@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Irradiance Map Vray - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Irradiance Map Vray, , , , , , , 0, , , , , , 0, fungsi-dari-irradiance-map-vray, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Irradiance Map Vray - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Irradiance Map Vray, , , , , , , 0, , , , , , 0, fungsi-dari-irradiance-map-vray, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Irradiance Map Vray - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Irradiance Map Vray, , , , , , , 0, , , , , , 0, fungsi-dari-irradiance-map-vray, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://soalpedia.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://soalpedia.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://soalpedia.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://soalpedia.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://soalpedia.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://soalpedia.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://soalpedia.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Irradiance Map Vray</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">IvoGiovanni</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Irradiance+Map+Vray" alt="Fungsi Dari Irradiance Map Vray">
+                    </div>
+                    <p></p>
+                    <p>brace map juga berfungsi sebagai ?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#brace-map-juga-berfungsi-sebagai">1.
+                                            brace map juga berfungsi sebagai ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-flow-map-adalah">2.
+                                            fungsi flow map adalah ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-google-map">3.
+                                            fungsi dari google map</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-mind-mapapa-saja-contoh-mind-map%e2%80%8b">4.
+                                            apa itu mind map?apa saja contoh mind map?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tata-cara-me-render-tangga-3d-di-aplikasi-autocad-dan-sketch-upvray%e2%80%8b">5.
+                                            jelaskan tata cara me-render tangga 3d di aplikasi autocad dan sketch up+vray​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-rulerdocument-map-gridillines">6.
+                                            apa fungsi dari ruler,document map, gridillines, </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#maap-tolong-bantu-yang-bisa-jawab-map-tolong-map-yang-bisa-jab-pali-map-yang-bisa-bantu%e2%80%8b">7.
+                                            maap tolong bantu yang bisa jawab map tolong map yang bisa jab Pali map yang bisa bantu​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#garis-dalam-mind-map-berfungsi-sebagai%e2%80%8b">8.
+                                            garis dalam mind map berfungsi sebagai​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-mind-map-biologi-tentang-sturtur-dan-fungsi-tumbuhan-please-tolong-yah">9.
+                                            contoh mind map biologi tentang sturtur dan fungsi tumbuhan    
+please tolong yah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#document-map-di-ms-word-berfungsi-untuk">10.
+                                            document map di ms word berfungsi untuk</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-lah-mind-map-dari-struktur-dan-fungsi-bunga-bantu-coyy%e2%80%8b">11.
+                                            buat lah mind map dari struktur dan fungsi bunga bantu coyy​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#assalamualaikum-map-yang-tau-dan-yang-bisa-untuk-bantu-map-dan-yang-bisa-map-banget-ya-plis-plis%e2%80%8b">12.
+                                            assalamualaikum map yang tau dan yang bisa untuk bantu map dan yang bisa map banget ya plis plis​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-yang-bukan-jenis-dari-peta-konsep-adalah-a-circle-mapb-double-bubble-mapc-flow-mapd-bridge-mape-road-map">13.
+                                            Berikut ini yang bukan jenis dari peta konsep adalah ....
+A. Circle map
+B. Double bubble map
+C. Flow map
+D. Bridge map
+E. Road map</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#membuat-mind-map-peta-fikiran-dari-materi-bab-2-fungsi-unsur-warna-%e2%80%8b">14.
+                                            Membuat mind map (peta fikiran) dari materi bab 2 fungsi &amp; unsur warna.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-peta-perencanaa-planning-map">15.
+                                            apa fungsi peta perencanaa (planning map)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berapa-kode-padamontor-injektor-honda-jika-terjadi-kegagalan-fungsi-pada-rangkaiyan-sensor-map">16.
+                                            berapa kode padamontor injektor honda jika terjadi kegagalan fungsi pada rangkaiyan sensor MAP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#map-yang-mempunyai-penjepit-di-tengah-map-adalah%e2%80%8b">17.
+                                            map yang mempunyai penjepit di tengah map adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#26-a-map-describe-the-crust-of-earth-surface-by-using-middle-scale-aa-geography-mapb-chorography-mapc-topography-mapd-technique-mapdi-jawab-ya%e2%80%8b">18.
+                                            26.a map describe the crust of earth surface by using middle scale a?a.geography mapb.chorography mapc.topography mapd.technique mapdi jawab ya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-map-plastik">19.
+                                            apa fungsi map plastik?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#map-ini-isi-nya-apa-yang-map-tolong-plis-plis-%e2%80%8b">20.
+                                            map ini isi nya apa yang map tolong plis plis ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-antara-map-folder-dan-mapsnelhecter%e2%80%8b">21.
+                                            Jelaskan perbedaan antara map folder dan mapSnelhecter​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-map-folio-dan-map-snelhecter">22.
+                                            perbedaan map folio dan Map snelhecter</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#15-one-of-components-of-map-that-give-directions-to-find-locations-on-a-map-is-calleda-legendb-orientationc-scaled-title16-map-made-based-on-the-real-form-of-earth%e2%80%99s-surface-is-calleda-fla">23.
+                                            15. One of components of map that give directions to find locations on a map is called?a.legendb.orientationc.scaled.title16. Map made based on the real form of earth’s surface is called?a.Flat mapb.Relief mapc.Digital mapd.Technical map​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#clicle-map-berfungsi-sebagai">24.
+                                            clicle map berfungsi sebagai ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berfungsi-seperti-map-digunakan-untuk-menyimpan-file-atau-dokumen-dalam-komputer-disebut">25.
+                                            berfungsi seperti map digunakan untuk menyimpan file atau dokumen dalam komputer disebut</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sederhanakan-fungsi-boolean-berikut-menggunakan-k-map">26.
+                                            Sederhanakan fungsi Boolean berikut menggunakan K-Map</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mind-map-berfungsi-sebagai-alat-bantu-untuk-memunculkantolong-jawab-bkbimbingan-konseling%e2%80%8b">27.
+                                            mind map berfungsi sebagai alat bantu untuk memunculkan#tolong jawab #BK(bimbingan konseling)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-tree-map-adalah">28.
+                                            fungsi tree map adalah ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-persamaan-mind-map-yang-satu-dengan-mind-map-lainnya">29.
+                                            Apa persamaan mind map yang satu dengan mind map lainnya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-map-kuning-dengan-map-merah-untuk%e2%80%8b">30.
+                                            perbedaan map kuning dengan map merah untuk​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-periosteum-map-el-ipa%e2%80%8b">31.
+                                            fungsi periosteum map el ipa​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#map-tolong-bantu-yang-bisa-map-tolong-banget-map-yang-bisa-dan-yang-bisa-untuk-bantun-dan-juga-yang-ikls%e2%80%8b">32.
+                                            map tolong bantu yang bisa map tolong banget map yang bisa dan yang bisa untuk bantun dan juga yang ikls​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-yang-dimaksud-dengan-map-arsip-dan-macam-macam-map-arsip">33.
+                                            Jelaskan yang dimaksud dengan map arsip dan macam-macam map arsip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-yang-bukan-jenis-dari-peta-konsep-adalah-a-circle-mapb-double-bubble-mapc-flow-mapd-bridge-mape-road-map">34.
+                                            Berikut ini yang bukan jenis dari peta konsep adalah ....
+A. Circle map
+B. Double bubble map
+C. Flow map
+D. Bridge map
+E. Road map</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebuah-lemari-memiliki-d-laci-setiap-laci-mengandung-h-wadah-map-dan-setiap-map-mengandung-20-map-manila-berapa-map-manila-yang-ada-di-3-lemari-seperti-itu">35.
+                                            Sebuah lemari memiliki d laci. Setiap laci mengandung h wadah map, dan setiap map mengandung 20 map manila. Berapa map manila yang ada di 3 lemari seperti itu?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-macam-macama-mind-mapping-kecuali-a-flow-mapb-bit-mapc-multi-flow-mapd-brace-mape-bubble-map%e2%80%8b">36.
+                                            Berikut macam-macama Mind Mapping, kecuali a. Flow Mapb.Bit Mapc. Multi Flow Mapd. Brace Mape. Bubble Map​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#alat-yang-berfungsi-untuk-melubangi-dokumen-agar-bisa-dimasukkan-ke-dalam-map-ordner-dalam-proses-dokumen-disebut%e2%80%8b">37.
+                                            alat yang berfungsi untuk melubangi dokumen agar bisa dimasukkan ke dalam map ordner dalam proses dokumen disebut​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-hal-hal-yang-sama-antara-mind-map-satu-mind-map-lainnya%e2%80%8b">38.
+                                            apa saja hal-hal yang sama antara mind map satu mind map lainnya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-map-map-voucher">39.
+                                            apa yang dimaksud dengan map-map voucher???</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-antara-bubble-map-dan-doubble-bubble-map%e2%80%8b">40.
+                                            Jelaskan perbedaan antara Bubble map dan Doubble Bubble map?​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="brace-map-juga-berfungsi-sebagai">
+                            1. brace map juga berfungsi sebagai ?</h2><br />
+                        <p>untuk menganalisis objek fizikal</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-flow-map-adalah">
+                            2. fungsi flow map adalah ?</h2><br />
+                        Mendefinisikan hubungan antara bagian (pelaku proses), proses (manual/berbasis komputer) dan aliran data (dalam bentuk dokumen keluaran dan masukan)<br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-google-map">
+                            3. fungsi dari google map</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Google map dapat memudahkan kita untuk menuju suatu lokasi dengan menunjukkan jalan tercepat. Google map juga dapat memperkirakan berapa lama kita akan tiba di lokasi tersebut. Google map juga memiliki ulasan tentang restoran, toko, mall dan lain-lain. Dengan begitu kita bisa dengan mudah mencari tempat2 yang akan kita kunjungi</p><p></p><p>Jadikan jawaban ini yang terbaik!</p><br />
+                                            <h2 class="ez-toc-section" id="apa-itu-mind-mapapa-saja-contoh-mind-map%e2%80%8b">
+                            4. apa itu mind map?apa saja contoh mind map?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>mind map/ mind mapping adalah sistem pembelajaran dengan menggunakan tabel agar mudah dimengerti dan mengambil isi yang penting saja.</p><p><strong>Penjelasan:</strong></p><p>maaf kalu salah.</p><p><strong>Jawaban:</strong></p><p> pemetaan atau peta pikiran</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tata-cara-me-render-tangga-3d-di-aplikasi-autocad-dan-sketch-upvray%e2%80%8b">
+                            5. jelaskan tata cara me-render tangga 3d di aplikasi autocad dan sketch up+vray​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ada beberapa material yang saya aplikasinya pada desain saya, seperti material batu paras hitam, material kaca, material batu sikat, material rumput, material bata, material paving, material atap, material keramik, dll.</p><p>➥ Penyetingan Material Batu Paras Hitam:</p><p>Kesan realistis pada material batu paras hitam didapat dari efek timbul material itu sendiri. Untuk penyetingannya teman2 bisa ikuti langkah dibawah ini:</p><p></p><p>Seleksi material yang ingin disetting dengan cara kliik toolbar Paint Bucket, kemudian pada kotak dialog material klik Sample Paint → dilanjutkan dengan mengklik komponen material pada gambar 3 dimensi yang ingin disetting (dalam hal ini klik bagian yang berisikan material batu paras hitam).</p><p>Kemudian, klik material editor pada plugin V-ray yang ada pada sketchup, umumya berlogo “M”. </p><p>Pada V-ray material editor, pada bagian “Maps” → beri tanda centang pada pilihan Bump → dan isi dengan nilai 2. (Pada pilihan Bump ini, semakin besar nilai yang kita berikan maka semakin tinggi tingkat ketimbulan dari material tersebut, namun efek sampingnya saat di render akan membutuhkan waktu yang cukup lama).</p><p>Untuk melihat hasil settingan, klik tombol “Preview” </p><p>Untuk material lain seperti material bata, material paving, material batu sikat, dan material atap, penyetingannya sama dengan penyetingan material batu paras hitam. Dengan nilai bump sesuaikan dengan keinginan teman2. Selamat mencoba!</p><p></p><p>➥ Penyetingan Material Kaca:</p><p>Pada material kaca ini, saya akan menerapkan efek reflection agar objek yang ada di depannya memiliki kesan terpantul dan akan terlihat semakin realistis. Adapun langkah-langkahnya adalah:</p><p>Seleksi material yang ingin disetting dengan cara kliik toolbar Paint Bucket, kemudian pada kotak dialog material klik Sample Paint → dilanjutkan dengan mengklik komponen material pada gambar 3 dimensi yang ingin disetting (dalam hal ini klik bagian yang berisikan material kaca).</p><p>Kemudian, klik material editor pada plugin V-ray yang ada pada sketchup, umumya berlogo “M”</p><p>Pada kotak pilihan Reflection, saya beri nilai 1.1 (semakin tinggi nilainya, semakin tinggi pula tinggat pantulan (reflection) dari material kaca tersebut), teman2 bisa mengisi nilai tersebut sesuai dengan keinginan dan selera teman2. Dan jika ingin melihat hasil setingan dengan cara klik tombol Preview yang ada dibawah material editor</p><p>Untuk mengatur tingkat “Kekinclongan” dari material kaca, klik tombol “M”</p><p>Kemudian pilih TexFresnel pada bagian bawah gambar diatas, kemudian  saya akan mengatur nilai IOR dan Refract IOR, dan masing masing dengan nilai  1.6 (Sesuaikan dengan selera teman2)</p><p>Nah, pada bagian Parallel yang terletak diatas IOR, atur warna untuk memberikan tampilan pada kaca, semakin mendekati warna putih maka semakin bening warna kaca</p><p>Kemudian klik OK</p><p>Untuk material lain seperti material keramik, saya akan memberikan efek reflection juga, sehingga penyetingannya sama dengan penyetingan material kaca</p><p>Untuk penyetingan material di V-ray saya aplikasikan sederhana saja, seperti penjelasan saya diatas. Karena semakin detail kita mengatur penyetingan material di V-ray, maka semakin tinggi pula spesifikasi laptop yang dibutuhkan. Dan berhubung laptop saya bukan kategori high spec, jadi penyetingan material saya aplikasikan sederhana saja. Yang terpenting adalah gambar yang dihasilkan sudah memenuhi keinginan kita.</p><p></p><p>➤ Setting Option Editor V-ray</p><p>Saat pengaturan material sudah selesai dilakukan, selanjutnya dilakukan penyetingan pada “Option Editor” dengan klik logo “O” pada plugin V-ray.</p><p>Pada GI (skylight) seperti gambar dibawah ini, kita akan mengatur nilainya, dalam kasus ini saya akan mengisi nilai 0.3 (agar tidak terlalu terang), karena semakin tinggi nilainya, makan akan memberikan tingkat kecerahan yang tinggi pula.</p><p>Kemudian, pada pilihan reflection/refraction (background)</p><p>Selanjutnya, untuk mengatur background Sketchup klik logo “M” yang ada pada reflection/refraction (background) </p><p>Pada piihan “File” import file HDRI yang teman2 punya dengan format .hdr</p><p>Kemudian scroll kebawah, pada pilihan UVW Type pilih UVWGenEnvironment → kemudian klik OK</p><p>Kemudian pada pilihan Mapping type Pilih Screen</p><p>Penyetingan untuk background skethchup sudah selesai.</p><p></p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><p>maaf jika tidak paham</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-rulerdocument-map-gridillines">
+                            6. apa fungsi dari ruler,document map, gridillines, </h2><br />
+                        kalau ruler untuk mengaris kalau document map untuk menyimpan dokumen penting<br />
+                                            <h2 class="ez-toc-section" id="maap-tolong-bantu-yang-bisa-jawab-map-tolong-map-yang-bisa-jab-pali-map-yang-bisa-bantu%e2%80%8b">
+                            7. maap tolong bantu yang bisa jawab map tolong map yang bisa jab Pali map yang bisa bantu​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>14. A</p><p>15. D</p><p>17. A</p><p>22. B</p><p>23. B</p><p></p><p>cmiiw</p><p><strong>Penjelasan:</strong></p><p>Khalifah Ustman bin Affan mendapat julukan Dzun Nurain, yg artinya dua cahaya karena menikahi 2 putri Nabi Muhammad Saw.</p><p></p><p>cmiiw</p><br />
+                                            <h2 class="ez-toc-section" id="garis-dalam-mind-map-berfungsi-sebagai%e2%80%8b">
+                            8. garis dalam mind map berfungsi sebagai​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>mempermudah pembaca mind mapping untuk memahanminya</p><p><strong>Penjelasan:</strong></p><p><strong>maaf klo salah,smoga bisa mmbntu:)</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-mind-map-biologi-tentang-sturtur-dan-fungsi-tumbuhan-please-tolong-yah">
+                            9. contoh mind map biologi tentang sturtur dan fungsi tumbuhan    
+please tolong yah</h2><br />
+                        struktur tumbuhan<br /><br />DAUN<br /><br />Struktur Morfologi<br /><br /><br />1. Bentuk daun berdasarkan tepi daun (rata, bergerigi, dsb)<br />2. Daun berdasarkan jumlah anak daun dalam 1 tangkai<br />3. Daun berdasarkan tulang daun<br />Struktur Anatomi<br />Dari lapisan atas ke bawah<br /><br /><br />1. Jaringan Epidermis atas, terdiri dari sel selapis yang dilindungi oleh kutikula<br />2. Jaringan Palisade, sel berbentuk seperti tiang, terdapat banyak kloroplas<br /><br />3. Jaringan Spons, sel berlapis-lapis, terdapat rongga udara, terdapat sedikit kloroplas, terdapat jaringan pengangkut (xylem dan floem)<br />4. Jaringan Epidermis bawah, terdiri dari sel selapis, terdapat stomata yang berfungsi sebagai tempat pertukaran udara<br />Fungsi Daun<br />1. sebagai tempat fotosintesis<br />2. sebagai tempat respirasi<br />3. sebagai tempat transpirasi<br />4. sebagai alat perkembangbiakan vegetatif<br />AKAR<br />Struktur Anatomi<br />1. Jaringan Epidermis, terdiri dari sel selapis, tipis, rapat, dan mudah dilalui air<br />2. Jaringan Korteks, terdiri dari sel beberapa lapis, berdinding tipis, berfungsi sebagai penyimpan cadangan makanan<br />3. Jaringan Endodermis, terdiri dari sel selapis, tebal, sulit dilalui air (selektif)<br />4. Stele, terdiri dari xylem dan floem<br />Struktur Morfologi<br /> Ujung akar, sebagai daerah meristematik yang sel-selnya selalu aktif membelah<br />Rambut akar, untuk memperluas daerah penyerapan air dan mineral<br />Batang akar<br /> Kaliptra / Tudung akar, sebagai pelindung dari ujung akar dari kerusakan mekanis ketika menembus tanah<br />Fungsi akar<br />1. menyerap air dan garam-garam mineral<br />2. memperkokoh tegaknya tanaman<br />3. alat respirasi<br />4. penyimpan cadangan makanan<br />5. alat perkembangbiakan vegetatif<br />BIJI TERDIRI DARI<br />1. Spermodermis (kulit biji)<br />2. Funiculus (tali pusat)<br />3. Nucleus seminis (inti biji)<br />BUAH<br />Ada 2 macam buah <br />1. Buah sejati, misal : mangga, rambutan, dll<br /><br />2. Buah semu, misal : nangka, nanas, jambu mente, apel, dll<br />BUNGA<br />Bagian-bagian<br />1. Calix (kelopak), berfungsi untuk melindungi bunga ketika masih kuncup<br />2. Corolla (mahkota), berfungsi sebagai hiasan bunga untuk menarik serangga<br />3. Stamen (benangsari), terdiri dari filamen (tangkai sari), antera(kepala sari), pollen (serbuk sari)<br />4. Pistillum (putik), terdiri dari stigma (kepala putik), stillus (tangkai putik), ovarium (bakal buah), ovullum (bakal biji)<br />1. Struktur Morfologi, merupakan struktur yang tampak dari luar tubuh tumbuhan<br />2. Struktur Anatomi, merupakan struktur yang tampak melalui penampang mikroskopis<br />BATANG<br />Struktur Anatomi<br />Dari lapisan luar ke dalam<br />1. Jaringan Epidermis, terdiri dari selapis sel, dinding sel menebal, dilindungi oleh kutikula<br />2. Jaringan Korteks, terdiri dari beberapa lapis sel, berongga-rongga, bervakuola besar, berfungsi sebagai tempat menyimpan cadangan makanan<br />3. Stele, terdiri dari xylem dan floem. Letak jaringan pengangkut (xylem dan floem) pada tumbuhan dikotil lebih teratur daripada tumbuhan monokotil<br />Struktur Morfologi<br /><br />1. Batang herba, umumnya batang lunak, berwarna hijau (karena terdapat klorofil), terdapat stomata, sedikit / tidak ada jaringan kayu, ukuran kecil, dan umurnya relatif pendek.<br />2. Batang berkayu, umumnya batang keras, terdapat jaringan kayu, berwarna coklat, terdapat lentisel, ukuran besar, dan umurnya relatif panjang.<br />Fungsi batang:<br /><br /><br /><br /><br />1. sebagai organ perlintasan air dan makanan. Xylem sebagai jaringan yang mengangkut air dan garam mineral, sedangkan Floem sebagai jaringan yang mengangkut hasil fotosintesis (makanan)<br />2. sebagai organ pembentuk dan penyangga tubuh tumbuhan<br />3. sebagai tempat penyimpan cadangan makanan<br />4. sebagai alat perkembangbiakan vegetatif.<br /><br />~ SEMOGA MEMBANTU...<br />~ JANGAN LUPA IKUTI SAYA YA...<br />
+                                            <h2 class="ez-toc-section" id="document-map-di-ms-word-berfungsi-untuk">
+                            10. document map di ms word berfungsi untuk</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Document map adalah alat bantu yang memetakan secara visual bagian-bagian yang kita miliki dalam sebuah dokumen. Document map dibuat otomatis dengan mendeteksi keberadaan Heading yang telah kita pelajari pada bagian sebelumnya.</p><p><strong>Penjelasan:</strong></p><p>semoga bermanfaat</p><br />
+                                            <h2 class="ez-toc-section" id="buat-lah-mind-map-dari-struktur-dan-fungsi-bunga-bantu-coyy%e2%80%8b">
+                            11. buat lah mind map dari struktur dan fungsi bunga bantu coyy​</h2><br />
+                        <p><strong>Struktur bunga </strong>terdiri dari</p>Tangkai bunga.Kelopak.Mahkota.Bakal buah.Bakal biji.Kepala putik.Tangkai putik.Benang sari.<p><strong>Fungsi bunga </strong>antara lain yaitu sebagai alat reproduksi generatif pada bunga.</p><p></p><p><strong>Pembahasan:</strong></p><p><strong>Bunga </strong>dalam bahasa latin bernama flos. Bunga itu sendiri bisa dikatakan sebagai alat reproduksi seksual yang ada pada tumbuhan yang berbunga. Pada umumnya, <strong>bunga</strong> itu terdapat di divisi magnoliophyta atau angiospermae. Kedua divisi tersebut memiliki arti tumbuhan berbiji tertutup. <strong>Bunga </strong>adalah bagian dari tanaman yang umumnya berpenampilan indah dan mengeluarkan aroma wangi. Bunga adalah salah satu organ tumbuhan yang mempunyai fungsi biologis. Fungsi biologis <strong>bunga</strong> adalah untuk memicu proses reproduksi pada tanaman, yaitu dengan cara mempertemukan serbuk sari dan putik.</p><p><strong></strong></p><p><strong>Pelajari lebih lanjut</strong></p><p>Materi tentang bunga pada link https://brainly.co.id/tugas/16936335</p><p></p><p><strong>#BelajarBersamaBrainly</strong></p><p><strong>#SPJ1</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="assalamualaikum-map-yang-tau-dan-yang-bisa-untuk-bantu-map-dan-yang-bisa-map-banget-ya-plis-plis%e2%80%8b">
+                            12. assalamualaikum map yang tau dan yang bisa untuk bantu map dan yang bisa map banget ya plis plis​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>32.a</p><p>34d</p><p>35b</p><p>38a</p><p>39e</p><p></p><p><strong>Penjelasan:</strong></p><p>bantu follow ya</p><br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-yang-bukan-jenis-dari-peta-konsep-adalah-a-circle-mapb-double-bubble-mapc-flow-mapd-bridge-mape-road-map">
+                            13. Berikut ini yang bukan jenis dari peta konsep adalah ....
+A. Circle map
+B. Double bubble map
+C. Flow map
+D. Bridge map
+E. Road map</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D.bridge map</p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="membuat-mind-map-peta-fikiran-dari-materi-bab-2-fungsi-unsur-warna-%e2%80%8b">
+                            14. Membuat mind map (peta fikiran) dari materi bab 2 fungsi &amp; unsur warna.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ini berarti kamu harus gambar. baca materi yang dikasih gurumu. trs dirangkum, buat mind map oke. ayo semangat!</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-peta-perencanaa-planning-map">
+                            15. apa fungsi peta perencanaa (planning map)</h2><br />
+                        Untuk memudahkan suatu perencanaan<br />
+                                            <h2 class="ez-toc-section" id="berapa-kode-padamontor-injektor-honda-jika-terjadi-kegagalan-fungsi-pada-rangkaiyan-sensor-map">
+                            16. berapa kode padamontor injektor honda jika terjadi kegagalan fungsi pada rangkaiyan sensor MAP</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1 kedipan lampu injektor</p><br />
+                                            <h2 class="ez-toc-section" id="map-yang-mempunyai-penjepit-di-tengah-map-adalah%e2%80%8b">
+                            17. map yang mempunyai penjepit di tengah map adalah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>snelhecter</p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah</p><p><strong>Jawaban:</strong></p><p>map snelhecter atau snelhecter map</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="26-a-map-describe-the-crust-of-earth-surface-by-using-middle-scale-aa-geography-mapb-chorography-mapc-topography-mapd-technique-mapdi-jawab-ya%e2%80%8b">
+                            18. 26.a map describe the crust of earth surface by using middle scale a?a.geography mapb.chorography mapc.topography mapd.technique mapdi jawab ya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>25.The answer is B</p><p>26.The answer is C</p><p> <strong>P</strong><strong>e</strong><strong>n</strong><strong>j</strong><strong>e</strong><strong>l</strong><strong>a</strong><strong>s</strong><strong>a</strong><strong>n</strong><strong>:</strong></p><p>"Broad and Distance" mengartikan luas dan jarak "Location and place" mengartikan Lokasi dan tempat,,So....Fungsi dri map adalah kedua pilihan itu</p><p><strong>S</strong><strong>e</strong><strong>m</strong><strong>o</strong><strong>g</strong><strong>a</strong><strong> </strong><strong>m</strong><strong>e</strong><strong>m</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong>t</strong><strong>u</strong><strong>u</strong></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-map-plastik">
+                            19. apa fungsi map plastik?</h2><br />
+                        buat menaruh kertas2 kerjaan / lamaran pekerjaan :) semoga bisa membantu :)<br />
+                                            <h2 class="ez-toc-section" id="map-ini-isi-nya-apa-yang-map-tolong-plis-plis-%e2%80%8b">
+                            20. map ini isi nya apa yang map tolong plis plis ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Maksudnya </strong><strong>itu </strong><strong>ginii</strong></p><p></p><p><strong>kamu </strong><strong>harus </strong><strong>bikin </strong><strong>dialog </strong><strong>seperti </strong><strong>contoh </strong><strong>tersebut</strong></p><p></p><p><strong>Translate </strong><strong>:</strong></p><p><strong>Contoh </strong></p><p><strong>A</strong><strong>:</strong><strong> </strong><strong>Apa </strong><strong>itu </strong><strong>di </strong><strong>dinding? </strong></p><p><strong>B:</strong><strong> </strong><strong>Itu </strong><strong>adalah </strong><strong>papan </strong><strong>tulis</strong></p><p><strong>A:</strong><strong> </strong><strong>Berapa </strong><strong>banyak </strong><strong>dikelas </strong><strong>kamu</strong><strong>? </strong></p><p><strong>B:</strong><strong> </strong><strong>Disini </strong><strong>hanya </strong><strong>satu </strong><strong> </strong><strong>papan </strong><strong>tulis </strong><strong>di </strong><strong>kelas </strong><strong>saya</strong></p><p></p><p></p><p></p><p><strong>#</strong><strong>Maaf </strong><strong>sya </strong><strong>gk </strong><strong>bisa </strong><strong>ngisiin, </strong><strong>paling </strong><strong>tidak </strong><strong>saya </strong><strong>sdh </strong><strong>translate </strong><strong>in#</strong><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-antara-map-folder-dan-mapsnelhecter%e2%80%8b">
+                            21. Jelaskan perbedaan antara map folder dan mapSnelhecter​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Map snelhecter atau lebih sering disebut dengan snelhecter map adalah map yang mempunyai penjepit di tengahnya dan tidak mempunyai daun penutup. ... Folder adalah map tanpa dilengkapi dengan daun penutup. Map ini berupa lipatan kertas tebal/plastik saja.</p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-map-folio-dan-map-snelhecter">
+                            22. perbedaan map folio dan Map snelhecter</h2><br />
+                        <p>Kalau map snelhecter harus membolongi kertas terlebih dahulu sebelum disimpan di dalam map, sedangkan map folio tidak perlu.</p><p>Maaf bgt ya kalau salah :)</p><br />
+                                            <h2 class="ez-toc-section" id="15-one-of-components-of-map-that-give-directions-to-find-locations-on-a-map-is-calleda-legendb-orientationc-scaled-title16-map-made-based-on-the-real-form-of-earth%e2%80%99s-surface-is-calleda-fla">
+                            23. 15. One of components of map that give directions to find locations on a map is called?a.legendb.orientationc.scaled.title16. Map made based on the real form of earth’s surface is called?a.Flat mapb.Relief mapc.Digital mapd.Technical map​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>15. orienration</p><p>16. relief map</p><p><strong>Penjelasan:</strong></p><p> orientation adalah petunjuk arah atau arahan untuk mencari suatu lokasi</p><p></p><p>relief map adalah peta yang dibuat berdasarkan kontur asli dari perrmukaan bumi</p><br />
+                                            <h2 class="ez-toc-section" id="clicle-map-berfungsi-sebagai">
+                            24. clicle map berfungsi sebagai ?</h2><br />
+                        Fungsi google.maps.circle adalah salah satu fungsi di google map api yang bertugas untuk membuat lingkaran di dalam map.<br />
+                                            <h2 class="ez-toc-section" id="berfungsi-seperti-map-digunakan-untuk-menyimpan-file-atau-dokumen-dalam-komputer-disebut">
+                            25. berfungsi seperti map digunakan untuk menyimpan file atau dokumen dalam komputer disebut</h2><br />
+                        file explorer:v<br /><br /><br /><br /><br /><br /><br />.........Folder ~~~~~~~~~~~~~~~~~~~~~~~~~~~<br /><br />
+                                            <h2 class="ez-toc-section" id="sederhanakan-fungsi-boolean-berikut-menggunakan-k-map">
+                            26. Sederhanakan fungsi Boolean berikut menggunakan K-Map</h2><br />
+                        <p></p><p>Latihan Sederhanakan dengan menggunakan metode tabulasi </p><p></p><p>a. F(a,b,c,d,e)= ∑(6,9,13,18,19,25,27,29) </p><p></p><p>b.</p><p>F(a,b,c,d,e,f)=</p><p>∑(20,28,38,39,52,60,102,103,127) </p><p></p><p>c. F = A’B’CE’ + A’B’C’D’E’ + B’D’E’ + B’CD’ + CDE’ + BDE’</p><p></p><p>Semoga membantu dan dapat bermanfaat ya terimakasih</p><p></p><p>[tex]{\colorbox{aqua}{\colorbox{black}{\bf{\color{66FFFF}{Answer by : misrokhah439}}}}}[/tex]</p><br />
+                                            <h2 class="ez-toc-section" id="mind-map-berfungsi-sebagai-alat-bantu-untuk-memunculkantolong-jawab-bkbimbingan-konseling%e2%80%8b">
+                            27. mind map berfungsi sebagai alat bantu untuk memunculkan#tolong jawab #BK(bimbingan konseling)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>suatu pola pikir yang membuat pikiran dapat berimajinasi dalam menentukan suatu jawaban dimana otak akan terus bekerja untuk menemukan jawaban dalam suatu masalah^--^</p><p></p><p>kemungkinan seperti itu</p><p>Terimah kasih yah^--^</p>pembahasan:<p>mind map berfungsi sebagai alat bantu untuk memunculkan daya fikir atau daya kemampuan suatu otak bekerja dalam merespon atau merangsang segala jenis sesuatu yang telah diteliti lebih lagi </p><p>@salam Juliegamming :D</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-tree-map-adalah">
+                            28. fungsi tree map adalah ?</h2><br />
+                        <p>Tree map itu apa , atau maksudnya topologi tree????</p><br />
+                                            <h2 class="ez-toc-section" id="apa-persamaan-mind-map-yang-satu-dengan-mind-map-lainnya">
+                            29. Apa persamaan mind map yang satu dengan mind map lainnya?</h2><br />
+                        <p>Persamaan mind map yang satu dengan yang lain yaitu sama-sama suatu metode yang digunakan untuk memaksimalkan potensi pikiran manusia serta sama-sama suatu proses memetakan pikiran untuk menghubungkan konsep permasalahan  menuju suatu pemahaman yang hasilnya dituangkan langsung diatas kertas  dengan anismasi yang disukai dan mudah dimengerti oleh pembuatnya.  Persamaan mind mapp yang satu dengan yang lain juga sama-sama berfungsi dalam memudahkan melihat gambaran secara keseluruhan, dengan adanya mind mapp sama-sama memudahkan pengkajian ulang yang bisa dilakukan dengan lebih cepat.
+</p><p>
+</p>Pembahasan
+<p>Mind map adalah  sarana  berpikir kreatif yang menunjukkan  cara kerja otak secara alami. Mind map ini juga memungkinkan otak untuk menggunakan semua  gambar dan asosiasi dalam pola radial dan jaringan sebagaimana otak dirancang.
+</p><p>
+</p><p>Adapun jenis-jenis mind map, yaitu:
+</p>Mind Map Silabus atau mind map makro, yaitu mind mapping yang membantu memberikan gambaran tentang apa yang dipelajari dan biasanya mind mapp ini dibuat dalam ukuran besar dan di tempel di dinding.
+<p>
+</p>Mind Map Bab, yaitu mind mapp yang dibuat berdasarkan masing-masing bab yang telah dipelajari, namun harus ringkas poin penting atau garis besarnya saja untuk mudah dalam mengingatnya.
+<p>
+</p>Mind Map Paragraf, yaitu suatu jenis mind mapp yang memberikan informasi secara lengkap karena selain bisa melihat ringkasan setiap bab, bisa juga digunakan untuk mengetahui ringkasan penjelasan.
+<p>
+</p>Pelajari lebih lanjut
+<p>Sebutkan indikator dalam mind mapping https://brainly.co.id/tugas/17457771
+</p><p><strong>-------------------------------------
+</strong></p><p>
+</p>Detil Jawaban  <p><strong>Mata pelajaran:</strong> Bahasa Inggris
+</p><p><strong>Kelas:</strong> 12
+</p><p><strong>Bab:</strong> 4</p><p><strong>Kode:</strong> 12.5.4
+</p><p>
+</p><p><strong>Kata Kunci:</strong> Mind Map, Persamaan, Mind, Map</p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-map-kuning-dengan-map-merah-untuk%e2%80%8b">
+                            30. perbedaan map kuning dengan map merah untuk​</h2><br />
+                        maaf salah,kalau tadi jawaban aku bukan perbedaan tapi arti/makna<br />
+                                            <h2 class="ez-toc-section" id="fungsi-periosteum-map-el-ipa%e2%80%8b">
+                            31. fungsi periosteum map el ipa​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Periosteum melayani beberapa fungsi termasuk penahan tendon dan ligamen, membantu mencret darah masuk dan keluar dari tulang dan membantu pertumbuhan tulang. Periosteum merupakan bagian penting dari sistem kerangka dan ditemukan sebagai membran di sepanjang bagian luar tulang. Membran ini terdiri dari jaringan ikat padat tidak teratur, yang terbagi menjadi dua lapisan yang disebut lapisan fibrosa dan lapisan kambium.</p><p></p><p></p><p> </p><p>Lapisan kambium berisi sel-sel progenitor yang berkembang menjadi osteoblas. Osteoblas adalah kunci dalam meningkatkan lebar atau panjang tulang. Mereka juga berperan dalam penyembuhan tulang patah dan keretakan tulang.</p><p></p><p>semoga bermanfaat</p><p></p><p>#backtoscholl2019</p><p><strong>Jawaban:</strong></p><p>Berikut fungsi-fungsi periosteum:</p><p>1.Menahan ligamen</p><p>2.Menyimpan kalsium dan fosfor</p><p>3.Memberi nutrisi untuk pertumbuhan tulang</p><p>4.Jalur keluar masuk darah ke tulang</p><p>5.Membentuk jaringan baru jika salah satu tulang cedera/patah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="map-tolong-bantu-yang-bisa-map-tolong-banget-map-yang-bisa-dan-yang-bisa-untuk-bantun-dan-juga-yang-ikls%e2%80%8b">
+                            32. map tolong bantu yang bisa map tolong banget map yang bisa dan yang bisa untuk bantun dan juga yang ikls​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>21a</p><p>22d</p><p>25d</p><p>27 lupa hehe</p><p>28c</p><p>29d</p><p>30a</p><p><strong>Penjelasan:</strong></p><p>insyaallah bener xixixi</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-yang-dimaksud-dengan-map-arsip-dan-macam-macam-map-arsip">
+                            33. Jelaskan yang dimaksud dengan map arsip dan macam-macam map arsip</h2><br />
+                        Peralatan Kearsipan adalah alat atau sarana yang dipergunakan dalam kegiatan pengelolaan arsip<br /><br />macam macam :<br /><br />1. Filing Cabinet<br />Filing cabinet adalah lemari arsip yang terdiri dari beberapa laci, antara 1 – 6 laci. Tetapi yang paling banyak digunakan adalah 4 dan 5 laci. Setiap laci dapat menampung kurang lebih 5000 lembar arsip ukuran surat yang disusun berdiri tegak lurus (vertikal) berderet ke belakang.<br /><br />2. Rotary Filing Cabinet (alat penyimpanan berputar)<br />Rotary filing cabinet adalah alat penyimpanan arsip seperti filing cabinet yangdapat digerakkan secara berputar.<br /><br />3. Lemari Arsip<br />Lemari arsip adalah lemari tempat penyimpanan arsip, yang biasanya terbuat dari besi atau kayu yang dilengkapi dengan daun pintu, dan arsip terlebih dahulu dimasukkan ke dalam ordner atau stopmap.<br /><br />4. Rak Arsip<br />Rak arsip adalah lemari tempat penyimpanan arsip, yang biasanya terbuat dari besi atau kayu tanpa pintu, dan arsip terlebih dahulu dimasukkan ke dalam ordner atau box file.<br /><br />5. Stopmap Folio<br />Stopmap folio adalah map yang terdapat daun penutup pada setiap sisinya. Daun penutup ini berfungsi untuk menopang surat yang ada di dalamnya agar tidak terjatuh.<br /><br />6. Map Snelhecter<br />Map snelhecter atau lebih sering disebut dengan snelhecter map adalah map yang mempunyai penjepit di tengahnya dan tidak mempunyai daun penutup. Untuk menopang arsip/surat yang ada di dalamnya maka digunakan penjepit tersebut, maka sebelumnya arsip harus terlebih dulu dilubangi dengan menggunakan perforator.<br /><br />7. Folder<br />Folder adalah map tanpa dilengkapi dengan daun penutup. Map ini berupa lipatan kertas tebal/plastik saja. Karena tidak ada daun penutupnya maka map ini fungsinya untuk menyimpan arsip yang selanjutnya akan dimasukkan ke dalam box arsip secara vertikal.<br />Map ini mempunyai TAB (Bagian yang menonjol pada posisi atas) untuk menuliskan judul/label tentang arsip yang ada di dalam folder tersebut.<br /><br />8. Map Gantung (hanging map)<br />Map gantung adalah folder yang mempunyai besi penggantung. Fungsi besi penggantung ini adalah untuk di pasang pada gawang yang ada di filing cabinet. Hanging folder juga mempunyai TAB untuk menuliskan kode atau indeks arsip yang ada di dalamnya.<br /><br />9. Ordner<br />Ordner adalah map besar yang terbuat dari kardus atau plastik tebal dengan ukuran punggung sekitar 5 cm yang didalamnya terdapat besi penjepit yang dipergunakan untuk menjepit arsip. Untuk itu arsip sebelum disimpan harus dilubangi terlebih dahulu dengan menggunakan perforator.<br /><br />10. Guide<br />Guide adalah lembaran kertas tebal atau karton manila yang digunakan sebagai penunjuk dan atau sekat/pemisah dalam penyimpanan arsip.<br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-yang-bukan-jenis-dari-peta-konsep-adalah-a-circle-mapb-double-bubble-mapc-flow-mapd-bridge-mape-road-map">
+                            34. Berikut ini yang bukan jenis dari peta konsep adalah ....
+A. Circle map
+B. Double bubble map
+C. Flow map
+D. Bridge map
+E. Road map</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D.Bridge map</p><p><strong>Penjelasan:</strong></p><p>semoga bermanfaat ya..</p><p>Maaf kalau salah kak...hihihi</p><p><strong>Penjelasan:</strong></p><p>D. bridge map</p><p> </p><p>betul kah? </p><br />
+                                            <h2 class="ez-toc-section" id="sebuah-lemari-memiliki-d-laci-setiap-laci-mengandung-h-wadah-map-dan-setiap-map-mengandung-20-map-manila-berapa-map-manila-yang-ada-di-3-lemari-seperti-itu">
+                            35. Sebuah lemari memiliki d laci. Setiap laci mengandung h wadah map, dan setiap map mengandung 20 map manila. Berapa map manila yang ada di 3 lemari seperti itu?</h2><br />
+                        <p>Jawab:</p><p></p><p>Penjelasan dengan langkah-langka</p><p></p><p></p><p>d×h×20×3 = 60dh</p><br />
+                                            <h2 class="ez-toc-section" id="berikut-macam-macama-mind-mapping-kecuali-a-flow-mapb-bit-mapc-multi-flow-mapd-brace-mape-bubble-map%e2%80%8b">
+                            36. Berikut macam-macama Mind Mapping, kecuali a. Flow Mapb.Bit Mapc. Multi Flow Mapd. Brace Mape. Bubble Map​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Berikut macam-macama Mind Mapping, kecuali</p><p>a. Flow Map</p><p><strong>b. Bit Map</strong></p><p>c. Multi Flow Map</p><p>d. Brace Map</p><p>e. Bubble Map​</p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="alat-yang-berfungsi-untuk-melubangi-dokumen-agar-bisa-dimasukkan-ke-dalam-map-ordner-dalam-proses-dokumen-disebut%e2%80%8b">
+                            37. alat yang berfungsi untuk melubangi dokumen agar bisa dimasukkan ke dalam map ordner dalam proses dokumen disebut​</h2><br />
+                        <p>Jawaban:</p><p>pembolong kertas </p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-saja-hal-hal-yang-sama-antara-mind-map-satu-mind-map-lainnya%e2%80%8b">
+                            38. apa saja hal-hal yang sama antara mind map satu mind map lainnya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Kedua-duanya adalah mind map.</p><p></p><p>Maff jika jawaban saya kurang tepat.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-map-map-voucher">
+                            39. apa yang dimaksud dengan map-map voucher???</h2><br />
+                        map-map yang berisi voucher.<br /><br />atau mungkin MAP Voucher, Mitra Adiperkasa Voucher<br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-antara-bubble-map-dan-doubble-bubble-map%e2%80%8b">
+                            40. Jelaskan perbedaan antara Bubble map dan Doubble Bubble map?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>  </p><p></p>  #Bubble Map, adalah salah satu mind mapping yang umumnya menggunakan kata-kata deskriptif dan penjabaran dari tiap konsep.                    sedangkan...#Double Bubble Map, adalah sebuah mind mapping yang umumnya digunakan untuk membandingkan beberapa konsep sekaligus.<p></p><p></p><p><strong>Penjelasan:</strong></p><p></p><p>semoga membantu.....</p><p>jadikan jawaban terbaik ya....</p>^_________^<p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/lUnGWym-jsM?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-fib-dan-adjenjency-table.html">Fungsi Dari Fib Dan Adjenjency Table</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-proposal-tugas-akhir-teknik-kimia.html">Contoh Proposal Tugas Akhir Teknik Kimia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-dan-pembahasan-optika-geometri.html">Contoh Soal Dan Pembahasan Optika Geometri</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/apa-fungsi-dari-rumus-vlookup.html">Apa Fungsi Dari Rumus Vlookup</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/download-pkv-games-2021.html">Download Pkv Games 2021</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/senjata-khas-suku-aborigin-tts.html">Senjata Khas Suku Aborigin Tts</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-sd-kelas-2.html">Contoh Soal Sd Kelas 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-laporan-tugas-akhir-umy.html">Contoh Laporan Tugas Akhir Umy</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-esape-pada-tab-even-construct-2.html">Fungsi Dari Esape Pada Tab Even Construct 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/apa-fungsi-dari-mysql-fetch-assoc.html">Apa Fungsi Dari Mysql fetch assoc</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-invers-fungsi-komposisi.html">Contoh Soal Invers Fungsi Komposisi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-fungsi-eksplisit.html">Contoh Soal Fungsi Eksplisit</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dan-tujuan-dari-scm.html">Fungsi Dan Tujuan Dari Scm</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/apakah-fungsi-dari-gendang-telinga.html">Apakah Fungsi Dari Gendang Telinga</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/dalam-pranata-keluarga-arti-dari-fungsi-apeksi.html">Dalam Pranata Keluarga Arti Dari Fungsi Apeksi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-deret-angka-dan-jawabannya-pdf.html">Contoh Soal Deret Angka Dan Jawabannya Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-bilangan-pangkat-negatif.html">Contoh Soal Bilangan Pangkat Negatif</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-pph-pasal-21-dan-jawabannya.html">Contoh Soal Pph Pasal 21 Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-cbr-california.html">Fungsi Dari Cbr California</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-uraian-bahasa-indonesia-kelas-6.html">Contoh Soal Uraian Bahasa Indonesia Kelas 6</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://soalpedia.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://soalpedia.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Getopt Cla - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Getopt Cla, , , , , , , 0, , , , , , 0, fungsi-dari-getopt-cla, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Getopt Cla - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Getopt Cla, , , , , , , 0, , , , , , 0, fungsi-dari-getopt-cla, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Getopt Cla - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Getopt Cla, , , , , , , 0, , , , , , 0, fungsi-dari-getopt-cla, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://soalpedia.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://soalpedia.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://soalpedia.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://soalpedia.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://soalpedia.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://soalpedia.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://soalpedia.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Getopt Cla</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Alyssapramudita458</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Getopt+Cla" alt="Fungsi Dari Getopt Cla">
+                    </div>
+                    <p></p>
+                    <p>Tommy wa one ____________________
+A. Of the happy child of hi cla
+B. Of the happiet child in the cla
+C. Child who wa the happiet of all the cla
+D. Of the happiet children in the cla.</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tommy-wa-one-____________________a-of-the-happy-child-of-hi-clab-of-the-happiet-child-in-the-clac-child-who-wa-the-happiet-of-all-the-clad-of-the-happiet-children-in-the-cla">1.
+                                            Tommy wa one ____________________
+A. Of the happy child of hi cla
+B. Of the happiet child in the cla
+C. Child who wa the happiet of all the cla
+D. Of the happiet children in the cla.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-paragraf-dengan-tema-online-cla-during-pandemic">2.
+                                            Buatlah paragraf dengan tema : online cla during pandemic.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#luruhcla-yangsebut-kan-batas-batas-benua-amerika%e2%80%8b">3.
+                                            luruhCla .yangSebut kan batas-batas benua Amerika​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#friend-dilike-%e2%80%93-her-%e2%80%93-he-%e2%80%93-the-in-cla-a-%e2%80%93-arret-policeman-thief-the-kind-my-girl-i-iter-very-girl-the-food-don%e2%80%99t-%e2%80%93-cla-brin">4.
+                                            - Friend - dilike – her – he – the- in- cla 
+ - A – arret- policeman- thief- the 
+ - Kind- my- girl- i- iter- very- girl
+ - The- food- don’t – cla- bring- in
+ - Lover- are- ?- food- you
+ - Doing- in- what- thi-are- weekend- you-?
+ - Thief- kind- i –robin hood- a
+ - Cookie- don’t- I – chocolate- like
+ - Monkey-went- week- to-lat-my-park- ee- the – family – the- my 
+ - My- I – viit – village- in - grandmother – mut- the.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#he-hi-home-work-by-the-time-the-teacher-come-to-the-cla">5.
+                                            He. Hi home work by the time the teacher come to the cla.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#massa-molar-fe-cla-adalah-ar-fe-56-cl-35%e2%80%8b">6.
+                                            Massa molar Fe cla adalah (Ar Fe = 56, Cl = 35)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#aiyah-meet-mr-harun-in-the-morning-in-front-of-her-cla-she-greet-him-what-doe-aiyah-ay-to-mr-harun">7.
+                                            Aiyah meet Mr. Harun in the morning in front of her cla. She greet him. What doe Aiyah ay to Mr. Harun?.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#op-betaal-malco-wro-pensando-i-lor-nuder-aulbil-20-organit-dari-selatarnya-saes-swasi-pada-mabuelo-widap-asmagle-cla-sluturua-dan-iade-hd-up-bulunamall-lian-untukhewan-tidak-punya-klorofil-maka-cara">8.
+                                            op betaal Malco wro pensando i lor nuder aulbil 20 organit dari selatarnya saes Swasi pada mabuelo widap asMagle Cla Sluturua) dan iade hd up bulunamall lian untukhewan tidak punya klorofil maka cara pengambilan nutrisi dilakukan dengan mengambil zat organik dan sekitarnya secara karena hewan tidak punya klorofil maka cara pengambilan nutrisi dilakukan dengan mengambil zat organik dan sekitarnya secara ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tujuan-pesawat-dokota-india-vt-cla-yang-bertolak-dari-singapura-menuju-yogyakarta-dan-di-dalamnya-terdapat-adisutjipto-abdulrachman-saleh-dan-tokoh-lainnya-adalah-%e2%80%a6-%e2%80%8b">9.
+                                            Tujuan pesawat Dokota India VT-CLA yang bertolak dari Singapura menuju Yogyakarta dan di dalamnya terdapat Adisutjipto, Abdulrachman Saleh dan tokoh lainnya adalah … .​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#no-tentukan-titik-sudut-nama-sudut-dan-jenis-sudut-pada-bangun-di-bawah-inibanguntitik-sudut-nama-sudut-jenis-sudut-ade1-a-b-c-dsudol-siro-deb-clab7-12d4-2-nm-3-%d0%bad-4-rs5-ahf6-de%e2%80%8b">10.
+                                            No.Tentukan titik sudut, nama sudut, dan jenis sudut pada bangun di bawah ini!BangunTitik Sudut Nama Sudut Jenis Sudut-ADE1.A, B, C, Dsudol siro.DeB.CLAB7 12D4.2.NM...3.кD.4.RS5.AHF6.DE​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#32-agar-ketiga-titik-a2-1-b6-7-dan-cla-15-terletak-pada-sebuah-garis-lurus-maka-nilai-3a-sama-dengan-a-34-b-28-c-22-d-18-garis-melalui%e2%80%8b">11.
+                                            32. Agar ketiga titik A(2, 1), B(6, 7), dan Cla, 15) terletak pada sebuah garis lurus, maka nilai 3a sama dengan A. 34 B. 28 C. 22 D. 18 garis melalui​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#my-bedroommy-name-is-cla-my-room-is-very-nice-its-got-a-smallwindow-and-yellow-walls-ive-got-a-table-next-to-mybed-a-cupboard-with-all-my-clothes-a-desk-and-a-chairall-my-favorite-things-are">12.
+                                            My BedroomMy name is Cla. My room is very nice. It's got a smallwindow and yellow walls. I've got a table next to mybed, a cupboard with all my clothes, a desk, and a chair,All my favorite things are in my bedroom. I'm a bigSelena Gomes fan and I've got a poster of her on mywall. My collection of magazines and mp3 player areon my desk. I've also got a photo of my family on thetable next to my bed.14. What does the text talk about?A. Cla's house.B. Cla's family room.C. Cla's bedroom.D. Cla's living room.15. What can we find on Cla's desk?A clothesB. a posterC. magazinesD. a photo16. Where does Cla put her clothes?She puts her clothes in the ....A tableB. cupboardC. deskD. chair​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#this-text-is-for-number-1-and-2-studeni-identity-cardalexandria-junior-high-schoolh-abdul-salam-s1-jakartaclanome-raditya-nugroha-ulamaod-ol-birthnexember-2006gondermateaddressjl-bromo-no-71berlian">13.
+                                            This text is for number 1 and 2.STUDENI IDENTITY CARDAlexandria Junior High SchoolH. Abdul Salam S1 JakartaClaNome: Raditya Nugroha UlamaOd ol birthNexember 2006GonderMateAddressJL. Bromo No 71Berlian Regency JakartaStudent's number 181920201. What kind of text is it?2.How old is he?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#student-i-m-orry-ir-i-have-broken-the-cla-window-by-accident-and-i-mut-apologize-for-that-i-honet">14.
+                                            Student i m orry ir i have broken the cla window by accident and i mut apologize for that i honet.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#man-you-didnt-bring-my-dictionwoman-if-you-had-left-your-dictiin-the-classroom-i-wouldbeen-able-to-find-it-what-does-the-woman-meana-she-wasnt-able-to-find-the-dictieb-she-left-the-dictionary">15.
+                                            Man : You didn't bring my dictionWoman: If you had left your dictiin the classroom, I wouldbeen able to find it.What does the woman mean?A. She wasn't able to find the dictieB. She left the dictionary in the cla:C. She brought the man's dictionarD. She didn't go to the classroom.       E.she didn't leave the dictionary in the classroom​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-reaksi-kesetimbanganpelo-al-pelzg-clagpada-suhu-27%c2%b0c-mempunyai-nilai-kc0-04-nilai-kp-padakesetimbangan-terlebut-adalah-%e2%80%8b">16.
+                                            Pada reaksi kesetimbanganPelo (al pelz(g) + Cla(g)Pada suhu 27°C mempunyai nilai kc=0.04 Nilai kp padakesetimbangan terlebut adalah...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ii-complete-the-blanks-with-the-correct-answer-in-the-boxlatehome-workdiligenthelpmeli-is-a-26-student-she-is-never-27-come-to-school-she-always-does-her-28-at-hom">17.
+                                            II. Complete the blanks with the correct answer in the box!lateHome workdiligenthelpMeli is a (26).......student, she is never (27)......... come to school.She always does her (28)............. at home. She an active student in the cla(29).............. .her friends. She is such a (30) .........student.and intacaad sentencern​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-dari-reaksi-dibawah-ini-yang-merupakan-reaksi-redoks-adalah-a-2als-6hclaq-%e2%86%92-2-alcl3aq-3h%e2%82%82-b-ag-aq-cla-agcls-c-so%e2%82%82-oh-aq-%e2%86%92-hso3aq-znos-c">18.
+                                            10. Dari reaksi dibawah ini yang merupakan reaksi redoks adalah... A. 2Al(s) + 6HCl(aq) → 2 AlCl3(aq) + 3H₂ B. Ag (aq) Cla AgCl(s) C. SO₂+ OH (aq) → HSO3(aq) ZnO(s) + CO₂(g) → (aq) → D. ZnCO3(s) E. BaCl2(s) + H₂SO4(aq) → BaSO4(s) + 2HCl(aq)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#doni-our-englih-cla-i-very-boring-tito-i-think-o-too-the-teacher-hould-ue-more-more-englih-game-to-make-it-fun-a-i-agreeb-i-thinkc-i-dont-like-itd-i-diagree-e-im-not-ure">19.
+                                            Doni :. Our Englih cla i very boring. Tito : I think o too. The teacher hould ue more more Englih game to make it fun. *
+a. I agree
+b. . I think
+c. I don't like it
+d I diagree. E. I'm not ure.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#nama-tumbuhan-berikut-tingkatannya-mulai-dari-speciesgenusfamiliaordocla-dan-kingdom-apa-saja-sih">20.
+                                            Nama tumbuhan berikut tingkatannya mulai dari species,genus,familia,ordo,cla... dan kingdom apa saja sih?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#daur-hidup-katak-dan-kelemahan-da-bu-unkemampuan-berpikir-kalian1-jelaskan-apa-yang-dimaksud-ekosistem-dan-berikan-contohnyajawab-cla2-jelaskan-dan-gambarkan-daur-hidup-katak-dan-kucingjawab-loc">21.
+                                            daur hidup katak dan kelemahan da bu unkemampuan berpikir kalian1. Jelaskan apa yang dimaksud ekosistem dan berikan contohnya!Jawab: CLA2. Jelaskan dan gambarkan daur hidup katak dan kucing!Jawab: Local3. Jelaskan peran produsen dalam sebuah rantai makanan!Jawab:Apabila konsumen puncak punah, apakah yang akan terjadi pada kodan konsumen ll?Jawab:Menurutmu, apa sajakah yang dapat mengganggu rantai makanan? Bpengaruhnya terhadap ekosistem?Jawab:IPA Kelas 5 SD/MI Semester Ganjil​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#e-43-a-b-berdasarkan-gambar-diatas-pasangan-sudut-sudut-yang-sehadap-adalah-cla%e2%82%82-dan-lb4-d-ag-dan-lb3-sudut-sebuah-segitiga-a-la%e2%82%81-dan-b3-laa-dan-lb3-lg%e2%80%8b">22.
+                                            E 4/3 A B Berdasarkan gambar diatas, Pasangan Sudut- Sudut yang sehadap adalah... CLA₂ dan LB4 d. Ag dan LB3 Sudut Sebuah Segitiga a LA₁ dan B3 LAA dan LB3 lg​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cla10-perhatikan-pantun-berikutbuah-nangka-buah-pepayadibeli-paman-dari-belawan-12larik-yang-tepat-untuk-melengkapi-isipantun-tersebut-adalaha-1-rajinlah-membaca2-banyak-pengetahuan-ban">23.
+                                            Cla10. Perhatikan pantun berikut!Buah nangka buah pepayaDibeli paman dari belawan.... (1)(2)Larik yang tepat untuk melengkapi isipantun tersebut adalahA. (1) Rajinlah membaca(2) Banyak pengetahuan banyak ilmuB. (1) Pandailah menjaga kata(2) Disukai teman disegani lawanC. (1) Belajar sejak kecil(2) Supaya jadi orang dermawanD. (1) Rajin belajar ketika muda(2) Hidup kan sukses selalu​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-my-grandfather-is-than-my-grandmothera-oldb-olderc-oldestd-more-old9-tania-always-gets-the-first-rank-in-her-clashe-is-the-student-in-the-class-a-cleverb-more-cleverc-cleverestd-cl">24.
+                                            8. My grandfather is ... than my grandmothera. oldb. olderc. oldestd. more old9. Tania always gets the first rank in her claShe is the ... student in the class.a. cleverb. more cleverc. cleverestd. cleverer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3kata-kerja-pasif-terdapat-pada-kalimata-la-mergapur-dindingb-petani-bertanam-padicla-membuatkan-saya-bajud-bunga-distrami-adik%e2%80%8b">25.
+                                            3kata kerja pasif terdapat pada kalimata la mergapur dindingb. Petani bertanam padicla membuatkan saya bajud Bunga distrami adik​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#claass5-suhu-pada-sebuah-pendingin-mula-mula-3%c2%b0c-lalu-10-menit-kemudian-dinaikkansebesar-9%c2%b0c-suhu-udara-di-tempat-pendingin-sekarang-adalah-a-12%c2%b0cb-6%c2%b0cd-12">26.
+                                            cla
+ass
+5. Suhu pada sebuah pendingin mula-mula -3°C, lalu 10 menit kemudian dinaikkan
+sebesar 9°C. Suhu udara di tempat pendingin sekarang adalah .....
+a. -12°C
+b. -6°C
+d. 12°C
+C. 6°C
+en</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#susan-where-were-you-at-10-00-i-came-to-your-class-but-you-werent-there-desi-when-you-1-%e2%80%a6-to-my-cla-ss-i-was-%e2%80%a6-my-teacher-carrying-student-books-to-the-teacher-at-10-00">27.
+                                            Susan : Where were you at 10.00? I came to your class but you weren't there. Desi : When you (1 ) … to my cla ss, I was ( ) … my teacher carrying student books to the teacher at 10.00 *</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-how-many-bagus-does-anita-have2-2-how-many-malls-do-you-have5-3-how-many-bicycles-do-they-have2-4-how-many-potatoes-does-here-have7-5-how-many-rabbits-does-cla-have6-6-how-many-umbrel">28.
+                                            1.How many bagus does Anita have?(2) 2.How many malls do you have?(5) 3.How many bicycles do they have?(2) 4.How many potatoes does here have?(7) 5.How many Rabbits does cla have?(6) 6.How many umbrella do you have?(1) 7.How many orangaes does Rudi have?(12) 8.How many mangoes do you have?(15)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arti-dari-lafaz-cla-adalaha-nama-namab-akhlakc-aqidahd-alamat%e2%80%8b">29.
+                                            Arti dari lafaz cla adalaha.nama-namab. akhlakc. aqidahd. alamat​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#%c2%b2k10-fsiclaliss%d8%aba%d9%86d9o-e7%d9%85%d8%a7%d8%af%d9%87-2-%d8%aa%d8%a7-%db%b4lapc9ij8a-glgurc0-menurunmendatar5-1-%d9%8a%d8%b5%d9%84%d9%8a%d8%b1%d9%82%d8%a9-%d8%a7%d9%84%d8%b0%d8%a7%d9%83">30.
+                                            (²k10 FSIclaLissثaنd9O e7ماده 2 تا ۴laPC9IJ8a glgurC0.MenurunMendatar5.1.يصليرقة الذاكرة8.2.مشيا على الأقدامجماع .96.دررهيجلس .34.يب7.ذاكر4.تناول الفطور​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#he-1-4-perhatikan-ayat-ayat-di-bawah-ini-cla-%d8%a3%d8%b7%d9%8a%d8%b9%d9%88%d8%a7-%d8%a7%d9%84%d9%84%d9%87-%d9%88%d8%a3%d8%b7%d9%8a%d8%b9%d9%88%d8%a7-%d8%a7%d9%84%d8%b1%d8%b3%d9%88%d9%84-1">31.
+                                            he 1 4. | Perhatikan ayat-ayat di bawah ini! cla أطيعوا الله وأطيعوا الرسول (1) يأيها الذين امنوا (2) وما انزلنا عليك الكتب (3) إلا لتبين لهم الذي (4) Penggalan Surah an-Nahl ayat 64 ditunjukkan oleh nomor .... a. (1) dan (2) b. (1) dan (4) C.(2) dan (3) d. (3) dan (4)  ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-%e2%88%9a5-f-40-0%e2%82%81f-8-2-0966-f-cla-dari-ujung-atas-sebuah-bidang-miring-40%c2%b0-yang-panjangnya-5m-sebua-benda-12-kg-dilepas-hingga-meluncur-ke-bawah-ternypta-benda-men-gesehan-60">32.
+                                            1 √5 F - (40-0₁F) = 8 2 0966 F:= cla Dari ujung atas sebuah bidang miring 40° yang panjangnya 5m sebua benda 12 kg dilepas hingga meluncur ke bawah, ternypta benda men gesehan 60 N, a. Berapakah percepatan benda itu ? b. Berapa waktu yang dibutuhkan hingga sampai di bawah 9 B) F = W sin AQ -AL = 9.064 - 60 = 12,10.064 - 60 = 30 - 60 = 168 N​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#9-perhatikan-gambar-berikutmakanan-pada-gambar-di-samping-berasal-daridaerah-claa-medanb-padangc-papuad-madura%e2%80%8b">33.
+                                            9. Perhatikan gambar berikut!Makanan pada gambar di samping berasal daridaerah ....Claa. Medanb. Padangc. Papuad. Madura​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tokoh-yang-gugur-dalam-peristiwa-penembakan-pesawat-dakota-vt-cla-yang-membawa-sumbangan-obat-obatan-bagi-indonesia-dari-palang-merah-malaya-adalah">34.
+                                            tokoh yang gugur dalam peristiwa penembakan pesawat dakota VT-CLA yang membawa sumbangan obat obatan bagi indonesia dari palang merah malaya adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengapa-bok-speaker-model-cla-jika-speaker-tidak-sesuai-spesifikasi-daunya-akan-robek-jika-di-geber-dengan-keras%e2%80%8b">35.
+                                            Mengapa bok speaker model CLA jika speaker tidak sesuai spesifikasi daunya akan robek jika di geber dengan keras​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-he-perhatikan-rumus-kimia-berikut-1-so-3-ho-2-cla-molekul-unsur-ditunjukkan-oleh-nomor-a-1-c-3-b-2-d-4tolong-kak-hari-ini-di-kumpul%e2%80%8b">36.
+                                            4) He Perhatikan rumus kimia berikut! 1) SO 3) HO 2) Cla Molekul unsur ditunjukkan oleh nomor .... a. 1) c. 3) b. 2) d. 4)tolong kak hari ini di kumpul​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cla-din-mae-ballade-battersebut-adalah-a-jurus-5b-jurus-4c-jurus-3d-jurus-2%e2%80%8b">37.
+                                            cla din Mae Ballade battersebut adalah a. jurus 5b. jurus 4c. jurus 3d. jurus 2​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penamaan-file-yang-benar-pada-sistem-operasi-dos-adalah-a-latihan1-txt-b-latihan-1-txt-c-latihan-1-class-d-latihan-satu-cla-e-latihansatu-cla">38.
+                                            Penamaan file yang benar pada sistem operasi DOS adalah?  A.) Latihan1.TXT B.) LATIHAN 1.TXT C.) LATIHAN 1.CLASS D.) LATIHAN SATU. CLA E.) LATIHANSATU. CLA</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#write-a-imple-invitation-baed-on-thi-ituation-sakia-invited-baim-to-attend-the-cla-meeting-on-saturday-tranlate-into-englih">39.
+                                            Write a imple invitation baed on thi ituation!
+ Sakia invited Baim to attend the cla meeting on Saturday. Tranlate Into Englih!.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#%e2%96%aa%ef%b8%8e-%e3%80%8equiz%e3%80%8f-%e2%96%aa%ef%b8%8etentukan-permutasi-dari-kata-cla-rissanote-mks%e2%80%8b">40.
+                                            ▪︎ 『QUIZ』 ▪︎Tentukan permutasi dari kata- cla- rissaNote : mks​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="tommy-wa-one-____________________a-of-the-happy-child-of-hi-clab-of-the-happiet-child-in-the-clac-child-who-wa-the-happiet-of-all-the-clad-of-the-happiet-children-in-the-cla">
+                            1. Tommy wa one ____________________
+A. Of the happy child of hi cla
+B. Of the happiet child in the cla
+C. Child who wa the happiet of all the cla
+D. Of the happiet children in the cla.</h2><br />
+                        <p><strong>Jawaban:</strong></p><strong>C.</strong><p></p><p><strong>Penjelasan:</strong></p><p><strong>Child </strong><strong>who </strong><strong>wa </strong><strong>the </strong><strong>happiet </strong><strong>of </strong><strong>all </strong><strong>the </strong><strong>cla</strong></p><p></p><p></p><p></p><p></p><strong>SEMOGA</strong><p></p><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>BERMANFAAT </strong><p></p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-paragraf-dengan-tema-online-cla-during-pandemic">
+                            2. Buatlah paragraf dengan tema : online cla during pandemic.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Hi!. i am ( nama mu / your name) i now studying in online class with my friends,i like how the teacher teaching us patiently and she always smile and kind to us . So i like online class .Thank you :)</p><p><strong>Penjelasan:</strong></p><p>Semoga membantu :)</p><br />
+                                            <h2 class="ez-toc-section" id="luruhcla-yangsebut-kan-batas-batas-benua-amerika%e2%80%8b">
+                            3. luruhCla .yangSebut kan batas-batas benua Amerika​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>lurus</p><p><strong>Penjelasan:</strong></p><p>gcbvkkvkkjndnbjjfjjfkhfbfkfbrjfjfi</p><p><strong>Jawaban:</strong></p><p>sebelah utara, benua Amerika berbatasan dengan laut Arktik. sebelah selatan benua Amerika berbatasan dengan perairan samudera Pasifik. sebelah timur, benua Amerika berbatasan dengan perairan atlantik. sebelah barat. benua Amerika berbatasan dengan perairan Samudera Pasifik. </p><br />
+                                            <h2 class="ez-toc-section" id="friend-dilike-%e2%80%93-her-%e2%80%93-he-%e2%80%93-the-in-cla-a-%e2%80%93-arret-policeman-thief-the-kind-my-girl-i-iter-very-girl-the-food-don%e2%80%99t-%e2%80%93-cla-brin">
+                            4. - Friend - dilike – her – he – the- in- cla 
+ - A – arret- policeman- thief- the 
+ - Kind- my- girl- i- iter- very- girl
+ - The- food- don’t – cla- bring- in
+ - Lover- are- ?- food- you
+ - Doing- in- what- thi-are- weekend- you-?
+ - Thief- kind- i –robin hood- a
+ - Cookie- don’t- I – chocolate- like
+ - Monkey-went- week- to-lat-my-park- ee- the – family – the- my 
+ - My- I – viit – village- in - grandmother – mut- the.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>-His Friends dislike her in the class</p><p>-A Policeman arrest the thief</p><p>-My little girl is very kind girl</p><p>-Don't bring food in the class</p><p>-Are you food lover?</p><p>-Robin Hood is a kind thief</p><p>-I don't like chocolate cookie</p><p>-My family went to the park last week and see the Monkey</p><p>     ^</p><p>     ||</p><p>(yang itu harusnya ditambah and)</p><p>-I must visit my Grandmother in the Village</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="he-hi-home-work-by-the-time-the-teacher-come-to-the-cla">
+                            5. He. Hi home work by the time the teacher come to the cla.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>he will be finished his jomework by the time the teacher come to tho class</p><p></p><p><strong>p</strong><strong>e</strong><strong>n</strong><strong>j</strong><strong>e</strong><strong>l</strong><strong>a</strong><strong>s</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>:</strong></p>maaf kalo salahh<p></p>jadikanlah jawaban terbaikk<br />
+                                            <h2 class="ez-toc-section" id="massa-molar-fe-cla-adalah-ar-fe-56-cl-35%e2%80%8b">
+                            6. Massa molar Fe cla adalah (Ar Fe = 56, Cl = 35)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jadi, massa molar FeCl₂ adalah 126 g/mol.</p><p><strong>Penjelasan:</strong></p><p>Untuk menghitung massa molar dari senyawa FeCl₂ (FeCl adalah senyawa yang lebih umum), kita perlu menambahkan massa molar atom-atom penyusunnya. Berikut adalah perhitungannya:</p><p></p><p>Masa molar FeCl₂ = (Jumlah atom Fe × Ar Fe) + (Jumlah atom Cl × Ar Cl)</p><p></p><p>Dalam senyawa FeCl₂, terdapat satu atom besi (Fe) dan dua atom klorin (Cl).</p><p></p><p>Masa molar FeCl₂ = (1 × 56) + (2 × 35)</p><p>                   = 56 + 70</p><p>                   = 126 g/mol</p><p></p><p>Jadi, massa molar FeCl₂ adalah 126 g/mol.</p><br />
+                                            <h2 class="ez-toc-section" id="aiyah-meet-mr-harun-in-the-morning-in-front-of-her-cla-she-greet-him-what-doe-aiyah-ay-to-mr-harun">
+                            7. Aiyah meet Mr. Harun in the morning in front of her cla. She greet him. What doe Aiyah ay to Mr. Harun?.</h2><br />
+                        good morning mr harun<br />
+                                            <h2 class="ez-toc-section" id="op-betaal-malco-wro-pensando-i-lor-nuder-aulbil-20-organit-dari-selatarnya-saes-swasi-pada-mabuelo-widap-asmagle-cla-sluturua-dan-iade-hd-up-bulunamall-lian-untukhewan-tidak-punya-klorofil-maka-cara">
+                            8. op betaal Malco wro pensando i lor nuder aulbil 20 organit dari selatarnya saes Swasi pada mabuelo widap asMagle Cla Sluturua) dan iade hd up bulunamall lian untukhewan tidak punya klorofil maka cara pengambilan nutrisi dilakukan dengan mengambil zat organik dan sekitarnya secara karena hewan tidak punya klorofil maka cara pengambilan nutrisi dilakukan dengan mengambil zat organik dan sekitarnya secara ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>nggak jelas banget soalnya</p><br />
+                                            <h2 class="ez-toc-section" id="tujuan-pesawat-dokota-india-vt-cla-yang-bertolak-dari-singapura-menuju-yogyakarta-dan-di-dalamnya-terdapat-adisutjipto-abdulrachman-saleh-dan-tokoh-lainnya-adalah-%e2%80%a6-%e2%80%8b">
+                            9. Tujuan pesawat Dokota India VT-CLA yang bertolak dari Singapura menuju Yogyakarta dan di dalamnya terdapat Adisutjipto, Abdulrachman Saleh dan tokoh lainnya adalah … .​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>membawa bantuan obat-obatan dari Palang Merah Malaya</p><p></p><p>#semogamembantu</p><br />
+                                            <h2 class="ez-toc-section" id="no-tentukan-titik-sudut-nama-sudut-dan-jenis-sudut-pada-bangun-di-bawah-inibanguntitik-sudut-nama-sudut-jenis-sudut-ade1-a-b-c-dsudol-siro-deb-clab7-12d4-2-nm-3-%d0%bad-4-rs5-ahf6-de%e2%80%8b">
+                            10. No.Tentukan titik sudut, nama sudut, dan jenis sudut pada bangun di bawah ini!BangunTitik Sudut Nama Sudut Jenis Sudut-ADE1.A, B, C, Dsudol siro.DeB.CLAB7 12D4.2.NM...3.кD.4.RS5.AHF6.DE​</h2><br />
+                        negatif yg didasarkan pd jawabanmu nomor 1 *<br />Jawaban Anda<br />3. Change Into Interrogative sentences based on your answer number 1 ( Uahlah ke dalam bentuk kalimat Tanya atas<br /><br /><br />Terima kasih nomor 1, beserta jawabanya } *<br />
+                                            <h2 class="ez-toc-section" id="32-agar-ketiga-titik-a2-1-b6-7-dan-cla-15-terletak-pada-sebuah-garis-lurus-maka-nilai-3a-sama-dengan-a-34-b-28-c-22-d-18-garis-melalui%e2%80%8b">
+                            11. 32. Agar ketiga titik A(2, 1), B(6, 7), dan Cla, 15) terletak pada sebuah garis lurus, maka nilai 3a sama dengan A. 34 B. 28 C. 22 D. 18 garis melalui​</h2><br />
+                        <p>Persamaan garis yang melalui titik A, B, dan C dapat dicari menggunakan koordinat dari titik A dan B.</p><p></p><p>[tex] \frac{y - y1}{y2 - y1}  =  \frac{x - x1}{x2 - x1}  \\  \frac{y - 1}{7 - 1}  =  \frac{x - 2}{6 - 2}  \\  =  \frac{y - 1}{6}  =  \frac{x - 2}{4}  \\ 4(y - 1) = 6(x - 2) \\ 4y - 4 = 6x - 12 \\ 6x - 4y - 8 = 0[/tex]</p><p>Karena titik C berada di garis 6x - 4y - 8 = 0, maka nilai absis dan ordinat dari titik C disubstitusi ke persamaan garisnya.</p><p>[tex]6x - 4y - 8 = 0 \\ 6(a) - 4(15) - 8 = 0 \\ 6a - 60 - 8 = 0 \\6 a - 68 = 0 \\ 6a = 68 \\ a =  \frac{68}{6}  \\ a =  \frac{34}{3} [/tex]</p><p>Maka 3a = 34</p><br />
+                                            <h2 class="ez-toc-section" id="my-bedroommy-name-is-cla-my-room-is-very-nice-its-got-a-smallwindow-and-yellow-walls-ive-got-a-table-next-to-mybed-a-cupboard-with-all-my-clothes-a-desk-and-a-chairall-my-favorite-things-are">
+                            12. My BedroomMy name is Cla. My room is very nice. It's got a smallwindow and yellow walls. I've got a table next to mybed, a cupboard with all my clothes, a desk, and a chair,All my favorite things are in my bedroom. I'm a bigSelena Gomes fan and I've got a poster of her on mywall. My collection of magazines and mp3 player areon my desk. I've also got a photo of my family on thetable next to my bed.14. What does the text talk about?A. Cla's house.B. Cla's family room.C. Cla's bedroom.D. Cla's living room.15. What can we find on Cla's desk?A clothesB. a posterC. magazinesD. a photo16. Where does Cla put her clothes?She puts her clothes in the ....A tableB. cupboardC. deskD. chair​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>14.</p><p>B.Cla’s bedroom</p><p></p><p>15.</p><p>D.a photo</p><p></p><p>16.</p><p>D.chair</p>penjelasan:<p>Maaf klo salah ya kak^^</p><br />
+                                            <h2 class="ez-toc-section" id="this-text-is-for-number-1-and-2-studeni-identity-cardalexandria-junior-high-schoolh-abdul-salam-s1-jakartaclanome-raditya-nugroha-ulamaod-ol-birthnexember-2006gondermateaddressjl-bromo-no-71berlian">
+                            13. This text is for number 1 and 2.STUDENI IDENTITY CARDAlexandria Junior High SchoolH. Abdul Salam S1 JakartaClaNome: Raditya Nugroha UlamaOd ol birthNexember 2006GonderMateAddressJL. Bromo No 71Berlian Regency JakartaStudent's number 181920201. What kind of text is it?2.How old is he?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>what kind of text is it? student identity</p><p>how old is he? 14</p><br />
+                                            <h2 class="ez-toc-section" id="student-i-m-orry-ir-i-have-broken-the-cla-window-by-accident-and-i-mut-apologize-for-that-i-honet">
+                            14. Student i m orry ir i have broken the cla window by accident and i mut apologize for that i honet.</h2><br />
+                        <p><strong>Jawaban:student appologizes to the teacher because he broke the window by accident</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="man-you-didnt-bring-my-dictionwoman-if-you-had-left-your-dictiin-the-classroom-i-wouldbeen-able-to-find-it-what-does-the-woman-meana-she-wasnt-able-to-find-the-dictieb-she-left-the-dictionary">
+                            15. Man : You didn't bring my dictionWoman: If you had left your dictiin the classroom, I wouldbeen able to find it.What does the woman mean?A. She wasn't able to find the dictieB. She left the dictionary in the cla:C. She brought the man's dictionarD. She didn't go to the classroom.       E.she didn't leave the dictionary in the classroom​</h2><br />
+                        <p>A</p><p></p><p>karena ia ngomongnya kalau kamu meninggalkan dictie di kelas,aku bisa mencari itu</p><p></p><p></p><p></p><p><strong>Jawaban:</strong></p><p>E. she didn't leave the dictionary in the classroom</p><p><strong>pembahasan </strong></p><p>jadi dia kan ngomong jika kamu meninggalkan kamus dikelas, terus dia akan mencarinya</p><p>opsi A  artinya dia tidak mencari kamusnya (jawaban salah) </p><p>opsi B artinya dia meninggalkan kamus di kelas(jawaban salah, soalnya kan yang menginggalkan kamus di kelas kan si cowok bukan si perempuan) </p><p>opsi C artinya si perempuan membawa kamus si laki² (jawaban kurang tepat,kan dia ngomongnya mau mencari kamus si laki²)</p><p>opsi D artinya dia tidak akan pergi ke kelas(jawaban salah, karena kamus nya ketinggalan dikelas, jadi si perempuan akan pergi ke kelas untuk mencarinya) </p><p>opsi E artinya dia tidak meninggalkan kamus dikelas(jawaban benar soalnya yang meninggalkan kamus dikelas kan si cowok) </p><br />
+                                            <h2 class="ez-toc-section" id="pada-reaksi-kesetimbanganpelo-al-pelzg-clagpada-suhu-27%c2%b0c-mempunyai-nilai-kc0-04-nilai-kp-padakesetimbangan-terlebut-adalah-%e2%80%8b">
+                            16. Pada reaksi kesetimbanganPelo (al pelz(g) + Cla(g)Pada suhu 27°C mempunyai nilai kc=0.04 Nilai kp padakesetimbangan terlebut adalah...​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Kp = Kc x R x T^n</p><p>Kp = 0,04 x 0,082 x 300 (suhu 27C dalam kelvin=300K)</p><p>Kp = 0,984</p><p></p><p><strong>Penjelasan:</strong></p><p> semoga bermanfaat (・∀・)</p><br />
+                                            <h2 class="ez-toc-section" id="ii-complete-the-blanks-with-the-correct-answer-in-the-boxlatehome-workdiligenthelpmeli-is-a-26-student-she-is-never-27-come-to-school-she-always-does-her-28-at-hom">
+                            17. II. Complete the blanks with the correct answer in the box!lateHome workdiligenthelpMeli is a (26).......student, she is never (27)......... come to school.She always does her (28)............. at home. She an active student in the cla(29).............. .her friends. She is such a (30) .........student.and intacaad sentencern​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>26. dilligent</p><p>27. late</p><p>28. homework </p><p>29. help </p><p>30. ? there's no option left jadi gatau deh..</p><p></p><p>semangattt</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="10-dari-reaksi-dibawah-ini-yang-merupakan-reaksi-redoks-adalah-a-2als-6hclaq-%e2%86%92-2-alcl3aq-3h%e2%82%82-b-ag-aq-cla-agcls-c-so%e2%82%82-oh-aq-%e2%86%92-hso3aq-znos-c">
+                            18. 10. Dari reaksi dibawah ini yang merupakan reaksi redoks adalah... A. 2Al(s) + 6HCl(aq) → 2 AlCl3(aq) + 3H₂ B. Ag (aq) Cla AgCl(s) C. SO₂+ OH (aq) → HSO3(aq) ZnO(s) + CO₂(g) → (aq) → D. ZnCO3(s) E. BaCl2(s) + H₂SO4(aq) → BaSO4(s) + 2HCl(aq)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>Jawaban yang merupakan reaksi redoks adalah:</p><p></p><p>A. 2Al(s) + 6HCl(aq) → 2 AlCl3(aq) + 3H2</p><p>B. Ag(aq) + Cl(aq) → AgCl(s)</p><p>C. SO2(aq) + 2OH(aq) → HSO3(aq)</p><p>E. BaCl2(s) + H2SO4(aq) → BaSO4(s) + 2HCl(aq)</p><p></p><p>Reaksi redoks adalah reaksi kimia di mana terjadi perubahan oksidasi dan reduksi. Dalam reaksi A, Al mengalami oksidasi menjadi Al3+, sedangkan HCl mengalami reduksi menjadi H2. Dalam reaksi B, Ag mengalami oksidasi menjadi Ag+, sedangkan Cl mengalami reduksi menjadi Cl-. Dalam reaksi C, SO2 mengalami oksidasi menjadi HSO3-, sedangkan OH mengalami reduksi menjadi H2O. Dalam reaksi E, BaCl2 mengalami oksidasi menjadi Ba2+, sedangkan H2SO4 mengalami reduksi menjadi H2.</p><p></p><p>Jadi, jawaban yang benar adalah A, B, C, dan E.</p><br />
+                                            <h2 class="ez-toc-section" id="doni-our-englih-cla-i-very-boring-tito-i-think-o-too-the-teacher-hould-ue-more-more-englih-game-to-make-it-fun-a-i-agreeb-i-thinkc-i-dont-like-itd-i-diagree-e-im-not-ure">
+                            19. Doni :. Our Englih cla i very boring. Tito : I think o too. The teacher hould ue more more Englih game to make it fun. *
+a. I agree
+b. . I think
+c. I don't like it
+d I diagree. E. I'm not ure.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>b.I think</p><p><strong>Penjelasan:</strong></p><p>SEMOGA MEMBANTU ^-^</p><br />
+                                            <h2 class="ez-toc-section" id="nama-tumbuhan-berikut-tingkatannya-mulai-dari-speciesgenusfamiliaordocla-dan-kingdom-apa-saja-sih">
+                            20. Nama tumbuhan berikut tingkatannya mulai dari species,genus,familia,ordo,cla... dan kingdom apa saja sih?</h2><br />
+                        mksdnya sprti klasifikasi?<br />Klasifikasi
+ Bunga Mawar (Rosa sp) Klasifikasi Rosa sp (Bunga mawar) 1. Kingdom: 
+Plantae (Tumbuhan) 2. Subkingdom: Tracheobionta (Tumbuhan berpembuluh) 
+3. Divisi: Magnoliophyta (Tumbuhan berbunga) 4. Super Divisi: 
+Angiospermae 5. Kelas: Magnoliopsida (berkeping dua / dikotil) 6. Ordo: 
+Rosales 7. Famili: Rosaceae 8. Genus: Rosa 9. Spesies: Rosa sp Nama umum
+ Indonesia : Bunga mawar Latin : Rosa sp <br /><br /><br />klasifikasi tumbuhan paku ekor kuda : <br />1. spesies   : equisetum dibile<br />2.  genus    : equisetum<br />3.  famili     : equistacae<br />4.  ordo      : equistales<br />5. kelas      : equisetiimae<br />6. divisi      : sporanophytha<br />7. kingdom ; plantae<br /><br />
+                                            <h2 class="ez-toc-section" id="daur-hidup-katak-dan-kelemahan-da-bu-unkemampuan-berpikir-kalian1-jelaskan-apa-yang-dimaksud-ekosistem-dan-berikan-contohnyajawab-cla2-jelaskan-dan-gambarkan-daur-hidup-katak-dan-kucingjawab-loc">
+                            21. daur hidup katak dan kelemahan da bu unkemampuan berpikir kalian1. Jelaskan apa yang dimaksud ekosistem dan berikan contohnya!Jawab: CLA2. Jelaskan dan gambarkan daur hidup katak dan kucing!Jawab: Local3. Jelaskan peran produsen dalam sebuah rantai makanan!Jawab:Apabila konsumen puncak punah, apakah yang akan terjadi pada kodan konsumen ll?Jawab:Menurutmu, apa sajakah yang dapat mengganggu rantai makanan? Bpengaruhnya terhadap ekosistem?Jawab:IPA Kelas 5 SD/MI Semester Ganjil​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jawaban:1.  ekosistem adalah suatu proses yg terbentuk krna adanya hubungan timbal balik anatar makhluk hidup dgn lingkungannya.</p><p></p><p>Jawaban:1.  ekosistem adalah suatu proses yg terbentuk krna adanya hubungan timbal balik anatar makhluk hidup dgn lingkungannya.contoh ekosistem </p><p>Jawaban:1.  ekosistem adalah suatu proses yg terbentuk krna adanya hubungan timbal balik anatar makhluk hidup dgn lingkungannya.contoh ekosistem Ekosistem alami :  laut,hutan,sungai,danau,rawa*,gunung.</p><p>Ekosistem buatan  :  sawah,waduk,aquarium,taman,kebun binatang,tambak</p><p></p><p></p><p>2.  Katak di mulai dari telur katak kemudian akan menjadi berudu (kecebong) kemudian menjadi katak remaja yg sudah ada kaki, mata ,tangan dll setelah itu sudah lebih 2minggu akan menjadi katak dewasa</p>Kucing pertama kucing dewasa melahirkan anak kucing kedua anak kucing menjadi kucing muda ketiga kucing muda menjadi kucing dewasa<p></p><p>3.    Produsen memiliki peran penting dalam sebuah rantai makanan. Dalam ekosistem, produsen merupakan makhluk hidup yang dapat menghasilkan zat makanan yang diperlukan makhluk hidup lain. Tugas tersebut diperankan oleh makhuk hidup yang mempunyai klorofil (zat hijau daun) yaitu tumbuhan hijau.</p><p></p><p>4. yang akan terjadi pada konsumen I dan II adalah konsumen I tidak dapat punah karna mereka masih bisa bertahab hidup dengan cara memakan produsen. Sedangkan konsumen II mereka masih bisa bertahan hidup dengan cara memakan konsumen I</p><p></p><p>5.   pemburuan hewan, penebangan hutan, dll yang bisa mempunahkan suatu spesies. akibatnya ekosistem tidak seimbang.</p><p></p>jika herbivora diburu terus menerus maka jumlah karnivora membanyak. dan karnivpra memakan herbivora. jika herbivora punah maka karnivora tidak mempunyai makanan.<p></p><p><strong>Penjelasan:</strong></p><p>SEMOGA MEMBANTU ❤️ JANGAN LUPA DIBERI BINTANG LIMA DAN LIKE YA </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="e-43-a-b-berdasarkan-gambar-diatas-pasangan-sudut-sudut-yang-sehadap-adalah-cla%e2%82%82-dan-lb4-d-ag-dan-lb3-sudut-sebuah-segitiga-a-la%e2%82%81-dan-b3-laa-dan-lb3-lg%e2%80%8b">
+                            22. E 4/3 A B Berdasarkan gambar diatas, Pasangan Sudut- Sudut yang sehadap adalah... CLA₂ dan LB4 d. Ag dan LB3 Sudut Sebuah Segitiga a LA₁ dan B3 LAA dan LB3 lg​</h2><br />
+                        <p><strong>Jawab:</strong></p><p>butuh poin maaf banget</p><p></p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="cla10-perhatikan-pantun-berikutbuah-nangka-buah-pepayadibeli-paman-dari-belawan-12larik-yang-tepat-untuk-melengkapi-isipantun-tersebut-adalaha-1-rajinlah-membaca2-banyak-pengetahuan-ban">
+                            23. Cla10. Perhatikan pantun berikut!Buah nangka buah pepayaDibeli paman dari belawan.... (1)(2)Larik yang tepat untuk melengkapi isipantun tersebut adalahA. (1) Rajinlah membaca(2) Banyak pengetahuan banyak ilmuB. (1) Pandailah menjaga kata(2) Disukai teman disegani lawanC. (1) Belajar sejak kecil(2) Supaya jadi orang dermawanD. (1) Rajin belajar ketika muda(2) Hidup kan sukses selalu​</h2><br />
+                        <p><strong>Jawaban:</strong></p>B. (1) Pandailah menjaga kata(2) Disukai teman disegani lawan<p><strong>Penjelasan:</strong></p><p>hai kebetulan nama saya dari .Cla.</p><p><strong>Jawaban:</strong></p><p>B.1pandailah menjaga kata</p><p>   2.di sukai teman di segani lawan </p><br />
+                                            <h2 class="ez-toc-section" id="8-my-grandfather-is-than-my-grandmothera-oldb-olderc-oldestd-more-old9-tania-always-gets-the-first-rank-in-her-clashe-is-the-student-in-the-class-a-cleverb-more-cleverc-cleverestd-cl">
+                            24. 8. My grandfather is ... than my grandmothera. oldb. olderc. oldestd. more old9. Tania always gets the first rank in her claShe is the ... student in the class.a. cleverb. more cleverc. cleverestd. cleverer​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>8) B</p><p>9) C</p><p></p><p>maaf kalau salah, semoga membantu♡</p><br />
+                                            <h2 class="ez-toc-section" id="3kata-kerja-pasif-terdapat-pada-kalimata-la-mergapur-dindingb-petani-bertanam-padicla-membuatkan-saya-bajud-bunga-distrami-adik%e2%80%8b">
+                            25. 3kata kerja pasif terdapat pada kalimata la mergapur dindingb. Petani bertanam padicla membuatkan saya bajud Bunga distrami adik​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>d. bunga di siram adik</p><p></p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="claass5-suhu-pada-sebuah-pendingin-mula-mula-3%c2%b0c-lalu-10-menit-kemudian-dinaikkansebesar-9%c2%b0c-suhu-udara-di-tempat-pendingin-sekarang-adalah-a-12%c2%b0cb-6%c2%b0cd-12">
+                            26. cla
+ass
+5. Suhu pada sebuah pendingin mula-mula -3°C, lalu 10 menit kemudian dinaikkan
+sebesar 9°C. Suhu udara di tempat pendingin sekarang adalah .....
+a. -12°C
+b. -6°C
+d. 12°C
+C. 6°C
+en</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C. 6°C</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p> cara : -3 + 9 = 6</p><p></p><p>maaf kalau salah, semoga membantu, tolong jadikan jawaban tercerdas ya, <strong>#</strong><strong>G</strong><strong>E</strong><strong>M</strong><strong>A</strong><strong>R</strong><strong>B</strong><strong>E</strong><strong>R</strong><strong>H</strong><strong>I</strong><strong>T</strong><strong>U</strong><strong>N</strong><strong>G</strong><strong>M</strong><strong>A</strong><strong>T</strong><strong>E</strong><strong>M</strong><strong>A</strong><strong>T</strong><strong>I</strong><strong>K</strong><strong>A</strong>, terimakasih</p><p><strong>Jawaban:</strong></p><p>C. 6</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>Mula mula -3 °C , Lalu Naik sebesar 9°C </p><p>-3°C</p><p> 9°C</p><p>____ +</p><p>6°C</p><p>Semoga Membantu </p><p></p><p>Maaf kalo Benar Kalau Salah Yaudah salah aja</p><br />
+                                            <h2 class="ez-toc-section" id="susan-where-were-you-at-10-00-i-came-to-your-class-but-you-werent-there-desi-when-you-1-%e2%80%a6-to-my-cla-ss-i-was-%e2%80%a6-my-teacher-carrying-student-books-to-the-teacher-at-10-00">
+                            27. Susan : Where were you at 10.00? I came to your class but you weren't there. Desi : When you (1 ) … to my cla ss, I was ( ) … my teacher carrying student books to the teacher at 10.00 *</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>(1) Came (2) With</p><p><strong>Penjelasan:</strong></p><p>Karena came artinya datang, dan Susan tadi datang. </p><p>Kalau "with",  saya hanya menduga. </p><p>Semoga bermanfaat.</p><br />
+                                            <h2 class="ez-toc-section" id="1-how-many-bagus-does-anita-have2-2-how-many-malls-do-you-have5-3-how-many-bicycles-do-they-have2-4-how-many-potatoes-does-here-have7-5-how-many-rabbits-does-cla-have6-6-how-many-umbrel">
+                            28. 1.How many bagus does Anita have?(2) 2.How many malls do you have?(5) 3.How many bicycles do they have?(2) 4.How many potatoes does here have?(7) 5.How many Rabbits does cla have?(6) 6.How many umbrella do you have?(1) 7.How many orangaes does Rudi have?(12) 8.How many mangoes do you have?(15)</h2><br />
+                        twofivetwosevensixonetwelvefiveteen<br />
+                                            <h2 class="ez-toc-section" id="arti-dari-lafaz-cla-adalaha-nama-namab-akhlakc-aqidahd-alamat%e2%80%8b">
+                            29. Arti dari lafaz cla adalaha.nama-namab. akhlakc. aqidahd. alamat​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jawabannya A.</p><p></p><p>Ini 100% fix bener </p><p>aku gk ngasal .</p><p></p><p><strong>TOLONG </strong><strong>JADIIN </strong><strong>JAWABAN </strong><strong>TERBAIK </strong><strong>YAA</strong></p><p><strong>SOALNYA </strong><strong>1</strong><strong> </strong><strong>JAWABAN</strong><strong> </strong><strong>TERBAIK </strong><strong>LAGI </strong><strong>AKU </strong><strong>NAIK </strong><strong>PERINGKAT!</strong><strong>!</strong></p><p></p><p><strong>MAKASII</strong></p><br />
+                                            <h2 class="ez-toc-section" id="%c2%b2k10-fsiclaliss%d8%aba%d9%86d9o-e7%d9%85%d8%a7%d8%af%d9%87-2-%d8%aa%d8%a7-%db%b4lapc9ij8a-glgurc0-menurunmendatar5-1-%d9%8a%d8%b5%d9%84%d9%8a%d8%b1%d9%82%d8%a9-%d8%a7%d9%84%d8%b0%d8%a7%d9%83">
+                            30. (²k10 FSIclaLissثaنd9O e7ماده 2 تا ۴laPC9IJ8a glgurC0.MenurunMendatar5.1.يصليرقة الذاكرة8.2.مشيا على الأقدامجماع .96.دررهيجلس .34.يب7.ذاكر4.تناول الفطور​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>maksud kamu,di apain pppppppppppo</p><br />
+                                            <h2 class="ez-toc-section" id="he-1-4-perhatikan-ayat-ayat-di-bawah-ini-cla-%d8%a3%d8%b7%d9%8a%d8%b9%d9%88%d8%a7-%d8%a7%d9%84%d9%84%d9%87-%d9%88%d8%a3%d8%b7%d9%8a%d8%b9%d9%88%d8%a7-%d8%a7%d9%84%d8%b1%d8%b3%d9%88%d9%84-1">
+                            31. he 1 4. | Perhatikan ayat-ayat di bawah ini! cla أطيعوا الله وأطيعوا الرسول (1) يأيها الذين امنوا (2) وما انزلنا عليك الكتب (3) إلا لتبين لهم الذي (4) Penggalan Surah an-Nahl ayat 64 ditunjukkan oleh nomor .... a. (1) dan (2) b. (1) dan (4) C.(2) dan (3) d. (3) dan (4)  ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. (1) DAN (4)</p><p>maaf kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="1-%e2%88%9a5-f-40-0%e2%82%81f-8-2-0966-f-cla-dari-ujung-atas-sebuah-bidang-miring-40%c2%b0-yang-panjangnya-5m-sebua-benda-12-kg-dilepas-hingga-meluncur-ke-bawah-ternypta-benda-men-gesehan-60">
+                            32. 1 √5 F - (40-0₁F) = 8 2 0966 F:= cla Dari ujung atas sebuah bidang miring 40° yang panjangnya 5m sebua benda 12 kg dilepas hingga meluncur ke bawah, ternypta benda men gesehan 60 N, a. Berapakah percepatan benda itu ? b. Berapa waktu yang dibutuhkan hingga sampai di bawah 9 B) F = W sin AQ -AL = 9.064 - 60 = 12,10.064 - 60 = 30 - 60 = 168 N​</h2><br />
+                        <p>Pernyataan Pertama:</p><p>1 √5 F - (40-0₁F) = 8 2 0966 F:= cla</p><p></p><p>Pernyataan ini tidak sepenuhnya jelas, dan tampaknya ada kesalahan penulisan atau ketidakjelasan dalam rumus matematika ini.</p><p></p><p>Pernyataan Kedua:</p><p>"Dari ujung atas sebuah bidang miring 40° yang panjangnya 5m sebua benda 12 kg dilepas hingga meluncur ke bawah, ternypta benda men gesehan 60 N."</p><p></p><p>Ini adalah situasi fisika di mana sebuah benda dilepas di atas bidang miring dan kemudian mengalami gaya gesekan sebesar 60 N. Untuk menghitung percepatan benda, Anda dapat menggunakan rumus Newton:</p><p></p><p>F = m * a</p><p></p><p>Di mana:</p><p></p><p>F adalah gaya (dalam hal ini, 60 N).</p><p>m adalah massa benda (12 kg).</p><p>a adalah percepatan yang ingin Anda hitung.</p><p>Jadi, a = F / m = 60 N / 12 kg = 5 m/s².</p><p></p><p>Jadi, percepatan benda adalah 5 m/s².</p><p></p><p>Pernyataan Ketiga:</p><p>"Berapa waktu yang dibutuhkan hingga sampai di bawah?"</p><p></p><p>Untuk menghitung waktu yang dibutuhkan, Anda dapat menggunakan rumus berikut:</p><p></p><p>v = u + at</p><p></p><p>Di mana:</p><p></p><p>v adalah kecepatan akhir (0 m/s, karena benda sampai di bawah dan berhenti).</p><p>u adalah kecepatan awal (0 m/s, karena benda dilepas dari keadaan diam).</p><p>a adalah percepatan (5 m/s², dari perhitungan sebelumnya).</p><p>t adalah waktu yang ingin Anda hitung.</p><p>Dengan menggantikan nilai-nilai ini, kita bisa mendapatkan:</p><p></p><p>0 = 0 + 5t</p><p></p><p>Sehingga, t = 0. Ini mungkin tampak aneh, namun, ini menunjukkan bahwa benda tidak akan sampai di bawah dengan kecepatan 0 m/s; sebaliknya, akan terus bergerak dengan kecepatan konstan.</p><br />
+                                            <h2 class="ez-toc-section" id="9-perhatikan-gambar-berikutmakanan-pada-gambar-di-samping-berasal-daridaerah-claa-medanb-padangc-papuad-madura%e2%80%8b">
+                            33. 9. Perhatikan gambar berikut!Makanan pada gambar di samping berasal daridaerah ....Claa. Medanb. Padangc. Papuad. Madura​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. Medan</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>itu kue ika ambon, yang berasal dri Sumatra Utara atau Medan</p><p>Bika ambon bukan berasal dari ambon yaa HAHAHA hanya namanya saja</p><p>jadikan jawaban yg terbaik yaa :)</p><br />
+                                            <h2 class="ez-toc-section" id="tokoh-yang-gugur-dalam-peristiwa-penembakan-pesawat-dakota-vt-cla-yang-membawa-sumbangan-obat-obatan-bagi-indonesia-dari-palang-merah-malaya-adalah">
+                            34. tokoh yang gugur dalam peristiwa penembakan pesawat dakota VT-CLA yang membawa sumbangan obat obatan bagi indonesia dari palang merah malaya adalah</h2><br />
+                        Komodor Udara Adisucipto, Komodor Udara Abdulrahman Saleh, Adisumarmo Wirjokusumo.<br /><br />
+                                            <h2 class="ez-toc-section" id="mengapa-bok-speaker-model-cla-jika-speaker-tidak-sesuai-spesifikasi-daunya-akan-robek-jika-di-geber-dengan-keras%e2%80%8b">
+                            35. Mengapa bok speaker model CLA jika speaker tidak sesuai spesifikasi daunya akan robek jika di geber dengan keras​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Karena bok speaker CLA adalah tipe bok selaed. Bok sealed adalah bok dengan ruangan tanpa port atau lubang angin, sehingga jika speaker tidak sesuai spesifikasi dan di geber dengan volume keras, voice coil akan terbakar dan daun speaker robek</p><br />
+                                            <h2 class="ez-toc-section" id="4-he-perhatikan-rumus-kimia-berikut-1-so-3-ho-2-cla-molekul-unsur-ditunjukkan-oleh-nomor-a-1-c-3-b-2-d-4tolong-kak-hari-ini-di-kumpul%e2%80%8b">
+                            36. 4) He Perhatikan rumus kimia berikut! 1) SO 3) HO 2) Cla Molekul unsur ditunjukkan oleh nomor .... a. 1) c. 3) b. 2) d. 4)tolong kak hari ini di kumpul​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>D. 4) He</p><p></p><p></p><p>semoga membantu yaa:)</p><br />
+                                            <h2 class="ez-toc-section" id="cla-din-mae-ballade-battersebut-adalah-a-jurus-5b-jurus-4c-jurus-3d-jurus-2%e2%80%8b">
+                            37. cla din Mae Ballade battersebut adalah a. jurus 5b. jurus 4c. jurus 3d. jurus 2​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jurus  5</p><p><strong>Penjelasan:</strong></p><p>semoga membantu y</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="penamaan-file-yang-benar-pada-sistem-operasi-dos-adalah-a-latihan1-txt-b-latihan-1-txt-c-latihan-1-class-d-latihan-satu-cla-e-latihansatu-cla">
+                            38. Penamaan file yang benar pada sistem operasi DOS adalah?  A.) Latihan1.TXT B.) LATIHAN 1.TXT C.) LATIHAN 1.CLASS D.) LATIHAN SATU. CLA E.) LATIHANSATU. CLA</h2><br />
+                        <p>A. Latihan1.TXT yang betul</p>mapel : ti<br />kelas : 10<br />materi : sistem operasi <br />kata kunci : dos<br />kode soal : 11<br />kode kategorisasi : 10.11<br />======================<br />penamaan file yang benar pada sistem operasi DOS adalah a) latihan1.txt<br /><br />penjelasan :<br />pada penulisan pilihan a), tidak ada spasi, nama file tidak lebih dari 8, ekstensi dibelakang file sudah ada.<br /><br />penulisan nama file :<br />1. ekstensinya ada dibelakang nama file. artinya ekstensi berada diurutan kedua setelah nama file<br />2. nama file tidak lebih dari 8 huruf (ekstensi tidak dihitung). pada sistem operasi baru, dukungan penamaan file sampai 256 huruf<br />3. tidak ada spasi <br /><br />semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="write-a-imple-invitation-baed-on-thi-ituation-sakia-invited-baim-to-attend-the-cla-meeting-on-saturday-tranlate-into-englih">
+                            39. Write a imple invitation baed on thi ituation!
+ Sakia invited Baim to attend the cla meeting on Saturday. Tranlate Into Englih!.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Dear Baim,</p><p></p><p>I would like to invite you to attend the class meeting on Saturday. It would be great if you could join us and share your thoughts on the upcoming project.</p><p></p><p>Sincerely,</p><p>Sakia</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="%e2%96%aa%ef%b8%8e-%e3%80%8equiz%e3%80%8f-%e2%96%aa%ef%b8%8etentukan-permutasi-dari-kata-cla-rissanote-mks%e2%80%8b">
+                            40. ▪︎ 『QUIZ』 ▪︎Tentukan permutasi dari kata- cla- rissaNote : mks​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>cla=6 Susunan kata </p><p>rissa=60 Susunan kata</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p><strong>cla</strong> </p><p>c=1 </p><p>l=1 </p><p>a=1 </p><p></p><p>Total Huruf=3 </p><p>P=n! </p><p>P=3! </p><p>P=3×2×1 </p><p>P=6 Susunan kata </p><p></p><p><strong>rissa </strong></p><p>r=1 </p><p>i=1 </p><p>s=2 </p><p>a=1 </p><p></p><p>Total Huruf=5 </p><p>Unsur Ganda=2 </p><p>P=n! / k! </p><p>P=5! / 2! </p><p>P=5×4×3×2×1 / 2×1 </p><p>P=120 / 2 </p><p>P=60 Susunan kata</p>》》Jawaban《《Nomor 1. <p>c = 1 </p><p>l = 1</p><p>a = 1 </p>Total unsur = 3 Unsur ganda = - <p>p = n! </p><p>p = 3! </p><p>p = <strong>6</strong><strong>s</strong><strong>u</strong><strong>s</strong><strong>u</strong><strong>n</strong><strong>a</strong><strong>n</strong><strong>✔</strong></p><p>.</p>Nomor 2. <p>r = 1</p><p>i = 1 </p><p>s = 2 </p><p>a = 1 </p>Total unsur = 5 Unsur ganda = 2(s)<p>p = n! ÷ k! </p><p>p = 5! ÷ 2! </p><p>p = 120 ÷ 2 </p><p>p = <strong>6</strong><strong>0</strong><strong>s</strong><strong>u</strong><strong>s</strong><strong>u</strong><strong>n</strong><strong>a</strong><strong>n</strong><strong>✔</strong></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/j-lEoC0DWI8?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>b_inggris</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-tes-masuk-bmt.html">Contoh Soal Tes Masuk Bmt</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-fpb-dan-kpk-kelas-4.html">Contoh Soal Fpb Dan Kpk Kelas 4</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/tentukan-turunan-pertama-dari-fungsi-berikut.html">Tentukan Turunan Pertama Dari Fungsi Berikut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/apa-fungsi-dari-trakea-manusia.html">Apa Fungsi Dari Trakea Manusia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-luas-permukaan-kubus.html">Contoh Soal Luas Permukaan Kubus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/pernyataan-yang-tepat-berkaitan-dengan-manajemen-sebagai-suatu-proses-adalah.html">Pernyataan Yang Tepat Berkaitan Dengan Manajemen Sebagai Suatu Proses Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-uas-smp-kelas-7.html">Contoh Soal Uas Smp Kelas 7</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-naskah-seminar-tugas-akhir.html">Contoh Naskah Seminar Tugas Akhir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-pancasila-sebagai-kepribadian-bangsa-adalah.html">Fungsi Pancasila Sebagai Kepribadian Bangsa Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/berikut-adalah-fungsi-dari-wearable-kecuali.html">Berikut Adalah Fungsi Dari Wearable Kecuali</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/tuliskan-fungsi-lembaga-sosial.html">Tuliskan Fungsi Lembaga Sosial</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-kata-pengantar-tugas-akhir-d3.html">Contoh Kata Pengantar Tugas Akhir D3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/sebutkan-fungsi-dari-sistem-pencernaan.html">Sebutkan Fungsi Dari Sistem Pencernaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-pph-pasal-26.html">Contoh Soal Pph Pasal 26</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-permeabilitas.html">Contoh Soal Permeabilitas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-smart-gma-numerical-bca.html">Contoh Soal Smart Gma Numerical Bca</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-noun-phrase-pilihan-ganda.html">Contoh Soal Noun Phrase Pilihan Ganda</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-uas-matematika-kelas-9.html">Contoh Soal Uas Matematika Kelas 9</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-proposal-tugas-akhir-teknik-arsitektur-taman-kuliner.html">Contoh Proposal Tugas Akhir Teknik Arsitektur Taman Kuliner</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/tombol-fungsi-pada-keyboard.html">Tombol Fungsi Pada Keyboard</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://soalpedia.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://soalpedia.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

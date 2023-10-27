@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Javascript Pada Validasi Data - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Javascript Pada Validasi Data, , , , , , , 0, , , , , , 0, fungsi-dari-javascript-pada-validasi-data, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Javascript Pada Validasi Data - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Javascript Pada Validasi Data, , , , , , , 0, , , , , , 0, fungsi-dari-javascript-pada-validasi-data, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Javascript Pada Validasi Data - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Javascript Pada Validasi Data, , , , , , , 0, , , , , , 0, fungsi-dari-javascript-pada-validasi-data, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://soalpedia.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://soalpedia.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://soalpedia.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://soalpedia.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://soalpedia.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://soalpedia.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://soalpedia.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Javascript Pada Validasi Data</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">nurdi1158</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Javascript+Pada+Validasi+Data" alt="Fungsi Dari Javascript Pada Validasi Data">
+                    </div>
+                    <p></p>
+                    <p>Apa Fungsi validasi data sel pada excel</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-validasi-data-sel-pada-excel">1.
+                                            Apa Fungsi validasi data sel pada excel</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-yang-digunakan-untuk-validasi-atau-mencocokkan-datamaka-cara-yang-tepat-adalah%e2%80%8b">2.
+                                            fungsi yang digunakan untuk validasi atau mencocokkan data,maka cara yang tepat adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-validasi-data-data-validation-di-excel-bagaimana-cara-menerapkan-validasi-data-pada-sel-sel-di-excel%e2%80%8b">3.
+                                            Apa itu validasi data (data validation) di Excel? Bagaimana cara menerapkan validasi data pada sel-sel di Excel?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-alasan-validasi-data-perlu-dilakukan-%e2%80%8b">4.
+                                            Jelaskan alasan validasi data perlu dilakukan. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tulis-dan-jelaskan-tipe-data-dan-batasannya-serta-operator-yang-ada-di-javascript%e2%80%8b">5.
+                                            Tulis dan Jelaskan tipe data dan batasannya serta operator yang ada di javascript!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-alert-dalam-javascript">6.
+                                            Apakah fungsi alert() dalam JavaScript?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-menempatkan-fungsi-pada-javascript-gimana">7.
+                                            cara menempatkan fungsi pada javascript gimana?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-apa-saja-data-yang-dapat-diolah-oleh-javascript">8.
+                                            jelaskan apa saja data yang dapat diolah oleh javascript</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#manfaat-validasi-data-di-era-teknologi-informasi%e2%80%8b">9.
+                                            manfaat validasi data di era teknologi informasi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-saat-memvalidasi-data-pada-kolom-allow-diisi">10.
+                                            Pada saat memvalidasi data pada kolom allow diisi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gimana-cara-validasi-di-javascript-supaya-karakter-dan-posisinya-ga-bisa-bersebelahan-kalo-pake-cara-indexof-kaya-gimana-yah">11.
+                                            gimana cara validasi di javascript supaya karakter "@" dan "." posisinya ga bisa bersebelahan. Kalo pake cara indexOf kaya gimana yah ??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-kurung-kurawal-dalam-javascript">12.
+                                            Fungsi kurung kurawal dalam javascript?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-secara-singkat-tentang-sorting-data-file-data-atau-validasi-dan-share-dan-project%e2%80%8b">13.
+                                            Jelaskan secara singkat tentang sorting data file data atau validasi dan share dan Project​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#validasi-data-sifatnya">14.
+                                            Validasi data sifatnya ...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-validasi-data-dalam-microsoft-excel">15.
+                                            apa yang dimaksud dengan validasi data dalam microsoft excel</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-tagperintah-dalam-javascript">16.
+                                            fungsi tag/perintah dalam javascript</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-jelaskan-mengapa-validasi-data-perlu-dilakukan-%e2%80%8b">17.
+                                            10. Jelaskan mengapa validasi data perlu dilakukan !​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menu-yang-dipilih-untuk-melakukan-validasi-di-aplikasi-tas-adalah-%e2%80%a6a-validasi-staffb-validasi-karyawanc-validasi-e-transd-validasi-drivere-validasi-atasan">18.
+                                            Menu yang dipilih untuk melakukan validasi di aplikasi TAS adalah …
+A. Validasi Staff
+B. Validasi Karyawan
+C. Validasi E-trans
+D. Validasi Driver
+E. Validasi Atasan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ada-yang-tahu-kepanjangan-dari-htmlphpdan-css-dan-apa-fungsi-dari-javascript">19.
+                                            ada yang tahu kepanjangan dari HTML,PHP,dan CSS?? dan apa fungsi dari javascript?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-data-validasi">20.
+                                            apa yang dimaksud dengan data Validasi???</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-empat-macam-tipe-data-implisit-yang-dimiliki-oleh-javascript%e2%80%8b">21.
+                                            jelaskan empat macam tipe data implisit yang dimiliki oleh javascript​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-yang-digunakan-untuk-mengganti-kata-tertentu-dari-suatu-string-pada-javascript-adalah">22.
+                                            fungsi yang digunakan untuk Mengganti kata tertentu dari suatu string pada javascript adalah ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-javascript-untuk-menulis-alamat-digunakan-tipe-data%e2%80%8b">23.
+                                            pada javascript untuk menulis alamat digunakan tipe data?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yg-dimaksud-dengan-validasi-data-dalam-ms-excel">24.
+                                            apa yg dimaksud dengan validasi data dalam ms excel</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jika-kalian-ingin-mengambil-data-tanggal-lahir-maka-pilihan-validasi-apa-yang-dapat-kalian-gunakan-jika-kalian-ingin-mengambil-data-nomor-induk-kependudukan-maka-pilihan-validasi-apa-yang-mungk">25.
+                                            Jika kalian ingin mengambil data tanggal lahir maka pilihan validasi apa yang dapat kalian gunakan ...... Jika kalian ingin mengambil data nomor induk kependudukan maka pilihan validasi apa yang mungkin dapat kalian gunakan ...... Jika kalian ingin mengambil data nama orang tua maka pilihan validasi apa yang mungkin kalian gunakan ........tolong bantu di jawab ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-private-class-dalam-javascript-adalah%e2%80%8b">26.
+                                            fungsi private class dalam javascript adalah??​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-data-yang-dapat-diolah-oleh-javascript">27.
+                                            Apa saja data yang dapat diolah oleh Javascript?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-data-yang-dapat-diolah-oleh-javascript">28.
+                                            Apa saja data yang dapat diolah oleh Javascript?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-pengertian-fungsi-dan-trik-penggunaan-keyword-void-di-javascript">29.
+                                            Apa pengertian, fungsi, dan trik penggunaan keyword void di Javascript? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-buatkan-validasi-data-dalam-study-tour-dong-tmn2">30.
+                                            Tolong buatkan validasi data dalam study tour dong tmn2. .</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-scrap-data-youtube-mp3-menggunakan-javascript">31.
+                                            Cara scrap data youtube mp3 menggunakan javascript</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-validasi-dan-penggunaannya">32.
+                                            fungsi validasi dan penggunaannya !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-penggunaan-fungsi-isnumberdalam-suatu-validasi-kolom-akanmemastikan-a-data-teks-akan-diterimab-data-yang-diinput-harusberupa-bilanganc-data-tanggal-akan-ditolakd-data-teks-akan-ditolak">33.
+                                            
+8. Penggunaan fungsi ISNUMBER
+dalam suatu validasi kolom akan
+memastikan..
+A. data teks akan diterima
+B. data yang diinput harus
+berupa bilangan
+C. data tanggal akan ditolak
+D. data teks akan ditolak</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-apa-saja-data-yang-dapat-diolah-oleh-javascript">34.
+                                            jelaskan apa saja data yang dapat diolah oleh javascript</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-validasi-data%e2%80%8b">35.
+                                            Jelaskan pengertian validasi data​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-validasi">36.
+                                            apa fungsi dari validasi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#keyword-javascript-yang-berfungsi-untuk-mendapatkan-type-dari-error-adalah">37.
+                                            keyword (JavaScript) yang berfungsi untuk mendapatkan type dari error adalah?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#memvalidasi-mencocokkan-data-atau-mencari-informasi-yang-diinginkan-dengan-cara-mencocokkan-informasi-yang-diinginkan-dengan-informasi-yang-tersedia-merupakan-fungsi%e2%80%8b">38.
+                                            Memvalidasi (mencocokkan) data atau mencari informasi yang diinginkan dengan cara mencocokkan informasi yang diinginkan dengan informasi yang tersedia merupakan fungsi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsikegunaan-javascript-pada-client-side-programming">39.
+                                            Apa fungsi/kegunaan Javascript pada Client Side Programming?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-mem-validasi-data-di-excel-hp-android%e2%80%8b">40.
+                                            bagaimana cara mem validasi data di Excel hp android?​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apa-fungsi-validasi-data-sel-pada-excel">
+                            1. Apa Fungsi validasi data sel pada excel</h2><br />
+                        Data Validation dalam Ms Excel mempunyai<br />fungsi untuk mempermudah dalam<br />memasukkan data, Data Validation juga<br />berguna untuk mencegah data yang tidak<br />valid / tidak diinginkan ke dalam Cell.Memudahkan kita memasukkan data<br />
+                                            <h2 class="ez-toc-section" id="fungsi-yang-digunakan-untuk-validasi-atau-mencocokkan-datamaka-cara-yang-tepat-adalah%e2%80%8b">
+                            2. fungsi yang digunakan untuk validasi atau mencocokkan data,maka cara yang tepat adalah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Fungsi IF</strong>: Fungsi ini digunakan untuk membuat kondisi. Kamu bisa mengatakannya "Jika ini benar, lakukan ini; jika tidak, lakukan itu." Misalnya, kamu ingin mengecek apakah nilai dalam suatu sel memenuhi syarat tertentu, maka kamu bisa menggunakan fungsi IF.</p><p></p><p>Contoh: =IF(A1&gt;10, "Lulus", "Tidak Lulus")</p><p></p><p><strong>Fungsi VLOOKUP</strong>: Fungsi ini digunakan untuk mencari nilai dalam suatu tabel dan mengembalikan nilai yang terkait dari kolom lain dalam baris yang sesuai. Ini sangat berguna saat kamu ingin mencocokkan data dari satu daftar dengan data di daftar lain.</p><p></p><p>Contoh: =VLOOKUP(A2, DaftarNama, 2, FALSE)<br /></p><p><strong>Penjelasan:</strong></p><p>Jadi, cara yang tepat adalah dengan menggunakan fungsi IF jika kamu ingin membuat kondisi atau aturan validasi, dan menggunakan fungsi <strong>VLOOKUP</strong> jika kamu ingin mencocokkan data dari satu tabel ke tabel lain. Ingat, selalu pastikan untuk memahami cara kerja fungsi-fungsi ini sebelum menggunakannya.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-itu-validasi-data-data-validation-di-excel-bagaimana-cara-menerapkan-validasi-data-pada-sel-sel-di-excel%e2%80%8b">
+                            3. Apa itu validasi data (data validation) di Excel? Bagaimana cara menerapkan validasi data pada sel-sel di Excel?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Validasi data (data validation) adalah fitur di Excel yang memungkinkan untuk mengatur aturan atau batasan pada nilai yang dapat dimasukkan ke dalam sel atau rentang sel tertentu. Dengan menggunakan validasi data dapat membatasi jenis data yang dapat dimasukkan, seperti angka, tanggal, atau teks, serta mengatur batasan nilai, panjang, atau memilih dari daftar yang ditentukan.</p><p></p><p>Langkah-langkah untuk menerapkan validasi data pada sel-sel di Excel:</p><p></p><p>1. Pilih sel atau rentang sel yang ingin Anda terapkan validasi data.</p><p></p><p>2. Pergi ke tab "Data" di menu Excel.</p><p></p><p>3. Klik pada tombol "Validasi Data" di grup "Periksa Data".</p><p></p><p>4. Akan muncul dialog "Validasi Data". Di dalamnya, pada tab "Pesan Input" dapat memasukkan pesan yang akan muncul sebagai petunjuk ketika pengguna memilih sel yang tervalidasi. Juga dapat mengatur apakah pesan tersebut ditampilkan atau tidak.</p><p></p><p>5. Pada tab "Pesan Error", Dapat memasukkan pesan yang akan muncul jika pengguna memasukkan data yang tidak valid. Dandapat mengatur jenis pesan error dan apakah pesan tersebut ditampilkan atau tidak.</p><p></p><p>6. Pada tab "Setting", Dapat memilih tipe validasi yang ingin diterapkan, seperti angka, tanggal, teks, daftar yang dipilih, dll.</p><p></p><p>7. Sesuaikan pengaturan di tab "Input Message" dan "Error Alert" jika diperlukan.</p><p></p><p>8. Klik "OK" untuk menerapkan validasi data pada sel atau rentang sel yang dipilih.</p><p></p><p>Setelah validasi data diterapkan, pengguna akan diberikan pesan input dan harus memasukkan nilai yang sesuai dengan batasan yang ditentukan. Jika pengguna memasukkan data yang tidak valid, pesan error akan muncul dan data tidak akan diterima.</p><p></p><p></p><p><strong>Penjelasan:</strong></p><p>Dengan menggunakan validasi data, Anda dapat memastikan bahwa data yang dimasukkan ke dalam sel-sel di Excel sesuai dengan kriteria yang telah Anda tentukan, sehingga meminimalkan kesalahan dan menjaga konsistensi data.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-alasan-validasi-data-perlu-dilakukan-%e2%80%8b">
+                            4. Jelaskan alasan validasi data perlu dilakukan. ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jika kaku kake akan marah seperti harimau</p><p><strong>Penjelasan:</strong></p><p>kdjceuxiieieidieieificieicuucieifici</p><br />
+                                            <h2 class="ez-toc-section" id="tulis-dan-jelaskan-tipe-data-dan-batasannya-serta-operator-yang-ada-di-javascript%e2%80%8b">
+                            5. Tulis dan Jelaskan tipe data dan batasannya serta operator yang ada di javascript!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Integer adalah tipe data untuk bilangan bulat.</p><p>2. Float adalah tipe data untuk bilangan desimal.</p><p>3. Boolean adalah tipe data yang memiliki true or false.</p><p>4. Array adalah tipe data untuk menyimpan banyak data atau nilai pada 1 variable.</p><p>5. String adalah tipe data untuk menuliskan sebuah karakter.</p><p>6. Null adalah tipe data yang nilainya kosong.</p><p>7. Undefined adalah tipe data kosong atau belum di set nilainya. </p><p></p><p>Operator</p><p>1. Pertambahan digunakan untuk melakukan perhitungan tambah (+).</p><p>2. Pengurangan digunakan untuk melakukan perhitungan kurang (-).</p><p>3. Perkalian digunakan untuk melakukan perhitungan kali (*).</p><p>4. Pembagian digunakan untuk melakukan perhitungan bagi (/).</p><p>5. Increment(++) digunakan untuk menambahkan +1 misalnya i = 10; i++; jadi nilainya 11.</p><p>6. Decrement (--) digunakan untuk mengurangkan -1</p><p>misalnya i = 10; i--; jadi nilainya 9.</p><p><strong>Penjelasan:</strong></p><p>Alert : ini adalah beberapa tipe data yang saya tahu. Semoga penjelasan saya membantu Anda. Salam programmer :)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-alert-dalam-javascript">
+                            6. Apakah fungsi alert() dalam JavaScript?</h2><br />
+                        <p>Salah satu fungsi <strong>a</strong><strong>l</strong><strong>e</strong><strong>r</strong><strong>t</strong><strong> </strong><strong>(</strong><strong>)</strong><strong> </strong>dalam JS Vanilla yaitu memunculkan pop up ataupun notifikasi di dlam sebuah website</p><br />
+                                            <h2 class="ez-toc-section" id="cara-menempatkan-fungsi-pada-javascript-gimana">
+                            7. cara menempatkan fungsi pada javascript gimana?</h2><br />
+                        Untuk dapat menggunakan JavaScript secara benar membutuhkan
+            pengertian bagaimana Netscape Navigator memproses suatu dokumen
+            HTML. Ketika suatu dokumen HTML di muat, browser akan mulai
+            melakukan proses terhadap baris pertama dari dokumen. Browser
+            membuat layout dari layar berdasarkan perintah HTML yang terdapat
+            dalam dokumen tersebut. Setelah layar selesai digambar, layar tidak
+            dapat digambar ulang tanpa melakukan proses terhadap dokumen baru.
+            Bagaimana hal ini mempengaruhi frame dan window adalah topik pada
+            bagian berikutnya.
+            Sesuai dengan hal ini, maka instance dari suatu objek ada setelah
+            proses dilakukan terhadap baris HTML yang menghasilkan instance
+            tersebut. Dengan kata lain JavaScript tidak dapat mengacu pada suatu
+            objek HTML seperti form, atau menjalankan suatu fungsi sampai
+            browser memproses perintah tersebut. Sebagai contoh, JavaScript
+            tidak dapat mengacu pada suatu objek form sampai browser
+            memproses HTML untuk form tersebut. Demikian juga dengan proses
+            perubahan  properti, setelah browser menggunakan properti dalam
+            menghasilkan layout window, maka perubahan properti setelah itu
+            tidak memiliki efek terhadap tampilannya.
+            Walaupun nampaknya keterbatasan tersebut berat, namun dengan
+            pengertian yang baik terhadap HTML proses dan JavaScript akan
+            mengurangi frustasi. Prinsip utama yang perlu diingat bahwa suatu
+            dokumen HTML diproses secara berurut dan JavaScript adalah bagian
+            dari proses secara berurut tersebut.
+            Objek Window
+            Objek window adalah orang tua dari semua Objek. Hal
+            tersebut termasuk semua window dan frame yang berada dalam suatu.
+            Ketika browser mulai memuat suatu dokumen HTML, hal tersebut dimulai
+            dengan suatu instance dari objek window. Jika dokumen HTML
+            membuat suatu frame, informasi dari frame tersebut tersimpan dalam
+            suatu objek frame array. Dengan kata lain, membuka suatu window akan
+            menghasilkan suatu anak dari objek window. Kehebatan dari JavaScript
+            adalah terletak pada kemampuan untuk melakukan utilisasi properti
+            dan metode dari objek window.
+            Bagian ini akan membahas properti dari objek  window
+            berikut :
+            objek Location
+              objek History
+              objek Document
+            Diantara ketiga objek tersebut, document adalah objek yang paling
+            penting dalam hirarki tersebut. Objek document itu
+            sendirinya mengacu kepada objek lain. Hal lain yang penting dari hal
+            ini adalah sebagai berikut:
+            objek form
+              objek anchor
+              objek link.<br />semoga membantu :)<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-apa-saja-data-yang-dapat-diolah-oleh-javascript">
+                            8. jelaskan apa saja data yang dapat diolah oleh javascript</h2><br />
+                        String, integer, float, array, object dan
+Booleans<br /><br />
+                                            <h2 class="ez-toc-section" id="manfaat-validasi-data-di-era-teknologi-informasi%e2%80%8b">
+                            9. manfaat validasi data di era teknologi informasi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>menghasilkan data yang berkualitas sehingga bisa menghasilkan informasi yang benar dan tidak meresahkan.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="pada-saat-memvalidasi-data-pada-kolom-allow-diisi">
+                            10. Pada saat memvalidasi data pada kolom allow diisi</h2><br />
+                        <strong>Akuntansi</strong><br /><strong>Spread Sheet</strong><br /><strong>Validasi Data</strong><br /><br /><br /><br /><strong>1. Validasi Angka</strong><br />    a.. Blok sell yang ingin divalidasi<br />    b. Pada menu pilih Data -&gt;  Data Tools -&gt; Data Validation.    c. Akan muncul menu pop-up, pada kolom <strong>Allow -&gt; Whole Number,</strong> Data -&gt; <strong>Between</strong> <br />    d. Klik Ok<br /><br /><strong>
+2. Validasi Teks</strong><br />   
+Caranya sama, hanya pada kolom <strong>allow</strong> isi dengan <strong>custom</strong><br />
+<br />
+
+<strong>3. Validasi Waktu atau
+Tanggal</strong><br />
+   
+Caranya sama, hanya pada kolom <strong>allow</strong> isi dengan <strong>date</strong><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="gimana-cara-validasi-di-javascript-supaya-karakter-dan-posisinya-ga-bisa-bersebelahan-kalo-pake-cara-indexof-kaya-gimana-yah">
+                            11. gimana cara validasi di javascript supaya karakter "@" dan "." posisinya ga bisa bersebelahan. Kalo pake cara indexOf kaya gimana yah ??</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>@/.</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-kurung-kurawal-dalam-javascript">
+                            12. Fungsi kurung kurawal dalam javascript?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Statement-statement pada javascript bisa di kelompokan dalam blok-blok sebuah blok kode di javascript dimulai dengan tanda kurung kurawal buka " { " dan di akhiri dengan kurung kurawal tutup " } " .</p><p></p><p><strong>Penjelasan:</strong></p><p>Semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-secara-singkat-tentang-sorting-data-file-data-atau-validasi-dan-share-dan-project%e2%80%8b">
+                            13. Jelaskan secara singkat tentang sorting data file data atau validasi dan share dan Project​</h2><br />
+                        <p><strong>Jawaban:</strong></p>Sorting data adalah proses pengurutan data dalam urutan tertentu, baik secara menaik atau menurun. Sorting biasanya dilakukan untuk mempermudah pencarian dan analisis data.Validasi data adalah proses memastikan bahwa data yang dimasukkan atau diproses sesuai dengan kriteria atau aturan yang telah ditentukan. Validasi data sangat penting untuk memastikan keakuratan dan konsistensi data yang digunakan dalam suatu sistem atau aplikasi.Sharing data adalah proses berbagi data antara pengguna atau sistem yang berbeda. Sharing data dapat dilakukan melalui berbagai metode, seperti email, file sharing, atau database sharing.Project adalah suatu usaha yang direncanakan dan diorganisir untuk mencapai tujuan tertentu dalam waktu tertentu. Project dapat melibatkan berbagai jenis aktivitas, seperti perencanaan, pengembangan produk, penelitian, atau pembangunan infrastruktur. Dalam konteks teknologi informasi, project sering terkait dengan pengembangan aplikasi atau sistem informasi.<br />
+                                            <h2 class="ez-toc-section" id="validasi-data-sifatnya">
+                            14. Validasi data sifatnya ...</h2><br />
+                        nyata dan harus benar-benar terjadj<br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-validasi-data-dalam-microsoft-excel">
+                            15. apa yang dimaksud dengan validasi data dalam microsoft excel</h2><br />
+                        untuk memvalidasi data<br />
+                                            <h2 class="ez-toc-section" id="fungsi-tagperintah-dalam-javascript">
+                            16. fungsi tag/perintah dalam javascript</h2><br />
+                        Menurut saya sih fungsinya sebagai tujuan untuk menjalankan web / javascript tsb<br /><br /><br /><br /><br /><br />Maaf ya kalo salah<br /><br />
+                                            <h2 class="ez-toc-section" id="10-jelaskan-mengapa-validasi-data-perlu-dilakukan-%e2%80%8b">
+                            17. 10. Jelaskan mengapa validasi data perlu dilakukan !​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Validasi data adalah langkah pemeriksaan untuk memastikan bahwa data tersebut telah sesuai kriteria yang ditetapkan dengan tujuan untuk memastikan bahwa data yang akan dimasukkan ke dalam basis data telah diketahui dan dapat dijelaskan sumber dan kebenaran datanya.</p><p><strong>Penjelasan:</strong></p><p>smg membantu!!</p><br />
+                                            <h2 class="ez-toc-section" id="menu-yang-dipilih-untuk-melakukan-validasi-di-aplikasi-tas-adalah-%e2%80%a6a-validasi-staffb-validasi-karyawanc-validasi-e-transd-validasi-drivere-validasi-atasan">
+                            18. Menu yang dipilih untuk melakukan validasi di aplikasi TAS adalah …
+A. Validasi Staff
+B. Validasi Karyawan
+C. Validasi E-trans
+D. Validasi Driver
+E. Validasi Atasan</h2><br />
+                        <p>Dalam aplikasi TAS, menu yang dipilih untuk melakukan validasi adalah A. Validasi Staff. </p><p></p><p>Validasi Staff digunakan untuk melakukan verifikasi data absensi para pegawai/staff sebelum diolah menjadi laporan absensi. Dengan memvalidasi absensi melalui menu ini, atasan atau supervisor dapat memastikan keakuratan data absensi dan menghindari adanya kesalahan dalam penggajian.</p><p></p><p>Menu Validasi Karyawan tidak tersedia dalam aplikasi TAS karena nama karyawan sudah ada di dalam daftar pegawai/staff yang dipilih saat melakukan absensi. Menu Validasi E-trans juga tidak terkait dengan proses absensi dan lebih berkaitan dengan validasi transaksi elektronik seperti pembayaran atau transfer dana.</p><p></p><p>Validasi Driver dan Validasi Atasan juga bukan menu yang relevan dalam proses absensi karyawan pada aplikasi TAS. Validasi Driver mungkin berhubungan dengan validasi data driver pada aplikasi transportasi online, sedangkan Validasi Atasan tidak terkait langsung dengan proses absensi dan lebih berkaitan dengan validasi persetujuan atas tugas atau proyek tertentu.</p><p></p><p>Oleh karena itu, jawaban yang tepat adalah A. Validasi Staff.</p><br />
+                                            <h2 class="ez-toc-section" id="ada-yang-tahu-kepanjangan-dari-htmlphpdan-css-dan-apa-fungsi-dari-javascript">
+                            19. ada yang tahu kepanjangan dari HTML,PHP,dan CSS?? dan apa fungsi dari javascript?</h2><br />
+                        HyperText Markup Language (HTML) 
+hypertext proprocessor (php)
+cascading style sheat (css)
+
+maaf ya fungsinya tdk tauHTML: HyperText Markup Language<br />PHP: hypertext Processor<br />CSS: Cascading Style Sheets<br /><br />kalo fungsi dari  javascripts itu sarana bahasa yang digunakan untuk berinteraksi dengan elemen web. maaf kalo salah.<br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-data-validasi">
+                            20. apa yang dimaksud dengan data Validasi???</h2><br />
+                        adalah sebuah sistembaru yang dapat di gunkan untuk memeriksa revisi - revisi suntingan yang di lakukan di salah satu web contohnya seperti wikipedia indonesia dan internasional<br />Validasi data adalah fitur yang tersedia di Microsoft Excel. Hal ini memungkinkan Anda untuk melakukan hal berikut: <br />Membuat daftar entri yang membatasi nilai yang diizinkan dalam sel.Buat pesan prompt menjelaskan jenis data yang diizinkan dalam sel.Membuat pesan yang muncul ketika data yang salah telah dimasukkan. Memeriksa entri yang tidak sesuai dengan menggunakan bilah audit . Menetapkan kisaran nilai numerik yang dapat dimasukkan ke dalam sel.Menentukan apakah entri yang benar didasarkan pada perhitungan sel lain.<br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-empat-macam-tipe-data-implisit-yang-dimiliki-oleh-javascript%e2%80%8b">
+                            21. jelaskan empat macam tipe data implisit yang dimiliki oleh javascript​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Numerik, berupa tipe data angka. String, berupa tipe data huruf. Boolean, berupa tipe data True atau False</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-yang-digunakan-untuk-mengganti-kata-tertentu-dari-suatu-string-pada-javascript-adalah">
+                            22. fungsi yang digunakan untuk Mengganti kata tertentu dari suatu string pada javascript adalah ?</h2><br />
+                        Fungsi string.replace()<br /><br />___________<br />#Semoga bermanfaat ^_^<br />
+                                            <h2 class="ez-toc-section" id="pada-javascript-untuk-menulis-alamat-digunakan-tipe-data%e2%80%8b">
+                            23. pada javascript untuk menulis alamat digunakan tipe data?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>cari di google ada :) </p><p><strong>Penjelasan:</strong></p><p>cari : ketik pada javascript untuk menulis alamat di gunakan tipe data ? gitu , semoga membantu :)</p><br />
+                                            <h2 class="ez-toc-section" id="apa-yg-dimaksud-dengan-validasi-data-dalam-ms-excel">
+                            24. apa yg dimaksud dengan validasi data dalam ms excel</h2><br />
+                        Yang
+dimaksud dengan validasi data adalah pengaturan saat ingin
+mengisi lembar kerja Ms. Excel hanya dengan angka dan pada range yang lain ingin menuliskan teks.<br /><br />Pengaturan saat ingin
+mengisi lembar kerja Ms. Excel hanya dengan angka dan pada range yang lain ingin menuliskan teks.<br /><br />Semoga Membantu!<br /><br />
+                                            <h2 class="ez-toc-section" id="jika-kalian-ingin-mengambil-data-tanggal-lahir-maka-pilihan-validasi-apa-yang-dapat-kalian-gunakan-jika-kalian-ingin-mengambil-data-nomor-induk-kependudukan-maka-pilihan-validasi-apa-yang-mungk">
+                            25. Jika kalian ingin mengambil data tanggal lahir maka pilihan validasi apa yang dapat kalian gunakan ...... Jika kalian ingin mengambil data nomor induk kependudukan maka pilihan validasi apa yang mungkin dapat kalian gunakan ...... Jika kalian ingin mengambil data nama orang tua maka pilihan validasi apa yang mungkin kalian gunakan ........tolong bantu di jawab ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. data validasi Date</p><p>2. data validasi Number</p><p>3. data validasi text atau string</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-private-class-dalam-javascript-adalah%e2%80%8b">
+                            26. fungsi private class dalam javascript adalah??​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>untuk memprivasi class dan subclass yang di private agar class lain tidak dapat melihat class tersebut seperti public class</p><br />
+                                            <h2 class="ez-toc-section" id="apa-saja-data-yang-dapat-diolah-oleh-javascript">
+                            27. Apa saja data yang dapat diolah oleh Javascript?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>String (teks)</p><p>Integer atau Number (bilangan bulat)</p><p>Float (bilangan Pecahan)</p><p>Boolean</p><p>Object</p><p></p><p>maaf klo salah :) </p><p></p><p><strong>Jawaban:</strong></p><p>1.String (teks)</p><p>2.Integer atau Number (bilangan bulat)</p><p>3.Float (bilangan Pecahan)</p><p>4.Boolean.</p><p>5.Object.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-saja-data-yang-dapat-diolah-oleh-javascript">
+                            28. Apa saja data yang dapat diolah oleh Javascript?</h2><br />
+                        String, integer, float, array, object dan
+Booleans.<br /><br /> maaf kalo saya salah<br /><br />
+                                            <h2 class="ez-toc-section" id="apa-pengertian-fungsi-dan-trik-penggunaan-keyword-void-di-javascript">
+                            29. Apa pengertian, fungsi, dan trik penggunaan keyword void di Javascript? </h2><br />
+                        <p><strong>Jawaban:</strong></p><p>void adalah operator yang digunakan untuk mengembalikan nilai undefined sehingga browser tidak akan dapat memuat halaman baru.</p><p></p><p>pembuat web memanggil javascript tersebut untuk membuat fungsi tambahan pada sebuah link. pada dasarnya ketika anda mengklik sebuah link browser anda akan menuju ketempat link itu berada dengan refresh page halaman / loading halaman.</p><p></p><p>ada suatu kondisi dimana anda ingin merubah suatu aksi tapi tidak sesuai dengan sifat aslinya dan tidak menampilkan perubahan apapun pada url pada browser untuk keperluan proses selanjutnya.</p><p></p><p>semoga bermanfaat yaa ☺☺☺</p><br />
+                                            <h2 class="ez-toc-section" id="tolong-buatkan-validasi-data-dalam-study-tour-dong-tmn2">
+                            30. Tolong buatkan validasi data dalam study tour dong tmn2. .</h2><br />
+                        SEMOGA MEMBANTU <br />Validasi data sangat bermanfaat jika Anda ingin berbagi buku kerja 
+dengan orang lain, dan Anda ingin data yang dimasukkan ke akurat dan 
+konsisten. Antara lain, Anda bisa menggunakan validasi data untuk hal <br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="cara-scrap-data-youtube-mp3-menggunakan-javascript">
+                            31. Cara scrap data youtube mp3 menggunakan javascript</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>&gt;</strong><strong>memodifikasi style dari suatu obyek HTML menggunakan CSS yang dilakukan </strong><strong>melalui</strong><strong> </strong><strong>Javascript</strong><strong> </strong><strong>:</strong><strong> </strong>Dalam metode tersebut merupakan metode Cara scrap data youtube mp3 menggunakan javascript menggunakan kode CSS yang diterapkan melalui Javascript ke suatu obyek HTML.</p><p><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong></p><p><strong>-</strong><strong>-</strong><strong>----</strong><strong>&gt;</strong><strong>D</strong><strong>e</strong><strong>t</strong><strong>a</strong><strong>i</strong><strong>l</strong><strong> </strong><strong>jawaban</strong></p><p><strong>-</strong><strong>-</strong><strong>----</strong><strong>&gt;</strong><strong>m</strong><strong>a</strong><strong>p</strong><strong>e</strong><strong>l</strong><strong>:</strong><strong>T</strong><strong>i</strong><strong>k</strong></p><p><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>&gt;</strong><strong>k</strong><strong>e</strong><strong>l</strong><strong>a</strong><strong>s</strong><strong>:</strong><strong>1</strong><strong>0</strong></p><p><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>&gt;</strong><strong>m</strong><strong>a</strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>i</strong><strong>:</strong><strong>Cara scrap data youtube mp3 </strong></p><p><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>&gt;</strong><strong>k</strong><strong>a</strong><strong>t</strong><strong>a</strong><strong> </strong><strong>kunci</strong><strong>:</strong><strong>memodifikasi style </strong><strong>melalui Javascript </strong></p><p><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong><strong>_</strong></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-validasi-dan-penggunaannya">
+                            32. fungsi validasi dan penggunaannya !</h2><br />
+                        fungsi validasi<br /><br />Membatasi entri ke item yang sudah ditentukan sebelumnya dalam daftar— misalnya, Anda bisa membatasi pengguna Departemen pilihan untuk akuntansi, penggajian, HR, untuk beberapa nama.<br /><br />Membatasi angka di luar rentang yang ditentukan— misalnya, Anda bisa menentukan persentase maksimum input untuk karyawan tahunan kelebihan tambah, mari kita Katakanlah 3%, atau hanya memperbolehkan bilangan bulat antara1 dan 100.<br /><br />Membatasi tanggal di luar kerangka waktu tertentu— misalnya, saat karyawan menonaktifkan permintaan, Anda bisa mencegah seseorang memilih tanggal sebelum tanggal hari ini.<br /><br />Membatasi waktu di luar kerangka waktu tertentu— misalnya, Anda bisa menentukan Rapat penjadwalan antara 8:00 AM dan 5:00 PM.<br /><br />Membatasi jumlah karakter teks— misalnya, Anda bisa membatasi diperbolehkan teks di dalam sel untuk 10 atau lebih sedikit karakter.<br /><br />Memvalidasi data berdasarkan rumus atau nilai di sel lainnya— misalnya, Anda bisa menggunakan validasi data untuk mengatur batas maksimum untuk komisi dan bonus berdasarkan nilai penggajian diproyeksikan keseluruhan. Jika pengguna memasukkan lebih dari batas jumlah, mereka akan melihat pesan kesalahan.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="8-penggunaan-fungsi-isnumberdalam-suatu-validasi-kolom-akanmemastikan-a-data-teks-akan-diterimab-data-yang-diinput-harusberupa-bilanganc-data-tanggal-akan-ditolakd-data-teks-akan-ditolak">
+                            33. 
+8. Penggunaan fungsi ISNUMBER
+dalam suatu validasi kolom akan
+memastikan..
+A. data teks akan diterima
+B. data yang diinput harus
+berupa bilangan
+C. data tanggal akan ditolak
+D. data teks akan ditolak</h2><br />
+                        <p> <strong>jawaban</strong><strong>=</strong></p><p>B. data yang diinput harus berupa bilangan</p><p></p><p><strong>Penjelasan: Rumus Excel ISNUMBER yaitu digunakan untuk mengecek suatu data pada cell apakah berupa angka atau bukan.</strong></p><p></p><p><strong>maaf </strong><strong>kalo </strong><strong>salah </strong><strong>ya </strong><strong>(๑´•.̫ • `๑)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-apa-saja-data-yang-dapat-diolah-oleh-javascript">
+                            34. jelaskan apa saja data yang dapat diolah oleh javascript</h2><br />
+                        Tipe data pada javascript meliputi: String, integer, float, array, object dan Booleans. Tipe data string adalah data yang memuat karakter, misalnya: “Semarang”, Teks yang ada di dalam tanda petik baik petik tunggal maupun petik ganda<br /><br />Tipe data integer dan float merupakan tipe data numeric, tipe data object digunakan kurung kurawal (,.. -)<br /><br />Setiap property pada tipe data object dipisahkan dengan tanda koma (,)<br /><br />Tipe data Booleans terdiri dari 2 nilai yaitu: True and False<br /><br />CONTOH:<br /><br />Var namakota=”Semarang”;  //tipe data string<br /><br />Var provinsi=”Jawa Tengah”; //tipe data string<br /><br />Var x1=34;         //tipe data integer<br /><br />Var x2=3.14;     //tipe data float<br /><br />Var y=123e4;    //tipe data integer<br /><br />Var x=true;        //tipe data Booleans<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-validasi-data%e2%80%8b">
+                            35. Jelaskan pengertian validasi data​</h2><br />
+                        <p>Validasi data adalah <strong>proses pengecekan dan verifikasi keakuratan dan kebenaran data yang telah dikumpulkan atau diinput sebelum data tersebut diproses atau digunakan</strong>. Tujuan dari validasi data adalah untuk memastikan bahwa data yang digunakan dalam pengambilan keputusan atau analisis sudah benar dan valid. Validasi data dilakukan dengan menggunakan teknik-teknik yang berbeda, seperti verifikasi data melalui sumber yang berbeda, verifikasi format dan struktur data, dan verifikasi konsistensi data.</p><p></p><p>Semoga membantu &gt;0&lt;</p><p>~Trex</p><p><strong>Jawaban:</strong></p><p>kamu nanyak kamu nanyak</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-validasi">
+                            36. apa fungsi dari validasi</h2><br />
+                        1.membatasi entri ke item yg sudah di tentukan sebelumnya dalam daftar<br /><br />2.membatasi angka diluar tentang yg di tentukan<br /><br />3.membatasi tanggal di luar kerangka waktu tertentu<br /><br />4.membatasi waktu diluar kerangka waktu tertentu<br /><br />5.membatasi jumlah karakter teks<br /><br />6.memvalidasi data berdasarkan rumus atau nilai di sel lainnya<br />
+                                            <h2 class="ez-toc-section" id="keyword-javascript-yang-berfungsi-untuk-mendapatkan-type-dari-error-adalah">
+                            37. keyword (JavaScript) yang berfungsi untuk mendapatkan type dari error adalah?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>try and catch</p><p><strong>Penjelasan:</strong></p><p>try: untuk menguji kode yang akan dijalankan errornya</p><p>catch: untuk menindak lanjuti error yang terjadi mau digimanakan</p><br />
+                                            <h2 class="ez-toc-section" id="memvalidasi-mencocokkan-data-atau-mencari-informasi-yang-diinginkan-dengan-cara-mencocokkan-informasi-yang-diinginkan-dengan-informasi-yang-tersedia-merupakan-fungsi%e2%80%8b">
+                            38. Memvalidasi (mencocokkan) data atau mencari informasi yang diinginkan dengan cara mencocokkan informasi yang diinginkan dengan informasi yang tersedia merupakan fungsi​</h2><br />
+                        <strong>Jawaban:</strong><p>Memvalidasi data atau mencari informasi yang diinginkan dengan cara mencocokkan informasi yang diinginkan dengan informasi yang tersedia merupakan fungsi pencarian atau penelusuran (search function). Fungsi ini melibatkan proses mengidentifikasi dan mengumpulkan informasi yang sesuai dengan kriteria atau pertanyaan yang diajukan oleh pengguna. Pencarian dapat dilakukan dalam berbagai sumber, seperti basis data, situs web, arsip, atau dokumen lainnya, dengan tujuan mencari data yang valid dan relevan.</p><p></p><p>Dalam konteks teknologi informasi dan internet, fungsi pencarian sangat umum digunakan. Mesin pencari seperti Google adalah contoh nyata dari fungsi pencarian yang kuat, di mana pengguna dapat memasukkan kata kunci atau pertanyaan untuk menemukan informasi yang mereka butuhkan dari berbagai sumber online.</p><p></p><p>Fungsi pencarian juga dapat diterapkan di berbagai bidang, termasuk perpustakaan, ilmu pengetahuan, bisnis, dan banyak lagi, dengan tujuan mencocokkan data yang dicari dengan data yang ada untuk memenuhi kebutuhan informasi pengguna.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsikegunaan-javascript-pada-client-side-programming">
+                            39. Apa fungsi/kegunaan Javascript pada Client Side Programming?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p> Fungsi utama dari JS yaitu membuat suatu website lebih interaktif dan lebih menarik.</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-mem-validasi-data-di-excel-hp-android%e2%80%8b">
+                            40. bagaimana cara mem validasi data di Excel hp android?​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Cara Menggunakan Data Validation Excel</p><p></p><p>Cara membuat validasi data dengan menggunakan data validation di excel untuk membatasi isi sebuah sel dan atau range excel, ikuti langkah-langkah berikut:</p><p>Pilih(seleksi) Sel/Range yang akan Anda atur data validation-nya.</p><p>Pilih Menu Data Validation Pada Tab Data--Group Data Tools.</p><p></p><p>Data Validation Excel Menu</p><p></p><p>Langkah diatas bisa juga kita lakukan dengan Shortcut keyboard Alt + A + V + V.</p><p>Setelah muncul kotak opsi Data Validation, setting pengaturan validasi data atau pembatasan isi sel yang diinginkan.</p><p></p><p>Data Validation Option Box Excel</p><p></p><p>Penjelasan lebih lanjut tentang pengaturan validasi data ini akan dijelaskan secara khusus pada bagian selanjutnya.</p><p>Terkhir Pilih/Klik OK untuk menyelesaikan dan menerapkan pengaturan validasi data.</p><p></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/In0nB0ABaUk?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-cinta-tanah-air.html">Contoh Soal Cinta Tanah Air</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-membran-plasma-adalah.html">Fungsi Dari Membran Plasma Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-proposal-tugas-akhir-komputer-tentang-web.html">Contoh Proposal Tugas Akhir Komputer Tentang Web</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dan-arti-dari-cmyk.html">Fungsi Dan Arti Dari Cmyk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-eksponen-kelas-12.html">Contoh Soal Eksponen Kelas 12</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/14-hari-berapa-jam.html">14 Hari Berapa Jam</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-dan-pembahasan-optika-geometri.html">Contoh Soal Dan Pembahasan Optika Geometri</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/jelaskan-kedudukan-pancasila-sebagai-dasar-negara-bagi-bangsa-indonesia.html">Jelaskan Kedudukan Pancasila Sebagai Dasar Negara Bagi Bangsa Indonesia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-software-presentasi-brainly.html">Fungsi Dari Software Presentasi Brainly</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/sebutkan-fungsi-dari-paru-paru.html">Sebutkan Fungsi Dari Paru Paru</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-bahasa-mandarin-dan-jawabannya.html">Contoh Soal Bahasa Mandarin Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-zaman-pra-aksara-dan-jawabannya.html">Contoh Soal Zaman Pra Aksara Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-produktivitas.html">Contoh Soal Produktivitas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-setiap-software-adobe.html">Fungsi Dari Setiap Software Adobe</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-file-server.html">Fungsi Dari File Server</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-kumpulan-soal-statistika-dan-penyelesaiannya.html">Contoh Kumpulan Soal Statistika Dan Penyelesaiannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-pengurangan-pecahan.html">Contoh Soal Pengurangan Pecahan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-jenis-jenis-pura-di.html">Fungsi Dari Jenis Jenis Pura Di</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-nota-debet.html">Fungsi Dari Nota Debet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-tugas-akhir-bsi-spesifikasi-sistem-informasi.html">Contoh Tugas Akhir Bsi Spesifikasi Sistem Informasi</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://soalpedia.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://soalpedia.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Pembuatan Configuration Layer 3 Dalam Cisco - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Pembuatan Configuration Layer 3 Dalam Cisco, , , , , , , 0, , , , , , 0, fungsi-dari-pembuatan-configuration-layer-3-dalam-cisco, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Pembuatan Configuration Layer 3 Dalam Cisco - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Pembuatan Configuration Layer 3 Dalam Cisco, , , , , , , 0, , , , , , 0, fungsi-dari-pembuatan-configuration-layer-3-dalam-cisco, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Pembuatan Configuration Layer 3 Dalam Cisco - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Pembuatan Configuration Layer 3 Dalam Cisco, , , , , , , 0, , , , , , 0, fungsi-dari-pembuatan-configuration-layer-3-dalam-cisco, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://soalpedia.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://soalpedia.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://soalpedia.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://soalpedia.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://soalpedia.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://soalpedia.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://soalpedia.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Pembuatan Configuration Layer 3 Dalam Cisco</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">syuhada36</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Pembuatan+Configuration+Layer+3+Dalam+Cisco" alt="Fungsi Dari Pembuatan Configuration Layer 3 Dalam Cisco">
+                    </div>
+                    <p></p>
+                    <p>bagaimana cara memasuki mode global configuration dalam catalyst cisco jelaskan​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-memasuki-mode-global-configuration-dalam-catalyst-cisco-jelaskan%e2%80%8b">1.
+                                            bagaimana cara memasuki mode global configuration dalam catalyst cisco jelaskan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-urutan-perintah-untuk-memasuki-previleged-exec-mode-configuration-dalam-switch-cisco-catalyst">2.
+                                            Tuliskan urutan perintah untuk memasuki previleged exec mode configuration dalam switch cisco catalyst?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cisco-bagi-network-specialist-cisco-sebagai-tek-jaringan-komputer-dan-sistem-computer-network-system-technicians-question-1120-mana-dari-beberapa-pilihan-tersebut-yang-paling-tepat-menjelaskan-te">3.
+                                            CISCO bagi Network Specialist (Cisco) sebagai Tek Jaringan Komputer dan Sistem (Computer Network System Technicians) Question 11/20 Mana dari beberapa pilihan tersebut yang paling tepat menjelaskan tentang Line Configuration Mode? Digunakan untuk mengakses opsi konfigurasi pada​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ketika-perangkat-cisco-pada-lapisan-core-layer-switch-menggunakan-fitur-link-anggrengation-menggunakan-2-buah-interface-1-gigabit-ethernet-maka-speed-yang-didapat-adalah">4.
+                                            Ketika perangkat cisco pada lapisan core layer switch menggunakan fitur link anggrengation menggunakan 2 buah interface 1 gigabit ethernet maka speed yang didapat adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-setiap-layer-pada-7-model-osi-layer-beserta-contohnya%e2%80%8b">5.
+                                            fungsi setiap layer pada 7 model osi layer beserta contohnya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-subcutaneous-layer%e2%80%8b">6.
+                                            fungsi subcutaneous layer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-skrip-no-shutdown-pada-perintah-cisco">7.
+                                            Apa fungsi skrip no shutdown pada perintah cisco</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#siapakah-pembuat-wifi-cisco">8.
+                                            Siapakah Pembuat WIFI Cisco</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-layer-armature">9.
+                                            Apa fungsi dari layer armature?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-configuration-manager-adalah">10.
+                                            fungsi dari configuration manager adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelasakan-fungsi-layer">11.
+                                            jelasakan fungsi layer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-fungsi-transport-layer-dan-network-layer">12.
+                                            Perbedaan fungsi transport layer dan network layer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-data-link-layer-pada-model-osi-layer-adalah">13.
+                                            Fungsi data link layer pada model osi layer adalah...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-tombol-alternatif-untuk-perintah-layernew-layer-adalah">14.
+                                            fungsi tombol alternatif untuk perintah layer/new layer adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-rasterize-layer%e2%80%8b">15.
+                                            apa fungsi rasterize layer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-application-layer">16.
+                                            apa fungsi dari application layer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-syntax-apa-yang-digunakan-untuk-mengecek-fungsi-trunking-8-sebutkan-macam-macam-syntax-switch-cisco-yang-kalian-ketahui-9-apa-perbedaan-kabel-cross-over-dan-straight-10-sebutkan-macam-macam-l">17.
+                                            7. Syntax apa yang digunakan untuk mengecek fungsi trunking? 8. Sebutkan macam macam syntax switch cisco yang kalian ketahui? 9. Apa perbedaan kabel cross over dan straight? 10. Sebutkan macam macam layer OSI!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-physical-layer-pada-osi-layer%e2%80%8b">18.
+                                            Apa fungsi physical layer pada osi layer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-pengertian-dan-fungsi-dari-application-layer-dan-contoh-dari-application-layer">19.
+                                            apakah pengertian dan fungsi dari application layer dan contoh dari application layer ??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-bagaimana-cara-menambah-bingkai-kotak-pada-layer2-bagian-yang-tidak-bergambar-pada-layar-bersifat3-jelaskan-tentang-charles-babbage-4-apa-fungsi-layer-normal-dan-fill-layer5-bagaimana-cara-membuat">20.
+                                            1.Bagaimana cara menambah bingkai kotak pada layer2.bagian yang tidak bergambar pada layar bersifat3. Jelaskan tentang Charles babbage 4.Apa fungsi layer normal dan fill layer5.Bagaimana cara membuat hiasan pada slogan ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-cisco-packet-tracer">21.
+                                            apa fungsi cisco packet tracer?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-masing-masing-port-pada-router-cisco-1841">22.
+                                            Apa fungsi dari masing masing port pada router cisco 1841?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-layer-transport">23.
+                                            apa fungsi dari layer transport ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-membuat-jaringan-menggunakan-router-di-cisco">24.
+                                            bagaimana cara membuat jaringan menggunakan router di cisco?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-adalah-perangkat-cisco-1-switch-2-connection-3-end-device-4-router-urutkan-pembuatan-tipologi-menggunakan-cisco-packet-tracer%e2%80%8b">25.
+                                            Berikut adalah perangkat Cisco: 1. Switch 2. Connection 3. End device 4. Router Urutkan pembuatan tipologi menggunakan Cisco Packet Tracer!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-layer-network">26.
+                                            fungsi layer network</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-cisco-dan-fungsinya">27.
+                                            pengertian cisco dan fungsinya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-layer-ke3-pada-setiap-layer-osi">28.
+                                            Jelaskan fungsi layer ke3 pada setiap layer osi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-masing-masing-port-pada-router-cisco-1941">29.
+                                            Apa fungsi dari masing masing port pada router cisco 1941?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-osi-layer-fungsi-distribution-layer-adalah-%e2%80%8b">30.
+                                            Dalam OSI Layer, fungsi Distribution layer adalah ....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-langkah-langkah-untuk-membuat-layer-baru-2-apa-fungsi-create-layer3-apa-fungsi-create-a-new-group4-sebutkan-langkah-langkah-membuat-duplikasi-layertolong-di-bantu%e2%80%8b">31.
+                                            1.Jelaskan langkah-langkah untuk membuat layer baru...2.Apa fungsi create layer?3.Apa fungsi create a new group?4.sebutkan langkah-langkah membuat duplikasi layer?tolong di bantu​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-layer-ke3-pada-setiap-layer-osi">32.
+                                            Jelaskan fungsi layer ke3 pada setiap layer osi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-transparansi-pada-layer">33.
+                                            Apa fungsi transparansi pada layer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-layer-adalah-%e2%80%8b">34.
+                                            Fungsi dari layer adalah...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-setiap-layer-osi-yang-menggunakan-tujuh-lapisan-atau-layer-dimana-tiap-layer-berdiri-sendiri-tetapi-fungsi-dari-masing-masing-layer-bertanggung-jawab-dari-keberhasilan-operasi-layer-s">35.
+                                            jelaskan fungsi setiap layer OSI yang menggunakan tujuh lapisan atau layer, dimana tiap layer berdiri sendiri tetapi fungsi dari masing masing layer bertanggung jawab dari keberhasilan operasi layer sebelumnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-3-engine-configuration">36.
+                                            Tuliskan 3 engine configuration</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-layer-palette">37.
+                                            fungsi dari layer palette</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-duplicate-layer-di-gunakan-untuk-a-membuat-layer-baru-b-mengganti-nama-sebuah-layer-c-mengaktifkan-sebuah-layer-d-membuat-copyan-dari-sebuah-layer%e2%80%8b">38.
+                                            perintah duplicate layer di gunakan untuk a. membuat layer baru. b. mengganti nama sebuah layer c. mengaktifkan sebuah layer d. membuat copyan dari sebuah layer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-cara-membuat-file-baru-pada-photopea2-jelaskan-cara-membuat-layer-baru-pada-photopea3-tuliskan-cara-memberikan-warna-pada-sebuah-layer-shape-pada-layer">39.
+                                            1) Jelaskan cara membuat file baru pada Photopea!
+2) Jelaskan cara membuat layer baru pada Photopea!
+3) Tuliskan cara memberikan warna pada sebuah layer (shape pada layer)!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-ikon-creat-new-layer-pada-palet-layer%e2%80%8b">40.
+                                            Apa fungsi dari ikon Creat New Layer pada palet layer?​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-memasuki-mode-global-configuration-dalam-catalyst-cisco-jelaskan%e2%80%8b">
+                            1. bagaimana cara memasuki mode global configuration dalam catalyst cisco jelaskan​</h2><br />
+                        <p><strong>Jawaban:</strong>,</p><p></p>Mode ini adalah mode yang pertama kali muncul saat kita baru mengakses perangkat cisco. Di Mode User ini tersedia command seperti mengubah pengaturan terminal, menampilkan basic test dan informasi sistem. Semua orang jika terhubung ke perangkat kita akan bisa mengakses mode ini tanpa autentifikasi.<p></p><p></p><p><strong>Penjelasan:</strong></p>FOLLOW &amp; LIKE JADIKAN JAWABAN TERBAIK-!!<br />
+                                            <h2 class="ez-toc-section" id="tuliskan-urutan-perintah-untuk-memasuki-previleged-exec-mode-configuration-dalam-switch-cisco-catalyst">
+                            2. Tuliskan urutan perintah untuk memasuki previleged exec mode configuration dalam switch cisco catalyst?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Untuk memasuki privileged exec mode configuration dalam switch Cisco Catalyst, Anda perlu menggunakan urutan perintah yang tepat. Pertama-tama, Anda harus masuk ke mode user exec dengan perintah "enable." Kemudian, Anda perlu memasukkan kata sandi yang benar untuk mengkonfirmasi otoritas Anda. Setelah terverifikasi, Anda bisa masuk ke privileged exec mode dengan perintah "configure terminal." Dari sini, Anda dapat mengatur konfigurasi switch sesuai dengan kebutuhan Anda menggunakan perintah yang relevan. Penting untuk diingat bahwa hanya pengguna dengan otoritas terbatas yang diizinkan untuk mengakses privileged exec mode.</p><br />
+                                            <h2 class="ez-toc-section" id="cisco-bagi-network-specialist-cisco-sebagai-tek-jaringan-komputer-dan-sistem-computer-network-system-technicians-question-1120-mana-dari-beberapa-pilihan-tersebut-yang-paling-tepat-menjelaskan-te">
+                            3. CISCO bagi Network Specialist (Cisco) sebagai Tek Jaringan Komputer dan Sistem (Computer Network System Technicians) Question 11/20 Mana dari beberapa pilihan tersebut yang paling tepat menjelaskan tentang Line Configuration Mode? Digunakan untuk mengakses opsi konfigurasi pada​</h2><br />
+                        <p>Line Configuration Mode (Mode Konfigurasi Line) adalah mode yang digunakan untuk mengakses konfigurasi pada antarmuka fisik pada perangkat Cisco. Mode ini memungkinkan pengguna untuk mengkonfigurasi opsi dan pengaturan yang terkait dengan antarmuka tersebut.</p><p></p><p>Dalam Line Configuration Mode, pengguna dapat mengatur parameter seperti kecepatan transfer data (baud rate), bit data (data bits), bit stop (stop bits), dan paritas (parity) untuk antarmuka serial. Mode ini juga memungkinkan pengguna untuk mengonfigurasi opsi lain seperti mode flow control (kontrol aliran), mode transmisi (transmission mode), serta opsi keamanan seperti password dan enkripsi.</p><p></p><p>Line Configuration Mode digunakan untuk mengatur dan mengelola opsi-opsi yang terkait dengan antarmuka fisik, baik itu antarmuka serial atau antarmuka lainnya pada perangkat Cisco. Dengan menggunakan mode ini, pengguna dapat mengoptimalkan pengaturan antarmuka sesuai dengan kebutuhan jaringan atau sistem yang sedang dikonfigurasi.</p><br />
+                                            <h2 class="ez-toc-section" id="ketika-perangkat-cisco-pada-lapisan-core-layer-switch-menggunakan-fitur-link-anggrengation-menggunakan-2-buah-interface-1-gigabit-ethernet-maka-speed-yang-didapat-adalah">
+                            4. Ketika perangkat cisco pada lapisan core layer switch menggunakan fitur link anggrengation menggunakan 2 buah interface 1 gigabit ethernet maka speed yang didapat adalah</h2><br />
+                        <p>tidak pintar 919288273u4u57584919288273u4u5758 919288273u4u5758 919288273u4u5758 u48</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-setiap-layer-pada-7-model-osi-layer-beserta-contohnya%e2%80%8b">
+                            5. fungsi setiap layer pada 7 model osi layer beserta contohnya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan: </strong></p><p><strong>1. Physical Layer </strong></p><p><strong>Layer pertama adalah physical layer. Sesuai dengan namanya, physical layer berarti merupakan lapisan yang berhubungan dengan fisik. Layer physical ini berhubungan erat dengan fungsi persinyalan, dan merupakan layer yang paling dekat dengan hardware alias perangkat keras jaringan secara fisik.</strong></p><p><strong></strong></p><p><strong>contoh : kabel lan, lan card</strong></p><p><strong>2. Data link Layer</strong></p><p><strong>Data Link layer merupakan layer setelah Phisical yang berperan sebagai penyedia data transfer yang lebih jalas / nyata, mengendilikan aliran data, mengidentifikasi piranti jaringan, penghubung antara media network dan layer protocol yang memiliki level lebih tinggi dibandingkan dengan layer physical</strong></p><p><strong></strong></p><p><strong>contoh : switch</strong></p><p><strong></strong></p><p><strong> Layer 3 (Network layer)</strong></p><p><strong>Network layer merupakan layer yang memiliki tugas untuk merutekan paket yang diterima ke alamat yang sesuai dengan network tujuan atau lebih singkatnya bisa di bilang sebagi penyedian fungsi routing, dalam layer ini juga bertugas untuk mendeteksi jika terjadi error, memperbaiki error dan melakukan pengiriman ulang paket yang rusak.</strong></p><p><strong></strong></p><p><strong>contoh : router, hub</strong></p><p><strong></strong></p><p><strong> Layer 4 (Transport layer)</strong></p><p><strong>Transport layer merupakan layer yang memiliki tugas utama untuk mengatasi masalah yang berhubungan dengan pengiriman data kepada komputer satu dengan yang lainya serta memperbaiki jika terjadi suatu error recovery saat berlangsungnya pengiriman. Tranport layer juga memiliki tugas menyediakan transfer yang reliable dan transparan (tidak terlihat di samarkan), memberitahuan kalau data pesan telah diterima, menjamin saat pengiriman berlangsung bebas dari kesalahan </strong></p><p><strong></strong></p><p><strong>contoh : tcp/ip, udp, spx</strong></p><p><strong></strong></p><p><strong> Layer 5 (Session layer)</strong></p><p><strong>Session layer merupakan layer yang dapat untuk mengendalikan sesi komunikasi dan mengidentifikasi untuk memulai, mengkontrol, mengakhiri suatu komunikasi serta melakukan koordinasi dan menyediakan layanan pada layer yang berada di atasnya yaitu layer Presentation dan layer Application. </strong></p><p><strong></strong></p><p><strong>contoh : Servise Advertising Protocol (SAP), SQL; NFS; NetBIOS.</strong></p><p><strong></strong></p><p><strong> Layer 6 (Presentation layer)</strong></p><p><strong>Presentation layer merupakan layer yang memiliki tugas utama untuk Enkripsi dan kompresi data serta mengidentifikasi atau menerjemahkan tipe data atau format data pada syntax system</strong></p><p><strong></strong></p><p><strong>contoh : JPEG, ASCII, TIFF, encryption, MPEG, GIF</strong></p><p><strong></strong></p><p><strong> Layer 7 (Application layer)</strong></p><p><strong>Application layer merupakan layer yang berada pada tingkatan pertama yang telah berhubungan dengan jaringan besar atau sering disebut Internet, memiliki tugas mengidentifikasi aplikasi yang berjalan pada suatu komputer yang kemudian akan membutuhkan akses pada layer ini lalu layer ini akan menyediakan interface untuk aplikasi yang sedang digunakan.</strong></p><p><strong></strong></p><p><strong>contoh : smtp, ftp, http</strong></p><p><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-subcutaneous-layer%e2%80%8b">
+                            6. fungsi subcutaneous layer​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi lapisan dermis</p><p>Fungsi dermis pada lapisan kulit manusia antara lain: - Membantu mengatur suhu tubuh. - Membuang kotoran. - Membuat kulit terlihat halus dan lembut.</p><p><strong>Penjelasan:</strong></p><p>maaf jika salah</p><p>Fungsi utama dari subcutaneous layer(jaringan subkutan) adalah menyimpan lemak. Jaringan subkutan juga membantu menempelkan kulit ke tulang dan otot serta menyediakan kulit dengan saraf dan suplai darah.</p><p></p><p>Maaf jika salah, semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-skrip-no-shutdown-pada-perintah-cisco">
+                            7. Apa fungsi skrip no shutdown pada perintah cisco</h2><br />
+                        untuk menghidupkan interface yang di maksud.<br />contoh<br />Switch(config)#interface vlan1<br />Switch(config-if)#ip address 192.168.11.1 255.255.255.0<br />
+                                            <h2 class="ez-toc-section" id="siapakah-pembuat-wifi-cisco">
+                            8. Siapakah Pembuat WIFI Cisco</h2><br />
+                        Vic Hayes Maaf Kalau salah<br />pembuat WI-FI Cisco adalah Vic Hayes<br />Semoga membantu....<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-layer-armature">
+                            9. Apa fungsi dari layer armature?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>untuk mengubah energi listrik menjadi energi gerak dalam bentuk gerak putar.</p><p></p><p>Fungsi Armature adalah untuk mengubah energi listrik menjadi energi gerak dalam bentuk gerak putar</p><p></p><p><strong>M</strong><strong>a</strong><strong>a</strong><strong>f</strong><strong> </strong><strong>K</strong><strong>a</strong><strong>l</strong><strong>a</strong><strong>u</strong><strong> </strong><strong>S</strong><strong>a</strong><strong>l</strong><strong>a</strong><strong>h</strong></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-configuration-manager-adalah">
+                            10. fungsi dari configuration manager adalah</h2><br />
+                        Configuration management (CM) adalah
+suatu proses untuk memastikan adanya
+dokumentasi yang akurat dan efisien untuk
+berbagai versi dari infrastruktur baik
+software maupun hardware dimana
+kedudukan configuration management di
+dalam service management adalah core
+dalam organisasi.
+Dengan kata lain configuration management
+adalah proses mencatat dan memelihara
+secara up to date dari semua komponen
+infrastruktur IT (aset IT, status aset, dan
+konfigurasinya) serta korelasinya satu
+dengan yang lain. Penekanan dari
+configuration management adalah pada
+hubungan antar component IT.
+Configuration management tidak mengacu
+pada aplikasi sistem perangkat lunak atau
+tingkat versi pengembangan perangkat lunak
+pada saat pengembangan atau testing.
+Kompatibilitas hardware dan software
+secara tepat adalah bagian dari proses
+manajemen konfigurasi. Menurut sebuah
+laporan yang dikeluarkan oleh Enterprise
+Management Associates (EMA), disiplin ilmu
+seperticonfiguration managementIT
+menjadi semakin penting untuk
+mempertahankan tingkat pelayanan dan
+menjaga semua perangkat keras dan
+perangkat lunak berfungsi maksimal.
+<br />
+                                            <h2 class="ez-toc-section" id="jelasakan-fungsi-layer">
+                            11. jelasakan fungsi layer</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>layer artinya lapisan (dalam b.inggris)</p><p><strong>Penjelasan:</strong></p><p>layer apa?</p><p><strong>Jawaban:</strong></p><p>Layer adalah lapisan yang berfungsi sebagai tempat objek, bisa ibaratkan sebagai kanvas atau lapisan </p><p><strong>Penjelasan:</strong></p><p> yaitu</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-fungsi-transport-layer-dan-network-layer">
+                            12. Perbedaan fungsi transport layer dan network layer</h2><br />
+                        -Transport<br />Transport layer bertanggung jawab membagi data menjadi segmen, menjaga koneksi logika “end – to _ end” antar terminal, dan menyediakan penanganan error (error handling)<br />Berfungsi untuk memecahkan data kedalam paket-paket tersebut sehingga dapat disusun kembali pada sisi tujuan yang telah diterima. Selain itu, pada level ini juga membuat tanda bahwa paket diterima dengan sukses (acknowledgement) dan mentransmisikan ulang terhadap paket-paket yang hilang di tengah jalan.<br /><br />-Network<br />Network layer bertanggung jawab menentukan alamat jaringan, menentukan rute yang harus diambil selama perjalanan, menjaga antrian tafik di jaringan. Data pada layer ini berbentuk “Paket”.<br />Berfungsi untuk mendefinisikan alamat-alamat IP, membuat Header untuk paket-paket dan kemudian melakukan routing melalui internet-working dengan menggunakan router dan switch layer 3<br />
+                                            <h2 class="ez-toc-section" id="fungsi-data-link-layer-pada-model-osi-layer-adalah">
+                            13. Fungsi data link layer pada model osi layer adalah...</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Tugas utama dari data link layer adalah sebagai fasilitas transmisi data mentah dan mentransformasi data tersebut ke saluran yang bebas dari kesalahan transmisi.</p><p></p><p><strong>P</strong><strong>e</strong><strong>n</strong><strong>j</strong><strong>e</strong><strong>l</strong><strong>a</strong><strong>s</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>:</strong></p><p>Data link layer merupakan salah satu bagian layer atau lapisan yang terdapat pada sebuah sistem OSI Reference Model. Sistem OSI reference model ini mengacu pada suatu sistem atau model yang digunakan dalam implementasi sebuah jaringan. Dalam pengaplikasiannya, OSI Reference model ini terdiri dari 7 buah layer atau lapisan. Salah satu lapisan yang masuk ke dalam model OSI layer ini adalah lapisan data link layer.</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-tombol-alternatif-untuk-perintah-layernew-layer-adalah">
+                            14. fungsi tombol alternatif untuk perintah layer/new layer adalah</h2><br />
+                        <p>Fungsi tombol alternatif untuk perintah layer/new layer adalah shift+ctrl+n</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-rasterize-layer%e2%80%8b">
+                            15. apa fungsi rasterize layer​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Rasterize (Rasterize Layer) adalah Pengubahan layer dari bentuk teks menjadi bentuk bitmap. Begitu sebuah layer teks di-rasterize, maka teks tersebut sudah tidak bisa diedit lagi. Pengubahan layar dari bentuk teks menjadi bentuk bitmap.</p><p><strong>Penjelasan:</strong></p><p>maaf yaa kalau salah</p><p><strong>Jawaban:</strong></p><p>Rasterize ( Rasterize layer ) adalah pengubahan layer dari bentuk teks menjadi bentuk bit map . begitu sebuah layer teks di rasterize, maka teks tersebut sudah tidak bisa diedit lagi.</p><p></p><p><strong>Penjelasan:</strong></p><p></p><p><strong>Pengubahan layar dari bentuk teks menjadi bentuk bitmap.</strong></p><p></p><p>maaf y klo salah....</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-application-layer">
+                            16. apa fungsi dari application layer</h2><br />
+                        application layer berfungsi utk menyediakan interface antara aplikasi yg dingunakan untuk berkomunikasi dan jaringan yg mendasarinya dimana pesan akan dikirim<br />
+                                            <h2 class="ez-toc-section" id="7-syntax-apa-yang-digunakan-untuk-mengecek-fungsi-trunking-8-sebutkan-macam-macam-syntax-switch-cisco-yang-kalian-ketahui-9-apa-perbedaan-kabel-cross-over-dan-straight-10-sebutkan-macam-macam-l">
+                            17. 7. Syntax apa yang digunakan untuk mengecek fungsi trunking? 8. Sebutkan macam macam syntax switch cisco yang kalian ketahui? 9. Apa perbedaan kabel cross over dan straight? 10. Sebutkan macam macam layer OSI!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>7. Melakukan test ping </p><p></p><p>8.</p><p>Menampilkan Jam dan tanggal
+</p><p>Switch&gt;show clock detail
+</p><p>Mengganti tanggal/jam
+</p><p>Switch#clock set hh:mm:ss  dd:mm:yyyy
+</p><p>Switch#clock set 15:28:10 22 Jun 2016
+</p><p>Menampilkan versi IOS
+</p><p>Switch&gt;show version
+</p><p>Menampilkan perintah sebelumnya
+</p><p>Switch&gt;show history
+</p><p>Untuk menampilkan satu-persatu perintah yang sudah diketikkan terlebih dahulu, gunakan tombol panah atas atau tombol panah bawah.
+</p><p>Menampilkan kemungkinan perintah
+</p><p>Switch&gt;di?
+</p><p>akan menampilkan perintah disconnect
+</p><p>Switch&gt;e?akan menampilkan perintah enable   exit</p><p></p><p>9. </p><p>Perbedaan kabel Straight dan Cross dalam pengiriman data dan penerimaan data:
+</p><p>1. Pengiriman data dan penerimaan data model Straight Cable (pengiriman data dengan model kabel lurus) adalah data dikirimkan ke hub/switch baru dari hub dikembalikan. Pengiriman data oleh network adapter akan diterima sebagai signal pengiriman data oleh hub/switch dan penerima data dinetwork adapter dan penerimaan data oleh hub/switch.
+</p><p>2. Pengiriman data dan penerimaan data model Cross Cable
+</p><p>(pengiriman dan penerimaan data kabel silang) dari komputer ke komputer yaitu pengiriman data oleh network adapter komputer 1 akan diterima sebagai sinyal penerima di network adapter komputer 2 dan penerimaan data oleh network adapter komputer 1 merupakan pengiriman data oleh network adapter komputer 2.</p><p></p><p>10. </p>Physical Layer.
+Data-link layer.
+Network Layer.
+Transport Layer.
+Session Layer.
+Presentation Layer.
+Aplication Layer.<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-physical-layer-pada-osi-layer%e2%80%8b">
+                            18. Apa fungsi physical layer pada osi layer​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi utama dari layer physical ini adalah melakukan sinkronisasi dari bit data, mendefinisikan LAN Card, dan juga melakukan definisi struktur jaringan dan media transmisi jaringan.</p><p></p><p>SEMOGA MEMBANTU</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apakah-pengertian-dan-fungsi-dari-application-layer-dan-contoh-dari-application-layer">
+                            19. apakah pengertian dan fungsi dari application layer dan contoh dari application layer ??</h2><br />
+                        <strong></strong>Secara singkat, <strong>Application layer </strong>merupakan salah satu layer pada Open System Interconnection (OSI), fungsi layer ini sendiri adalah menyediakan tampilan (interface) kepada pengguna, contoh fungsi dari application layer ini diantaranya:<br />- File Transfer<br />- Web Surfing<br />- Web Chat<br />- Simple Mail Transfer Protocol (SMTP)<br />
+                                            <h2 class="ez-toc-section" id="1-bagaimana-cara-menambah-bingkai-kotak-pada-layer2-bagian-yang-tidak-bergambar-pada-layar-bersifat3-jelaskan-tentang-charles-babbage-4-apa-fungsi-layer-normal-dan-fill-layer5-bagaimana-cara-membuat">
+                            20. 1.Bagaimana cara menambah bingkai kotak pada layer2.bagian yang tidak bergambar pada layar bersifat3. Jelaskan tentang Charles babbage 4.Apa fungsi layer normal dan fill layer5.Bagaimana cara membuat hiasan pada slogan ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.-buka foto pada software</p><p>  -duplikat layer</p><p>  -buat layer baru</p><p>  -menambahkan bingkai kotak</p><p>2.transparan </p><p>3.Charles Babbage adalah seorang matematikawan asal Inggris yang pertama kali mengemukakan gagasan tentang komputer yang dapat diprogram. Sebagian dari mesin yang dikembangkannya, tetapi tidak selesai. Sekarang dapat dilihat di Museum Sains London. </p><p>4.layer berfungsi sebagai pemisah antara elemen satu dengan lainnya dalam sebuah gambar</p><p>5.-buatlah terdengar menarik dan berirama</p><p>   -tekankan keunggulan kunci</p><p>   -menekankan komitmen perusahaan</p><p>   -slogan harus merefleksikan kepribadian produk secara jujur. .... buat sesingkat dan sesederhana mungkin.</p><p><strong>Penjelasan:</strong></p><p>maaf klo salah</p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-cisco-packet-tracer">
+                            21. apa fungsi cisco packet tracer?</h2><br />
+                        packet traker adalah simulator  alat-alat jaringan cisco yg sering digunakan sebagai media pembelajaran dan pelatihan ,dan juga dalam bidang penelitian simulasi  jaringan komputer. maaf kalau salah <br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-masing-masing-port-pada-router-cisco-1841">
+                            22. Apa fungsi dari masing masing port pada router cisco 1841?</h2><br />
+                        <p>Cisco 1941 Router Pelayanan Terpadu (ISR) memberikan data yang sangat aman, mobilitas, dan layanan aplikasi. Fitur utama termasuk dua integrasi 10/100/1000 Port Ethernet, ditingkatkannya slot Kecepatan Tinggi WAN Interface Card, slot HWIC1 internal Services module, Sepenuhnya distribusi daya terintegrasi untuk mendukung modul 802.3af Power over Ethernet (PoE) dan Cisco Ditingkatkan PoE.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-layer-transport">
+                            23. apa fungsi dari layer transport ?</h2><br />
+                        Transport Layer berfungsi dalam pemecahan dan penggabungan data, pengiriman, aliran dan kontrol kesalahan.<br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-membuat-jaringan-menggunakan-router-di-cisco">
+                            24. bagaimana cara membuat jaringan menggunakan router di cisco?</h2><br />
+                        cara paling mudah silahkan buka di goggle banyak cara lebih muda <br />
+                                            <h2 class="ez-toc-section" id="berikut-adalah-perangkat-cisco-1-switch-2-connection-3-end-device-4-router-urutkan-pembuatan-tipologi-menggunakan-cisco-packet-tracer%e2%80%8b">
+                            25. Berikut adalah perangkat Cisco: 1. Switch 2. Connection 3. End device 4. Router Urutkan pembuatan tipologi menggunakan Cisco Packet Tracer!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>لصتفتعفاخًيٌٍغِْث</p><p><strong>Penjelasan:</strong></p><p>Fiktif iku sifate ora nyata(tidak nyata)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-layer-network">
+                            26. fungsi layer network</h2><br />
+                        fungsi berikut : Pengalamatan logis, dan melakukan pemetaan (routing) terhadap paket-paket melalui jaringan.Untuk pengendalian operasi subnet<br />
+                                            <h2 class="ez-toc-section" id="pengertian-cisco-dan-fungsinya">
+                            27. pengertian cisco dan fungsinya</h2><br />
+                         Cisco Packet Tracer adalah simulator alat-alat jaringan cisco yang sering digunakan sebagai media pembelajaran dan pelatihan serta juga dalam bidang penelitian simulasi jaringan komputer.<br /><br /> fungsinya Yaitu untuk merancang sebuah sistem atau topologi jaringan yang akan diterapkan pada dunia nyata/kerja.• Cisco adalah simulator alat-alat jaringan yang sering di gunakan sebagai media pembelajaran dan pelatihan serta juga dalam bidang penelitian simulasi jaringan komputer.<br />• Fungsi cisco yaitu untuk merancang sebuah sistem atau tepologi jaringan yang akan diterapkan pada dunia nyata/kerja.<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-layer-ke3-pada-setiap-layer-osi">
+                            28. Jelaskan fungsi layer ke3 pada setiap layer osi</h2><br />
+                        Layer ke 3 adalah Network Layer :<br /><br />yang artinya.. ia berfungsi untuk menyediakan routing fisik dan menentukan rute yang akan ditempuh.<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-masing-masing-port-pada-router-cisco-1941">
+                            29. Apa fungsi dari masing masing port pada router cisco 1941?</h2><br />
+                        <p>Cisco 1941 Router Pelayanan Terpadu (ISR) memberikan data yang sangat aman, mobilitas, dan layanan aplikasi. Fitur utama termasuk dua integrasi 10/100/1000 Port Ethernet, ditingkatkannya slot Kecepatan Tinggi WAN Interface Card, slot HWIC1 internal Services module, Sepenuhnya distribusi daya terintegrasi untuk mendukung modul 802.3af Power over Ethernet (PoE) dan Cisco Ditingkatkan PoE.</p><br />
+                                            <h2 class="ez-toc-section" id="dalam-osi-layer-fungsi-distribution-layer-adalah-%e2%80%8b">
+                            30. Dalam OSI Layer, fungsi Distribution layer adalah ....​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi dan Tugas Distributor</p><p>Fungsi utama penyalur adalah sebagai perantara antara produsen dengan pengecer atau konsumen. Setelah membahas pengertian penyalur, sekarang kita bahas fungsi dari distributor.</p><p></p><p>Membeli Produk</p><p>Bertugas untuk membeli produk (barang maupun jasa) dari produsen atau pedagang yang lebih besar.</p><p></p><p>Menyimpan Produk</p><p>Setelah membeli produk dari produsen, penyalur juga harus menyimpan produk tersebut di gudang hingga batas waktu tertentu dan disalurkan ke retailer atau konsumen akhir.</p><p></p><p>Menjual Produk</p><p>Menjual produk kepada pengecer atau ke konsumen akhir dengan harga yang lebih tinggi untuk mendapatkan keuntungan.</p><p></p><p>Mengangkut Produk</p><p>Proses pemindahan atau pengangkutan produk dari produsen ke retailer atau konsumen juga merupakan tugas dari distributor. Namun, beban biaya pengangkutan tersebut nantinya akan dimasukkan ke dalam harga produk yang dijual.</p><p></p><p>Klasifikasi Produk</p><p>Bertanggung jawab dalam mengklasifikasikan atau memilah produk berdasarkan jenis, ukuran, dan kualitasnya.</p><p></p><p>Informasi Produk</p><p>Memberikan informasi terkait perkiraan harga dan pemasaran barang pada waktu tertentu yang akan dilakukan oleh pelaksana di lapangan.</p><p></p><p>Promosi Produk</p><p>Kegiatan promosi bertujuan untuk memperkenalkan produk kepada konsumen. Kegiatan promosi ini mencakup penjelasan manfaat produk, mutu produk, harga produk, yang dilakukan melalui media iklan.</p><p><strong>Penjelasan:</strong></p><p>Apa yang dimaksud dengan distributor? Secara umum, pengertian distributor atau penyalur adalah pihak yang membeli produk secara langsung dari produsen dan menjualnya kembali ke retailer atau pengecer, atau bisa juga menjual langsung ke konsumen akhir.</p><br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-langkah-langkah-untuk-membuat-layer-baru-2-apa-fungsi-create-layer3-apa-fungsi-create-a-new-group4-sebutkan-langkah-langkah-membuat-duplikasi-layertolong-di-bantu%e2%80%8b">
+                            31. 1.Jelaskan langkah-langkah untuk membuat layer baru...2.Apa fungsi create layer?3.Apa fungsi create a new group?4.sebutkan langkah-langkah membuat duplikasi layer?tolong di bantu​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. klik tombol Create a new layer yang terdapat pada palet layer (letaknya ada di bawah). Selain itu, kita bisa menggunakan cara cepat yaitu dengan cara menekan CTRL + SHIFT + N pada keyboard. Secara otomatis akan ditambahkan layer baru di atas layer Background.</p><p></p><p>2. Create a New Layer berfungsi untuk membuat layer baru. </p><p></p><p>3. Create a New Layer berfungsi untuk membuat layer baru. </p><p></p><p>4. Cukup menyeleksi layer yang ingin diduplikasi dan kemudian menekan kombinasi tombol keyboard CTRL+J. Salinan layer langsung dibuat.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-layer-ke3-pada-setiap-layer-osi">
+                            32. Jelaskan fungsi layer ke3 pada setiap layer osi</h2><br />
+                        Layer ke 3 adalah Network Layer :<br /><br />yang artinya.. ia berfungsi untuk menyediakan routing fisik dan menentukan rute yang akan ditempuh.<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-transparansi-pada-layer">
+                            33. Apa fungsi transparansi pada layer</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Opacity berfungsi untuk mengatur tranparansi layer secara keseluruhan. Fill yang untuk mengatur tranparansi layernya saja tanpa diikuti oleh style yang ada pada layer tersebut.</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><p>salah? komen di kolom komentar</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-layer-adalah-%e2%80%8b">
+                            34. Fungsi dari layer adalah...​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>d.digunakan untuk peraturan view seperti zoom in / out image.rules,menampilkan skala,screen mode,extra option,dll</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-setiap-layer-osi-yang-menggunakan-tujuh-lapisan-atau-layer-dimana-tiap-layer-berdiri-sendiri-tetapi-fungsi-dari-masing-masing-layer-bertanggung-jawab-dari-keberhasilan-operasi-layer-s">
+                            35. jelaskan fungsi setiap layer OSI yang menggunakan tujuh lapisan atau layer, dimana tiap layer berdiri sendiri tetapi fungsi dari masing masing layer bertanggung jawab dari keberhasilan operasi layer sebelumnya</h2><br />
+                        Application<br />Application layer menyediakan jasa untuk aplikasi 
+pengguna, layer ini bertanggungjawab atas pertukaran informasi antara 
+program computer, seperti program e-mail dan servis lain yang berjalan 
+di jaringan seperti server printer atau aplikasi computer l;ainnya.<br />Berfungsi
+ sebagai antarmuka dengan aplikasi dengan fungsionalitas jaringan. 
+Mengatur bagaimana aplikasi dapat mengakses jaringan, dan kemudian 
+membuat pesan-pesan kesalahan. Protocol yanmg berada dalam lapisan ini 
+adalah HTTP, FTP, SMTP, dan NFS.<br /><br />· Presentation<br />Presentation 
+layer bertanggungjawab bagaimana data dikonversi dan di format untuk 
+transfer data. Contoh konversi format text ASCII untuk dokumen, .GIF dan
+ .JPG untuk gambar layer ini membentuk kode konversi, trnslasi data, 
+enkripsi dan konversi.<br />Berfungsi untuk mentranslasikan data yang 
+hendak ditransmisikan oleh aplikasi kedalam format yang dapat 
+ditransmisikan melalui jaringan. Protocol yang berada dalam level ini 
+adalah perangkat lunak director (redictor Software). Seperti llayanan 
+worksatation (dalam Windows NT) dan juga Network Shell ( semacam Virtual
+ Network Computing) (VNC) atau Remote Dekstop Protocol (RDP).<br /><br />· Session<br />Session
+ layer menentukan bagaimna dua terminal menjaga, memelihara dan mengatur
+ koneksi. Bagaimna mereka saling berhubungan satu sama lain. Koneksi di 
+layer di sebut “session”.<br />Berfungsi untuk mendefinisikan bagaimana 
+koneksi dapat dibuat, dipelihara atau di hancurkan. Selain itu, di level
+ inio juga  dilakukan resolusi nama.<br /><br />· Transport<br />Transport
+ layer bertanggung jawab membagi data menjadi segmen, menjaga koneksi 
+logika “end – to _ end” antar terminal, dan menyediakan penanganan error
+ (error handling)<br />Berfungsi untuk memecahkan data kedalam paket-paket
+ tersebut sehingga dapat disusun kembali pada sisi tujuan yang telah 
+diterima. Selain itu, pada level ini juga membuat tanda bahwa paket 
+diterima dengan sukses (acknowledgement) dan mentransmisikan ulang 
+terhadap paket-paket yang hilang di tengah jalan.<br /><br />· Network<br />Network
+ layer bertanggung jawab menentukan alamat jaringan, menentukan rute 
+yang harus diambil selama perjalanan, menjaga antrian tafik di jaringan.
+ Data pada layer ini berbentuk “Paket”.<br />Berfungsi untuk 
+mendefinisikan alamat-alamat IP, membuat Header untuk paket-paket dan 
+kemudian melakukan routing melalui internet-working dengan menggunakan 
+router dan switch layer 3.<br /><br />· Datalink<br />Data link layer 
+menyediakan link untuk data. Memaketkannya menjadi frame yang 
+berhubungan dengan “hardware” kemudian diangkut melalui media 
+komunikasinya dengan kartu jaringan, mengatur komunikasi layer physical 
+antara system koneksi dengan penaganan error.<br />Berfungsi untuk 
+menentukan bagaimana bit-bit data dikelompokan menjadi format yang 
+disebut sebagai frame. Selain itu, pada level ini terjadi koreksi 
+kesalahan, flow control, pengalamatan perangkat keras( seperti halnya di
+ Media Access Control Address ( MAC Address), dan menetukan bagaimna 
+perangkat perangkat jaringan seperti hub, bridge, repeater dan switch 
+layer 2 beroperasi. Spesifikasi IEEE 802, membagi level; ini menjadi dua
+ level anak, yaitu lapisan Logical Link Control (LLC)dan lapisan Media 
+Access Control (MAC).<br /><br />· Physical<br />Physical layer bertyanggung 
+jawab atas proses data menjadi bit dan mentransfernya melalui media 
+(seperti kabel) dan menjaga koneksi fisik antar system.<br />Berfungsi 
+untuk mendefinisikan media transmisi jaringan, metode pensinyalan, 
+sinkronisasi bit, arsitektur jaringan (seperti halnya Ethernet atau 
+token Ring), topologi jaringan dan pengkabelan. Selain itu, level ini 
+juga mendefinisikan bagaimana Networl Interface Card (NIC) dapat 
+berinteraksi dengan media kabel atau radio.
+<br /><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-3-engine-configuration">
+                            36. Tuliskan 3 engine configuration</h2><br />
+                        1.categorisation by piston motion<br />2.other categorizations<br />3.references<br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-layer-palette">
+                            37. fungsi dari layer palette</h2><br />
+                        fungsi dari layer palette adalah fasilitas yang berfungsi untuk membagi image foto yang sedang diolah dalam lapisan-lapisan image yang terpisah sehingga memudahkan kita dalam mengerjakannya<br /><br />Semoga bisa membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="perintah-duplicate-layer-di-gunakan-untuk-a-membuat-layer-baru-b-mengganti-nama-sebuah-layer-c-mengaktifkan-sebuah-layer-d-membuat-copyan-dari-sebuah-layer%e2%80%8b">
+                            38. perintah duplicate layer di gunakan untuk a. membuat layer baru. b. mengganti nama sebuah layer c. mengaktifkan sebuah layer d. membuat copyan dari sebuah layer​</h2><br />
+                        <p>Perintah duplicate layer di gunakan untuk </p><p>a. membuat layer baru. </p><p>b. mengganti nama sebuah layer </p><p>c. mengaktifkan sebuah layer </p><p><strong>d. membuat copyan dari sebuah layer</strong></p><p></p><p></p><p>#semangatt ! </p><p><strong>Jawaban:</strong></p><p>D maaf sih kalok salah </p><p>jadiin yg terbaik ya makasih</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-cara-membuat-file-baru-pada-photopea2-jelaskan-cara-membuat-layer-baru-pada-photopea3-tuliskan-cara-memberikan-warna-pada-sebuah-layer-shape-pada-layer">
+                            39. 1) Jelaskan cara membuat file baru pada Photopea!
+2) Jelaskan cara membuat layer baru pada Photopea!
+3) Tuliskan cara memberikan warna pada sebuah layer (shape pada layer)!</h2><br />
+                        <p>Jawaban:</p><p>1. A. Kita dapat memilih menu File &gt; New. Atau untuk mempermudah pengerjaan kita dapat pula menekan tombol sesuai dengan Shortkey yang tersedia (pada gambar ditandai dengan kotak Merah).</p><p>2. Kita akan masuk ke kotak option new sebelum masuk ke lembar kerja dokumen. Pilih Nama Dokumen sesuai selera. Secara default nama dokumen adalahUntitled-1.</p><p></p><p>3. Pada Options Preset, kita akan disuguhkan dengan berbagai jenis dan tipe ukuran kertas.  Semisal jika kita ingin memilih ukuran kertas A4, kita dapat memilih International Paper.</p><p></p><p>4. Selanjutnya kita dapat memilih size document, menentukan panjang (Height) dan lebar (Widht) suatu lembar kerja sesuai keinginan kita, atau sering dikenal dengan istilah Custom.</p><p></p><p>5. Setelah resolution (tingkat ketajaman gambar) diatur, kita dapat pula (jika diperlukan) memilih mode warna dan warna background. Lalu klik OK.</p><p></p><p>2. Ada 3 cara yaitu</p><p>-. Cara Pertama : Panel Layer</p><p>untuk membuka panel layer ini sobat melalui menu Windows-&gt;Layer. Dan pada panel tersebut, silakan sobat cari ikon new layer.</p><p></p><p>-. Cara Kedua : Menu</p><p>menggunakan menu. Photoshop sendiri memiliki banyak menu yang memiliki fungsi nya masing-masing. Sedangkan menu yang digunakan untuk membuat layer baru sendiri ada di Layer-&gt;New-&gt;Layer</p><p></p><p>-. Cara ketiga Shortcut</p><p>Tekan Ctrl+Shift+N pada keyboard.</p><p></p><p>3. Dengan 2 cara yaitu</p><p>1. File-&gt;Open atau dengan Ctrl+O</p><p>2. Pilih warna foreground dahulu untuk memberi warna. Foreground tersedia pada toolbox, klik warnanya lalu akan muncul pop-up color picker yang berguna untuk mengatur warna, pilih warna sesuai keinginan kita.</p><p>3. Klik Paint Bucket Tool pada toolbox, dengan icon ember yang menumpahkan cat air.</p><p>4. Dll</p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-ikon-creat-new-layer-pada-palet-layer%e2%80%8b">
+                            40. Apa fungsi dari ikon Creat New Layer pada palet layer?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>membuat layer baru</p><p><strong>Penjelasan:</strong></p><p>maaf klo salah</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/S3Imm_-1aPY?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-mencari-fungsi-tabungan.html">Contoh Soal Mencari Fungsi Tabungan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-op-amp-inverting.html">Contoh Soal Op Amp Inverting</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/14-hari-berapa-jam.html">14 Hari Berapa Jam</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/sebutkan-fungsi-dari-paru-paru.html">Sebutkan Fungsi Dari Paru Paru</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-bentuk-tak-tentu.html">Contoh Soal Bentuk Tak Tentu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-aqidah-dari-rububiyah-dan-uluhiyah.html">Fungsi Aqidah Dari Rububiyah Dan Uluhiyah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/apa-fungsi-dari-mikro-fauna-di-dalam-tanah.html">Apa Fungsi Dari Mikro Fauna Di Dalam Tanah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-pointer-dalam-bahasa-c.html">Fungsi Dari Pointer Dalam Bahasa C</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/soal-psikologi-tni.html">Soal Psikologi Tni</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-bagian-bunga-mawar.html">Fungsi Dari Bagian Bunga Mawar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-ppt-sidang-tugas-akhir.html">Contoh Ppt Sidang Tugas Akhir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-cpns-tenaga-kesehatan.html">Contoh Soal Cpns Tenaga Kesehatan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-modulo-matematika-diskrit.html">Contoh Soal Modulo Matematika Diskrit</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-aplikasi-pixelmator-adalah.html">Fungsi Dari Aplikasi Pixelmator Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-un-sma-2018.html">Contoh Soal Un Sma 2018</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-clouddb-app-inventor.html">Fungsi Dari Clouddb App Inventor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-akuntansi-pilihan-ganda-dan-jawabannya.html">Contoh Soal Akuntansi Pilihan Ganda Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-tugas-akhir-d3-manajemen-informatika-perpustakaan-berbasis-web.html">Contoh Tugas Akhir D3 Manajemen Informatika Perpustakaan Berbasis Web</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-pin-yg-dimiliki-oleh-lcd.html">Fungsi Dari Pin Yg Dimiliki Oleh Lcd</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-persamaan-grafik-fungsi-kuadrat.html">Contoh Soal Persamaan Grafik Fungsi Kuadrat</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://soalpedia.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://soalpedia.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

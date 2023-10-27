@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jelaskan Fungsi Dari Virtual Trunking Protocol - BELAJAR</title>
+    <meta name="description" content="Jelaskan Fungsi Dari Virtual Trunking Protocol, , , , , , , 0, , , , , , 0, jelaskan-fungsi-dari-virtual-trunking-protocol, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jelaskan Fungsi Dari Virtual Trunking Protocol - BELAJAR" />
+    <meta property="og:description" content="Jelaskan Fungsi Dari Virtual Trunking Protocol, , , , , , , 0, , , , , , 0, jelaskan-fungsi-dari-virtual-trunking-protocol, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jelaskan Fungsi Dari Virtual Trunking Protocol - BELAJAR" />
+    <meta name="twitter:description" content="Jelaskan Fungsi Dari Virtual Trunking Protocol, , , , , , , 0, , , , , , 0, jelaskan-fungsi-dari-virtual-trunking-protocol, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://soalpedia.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://soalpedia.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://soalpedia.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://soalpedia.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://soalpedia.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://soalpedia.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://soalpedia.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Jelaskan Fungsi Dari Virtual Trunking Protocol</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">fahrizadafa123</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Jelaskan+Fungsi+Dari+Virtual+Trunking+Protocol" alt="Jelaskan Fungsi Dari Virtual Trunking Protocol">
+                    </div>
+                    <p></p>
+                    <p>apa tujuan dari trunking protocol? ​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-tujuan-dari-trunking-protocol-%e2%80%8b">1.
+                                            apa tujuan dari trunking protocol? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-apa-yang-dimaksud-vlan-id-dan-vtp-virtual-trunking-protokol">2.
+                                            Jelaskan apa yang dimaksud vlan id dan vtp ( virtual Trunking protokol)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-jenis-jenis-vlan-trunking-protocol%e2%80%8b">3.
+                                            sebutkan jenis-jenis vlan trunking protocol​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#13-inti-dari-teknologi-virtual-private-network-vpn-adalah%e2%80%a6-a-protocol-vpnb-extranet-vpnc-tunnelingd-intranet-vpne-protocol-vpn">4.
+                                            13. Inti dari teknologi Virtual Private Network (VPN) adalah… 
+a. Protocol VPN
+b. Extranet VPN
+c. Tunneling
+d. Intranet VPN
+e. Protocol VPN</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-dua-tipe-mekanisme-trunking">5.
+                                            Sebutkan dan jelaskan dua tipe mekanisme trunking </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-trunking-adalah-untuk-%e2%80%8b">6.
+                                            fungsi trunking adalah untuk...! ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#vlan-trunking-protocol-vtp-bekerja-menggunakan-konsep-klien-server-%e2%80%8b">7.
+                                            VLAN Trunking Protocol (VTP) bekerja menggunakan konsep klien server..​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#protocol-berfungsi-sebagai%e2%80%8b">8.
+                                            Protocol berfungsi sebagai​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-bagaimana-kedudukan-protocol-protocol-pada-tcp-tolong-jawab-ya-mksh">9.
+                                            Jelaskan bagaimana kedudukan protocol-protocol pada TCP. 
+Tolong jawab ya mksh</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-utama-protocol-tcpip">10.
+                                            apa fungsi utama protocol TCP/IP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ietf-session-description-protocol-merupakan-protocol-yang-berfungsi-untuk">11.
+                                            IETF Session Description Protocol merupakan protocol yang berfungsi untuk.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-protocol-topologi-dan-addresing-dalam-jaringan-%e2%80%8b">12.
+                                            jelaskan fungsi protocol, topologi dan addresing dalam jaringan ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-trunkingtolong-bantu-lh%e2%80%8b">13.
+                                            apa fungsi trunkingtolong bantu lh​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-adanya-kelas-virtual">14.
+                                            apa fungsi dari adanya kelas virtual</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#protocol-berfungsi-sebagai">15.
+                                            Protocol berfungsi sebagai?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#yang-dimaksud-dengan-trunking-adalah">16.
+                                            Yang dimaksud dengan trunking adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-file-transfer-protocol-ftp">17.
+                                            Fungsi file transfer protocol (FTP)?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-protocol-topologi-dan-addresing-dalam-jaringan-%e2%80%8b">18.
+                                            jelaskan fungsi protocol, topologi dan addresing dalam jaringan ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-file-transfer-protocol-yaitu">19.
+                                            Fungsi dari file transfer protocol,  yaitu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#trunking-berfungsi-untuk%e2%80%8b">20.
+                                            trunking berfungsi untuk​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-sebutkan-7-lapisan-osi-dan-gambar2-apa-yg-dimaksud-dengan-protocol-892-1x3-mengapa-dalam-menggunakan-virtual-vlan%e2%80%8b">21.
+                                            1. Sebutkan 7 lapisan OSI dan gambar2. Apa yg dimaksud dengan protocol 892.1x3. Mengapa dalam menggunakan virtual vlan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-cara-perbaikan-jaringan-pada-vlan-trunking">22.
+                                            Jelaskan cara perbaikan jaringan pada vlan trunking</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-setiap-lapisan-arsitektur-protocol-satu-protocol-umum-atau-lebih-diterapkan-dalam-sistem-komunikasi-masing-masing-protocol-umum-menyediakan-serangkaian-aturan-yang-berfungsi">23.
+                                            pada setiap lapisan arsitektur protocol, satu protocol umum atau lebih diterapkan dalam sistem komunikasi . masing-masing protocol umum menyediakan serangkaian aturan ,yang berfungsi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-kantor-virtual">24.
+                                            fungsi kantor virtual?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-protocol-%e2%80%93-protocol-komunikasi-computer-terapan-jaringan-dan-jelaskan">25.
+                                            Sebutkan protocol – protocol komunikasi computer terapan jaringan dan jelaskan </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-keperluan-komunikasi-data-diperlukan-protocol-sebutkan-dan-jelaskan-protocol-tersebut">26.
+                                            untuk keperluan komunikasi data diperlukan protocol, sebutkan dan jelaskan protocol tersebut !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-dari-protocol-ftp">27.
+                                            apakah fungsi dari protocol FTP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-trunking-adalah">28.
+                                            Fungsi trunking adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-protocol-email-smtp-menggunakan-protocol-dan-port-jelaskan%e2%80%8b">29.
+                                            apakah protocol email SMTP menggunakan protocol dan port? Jelaskan!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-konfigurasi-trunking%e2%80%8b">30.
+                                            contoh konfigurasi trunking??​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-fungsi-virtual-box">31.
+                                            apa saja fungsi virtual box??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-dari-protocol-ftp">32.
+                                            apakah fungsi dari protocol FTP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#20-kepanjangan-dari-voip-adalah-a-voice-over-indonesia-protocolb-voice-over-internet-protocolvirtual-over-internet-protocold-visual-operation-internal-protocole-visual-operation-internet-protoco">33.
+                                            20. Kepanjangan dari VoIP adalah...a. Voice over Indonesia Protocolb. Voice over Internet ProtocolVirtual over Internet Protocold. Visual Operation Internal Protocole Visual operation Internet Protocol​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-virtual-office">34.
+                                            Fungsi virtual office</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-dan-fungsi-vlan-trunking">35.
+                                            Jelaskan pengertian dan fungsi VLAN trunking</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-bantuin-ya-soalnya-besok-di-suruh-dikumpulin1-sebutkan-vlan-trunking-protocol2-apakah-yang-dimaksud-dengan-inter-vlan-routing3-sebutkan-jenis-jenis-access-control-list4-apakah-fungs">36.
+                                            Tolong bantuin ya soalnya besok di suruh dikumpulin!
+1. Sebutkan VLAN Trunking Protocol!
+2. Apakah yang dimaksud dengan Inter VLAN Routing?
+3. Sebutkan jenis jenis Access Control List!
+4. Apakah fungsi Access Control List?
+5. Apakah yang dimaksud dengan VLAN frame tagging?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-kantor-virtual">37.
+                                            fungsi kantor virtual</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-jenis-jenis-virtual-class-dan-fungsi-dari-virtual-class-itu-sendiri">38.
+                                            apa jenis jenis virtual class dan fungsi dari virtual class itu sendiri...?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-hubungan-vlan-trunking-dan-standart-ieee-802-1-q%e2%80%8b">39.
+                                            Jelaskan hubungan VLAN Trunking dan Standart IEEE 802.1 Q​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#trunking-switch-berfungsi-untuk">40.
+                                            trunking switch berfungsi untuk..</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apa-tujuan-dari-trunking-protocol-%e2%80%8b">
+                            1. apa tujuan dari trunking protocol? ​</h2><br />
+                        <p>Jawaban:</p><p>Untuk mempercepat konfigurasi karena dengan menggunakan VTP kita hanya mengkonfigurasi pada satu switch</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-apa-yang-dimaksud-vlan-id-dan-vtp-virtual-trunking-protokol">
+                            2. Jelaskan apa yang dimaksud vlan id dan vtp ( virtual Trunking protokol)</h2><br />
+                        jawaban ada di gambar<p>VTP adalah adalah suatu protocol untuk mengenalkan suatu atau sekelompok VLAN yang telah ada agar dapat berkomunikasi dengan jaringan</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-jenis-jenis-vlan-trunking-protocol%e2%80%8b">
+                            3. sebutkan jenis-jenis vlan trunking protocol​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Disini kita akan belajar mengenai Virtual Trunking Protocol, atau biasa disingkat VTP. VTP ini bisa diibaratkan sebuah administrasi VLAN secara terpusat dalam sebuah LAN skala besar. Jadi, jika kita akan mengkonfigurasi VLAN di sebuah perusahaan dengan banyak Switch, kita tidak perlu mengkonfigurasinya di tiap-tiap Switch, kita cukup konfigurasi VLAN di Switch yang termode VTP Server, dan nantinya Switch tersebut akan menyebarkan VLAN yang telah dibuat ke Switch-switch yang telah ter-mode VTP client secara otomatis.</p><p></p><p>Jenis atau mode VTP ada tiga, yaitu :</p><p></p><p>VTP Server : Switch yang dikonfigurasi mode ini diibaratkan sebagai administrator</p><p>VLAN. Dalam mode ini, switch dapat menambah, mengubah, menghapus dan</p><p>menyebarkan VLAN yang telah dibuat ke Switch yang ber-mode VTP-Client.</p><p>VTP Transparent : Switch yang dikonfigurasi mode ini difungsikan hanya sebagai</p><p>jembatan antara VTP Server dengan VTP Client. Jadi, sebenarnya mode ini tidak</p><p>terlalu mempengaruhi konfigurasi VLAN dengan VTP di network kita.</p><p>VTP Client : VTP dalam mode ini difungsikan menjadi client untuk VTP mode</p><p>Server. Jadi, Switch yang termode VTP Client ini hanya akan dapat menerima</p><p>konfigurasi VLAN secara otomatis dari VTP Server.</p><p></p><p>Maaf kalau salah :-(</p><br />
+                                            <h2 class="ez-toc-section" id="13-inti-dari-teknologi-virtual-private-network-vpn-adalah%e2%80%a6-a-protocol-vpnb-extranet-vpnc-tunnelingd-intranet-vpne-protocol-vpn">
+                            4. 13. Inti dari teknologi Virtual Private Network (VPN) adalah… 
+a. Protocol VPN
+b. Extranet VPN
+c. Tunneling
+d. Intranet VPN
+e. Protocol VPN</h2><br />
+                        <p><strong>Jawaban:</strong></p><p> menurut saya </p><p>C.tunneling</p><p></p><p></p><p>...</p><p><strong>Jawaban:</strong></p><p>Inti dari teknologi Virtual Private Network (VPN) adalah…</p><p><strong>C. Tunneling</strong></p><p><strong>Penjelasan:</strong></p><p>Secara umum VPN memiliki cara kerja yaitu dengan membuat jaringan di dalam jaringan yang sering disebut dengan tunneling. <strong>Tunneling</strong> bertujuan untuk membuat jalur koneksi secara privat dengan memanfaatkan infrakstruktur jaringan lain.</p><p>[tex] \\ [/tex]</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-dua-tipe-mekanisme-trunking">
+                            5. Sebutkan dan jelaskan dua tipe mekanisme trunking </h2><br />
+                        <p>Jawaban: </p><p>TRUNK adalah saluran yang menghubungkan dua buah node, dimana jumlah saluran di trunk lebih kecil dari saluran di tiap node. Saluran yang menghubungkan antar sentral-sentral telepon adalah contoh trunk yang paling populer. Untuk lebih mengerti konsep trunk kita dapat melihat contoh trunk yg paling sederhana, yaitu saluran telepon yang menghubungkan PBX di suatu kantor ke sentral Telkom . Tentu saja jumlah line yang menghubungkan PBX dgn Telkom tidak sebanyak jumlah 'ekstension' yang ada di PBX tersebut. Ini di lakukan karena kemungkinan kecil sekali semua karyawan di kantor tersebut menelepon ke luar kantor secara bersamaan. Jika jumlah line yang dipasang terlalu sedikit maka karyawan yang akan menelpon ke luar kantor akan mengalami kesulitan, karena line tersebut diantri oleh banyak pemakai, sedang jika kita memasang line tersebut terlalu banyak akan memakan biaya yang cukup mahal. Untuk itu kita memerlukan suatu perhitungan yg akurat untuk dapat memprediksi jumlah kanal yg dibutuhkan.</p><p>VLAN (Virtual Local Area Network) adalah  merupakan pengembangan dari LAN. VLAN adalah suatu model jaringan yang mirip dengan LAN namun tidak terbatas pada lokasi fisik. Oleh karena itu, jaringan ini dapat di konfigurasikan secara virtual dan tidak bergantung pada lokasi fisik peralatan.</p><p>Penggunaan VLAN akan membuat pengaturan jaringan menjadi sangat fleksibel dimana dapat dibuat segmen yang bergantung pada organisasi atau departemen, tanpa bergantung pada lokasi workstation.</p><p>VLAN ID adalah suatu informasi yang ditambahkan pada setiap frame untuk mengijinkan pengiriman frame melalui switch mode trunk, serta untuk memberikan identitas sebuah VLAN dan digunakan nomor identitas VLAN yang dinamakan VLAN ID. Dalam menandai VLAN yang terkait terdapat dua range VLAN ID yaitu:</p><p>      1.     Normal Range VLAN (1 – 1005)</p><p>·           digunakan untuk jaringan skala kecil dan menengah.</p><p>·           Nomor ID 1002 s.d. 1005 dicadangkan untuk Token Ring dan FDDI VLAN.</p><p>·           ID 1, 1002 - 1005 secara default sudah ada dan tidak dapat dihilangkan.</p><p>·           Konfigurasi disimpan di dalam file database VLAN, yaitu vlan.dat. file ini disimpan dalam memori flash milkik switch.</p><p>·         VLAN trunking protocol (VTP), yang membantu manaejemn VLAN, nanti dipelajari di bab 4, hanya dapat bekerja pada normal range VLAN dan menyimpannya dalam file database VLAN.</p><p>      2.     Extended Range VLANs (1006 – 4094)</p><p>·          Memampukan para seervice provider untuk memperluas infrastrukturnya kepada konsumen yang lebih banyak. Dibutuhkan untuk perusahaan skala besar yang membutuhkan jumlah VLAN lebih dari normal.</p><p>·             Memiliki fitur yang lebih sedikit dibandingakn VLAN normal range.</p><p>·             Disimpan dalam NVRAM (file running configuration).</p><p>·             VTP tidak bekerja di sini.</p><p></p><p></p><p></p><p>#Maaf dek kalau salah</p><p>#Semangat!!!</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-trunking-adalah-untuk-%e2%80%8b">
+                            6. fungsi trunking adalah untuk...! ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>trunking = LAN Atau Lebih simple-nya, konsep trunk membatasi akses antara satu jaringan dengan jaringan lainnya</p><p><strong>Penjelasan:</strong></p><p>trunking adalah konsep dimana sistem komunikasi dapat menyediakan akses jaringan untuk banyak klien dengan berbagi satu set garis (peraturan) atau frekuensi, bukan memberikannya secara individual</p><p><strong>Jawaban:</strong></p><p>trunk atau trunking adalah konsep dimana sistem komunikasi dapat menyediakan akses jaringan untuk banyak klien dengan berbagi satu set garis (peraturan) atau frekuensi, bukan memberikannya secara individual. Dari pengertian di atas, jika dihubungkan dengan konsep jaringan komputer, maka trunk dapat dikatakan sebagai konsep pembagian akses antar jaringan  dengan menggunakan perangkat jaringan, yang dalam hal ini adalah switch dan menggunakan suatu set peraturan yang ditetapkan dimana tidak sembarang komponen dapat mengakses komponen lain dalam jaringan lain. Lebih simple-nya, konsep trunk membatasi akses antara satu jaringan dengan jaringan lainnya.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="vlan-trunking-protocol-vtp-bekerja-menggunakan-konsep-klien-server-%e2%80%8b">
+                            7. VLAN Trunking Protocol (VTP) bekerja menggunakan konsep klien server..​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>VTP (VLAN Trunking Protocol) VTP (adalah) berguna untuk mengelola semua VLAN yang telah dikonfigurasi pada sebuah internetwork switch dan menjaga konsistensi diseluruh network tersebut</p><p></p><p><strong>Penjelasan:</strong></p><p>VLAN Trunking Protocol (VTP) merupakan fitur Layer 2 yang terdapat pada jajaran switch Cisco Catalyst, yang sangat berguna terutama dalam lingkungan switch skala besar yang meliputi beberapa Virtual Local Area Network (VLAN).
+</p><p>
+</p><p>Di dalam artikel VLAN pada beberapa edisi sebelumnya, Anda telah melihat konsep VLAN dan juga VLAN tagging protocol seperti ISL. Jika Anda ingat kembali, tujuan mengonfigurasi VLAN tagging adalah agar traffic dari beberapa VLAN dapat melewati trunk link yang digunakan untuk menghubungkan antar-switch. Meskipun hal ini merupakan hal yang baik dalam lingkungan yang besar, VLAN tagging tidak melakukan apa-apa untuk mempermudah pengonfigurasian VLAN pada beberapa switch. Di sinilah VTP mengambil bagian.</p><br />
+                                            <h2 class="ez-toc-section" id="protocol-berfungsi-sebagai%e2%80%8b">
+                            8. Protocol berfungsi sebagai​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>fungsinya untuk menghubungkan pengirim dan penerima dalam berkomunikasi serta dalam bertukar informasi agar dapat berjalan dengan baik dan akurat.</p><p></p><p>semoga membantu :)</p><p>jangan lupa follow</p><p><strong>Jawaban:</strong></p><p>untuk berkomunikasi dengan klient di network</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-bagaimana-kedudukan-protocol-protocol-pada-tcp-tolong-jawab-ya-mksh">
+                            9. Jelaskan bagaimana kedudukan protocol-protocol pada TCP. 
+Tolong jawab ya mksh</h2><br />
+                        sebagai alat yg memungkinkan terjadinya komunikasi ........<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-utama-protocol-tcpip">
+                            10. apa fungsi utama protocol TCP/IP</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Menyambungkan pada llamat komputer</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="ietf-session-description-protocol-merupakan-protocol-yang-berfungsi-untuk">
+                            11. IETF Session Description Protocol merupakan protocol yang berfungsi untuk.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Protokol yang mendeskripsikan media dalam suatu komunikasi</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-protocol-topologi-dan-addresing-dalam-jaringan-%e2%80%8b">
+                            12. jelaskan fungsi protocol, topologi dan addresing dalam jaringan ​</h2><br />
+                        <strong>Jawaban &amp; Penjelasan:</strong><p>Protocol dalam jaringan adalah aturan yang memudahkan interaksi antar sistem pada jaringan internet.</p><p><strong>*Fungsi protocol dalam jaringan secara umum adalah untuk menghubungkan pengirim dan penerima dalam berkomunikasi dan bertukar informasi supaya dapat berjalan dengan akurat dan lancar.</strong></p><p>Topologi dalam jaringan adalah hal yang menjelaskan hubungan geometris antara unsur-unsur dasar penyusun jaringan <strong>(</strong> yaitu node, link, dan station<strong> ) </strong></p><p><strong>*Topologi dalam jaringan berfungsi untuk mengetahui bagaimana masing - masing komputer atau host dalam jaringan komputer dapat saling berkomunikasi satu sama lain.</strong></p><p>Addresing dalam jaringan adalah label numerik yang mengandung alamat untuk memberikan identifikasi ke komputer pengirim dan penerima. </p><p><strong>*Addresing dalam jaringan berfungsi menggunakan informasi untuk menuntun setiap paket melewati network komunikasi dan menghubungkan antara komputer pengirim dan penerima.</strong></p><p><strong></strong></p><strong>Semoga Membantu :)</strong><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-trunkingtolong-bantu-lh%e2%80%8b">
+                            13. apa fungsi trunkingtolong bantu lh​</h2><br />
+                        <p>Jawabannya </p><p></p><p>trunking=LAN atau lebih simple nya, konsep trunk membatasi akses antara satu jaringan dengan jaringan lainnya </p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>Trunking adalah konsep dimana sistem komunikasi dapat menyediakan akses jaringan untuk banyak klien dengan berbagi satu set garis  ( peraturan ) atau  frekuensi , bukan memberikannya secara individual </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-adanya-kelas-virtual">
+                            14. apa fungsi dari adanya kelas virtual</h2><br />
+                        fungsinya memmudahkan interaksi antara siswa dengan siswa maupung siswa dengan guru dan dapat dijadikan tempat untuk share tugas dan digunakan untuk media pembelajaran yang tidak terbataskan ruang dan waktu <br /><br />semoga membantu<br />Kelas Virtual memiliki fingsi yg sama dgn kelas yg sebenarnya yaitu interaksi antara guru dan siswa dlm bentuk kegiatan pembelajaran.<br />:)<br /><br />
+                                            <h2 class="ez-toc-section" id="protocol-berfungsi-sebagai">
+                            15. Protocol berfungsi sebagai?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>fungsinya untuk menghubungkan pengirim dan penerima dalam berkomunikasi serta dalam bertukar informasi agar dapat berjalan dengan baik dan akurat.</p><p></p><p>Semoga Ngebantuu</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="yang-dimaksud-dengan-trunking-adalah">
+                            16. Yang dimaksud dengan trunking adalah</h2><br />
+                        <p>penghubungan baik antara swich atau swich dengan router</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-file-transfer-protocol-ftp">
+                            17. Fungsi file transfer protocol (FTP)?</h2><br />
+                        untuk mengunggah / mengunduh fileuntuk mentransfer file dari satu komputer ke komputer lainnya melalui internet<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-protocol-topologi-dan-addresing-dalam-jaringan-%e2%80%8b">
+                            18. jelaskan fungsi protocol, topologi dan addresing dalam jaringan ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sejumlah protokol harus bergabung dulu dengan protokol lainnya untuk membangun sistem komunikasi yang utuh. Fungsi protokol jaringan komputer secara umum adalah untuk menghubungkan pengirim dan penerima dalam berkomunikasi dan bertukar informasi supaya dapat berjalan dengan akurat dan lancar</p><p><strong>Penjelasan:</strong></p><p><strong>semoga</strong><strong> </strong><strong>memban</strong><strong>tu</strong><strong> </strong><strong>maaf</strong><strong> </strong><strong>kalo</strong><strong> </strong><strong>salah</strong></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-file-transfer-protocol-yaitu">
+                            19. Fungsi dari file transfer protocol,  yaitu</h2><br />
+                        digunakan untuk mengirimkan atau mengambil file dari / ke komputer lain.<br />
+                                            <h2 class="ez-toc-section" id="trunking-berfungsi-untuk%e2%80%8b">
+                            20. trunking berfungsi untuk​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>trunk atau trunking adalah konsep dimana sistem komunikasi dapat menyediakan akses jaringan untuk banyak klien dengan berbagi satu set garis (peraturan) atau frekuensi, bukan memberikannya secara individual. ... Lebih simple-nya, konsep trunk membatasi akses antara satu jaringan dengan jaringan lainnya.</p><p><strong>Jawaban:</strong></p><p>trunking = LAN Atau Lebih simple-nya, konsep trunk membatasi akses antara satu jaringan dengan jaringan lainnya</p><p><strong>Penjelasan:</strong></p><p>trunking adalah konsep dimana sistem komunikasi dapat menyediakan akses jaringan untuk banyak klien dengan berbagi satu set garis (peraturan) atau frekuensi, bukan memberikannya secara individual</p><br />
+                                            <h2 class="ez-toc-section" id="1-sebutkan-7-lapisan-osi-dan-gambar2-apa-yg-dimaksud-dengan-protocol-892-1x3-mengapa-dalam-menggunakan-virtual-vlan%e2%80%8b">
+                            21. 1. Sebutkan 7 lapisan OSI dan gambar2. Apa yg dimaksud dengan protocol 892.1x3. Mengapa dalam menggunakan virtual vlan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.</p><p>1.Application Layer (Lapisan ke-7) ...</p><p>2.Presentation Layer (Lapisan ke-6) ...</p><p>3. Session Layer (Lapisan ke-5) ...</p><p>4. Transport Layer (Lapisan ke-4) ...</p><p>5.Network Layer (Lapisan ke-3) ...</p><p>6. Data-Link Layer (Lapisan ke-2) ...</p><p>7. Physical Layer (Lapisan ke-1) </p><p></p><p>2.</p><p>Terdapat dua arti dari kata protokol. Dalam pengertian hukum, protokol didefinisikan sebagai perjanjian internasional yang melengkapi atau mengubah perjanjian. Dalam pengertian diplomatik, istilah tersebut mengacu pada seperangkat aturan, prosedur, konvensi dan upacara yang berkaitan dengan hubungan antar negara</p><p></p><p>3.</p><p>VLAN memungkinkan jaringan dan perangkat yang harus tetap terpisah untuk berbagi kabel fisik yang sama tanpa berinteraksi, meningkatkan kesederhanaan, keamanan, manajemen lalu lintas, atau ekonomi. ... Untuk membagi jaringan menjadi VLAN, satu mengkonfigurasi peralatan jaringan</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-cara-perbaikan-jaringan-pada-vlan-trunking">
+                            22. Jelaskan cara perbaikan jaringan pada vlan trunking</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Cara mengatasinya dengan melakukan pengecekan dengan menggunakan LAN tester.
+</p><p>2. Kerusakan pada switch ataupun hub tentu saja akan menyebabkan keseluruhan komputer client menjadi tidak dapat bekerja dan mengakses informasi dari komputer server.
+</p><p>Cara termudah untuk mendeteksi kerusakan pada hub dan juga switch adalah dengan cara melihat lampu indikatornya.  </p><p>3. Komputer user adalah LAN yang tidak muncul dan tidak terdeteksi pada komputer user atau client.
+</p><p>Untuk mengatasinya, anda bisa melakukan pembetulan dari proses pemasangan network wireless adapter, ataupun melakukan penginstalan ulang pada driver adapter network tersebut.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pada-setiap-lapisan-arsitektur-protocol-satu-protocol-umum-atau-lebih-diterapkan-dalam-sistem-komunikasi-masing-masing-protocol-umum-menyediakan-serangkaian-aturan-yang-berfungsi">
+                            23. pada setiap lapisan arsitektur protocol, satu protocol umum atau lebih diterapkan dalam sistem komunikasi . masing-masing protocol umum menyediakan serangkaian aturan ,yang berfungsi</h2><br />
+                        <p>Membawahi proses pertukaran data diantara dua entity atau mengatur semua pihak yang berkomunikasi tentang bagaimana komunikasi tersebut harus dilakukan.</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-kantor-virtual">
+                            24. fungsi kantor virtual?</h2><br />
+                        bisnis yg ditawarkan oleh resepsionisfungsi kantor virtual adalah sebagai sarana atau etalase untuk menawarkan produk atau jasa yang dihasilkan kepada konsumen, kantor virtual biasanya berupa media sosial seperti facebook, instagram, line dll<br />maaf bila salah thx<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-protocol-%e2%80%93-protocol-komunikasi-computer-terapan-jaringan-dan-jelaskan">
+                            25. Sebutkan protocol – protocol komunikasi computer terapan jaringan dan jelaskan </h2><br />
+                        ethernet,tcp/ip,ieee 802.11,<br />
+                                            <h2 class="ez-toc-section" id="untuk-keperluan-komunikasi-data-diperlukan-protocol-sebutkan-dan-jelaskan-protocol-tersebut">
+                            26. untuk keperluan komunikasi data diperlukan protocol, sebutkan dan jelaskan protocol tersebut !</h2><br />
+                        jika dalam komunikasi internet<br /> contoh protokol adalah IPV4<br />Protokol dalam Internet adalah penghubung akses jaringan yang mengatir IP address dan DHCP dan DNS<br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-dari-protocol-ftp">
+                            27. apakah fungsi dari protocol FTP</h2><br />
+                        Fungsinya untuk berbagi file/data dalam suatu network<br />
+                                            <h2 class="ez-toc-section" id="fungsi-trunking-adalah">
+                            28. Fungsi trunking adalah</h2><br />
+                        <p><strong>Trunking LAN. Dalam istilah komunikasi, trunk atau trunking adalah konsep dimana sistem komunikasi dapat menyediakan akses jaringan untuk banyak klien dengan berbagi satu set garis (peraturan) atau frekuensi, bukan memberikannya secara individual.</strong></p><p><strong></strong></p><p><strong>Semoga Membantu :D</strong></p><p><strong>#JadikanJawabanTerbaik</strong></p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apakah-protocol-email-smtp-menggunakan-protocol-dan-port-jelaskan%e2%80%8b">
+                            29. apakah protocol email SMTP menggunakan protocol dan port? Jelaskan!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>POP3 (Post Office Protocol 3) secara otomatis akan mengunduh dan menyimpan pesan melalui data server di SMTP. Dalam hal ini SMTP menggunakan TCP dengan port 10 sehingga dapat mengunduh pesan seutuhnya dan tidak melakukan selektif terhadap pesan yang masuk.</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-konfigurasi-trunking%e2%80%8b">
+                            30. contoh konfigurasi trunking??​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>ketika kita ingin menghubungkan 2 buah router, dalam lokasi yg berbeda.</p><p>misal antara kantor pusat dan kantor cabang, yg membuat kedua jaringan tersebut seolah" berada pada lingkungan jaringan yg sama. Kita harus meconfig jaringan tersebut secara trunking, atau mendaftarkan ip router A dan ip router B pada masing" router sehingga terjadi handshake yg membuat kedua router bisa saling terhubung</p><br />
+                                            <h2 class="ez-toc-section" id="apa-saja-fungsi-virtual-box">
+                            31. apa saja fungsi virtual box??</h2><br />
+                        perangkat lunak virtualisasi, yang dapat digunakan untuk mengeksekusi sistem operasi "tambahan" di dalam sistem operasi "utama".lebih ekonomis karena ga perlu menggunakan banyak komputer untuk menggunakan sisten operasi yang berbeda, untuk belajar menginstal dan menggunakan lebih dari satu os tanpa perlu mengubah hardisk <br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-dari-protocol-ftp">
+                            32. apakah fungsi dari protocol FTP</h2><br />
+                        fasilitas FTP memungkinkan pengguna untuk menyain file secara elektronik dari satu komputer ke komputer yang lainnya dii dalam internet. mengrimkan berkas dapat berupa tulisan, gambar, animasi, maupun game.<br />
+                                            <h2 class="ez-toc-section" id="20-kepanjangan-dari-voip-adalah-a-voice-over-indonesia-protocolb-voice-over-internet-protocolvirtual-over-internet-protocold-visual-operation-internal-protocole-visual-operation-internet-protoco">
+                            33. 20. Kepanjangan dari VoIP adalah...a. Voice over Indonesia Protocolb. Voice over Internet ProtocolVirtual over Internet Protocold. Visual Operation Internal Protocole Visual operation Internet Protocol​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>A</strong><strong>.</strong><strong>V</strong><strong>o</strong><strong>i</strong><strong>c</strong><strong>e</strong><strong> </strong><strong>o</strong><strong>v</strong><strong>e</strong><strong>r</strong><strong> </strong><strong>I</strong><strong>n</strong><strong>d</strong><strong>o</strong><strong>n</strong><strong>e</strong><strong>s</strong><strong>i</strong><strong>a</strong><strong> </strong><strong>P</strong><strong>r</strong><strong>o</strong><strong>t</strong><strong>o</strong><strong>c</strong><strong>o</strong><strong>l</strong></p><p><strong>Penjelasan:</strong></p><p><strong>M</strong><strong>a</strong><strong>a</strong><strong>f</strong><strong> </strong><strong>y</strong><strong>a</strong><strong>h</strong><strong> </strong><strong>k</strong><strong>a</strong><strong>l</strong><strong>u</strong><strong> </strong><strong>s</strong><strong>a</strong><strong>l</strong><strong>a</strong><strong>h</strong></p><p><strong>G</strong><strong>O</strong><strong>O</strong><strong>D</strong><strong> </strong><strong>L</strong><strong>U</strong><strong>C</strong><strong>K</strong></p><p><strong>J</strong><strong>a</strong><strong>d</strong><strong>i</strong><strong>k</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>j</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>b</strong><strong>a</strong><strong>i</strong><strong>k</strong><strong> </strong><strong>y</strong><strong>a</strong><strong>h</strong></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-virtual-office">
+                            34. Fungsi virtual office</h2><br />
+                        Virtual Office adalah sebuah "ruang kerja" yang berlokasi di dunia internet, di mana seorang individu dapat menyelesaikan tugas-tugas yang diperlukan untuk melaksanakan bisnis profesional atau pribadi tanpa memiliki "fisik" lokasi usaha<br /><br />mungkin fungsi nya untuk membantu manusia mencari penghasilan tanpa harus bekerja di tempat khusus,karena hal ini dapat dilakukan dimana pun <br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-dan-fungsi-vlan-trunking">
+                            35. Jelaskan pengertian dan fungsi VLAN trunking</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>VLAN Trunking Protocol (VTP) adalah protokol proprietary Cisco yang menyebarkan definisi Virtual Local Area Network (VLAN) di seluruh jaringan area lokal. </p><p><strong>Penjelasan:</strong></p><p>Semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="tolong-bantuin-ya-soalnya-besok-di-suruh-dikumpulin1-sebutkan-vlan-trunking-protocol2-apakah-yang-dimaksud-dengan-inter-vlan-routing3-sebutkan-jenis-jenis-access-control-list4-apakah-fungs">
+                            36. Tolong bantuin ya soalnya besok di suruh dikumpulin!
+1. Sebutkan VLAN Trunking Protocol!
+2. Apakah yang dimaksud dengan Inter VLAN Routing?
+3. Sebutkan jenis jenis Access Control List!
+4. Apakah fungsi Access Control List?
+5. Apakah yang dimaksud dengan VLAN frame tagging?</h2><br />
+                        <p><strong>Jawaban :</strong></p><p>1.  VLAN Trunking Protocol (VTP) adalah protokol proprietary Cisco yang menyebarkan definisi Virtual Local Area Network (VLAN) di seluruh jaringan area lokal. Untuk melakukan ini, VTP membawa informasi VLAN ke semua switch di domain VTP.</p><p></p><p>2. Inter-VLAN routing adalah proses mem-forward traffic network dari satu VLAN ke VLAN lain menggunakan router. VLAN diasosiasikan dengan ip subnet yang unik pada network. Konfigurasi subnet akan memfasilitasi proses routing pada lingkungan beberapa VLAN. Ketika kita menggunakan router untuk memfasilitasi inter-VLAN routing, interface pada router dapat dihubungkan dengan VLAN yang berbeda. Setiap device pada VLAN tersebut mengirimkan traffic melalui router untuk mencapai VLAN lain.</p><p></p><p>3. Jenisnya ada 2 yaitu :</p><p>- Standard ACL
+</p><p>Standard ACL merupakan jenis ACL yang paling sederhana. Standard ACL hanya melakukan filtering pada alamat sumber (Source) dari paket yang dikirimkan. Alamat sumber yang dimaksud dapat berupa alamat sumber dari jaringan (Network Address) atau alamat sumber dari host</p><p>- Extended ACL
+</p><p>Extended ACL merupakan jenis ACL yang mampu memberikan tingkat keamanan yang lebih baik ketimbang Standard ACL. Extended ACL mampu melakukan filtering pada alamat sumber (source) dan alamat tujuan (destination)</p><p></p><p>5. VLAN Frame tagging adalah teknologi yang digunakan untuk mengidentifikasi kepemilikan paket pada suatu VLAN. Frame tag VLAN ditempatkan pada frame ketika mencapai switch dari suatu access port, yang mana adalah keanggotaan VLAN. Jika switch memiliki trunk port, frame dapat di forward keluar dari switch melalui port yang dikonfigurasi menjadi port trunk. Metode tersebut memungkinkan setiap switch untuk melihat apa terdapat kepemilikan VLAN frame dan dapat forward frame ke port acces VLAN yang sesuai atau ke port trunk VLAN</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-kantor-virtual">
+                            37. fungsi kantor virtual</h2><br />
+                        untuk bisnis yg di tawarkan resepsionis<br />
+                                            <h2 class="ez-toc-section" id="apa-jenis-jenis-virtual-class-dan-fungsi-dari-virtual-class-itu-sendiri">
+                            38. apa jenis jenis virtual class dan fungsi dari virtual class itu sendiri...?</h2><br />
+                        Pengertian Kelas Maya (Virtual Class)<br />    
+Pengertian dari kelas virtual sendiri adalah kelas yang diadakan tanpa 
+tatap muka secara langsung antara pengajar dan yang menerima bahan ajar.
+ Kelas virtual berhubungan langsung dengan internet. Dimana pengajar 
+menyediakan sebuah forum kepada para penerima bahan ajar dan melakukan 
+diskusi seperti kegiatan belajar mengajar dikelas.<br /><br />    Yang 
+membedakan kelas virtual dengan kelas biasa sobat, yaitu adanya 
+pembatasan berkomunikasi, karena jelas beda berdiskusi secara langsung 
+dengan berdiskusi secara tidak langsung.<br /><br />   Dalam kelas maya 
+dapat diketahui kemajuan proses belajar, yang dapat dipantau baik oleh 
+guru, siswa maupun orang tua. Selain digunakan untuk proses pendidikan 
+jarak jauh, system tersebut juga dapat digunakan sebagai penunjang kelas
+ tatap muka.<br /><br />B. Jenis-jenis Pengelolaan Kelas Maya<br />     Pengelolaan kelas maya dapat dilakukan menggunakan berbagai aplikasi antara lain sebagai berikut :<br /><br />1. Learning Management System<br /> 
+   LMS atau yang lebih dikenal dengan Learning Management System adalah 
+suatu perangkat lunak atau software untuk keperluan administrasi, 
+dokumentasi, laporan sebuah kegiatan, kegiatan belajar mengajar dan 
+kegiatan secara online (terhubung ke internet), E-learning dan 
+materi-materi pelatihan. Dan semua itu dilakukan dengan online.<br /><br />2. Learning Content  Management System <br /> 
+   Aplikasi komputer yang digunakan untuk membuat, memperbaharui, 
+mengelola atau mempublikasikan isi dalam sebuah sistem yang teroganisir 
+dan konsiten yang bisa diakses dari intranet di jaringan lokal atau 
+internet.. LCMS digunakan untuk menyediakan, mengawasi, memperinci dan 
+mempublikasikan dokumen-dokumen spesifik seperti artikel, manual 
+operator, manual teknis, panduan penjualan dan brosur penjualan. Sebuah 
+LCMS dapat berisi file komputer, gambar, audio, video, dokemen 
+elektronik dan isi website.<br /><br />3. Social Learning Network (SLN)<br /> 
+   SLN adalah jejaring social untuk pembelajaran yang terjadi pada skala
+ yang lebih luas daripada kelompok belajar. Menginggal skala sosialnya 
+yang lebih besar, media ini bagi sebagian peserta dapat menyebabkan 
+perubahan sikap dan perilaku, sedangkan bagi sebagian yang lain tidak 
+menimbulkan dampak apa-apa.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-hubungan-vlan-trunking-dan-standart-ieee-802-1-q%e2%80%8b">
+                            39. Jelaskan hubungan VLAN Trunking dan Standart IEEE 802.1 Q​</h2><br />
+                        <p>Bagian dari jaringan yang dikenal dengan VLAN (yaitu, IEEE 802.1Q conformant) dapat mencakup tag VLAN. Ketika sebuah frame memasuki bagian jaringan VLAN yang sadar, sebuah tag ditambahkan untuk mewakili keanggotaan VLAN. [A] Setiap frame harus dapat dibedakan karena berada dalam satu VLAN. Bingkai di bagian jaringan VLAN yang sadar yang tidak mengandung tag VLAN diasumsikan mengalir pada VLAN asli.</p><br />
+                                            <h2 class="ez-toc-section" id="trunking-switch-berfungsi-untuk">
+                            40. trunking switch berfungsi untuk..</h2><br />
+                        Jika kita memiliki dua switch yang masing-masing switch tersebut memiliki VLAN, untuk menghubungkannya kita harus menghubungkannya menggunakan jalur khusus yang disebut dengan Trunk. Singkatnya jalur trunk ini adalah jalur yang dapat dilewati oleh semua lalu lintas dari VLAN manapun, karena jika hanya port switch biasa, hanya dapat dilewati satu VLAN saja.<br /><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/59LIOPaaQVA?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-masalah-yang-diangkut-dalam-tugas-akhir.html">Contoh Masalah Yang Diangkut Dalam Tugas Akhir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-kip.html">Fungsi Dari Kip</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-root-android.html">Fungsi Dari Root Android</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-sequence-diagram-pada-genmymodel.html">Fungsi Dari Sequence Diagram Pada Genmymodel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-mutually-exclusive.html">Contoh Soal Mutually Exclusive</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-sebuah-cv.html">Fungsi Dari Sebuah Cv</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-html-css-php-javascript.html">Fungsi Dari Html Css Php Javascript</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-kebugaran-jasmani-brainly.html">Fungsi Dari Kebugaran Jasmani Brainly</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/apakah-fungsi-dari-spirakel-pada-serangga.html">Apakah Fungsi Dari Spirakel Pada Serangga</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-bahasa-indonesia-bab-1-kelas-9.html">Contoh Soal Bahasa Indonesia Bab 1 Kelas 9</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-tes-verbal.html">Contoh Tes Verbal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-tugas-akhir-d4-untuk-informatika-2016.html">Contoh Tugas Akhir D4 Untuk Informatika 2016</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/tugas-bidang-pendidikan-dalam-organisasi.html">Tugas Bidang Pendidikan Dalam Organisasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-deret-angka-dan-jawabannya-pdf.html">Contoh Soal Deret Angka Dan Jawabannya Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-google-text-to-speech.html">Fungsi Dari Google Text To Speech</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-ielts.html">Contoh Soal Ielts</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-str.html">Fungsi Dari Str</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-akuntansi-dasar.html">Contoh Soal Akuntansi Dasar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-bentuk-polar-bilangan-kompleks.html">Contoh Soal Bentuk Polar Bilangan Kompleks</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/google-indonesia-contoh-tugas-akhir.html">Google Indonesia Contoh Tugas Akhir</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://soalpedia.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://soalpedia.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

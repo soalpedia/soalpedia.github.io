@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Struktur Utama Pada C++ - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Struktur Utama Pada C++, , , , , , , 0, , , , , , 0, fungsi-dari-struktur-utama-pada-c, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Struktur Utama Pada C++ - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Struktur Utama Pada C++, , , , , , , 0, , , , , , 0, fungsi-dari-struktur-utama-pada-c, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Struktur Utama Pada C++ - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Struktur Utama Pada C++, , , , , , , 0, , , , , , 0, fungsi-dari-struktur-utama-pada-c, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://soalpedia.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://soalpedia.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://soalpedia.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://soalpedia.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://soalpedia.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://soalpedia.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://soalpedia.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Struktur Utama Pada C++</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">cldya1828</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Struktur+Utama+Pada+C%2B%2B" alt="Fungsi Dari Struktur Utama Pada C++">
+                    </div>
+                    <p></p>
+                    <p>Jika kita ingin menulis teks deskriptif, kita harus mengetahui tiga bagian utama dari teks deskriptif, yaitu ..... *A. fungsi sosial, struktur umum dan fitur bahasaB. fungsi sosial, struktur generik dan identifikasi.C. Struktur generik, deskripsi dan pengidentifikasi.D. Struktur umum, fitur bahasa, dan bentuk kata.​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jika-kita-ingin-menulis-teks-deskriptif-kita-harus-mengetahui-tiga-bagian-utama-dari-teks-deskriptif-yaitu-a-fungsi-sosial-struktur-umum-dan-fitur-bahasab-fungsi-sosial-struktur-generik-d">1.
+                                            Jika kita ingin menulis teks deskriptif, kita harus mengetahui tiga bagian utama dari teks deskriptif, yaitu ..... *A. fungsi sosial, struktur umum dan fitur bahasaB. fungsi sosial, struktur generik dan identifikasi.C. Struktur generik, deskripsi dan pengidentifikasi.D. Struktur umum, fitur bahasa, dan bentuk kata.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-dengan-singkat-struktur-dan-fungsi-tiga-bagian-utama-dari-sel-di-bawah-inia-membran-selb-inti-selc-protoplasma">2.
+                                            jelaskan dengan singkat struktur dan fungsi tiga bagian utama dari sel di bawah ini
+a. membran sel
+b. inti sel
+c. protoplasma</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-fungsi-kuda-kuda-pada-pembuatan-atapadalah-a-penyangga-utama-pada-struktur-atapb-penguat-struktur-atapc-penopang-bagian-dindingd-pondasi-bagian-disarm-lantai%e2%80%8b">3.
+                                            5. Fungsi kuda-kuda pada pembuatan atapadalah ....a. penyangga utama pada struktur atapb. penguat struktur atapc. penopang bagian dindingd. pondasi bagian disarm lantai​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-suatu-kesatuan-struktur-fungsi-dasar-bagitingkat-organisasi-kehidupan-organismeadalah-a-atomb-jaringanc-molekuld-sel2-sel-memiliki-tiga-bagian-utama-yaitua-kloroplas-mitokondria-dan-vakuol">4.
+                                            1. Suatu kesatuan struktur fungsi dasar bagitingkat organisasi kehidupan organismeadalah...A atomB. jaringanC molekulD. sel2. Sel memiliki tiga bagian utama, yaituA. kloroplas, mitokondria, dan vakuolaB. sitoplasma, membran sel dan inti selC. inti sel mitokondria, dar vakuolaD. mitokondria, kloroplas, dan inti sel3. Sel tumbuhan memiliki bentuk yang tetapkarena ....A. berdinding sel dari selulosaB. memiliki plastidaC. membran sel rangkap duaD. memiliki sejumlah vakuola4. Struktur sel yang menjadi pembeda antara selhewan dan sel tumbuhan adalah ....A. membran selB. dinding selC. inti selD. mitokondria​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#13-akar-berfungsi-untuk-menyerap-air-dan-garam-mineral-dari-dalam-tanah-menambatkan-tubuh-tumbuhandalam-tanah-selain-fungsi-utama-tersebut-tumbuhan-juga-mengalami-modifikasi-struktur-dan-fungsibe">5.
+                                            13. Akar berfungsi untuk menyerap air dan garam mineral dari dalam tanah, menambatkan tubuh tumbuhandalam tanah. Selain 'fungsi utama tersebut, tumbuhan juga mengalami modifikasi struktur dan fungsiBerikut ini merupakan pernyataan yang benar mengenai modifikasi pada akar yaituA. Pada benalu, akar berubah menjadi akar penghisap yang berfungsi untuk menyerap air dan zat makanan dari inangnyamakanan dari inangnyaB. Pada tumbuhan bakau, akar termodifikasi menjadi akar banis yang berfungsi untuk menopang tubuhtumbuhanc. Pada tanaman sirih, akar termodifikasi menjadi akar pembelit untuk membelit inangnyaD. Pada tanaman kentang akar termodifikasi menjadi umbi akar sebagai tempat cadangan makanan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-berikut-yang-tidak-termasuk-ciri-kebahasaan-teks-eksposisi-adalaha-pronominab-kata-lekskialc-konjungsid-kata-bilangan8-struktur-yang-membahas-gagasan-utama-atau-prediksi-penulis-mengenai-suatu">6.
+                                            7. Berikut yang tidak termasuk ciri kebahasaan teks eksposisi adalaha. pronominab. kata lekskialc. konjungsid. kata bilangan8. struktur yang membahas gagasan utama atau prediksi penulis mengenai suatu persoalan yang didasarkan pada kenyataan atau fakta disebuta. tesisb. argumentasic. penegasan ulangd. kesimpulan15. Berikut salah satu yang menjadi struktur teks iklan adalaha. orientasib. nama produkc. pernyataan umumd. penutup10. Berikut yang termasuk konjungsi waktu adalaha. sesudahb. setelahc. kemudiand. serta11. Berikut yang bukan ciri ciri sebuah berita yang baik adalaha. menarik perhatianb. aktualc. segerad. panjang12. Iklan baris ditulis menggunakan bahasaa. berbelit-belitb. logis dan objektifc. tidak jelasd. tidak menarik14. Berikut yang merupakan fungsi teks iklan, kecuali sebagaia. informasib. persuasic. reminderd. argumentasi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-sebutkan-4-organ-pada-tumbuhan-2-jelaskan-4-fungsi-akar-3-jelaskan-ciri-akar-tunggangakar-utama-dan-berikan-5-contoh-tumbuhannya4-jelaskan-ciri-akar-serabut-dan-berikan-5-contoh-tumbuha">7.
+                                            1. Sebutkan 4 organ pada tumbuhan !
+2. Jelaskan 4 fungsi akar !
+3. Jelaskan ciri akar tunggang/akar utama, dan berikan 5 contoh tumbuhannya!
+4. Jelaskan ciri akar serabut, dan berikan 5 contoh tumbuhannya !
+5. Sebutkan (buat tabel) perbedaan tumbuhan dikotil dan monokotil !
+6. Jelaskan fungsi dari anatomi akar di bawah ini :
+A. Epidermis
+B. Korteks
+C. Endodermis
+D. Silinder pusat
+7. Buatkan gambar irisan melintang akar monokotil dan akar dikotil
+8. Sebutkan 3 fungsi batang !
+9. Buatlah gambar irisan melintang batang monokotil dan dikotil !
+10. Jelaskan fungsi dari
+A. Xylem
+B. Floem
+11.jelaskam fungsi daun !
+12. Jelaskan perbedaan daun tunggal dan daun majemuk !
+13. Jelaskan fungsi dari :
+A. Stomata
+B. Mesofil daun
+14. Buatlah struktur anatomi daun
+15. Jelaskan perbedaan bunga lengkap dan bunga tidak lengkap !
+16. Berdasarkan alat kelaminnya, bunga dibedakan menjadi 3. Jelaskan !
+17. Buatlah gambar struktur bunga lengkap.
+18. Apa yang dimaksud dengan penyerbukan dan pembuahan? 
+tolong jawab yg benar yaa</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-perbedaan-utama-antara-struktur-akar-tanaman-dikotildengan-monokotil-adalah-a-terdiri-atas-jaringan-epidermis-korteks-danperisikelb-mempunyai-xilem-dan-floemc-mempunyai-kambiumd-mempunyai">8.
+                                            7. Perbedaan utama antara struktur akar tanaman dikotildengan monokotil adalah ...a. terdiri atas jaringan epidermis, korteks, danperisikelb. mempunyai xilem dan floemC. mempunyai kambiumd. mempunyai empulurberfungsi untuk jalan masuk air dan garam mi-neral​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#soal-diutamakan-untuk-siswa-siswi-smplatihan-soal-un-2017mapel-biologimateri-struktur-dan-fungsi-jaringan-tumbuhanbagian-akar-yang-terdiri-atas-sel-sel-parenkim-dan-berfungsi-sebagai-penyimpan">9.
+                                            Soal diutamakan untuk siswa-siswi SMP
+Latihan Soal UN 2017
+Mapel : Biologi
+Materi : Struktur dan Fungsi Jaringan Tumbuhan
+Bagian akar yang terdiri atas sel-sel parenkim dan berfungsi sebagai penyimpan makanan cadangan adalah...
+A. Korteks
+B. Epidermis
+C. Endodermis
+D. Floem
+-SUKSES UN 2017-
+Posted by: NH :)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-jawablah-pertanyaan-berikut1-tuliskanlah-urutan-organisasi-kehidupan-tingkat-molekuler-dan-tingkat-seluler2-apakah-yang-dimaksud-dengan-kelenjar-endokrin3-tuliskanlah-jaringan-yang-menyusun-o">10.
+                                            6. Jawablah pertanyaan berikut!1. Tuliskanlah urutan organisasi kehidupan tingkat molekuler dan tingkat seluler!2. Apakah yang dimaksud dengan kelenjar endokrin?3. Tuliskanlah jaringan yang menyusun organ lambung!4. Mengapa struktur-struktur berikut ini penting bagi sel tumbuhan?a. dinding selb. vakuolac. kloroplasd.5. Tuliskanlah organel-organel sel dan fungsinya!6. Tuliskanlah macam-macam jaringan hewan!inti sel7. Tuliskanlah karakteristik utama jaringan meristematik dan di mana kita dapat menemukannya!8. Tuliskanlah nama jaringan yang berperan dalam pergerakan air dan mineral di dalam tubuh tumbuhan9. Tuliskanlah minimal empat perbedaan antara sel tumbuhan dan sel hewan!10. Tuliskanlah organel sel yang hanya dapat ditemukan pada sel tumbuhan!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menumbuhkan-kesadaran-otoritas-negara-dan-masyarakat-untuk-menanam-pohon-alami-di-lahan-lahan-negara-yang-sudah-kritis-adalah-masalah-berat-yang-harus-menjadi-perhatian-utama-pohon-seringkali-diangg">11.
+                                            Menumbuhkan kesadaran otoritas negara dan masyarakat untuk menanam pohon alami di lahan-lahan negara yang sudah kritis, adalah masalah berat yang harus menjadi perhatian utama. Pohon seringkali dianggap menjadi pengganggu dalam usaha pertanian sayur di lahan milik negara. Kutipan paragraf di atas merupakan bagian struktur penilaian karena…a. menjelaskan tentang cara mengembalikan fungsi Citarum sehingga kembali bersihb. menyebutkan tentang objek yang ditanggapic. menyebutkan tempat kejadiand.menyebutkan waktu kejadian​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-jaringan-ikatc-jaringan-ototd-jaringan-saraf39-jaringan-ini-berfungsi-untuk-menyimpan-cadangan-makanan-pada-daun-jaringanparenkim-berfungsi-untuk-fotosintesis-terutama-pada-jaringan-parenkim-p">12.
+                                            B. Jaringan ikatC. jaringan ototD. jaringan saraf39. Jaringan ini berfungsi untuk menyimpan cadangan makanan. Pada daun jaringanparenkim berfungsi untuk fotosintesis, terutama pada jaringan parenkim palisade(jaringan pagar) dan parenkim spons karena banyak mengandung klorofil adalahA. jaringan epidermisB. jaringan dasar atau parenkimC. jaringan pengangkutD. jaringan penguat40. Jaringan yang berfungsi untuk memperkokoh struktur tumbuhan, misalnya pada bisalak, tempurung kelapa, tangkai daun, tangkai buah, dan sebagainya adalah....A. jaringan epidermisB. jaringan dasar atau parenkimC. jaringan pengangkutD. jaringan penguat​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tex-quisstex%e2%9c%a8sekalian-big-points-%e2%9c%a8topik-struktur-dan-fungsi-sel-pada-sistem-pencernaansubtopik-gizi-dan-zat-makanan1-zat-makanan-x-memiliki-fungsi-seb">13.
+                                            [tex] \:  \:  \:  \:  \:  \: quiss[/tex]✨Sekalian Big Points ✨Topik : Struktur dan fungsi sel pada sistem pencernaanSubtopik : Gizi dan zat makanan1.  Zat makanan X memiliki fungsi sebagai sumber energi utama tubuh dan memperlancar sistem pencernaan. Dilihat dari fungsinya maka zat makanan X tersebut adalah ....a. karbohidratb. proteinc. lipidd. vitamine. mineral☁️"Follow"☁️✨"My BesTie"✨[tex]carlint \: kayla \: hya[/tex][tex]dadanago8[/tex][tex]twinklyu \: kayla[/tex][tex]delaubezanolodelau[/tex][tex]see \: kayla[/tex][tex]see \: jhyan[/tex]☁️✨"Follow Kk terbaik"✨☁️[tex]raytama0[/tex][tex]leaozharat123[/tex][tex]thanks \: your[/tex]​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-pada-umumnya-struktur-pura-di-bali-dibagi-atas-tiga-bagian-yang-disebut-tri-mandala-masing-masing-mandala-di-batasi-oleh-candi-bentar-dan-candi-kurung-pernyataan-yang-benar-tentang-candi-kurung">14.
+                                            5. Pada umumnya struktur pura di Bali dibagi atas tiga bagian yang disebut Tri Mandala. Masing- masing mandala di batasi oleh Candi Bentar dan Candi Kurung. Pernyataan yang benar tentang Candi Kurung di bawah ini adalah... a. Pintu masuk yang menghubungkan antara Jeron dengan Jaba Tengah b. Bangunan candi yang meng- hubungkan Nista Mandala dengan Madya Mandala c. Pintu masuk yang menghubungkan Utama Mandala dengan Nista Mandala d. Bangunan candi yang meng- hubungkan Madya Mandala dengan Jaba Tengah a. Madya M b. Utama Mandala c. Nista Mandala d. Jeroan Mandala 8. Pura Swagina arti berfungsi dan be masyarakat tertentu profesi dalam menja sehari-hari. Pura to yang berprofesi sel melakukan pemujaa a. Pura Melanting b. Pura Badugul c. Pura Segara d. bangunan candi yang menghubungkan Madya mandala dengan Jaba Tengah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-fungsi-manajemen-keuangan-dan-personalia-1-perencanaan-keuangan-2-penentuan-insentif-karyawan-3-menyusun-laporan-keuangan-4-struktur-penggajian-5-menganalisis-laporan-keuangan-tuga">15.
+                                            Berikut fungsi manajemen keuangan dan personalia: 
+1) Perencanaan keuangan 
+2) Penentuan insentif karyawan 
+3) Menyusun laporan keuangan 
+4) Struktur penggajian 
+5) Menganalisis laporan keuangan 
+Tugas utama manajer keuangan adalah ….
+Pilih salah satu:
+A. 1,2 dan 3
+B. 2,3 dan 5
+C. 2,4 dan 5
+D. 3,4 dan 5
+E. 1,3 dan 5</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bacalah-penggalan-teks-tanggapan-berikut-untuk-menjawab-soal-no-17-dan-18pemanasan-global-yang-sedang-melanda-bumi-beberapa-tahun-belakangan-semakinparah-hal-ini-disebabkan-oleh-banyaknya-asap-pabr">16.
+                                            Bacalah penggalan teks tanggapan berikut untuk menjawab soal no. 17 dan 18!Pemanasan global yang sedang melanda bumi beberapa tahun belakangan semakinparah. Hal ini disebabkan oleh banyaknya asap pabrik yang beroperasi dan asap darikendaraan bermotor. Keadaan ini diperparah dengan keadaan hutan yang seharusnyadapat berperan dalam mengurangi emisi gas, tetapi kenyataanya masih banyak hutanyang ditebang. Selain penebangan hutan, [...] hutan juga dapat menyebabkan hutantidak dapat menjalankan fungsinya dengan baik. Hal tersebut, menjadikan hutankonservasi yang sudah mulai banyak terjadi terutama di negara kita.17. Kata yang tepat untuk melengkapi kutipan teks tersebut adalah ...A. alih fungsiB. pemberdayaanC. penggunaanD. multi fungsi18. Struktur bagian teks tanggapan tersebut adalah ....A. konteksB. deskripsiC. argumentasiD. penilaian​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-bertambahnya-tinggi-badan-bertambahnya-lingkar-tubuh-dan-ukuran-besarnya-organ-seks-adalah-perubahan-yang-terjadi-pada-remaja-secara-a-eksternalb-outernalc-akternald-internal2-zat-zat-yang-terk">17.
+                                            1  Bertambahnya tinggi badan, bertambahnya lingkar tubuh dan ukuran besarnya organ seks adalah perubahan yang terjadi pada remaja secara ...a.Eksternalb.Outernalc.Akternald.Internal2 Zat-zat yang terkandung dalam suatu jenis makanan tertentu merupakan pengertian dari ...a.Malnutrisib.Lemakc.Gizid.Overnutrisi3 Membesarnya buah dada pada anak perempuan dan tumbuhnya kumis serta jenggot pada anak laki-laki adalah ciri-ciri pertumbuhan kelamin ...a.Primerb.Utamac.Sekunderd.Premium4 Manakah dibawah ini yang bukan dari tingkat perkembangan moral ...a.Konvensional Reasoningb.Learning Listeningc.Prakonvensional Learningd.Pascakonvensional Reasoning5 Bagian dari zat yang aktif dalam metabolisme atau sebagai bagian penting dari struktur sel dan jaringan sebagai kofaktor suatu enzim merupakan fungsi zat  ...a.Mineralb.Lemakc.Proteind.Karbohidrat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bacalah-paragraf-berikt-dengan-cermat-nama-kelinci-sendiri-berasal-dari-bahasa-belanda-kelinci-memiliki-telinga-yang-panjang-kedua-telinganya-tersebut-dapat-tumbuh-hingga-mencapai-lebih-dari-10-cm">18.
+                                            Bacalah paragraf berikt dengan cermat! Nama kelinci sendiri berasal dari bahasa Belanda. Kelinci memiliki telinga yang panjang. Kedua telinganya tersebut dapat tumbuh hingga mencapai lebih dari 10 cm,dan mungkin saja, bahwa telinga panjang itu hasil dari adaptasi aktivitas mereka dalam mendeteksi predator.Oleh karena itu memang fungsi utama dari telinganya adalah mendengarkan suara.Selain itu kelinci meiliki kaki yang sangat kuat. Paragraf tersebut dalam struktur tesk deskripsi merupakan bagian ... A. identifikasi B. deskripsi bagian C. penutup D. simpulantolongin​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pilihlah-salah-satu-jawaban-yang-paling-tepat1-teks-laporan-hasil-observasi-adalah-teks-yang-berisi-penjabaran-umummelaporkan-sesuatu-berupa-hasil-dari-a-penilaianb-pengamatanc-koreksid">19.
+                                            Pilihlah salah satu jawaban yang paling tepat!
+1. Teks laporan hasil observasi adalah teks yang berisi penjabaran umum/melaporkan
+ sesuatu berupa hasil dari...
+A. Penilaian
+B. Pengamatan
+C. Koreksi
+D. Peluang
+2. Jenis teks laporan hasil observasi mendeskripsikan atau menggambarkan bentuk, ciri,
+ atau sifat umum, seperti hal-hal berikut, kecuali...
+A. Keindahan bumi
+B. Peristiwa
+C. Hewan 
+D. Benda
+3. Museum merupakan salah satu tempat paling penting dalam upaya pelestarian sejarah 
+ (1). Museum adalah lembaga yang berfungsi mengumpulkan, merawat, dan menyajikan 
+ serta melestarikan warisan budaya masyarakat untuk tujuan studi, penelitian, dan 
+ kesenangan atau hiburan (2). 
+ Fungsi museum yang utama adalah menyimpan, merawat, mengamankan, dan 
+ memanfaatkan koleksi museum berupa benda cagar budaya (3). Dengan demikian, 
+ museum memiliki fungsi besar yaitu sebagai tempat pelestarian (4). Kalimat utama 
+ ditunjukan pada nomor....
+A. 1 dan 4
+B. 2 dan 3
+C. 1 dan 3
+D. 2 dan 4
+4. Museum merupakan salah satu tempat paling penting dalam upaya pelestarian sejarah
+ (1). Museum adalah lembaga yang berfungsi mengumpulkan, merawat, dan menyajikan 
+ serta melestarikan warisan budaya masyarakat untuk tujuan studi, penelitian, dan 
+ kesenangan atau hiburan (2). 
+ Fungsi museum yang utama adalah menyimpan, merawat, mengamankan, dan 
+ memanfaatkan koleksi museum berupa benda cagar budaya (3). Dengan demikian, 
+ museum memiliki fungsi besar yaitu sebagai tempat pelestarian (4). Kalimat utama 
+ ditunjukan pada nomor....
+A. 1 dan 4
+B. 2 dan 3
+C. 1 dan 3
+D. 2 dan 4
+5. Berikut ini yang bukan struktur teks laporan observasi adalah.... 
+A. Pernyataan umum
+B. Simpulan
+C. Deskripsi bagian
+D. Orientasi
+6. Bekam atau hijamah ialah sebuah teknik pengobatan yang dilakukan dengan jalan membuang darah kotor (racun yang berbahaya) dari dalam tubuh lewat permukaan kulit. Menurut pemahaman umum, sebenarnya bekam berfungs untuk membang darah yang teah rusak atau teroksidasi karena tingginya oksidan dalam tubuh. Kutipan teks di atas termasuk salah satu struktur teks laporan hasil observasi, yaitu...
+A. Simpulan
+B. Pernyataan umum
+C. Deskripsi bagian
+D. Orientasi
+7. Kalimat utama yang ada di awal paragraf disebut.....
+A. Deduktif
+B. Induktif
+C. Inneratif
+D. Campuran
+8. Kalimat utama yang ada di akhir paragraf disebut.....
+A. Deduktif
+B. Induktif
+C. Inneratif
+D. Campuran
+9. Berikut adalah ciri-ciri teks laporan hasil observasi, kecuali....
+A.Berisi pembahasan berupa ilmu tentang suatu objek/konsep
+B.Membahas objek secara sistematis yang merinci setiap bagian dengan subjektif
+C.Membahas objek yang bersifat umum, termasuk kategori atau kelompok tersebut
+D.Bertujuan menjelaskan dari sudut pandang ilmu
+10. Wayang kulit dilihat dari umur, dan gaya pertunjukannya pun dibagi lagi menjadi bermacam jenis. Jenis yang paling terkenal, karena diperkirakan memiliki umur paling tua adalah wayang purwa. Purwa berasal dari bahasa Jawa, yang berarti awal. Wayang ini terbuat dari kulit kerbau yang ditatah, dan diberi warna sesuai kaidah pulasan wayang pendalangan, diberi tangkai dari bahan tanduk kerbau bule yang diolah sedemikian rupa dengan nama cempurit yang terdiri dari: tuding dan gapit. 
+ Ide pokok paragraf di atas adalah....
+A. Wayang dibagi menjadi beberapa jenis
+B.Wayang terbuat dari kulit kerbau
+C. Wayang purwa adalah wayang yang paling tua
+D. Perbedaan wayang gapil dan wayang tuding</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-pengertian-perubahan-sosialmenurut-kingsley-davis-adalah-perubahan-perubahan-yang-terjadipada-lembaga-kemasyarakatan-didalam-suatu-masyarakat-yangmemengaruhi-sistem-sosialnyab-perubahan-s">20.
+                                            Berikut pengertian perubahan sosialmenurut Kingsley Davis adalah ....perubahan-perubahan yang terjadipada lembaga kemasyarakatan didalam suatu masyarakat yangmemengaruhi sistem sosialnyab. perubahan sosial meliputi unsur-unsur kebudayaan, baik yangmaterial maupun yang inmaterial,terutama yang menekankan padapengaruh yang besar dari unsur-unsur kebudayaan materialC. perubahan-perubahan yangterjadi dalam struktur dan fungsimasyarakatd. perubahan-perubahan dalamhubungan sosial atau perubahanterhadap keseimbangan sosialtersebut​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#xilem-merupakan-jaringan-kompleks-karena-tersusun-dari-beberapa-tipe-sel-yang-berbeda-penyusun-utamanya-adalah-trakeid-dan-trakea-sebagai-saluran-pengangkut-air-dengan-penebalan-dinding-sel-yang-cuku">21.
+                                            Xilem merupakan jaringan kompleks karena tersusun dari beberapa tipe sel yang berbeda. Penyusun utamanya adalah trakeid dan trakea sebagai saluran pengangkut air dengan penebalan dinding sel yang cukup tebal sekaligus berfungsi sebagai penyokong. Xilem juga tersusun atas serabut, sklerenkim, serta sel-sel parenkim yang hidup dan berperan dalam berbagai kegiatan metabolisme sel. Xilem disebut juga sebagai pembuluh kayu yang berbentuk kayu pada batang.1. Dalam laporan hasil percobaan, kutipan tersebut ditulis pada bagian....a. tujuanb. kajian teoric. pembahasand. alat dan bahan2. Dalam struktur teks laporan hasil percobaan, teks tersebut terdapat pada bagian.....a. pernyataan umumb. uraianc. hasild. kesimpulan3. Pernyataan yang benar berdasarkan teks tersebut adalah....a. Teks tersebut memberikan informasi bahwa xilem tersusun dari beberapa tipe sel yang berbeda. Penyusun utamanya adalah trakeid dan trakea.b. Teks tersebut merupakan laporan "Uji Coba Kekuatan Kayu".c. Teks tersebut memberikan informasi tentang proses pembentukan kayu.d. Teks tersebut menyampaikan bahwa kekuatan kayu terdapat pada batang.tolong di bantu ya guys makasih​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-ciri-ciri-jaringan-berikut-1berfungsi-untuk-absorpsi-dan-proteksi-atau-sebagai-kelenjar-2berfungsi-untuk-melekatkan-suatu-jaringan-dengan-jaringan-lain-3sel-selnya-terikat-oleh-zat-pen">22.
+                                            perhatikan ciri-ciri jaringan berikut! 
+1)berfungsi untuk absorpsi dan proteksi atau sebagai kelenjar 2)berfungsi untuk melekatkan suatu jaringan dengan jaringan lain 3)sel-selnya terikat oleh zat pengikat(semen) sehingga hampir tidak ada ruangan antarsel 4)mempunyai struktur serat-serat terutama kolagen yang padat 5)sel selnya melekat pada lamina basalis. ciri ciri jaringan epitel ditunjukkan oleh angka a.1),2),dan 3) b.1),2) dan 4) c.1),3),dan 5) d.2),4),dan 5) e.3),4),dan 5)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bantu-jawab-pleasee-jumlah-pin-pada-mikrokontroler-atmega328p-dalam-arduino-adalah-a-14-b-20c-28e-40e-42banyak-set-intruksi-yang-didukung-oleh-mikrokontroler-atmega328p-dalam-sebuah-prose">23.
+                                            BANTU JAWAB PLEASEE .....Jumlah pin pada mikrokontroler Atmega328P dalam Arduino adalah ...A. 14 B. 20C. 28E. 40E. 42Banyak set intruksi yang didukung oleh mikrokontroler Atmega328P dalam sebuah proses aritmatikaadalah ...A. 130 B. 131 C.132 D. 133E. 141Bagian dalam microkontroler yang mampu menyimpan data ketika dialiri arus listrik dan akanterhapus ketika tidak disupplai tegangan adalah ...A. CPUC. FlashE. Port I/OB. ROMD. RAMKomputer generasi pertama ditandai dengan ditemukannya tabung hampa. Berikut ini yangmerupakan Komputer generasi pertama adalah ....A. IBM 7094D. IBM 360B. UNIVACE. PDP-8C. Pentiu Konsep perencanaan dan struktur pengoperasian dasar dari suatu sistem komputer disebut ....A. Komponen komputerD. Organisasi komputerB. Jenis-jenis komputerE. Fungsi komputerC. Arsitektur komputer Fungsi utama komputer yang berfungsi mengolah kumpulan data yang menghasilkan suatu informasiadalah ....A. KendaliD. Penyimpan dataB. Pengolah dataE. Penghitung dataC. Pemindah data​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jaringan-embrional-akan-terus-berkembang-menjadi-struktur-dengan-fungsi-khusus-yang-akan-dimiliki-saat-dewasa-hal-ini-merupakan-salah-satu-proses-tahap-perkembangan-yaitu-a-mitosisb-pembela">24.
+                                            1. Jaringan embrional akan terus berkembang menjadi struktur dengan fungsi khusus yang akan dimiliki saat dewasa. Hal ini merupakan salah satu proses tahap perkembangan yaitu ....*a. mitosisb. pembelahan selc. morfogenesisd. Diferensiasi sele. rudimenter2. Pada peristiwa perkecambahan, kerja enzim dan hormon dipengaruhi terutama oleh faktor ....*a. suhub. kelembapanc. aird. tanahe. angin3. Berikut ini adalah empat bagian penting pada biji yang berkecambah, kecuali ....*a. kaulikulab. radikulac. plumulad. kotiledone. filokula​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#xilem-merupakan-jaringan-kompleks-xilem-tersusun-dari-beberapa-tipe-sel-yang-berbeda-penyusunutamanya-adalah-trakeid-dan-trakea-jaringan-tersebut-berfungsi-sebagai-saluran-pengangkut-air-dengan-pen">25.
+                                            Xilem merupakan jaringan kompleks. Xilem tersusun dari beberapa tipe sel yang berbeda. Penyusunutamanya adalah trakeid dan trakea. Jaringan tersebut berfungsi sebagai saluran pengangkut air dengan penebalan dinding sel yang cukup tebal sekaligus berfungsi sebagai penyokong. Xilem juga tersusun atas serabut, sklerenkim, serta sel-sel parenkim yang hidup. Xilem berperan dalam berbagai kegiatemetabolisme sel. Xilem disebut juga sebagai pembuluh kayu yang membentuk kayu pada batang 1. Dalam laporan hasil percobaan, kutipan tersebut ditulis pada bagian....a. tujuanb. kajian teoric. pembahasand. alat dan bahan2. Dalam struktur teks laporan hasil percobaan, teks tersebut terdapat pada bagian...a. pernyataan umumb. uraianc. hasild. kesimpulan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-untuk-melewatkan-parameter-dengan-referensi-dapat-dilakukan-den-menambahkan-karakter-di-depan-nama-parameter-yaitu-a-b-c-d-e-2-nilai-nilai-yang-akan-dikirim-pada-sebuah-fungsi-disebu">26.
+                                            1. Untuk melewatkan parameter dengan referensi, dapat dilakukan den menambahkan karakter di depan nama parameter yaitu.a. #b. @c. $d. &amp;e. %2. Nilai-nilai yang akan dikirim pada sebuah fungsi disebut sebagaia. fungsib. datac. argumend. karaktere. struktur kendali terakhir dari array umumnya diisi dengan karakter...a. -2b. -1c. 0d. 1e. 24. Fungsi yang paling umum digunakan dalam menampilkan data adalah . a.PUTS ()b. PRINTF ()c. PUTCHAR Od. GETCHE ( )e. SCANF ()5. Berikut yang bukan termasuk keuntungan memakai fungsi (function) adalah a. menggunakan keyword voidb. menguraikan tugas pemrograman yang rumit c. dapat menggunakan kode yang ditulis dalam berbagai program yang berbedad. mengurangi duplikasi kode dalam program e. meningkatkan kemampuan pelacakan kesalahan6. Dalam beberapa literatur, array sering disebut sebagai ..a. indeksb. larikc. garisd. cacahe. urutan7. Berikut yang bukan termasuk bagian-bagian dalam definisi fungsi adalaha. bodyb. namec. parameter listd. outpute. return type8. Pembeda antara prototipe yang memiliki kemiripan dengan fungsi header adalah pada bagian akhir terdapat.....a. titik duab. dua titike. titik komad. pungtuasie. spasi ganda9. Bentuk sean pada dasarnya menyerupai fungsi.....a. getche ()b. getch()c. kontrol prosesd. konversi datae printf()10. Nama tungsi getche() sebenarnya singkatan dari .a. get currencyb. get character and echoc. going characterd.get charactere. get the click11. Jika sejumlah variabel dapat memakai nama yang sama, namun di antarasatu variabel dengan variabel yang lain dibedakan berdasarkan subscript,termasuk dalam kategori....a. elemenb. array c. fungsid. subscripte. code12. Penomoran indeks yang dibutuhkan dalam array dimensi satu adalah ....a. sembilanb. tujuhc. limad. tigae. satu13. Fungsi utama akan dipanggil secara otomatis saat program dimulai,namun fungsi yang lain harus dijalankan melalui pernyataan ....a. parameter listb. fungsi headerc. inisialisasid. function calle. definisi fungsi14. Suatu metode pengurutan yang terinspirasi dari gelembung sabun yangada di dalam permukaan air adalaha. Bubble Sortb. Exchange Sortc. Selection Sortd. Insertion Sorte. Quick Sort15. Pengiriman parameter berupa array dimensi dua hampir sama dengan pengiriman parameter array dimensi satu, hanya perbedaannya terletakpada array dimensi dua yang harus menyebutkan posisi ..a. parameter formalb. memoric. baris dan kolomd. kolom sajae. baris saja#TOLONG BANTU DENGAN JAWABAN YG BENAR​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-perbedaan-susunan-jaringan-akar-antara-tumbuhan-dikotil-dan-monokotil-adalah-pada-bagian-berkas-pengangkutannya-pernyataan-yang-benar-untuk-tumbuhan-dikotil-adalah-a-susunan-xilem-di-dalam-lingk">27.
+                                            6. perbedaan susunan jaringan akar antara tumbuhan dikotil dan monokotil adalah pada bagian berkas pengangkutannya pernyataan yang benar untuk tumbuhan dikotil adalah...A. susunan xilem di dalam lingkaranB. susunan floem di dalam lingkaranc. xilem dan floem berselang selingd. xilem lebih banyak daripada floem7. pada beberapa tumbuhan akar mengalami modifikasi sehingga menyebabkan perubahan fungsi salah satunya yaitu sebagai tempat menyimpan cadangan makanan yang dapat ditemukan pada tanamanA. bawang merahB. singkongc. kentangd. sagu8. bunga terdiri dari dua bagian utama yaitu perhiasan dan alat reproduksi pernyataan yang bukan merupakan fungsi dari struktur bunga adalahA. benang sari merupakan alat reproduksi betinaB. kelopak bunga sebagai penutup kuncupc. mahkota bunga untuk menarik perhatian seranggad. putik berfungsi sebagai alat reproduksi betinatolong dijawab kak yang bisa jawab tolong dijawab kak yang bisa jawab ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kekurangan-cairan-pada-tubuh-bisa-berdampak-pada-terganggunya-fungsi-otak-terutama-kemampuan-untuk-fokus-dan-konsentrasi-hal-tersebut-dapat-berdampak-pada-aktivitas-dan-produktivitas-anda-sepanjang">28.
+                                            Kekurangan cairan pada tubuh bisa berdampak pada terganggunya fungsi otak, terutama kemampuan untuk fokus dan konsentrasi. Hal tersebut dapat berdampak pada aktivitas dan produktivitas anda sepanjang hari. Paragraf tersebut merupakan struktur bagian... a. Pengenalan Isu b. Rangkaian argumen c. Ajakan d. Penegasan Kembali​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bantu-ya-kaka1-struktur-sel-dibawah-ini-berfungsi-untuk-proses-transkripsi-proteina-mitokondriab-lisosomc-ribosomd-nucleus2-ubun-ubun-besae-pada-tulang-tengkorak-dibentuk-oleh-sambungan">29.
+                                            Bantu ya kaka
+1. Struktur sel dibawah ini berfungsi untuk proses transkripsi protein:
+A. Mitokondria
+B. Lisosom
+C. Ribosom
+D. Nucleus
+2. Ubun-ubun Besae pada tulang tengkorak dibentuk oleh sambungan....
+A. medula spinalis
+B. sutura
+C. vetebralis
+D. cerebrum
+3. Komponen darah berfungsi saat terjadi pendarahan..
+A. eritrosit
+B. platelet
+C. leukosit
+D. limfosit
+4. Pembuluh darah ini yg banyak mengandung O2 ini meninggalkan jantunc..
+A. vena pulmonalis
+B. arteri pulmonalis
+C. aorta
+D. arteri koronalis
+5. Pencernaan karbohidrat terutama terjadi di...
+A. lambunc
+B. usus halus
+C. usus besar
+D. mulut</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-dalam-membuat-target-bagi-perusahaan-target-tersebut-harus-bisa-terukur-dengan-jelas-hal-tersebut-merupakan-salah-satu-framework-dalam-membuat-target-yaitua-achievable-b-realistic-c-measurab">30.
+                                            1. Dalam membuat target bagi perusahaan, target tersebut harus bisa terukur dengan jelas. Hal tersebut merupakan salah satu framework dalam membuat target, yaitu?
+A.achievable.
+B.realistic.
+C.measurable.
+D.specific.
+2. Dalam merencanakan struktur organisasi, apa yang perlu dilakukan setelah menentukan bagaimana setiap proses dijalankan?
+A. Mengelompokkan beberapa fungsi ke dalam suatu divisi.
+B. Melakukan pemetaan mana yang termasuk fungsi utama dan fungsi pendukung.
+C. Mengidentifikasi proses-proses yang perlu ada di dalam perusahaan.
+D. Menentukan siapa yang bertanggung jawab atas proses tersebut.
+3.Berikut ini, yang tidak termasuk komponen dalam biaya pokok produksi adalah?
+A. biaya pengiriman barang ke toko.
+B. biaya upah pekerja produksi.
+C. biaya operasional kantor.
+D. biaya bahan baku.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-struktur-sel-amoeba-di-bawah-inimanakah-komponenprotein-seluler-utama-yangberfungsi-untukmembentuk-strukturlokomotif-yang-di-tunjukoleh-tanda-panaha-integrinb-aktinc-mikrotubul">31.
+                                            Perhatikan struktur sel Amoeba di bawah ini
+Manakah komponen
+protein seluler utama yang
+berfungsi untuk
+membentuk struktur
+lokomotif yang di tunjuk
+oleh tanda panah?
+A. Integrin
+B. Aktin
+C. Mikrotubulus
+D. Filamen intermedier
+E. Flagellin</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-presiden-dan-wakil-presiden-dipilihdalam-satu-pasangan-secara-langsungoleh-rakyat-hal-ini-tercantum-dalam-a-pasal-5a-ayat-1b-pasal-6a-ayat-1c-pasal-7a-ayat-1d-pasal-8a-ayat-1e-pas">32.
+                                            1. Presiden dan wakil presiden dipilihdalam satu pasangan secara langsungoleh rakyat. Hal ini tercantum dalam ....a. Pasal 5A Ayat (1)b. Pasal 6A Ayat (1)c. Pasal 7A Ayat (1)d. Pasal 8A Ayat (1)e. Pasal 82. Struktur politik dalam suatu pemerintahan, yang bertugas menjalankan fungsi-fungsi pengambilan dan pelaksanaansy keputusan disebut ....a. sistem politikb. struktur politikc. infrastrukturd. partai politike. suprastruktur3. Kegiatan interaksi antara pemerintahdengan masyarakat dalam rangka prosespembuatan kebijakan dan keputusan yangmengikat disebut....a. sistemb. politikc. sistem politikd. kebijakane. ketentuan4. DPD merupakan lembaga negara yang di-bentuk untuk menjalankan tugas utama ....a. membantu MPR dalam mengubahundang-undang dasarb. membantu pemerintah dalam meng-ajukan RUUc. mewakili dan memperjuangkanaspirasi daerahd. mewadahi dan memperjuangkankepentingan golongane. membantu presiden dalam peme-rintahan5. Berikut ini lembaga-lembaga yang ter-masuk di dalam suprastruktur politikIndonesia, kecuali....a. Mahkamah konstitusib. Badan Pemeriksa Keuanganc. partai politikd. Pemerintah Daerahe. Dewan Perwakilan Rakyat​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pernyataan-berikut-yang-tidak-benar-mengenai-komponen-kimiawi-sel-adalah%e2%80%a6-a-protein-berfungsi-sebagai-pembentuk-struktur-sel-serta-menghasilkan-energi-b-kabohidrat-berfungsi-sebagai-pembentu">33.
+                                            Pernyataan berikut yang tidak benar mengenai komponen kimiawi sel adalah….A. Protein berfungsi sebagai pembentuk struktur sel serta menghasilkan energi.B. Kabohidrat berfungsi sebagai pembentuk struktur sel serta menghasilkan energi.C. Protein berperan sebagai pembentuk struktur sel dan mempercepat reaksi kimia sebagai enzim.D. Lemak berperan sebagai komponen utama penyusun membran plasma dan penghasil energi.E. Asam nukleat berperan mengatur pewarisan sifat sel. 
+​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-tipe-jembatan-yang-digunakan-pada-jaman-modern-adalah-menggunakan-bahan-utamaa-jembatan-balokb-jembatan-gantungc-jembatan-kabel-penahand-jembatan-gerbangdibawah-ini-yang-bukan-merupakan-peng">34.
+                                            jenis tipe jembatan yang digunakan pada jaman modern adalah menggunakan bahan utamaA. jembatan balokB. jembatan gantungC. jembatan kabel penahanD. jembatan gerbangDibawah ini yang bukan merupakan penggolongan jembatan berdasarkan material yang digunakan adalahA. jembatan platB. jembatan bajaC. jembatan kayuD. jembatan betonBerikut ini kriteria atau syarat pembangunan bangunan tahan gempa kecualiA. denah bangunan harus simetrisB. bangunan harus terbuat dari batubataC. pondasi bangunan harus berada di tanah yang keras dan stabilD. struktur bangunan harus menyatu sehingga tidak mudah runtuhRentan terhadap rayap dan ukuran tidak sama adalah kelemahan dari konstruksiA. betonB. bajaC. kayuD. bambuJasa konstruksi menurut UUJK mencakup hal hal berikut ini kecualiA. jasa arsitekturB. jasa konsultasi konstruksiC. jasa rekayasa dan pembangunan konstruksiD. jasa pemeliharaan instalasi bangunanberikut fungsi konstruksi sebagai fungsi keagamaan kecuali A. masjidB. reaktor nuklirC. gerejaD. vihara​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mohon-bantuannya6-jawablah-pertanyaan-berikut1-tuliskanlah-urutan-organisasi-kehidupan-tingkat-molekuler-dan-tingkat-seluler2-apakah-yang-dimaksud-dengan-kelenjar-endokrin3-tuliskanlah-jaringan">35.
+                                            mohon bantuannya6. Jawablah pertanyaan berikut!1. Tuliskanlah urutan organisasi kehidupan tingkat molekuler dan tingkat seluler!2. Apakah yang dimaksud dengan kelenjar endokrin?3. Tuliskanlah jaringan yang menyusun organ lambung!4. Mengapa struktur-struktur berikut ini penting bagi sel tumbuhan?a. dinding selb. vakuolac. kloroplasd. inti sel5. Tuliskanlah organel-organel sel dan fungsinya!6. Tuliskanlah macam-macam jaringan hewan!inti sel7. Tuliskanlah karakteristik utama jaringan meristematik dan di mana kita dapat menemukannya!8. Tuliskanlah nama jaringan yang berperan dalam pergerakan air dan mineral di dalam tubuh tumbuhan9. Tuliskanlah minimal empat perbedaan antara sel tumbuhan dan sel hewan!10. Tuliskanlah organel sel yang hanya dapat ditemukan pada sel tumbuhan!​​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kutipan-berikut-dalam-struktur-laporan-hasil-observasi-termasuk-dalam-bagian-%e2%80%a6-1-poingambar-tanpa-teksa-pernyataan-umumb-deskripsi-bagianc-deskripsi-manfaatd-simpulanteks-hutan-mangrove">36.
+                                            Kutipan berikut dalam struktur laporan hasil observasi termasuk dalam bagian …. *1 poinGambar Tanpa TeksA. pernyataan umumB. deskripsi bagianC. deskripsi manfaatD. simpulanteks: hutan mangrove memiliki peran ekologis yabg besar bagi kehidupan manusia. telah berdabad abad lamanya dijadikan tumpuan jutaan orang yang hidup dipesisir. hutab ini memiliki banyak fungsi mulia dari penyedia sumber makanan, bahan baku industri, menjegah banjir, menjegah erosi hingga rekreasi. berikut ini fungsi utama hutan mangrove​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-kerugian-membuat-produk-berbahanbambu-adalah-a-kurang-awetb-kurang-mahalasc-jumlahnya-melimpahend-strukturnya-kurang-elastis9-faktor-yang-harus-diperhatikan-padagproduk-karya-kerajinan-yan">37.
+                                            8. Kerugian membuat produk berbahanbambu adalah ....a. Kurang awetb. kurang mahalasc. jumlahnya melimpahend. strukturnya kurang elastis9. Faktor yang harus diperhatikan padagproduk karya kerajinan yang siapdipasarkan agar terlihat lebih menarikdan tahan lama adalaha. hargab. merekc. kemasand. lokasi penjualan10. Pada pembuatan kerajinan, perbedaanutama mengenai bahan keras alami danbahan keras buatan adalah pada ....a. nilai bendanyab. harga bendanyac. fungsi bendanyad. pola pengolahannya11. Teknik tuang sekali pakai digunakan untukkarya kerajinan dalam bentuk ....a. ukiranb. mebelc. konveksi kaind. patung perunggu12.kayu sering dimanfaatkan untuk membuat Mebel,seperti meja dan kursi.bahan yg digunakan untuk memperindah mebel dari kayu adalah a. lem dan catb. tali dan pakuc. cat dan pernisd. Las dan ampelas​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#persiapan-un-smp-ipa-biologi-jaringan-tumbuhandiutamakan-siswa-smp-yang-akan-menghadapi-un1-jaringan-tumbuhan-yang-memiliki-ciri-ciri-memiliki-sel-hidup-dan-struktur-selnya-tersusun-rapat-tanpa">38.
+                                            PERSIAPAN UN SMP (IPA BIOLOGI - JARINGAN TUMBUHAN)
+Diutamakan siswa SMP yang akan menghadapi UN
+1. Jaringan tumbuhan yang memiliki ciri-ciri memiliki sel hidup dan struktur selnya tersusun rapat tanpa celah, seringkali memiliki derivat berupa stomata, bulu akar,  dan kutikula. Fungsi jaringan ini adalah...
+a. Aktif membelah untuk mengganti jaringan yang rusak
+b. Membentuk kulit biji yang keras
+c. Mengangkut hasil fotosintesis
+d. Melindungi jaringan yang berada di bawahnya
+2. Ketika batang dipotong melintang, susunan jaringannya mirip dengan struktur jaringan akar kecuali pada bagian...
+a. Epidermis
+b. Korteks
+c. Endodermis
+d. Silinder pusat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#baterai-atau-yang-dikenal-juga-sebagai-batu-baterai-merupakan-alat-yang-mengumpulkan-dan-membangkitkan-aliran-listrik-baterai-biasanya-digunakan-pada-beberapa-alat-elektronik-levisi-atau-ac-maina">39.
+                                            Baterai atau yang dikenal juga sebagai batu baterai merupakan alat yang mengumpulkan dan membangkitkan aliran listrik. baterai biasanya digunakan pada beberapa alat elektronik , levisi atau AC , mainan remote control, bahkan ponsel. Pada alat-alat tersebut, baterai berfungsi sebagai sumber energi utama . Tanpa adanya baterai, alat - alat tersebut tidak dapat dimanfaatkan . Akan tetapi, tahukah kamu bagaimana proses baterai ditemukan hingga dapat digunakan ? . Berdasarkan struktur teks eksplanasinya, paragraf tersebut tepat dijadikan bagian . . . . a. pembukaan/ pernyataan umum b. deret penjelas c. isi d. Kesimpulan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-pernyataan-berikut1-bersifat-hidrofobik-2-pelarut-vitamin-a-d-e-k-3-berfungsi-sebagai-sumber-energi-4-memiliki-rumus-molekul-ch2on-5-unsur-utama-penyusunnya-c-h-dan-o-6-unsur-utama">40.
+                                            Perhatikan pernyataan berikut!1. Bersifat hidrofobik 2.Pelarut vitamin A, D, E, K 3.Berfungsi sebagai sumber energi 4.Memiliki rumus molekul (CH2O)n 5.Unsur utama penyusunnya C, H, dan O 6.Unsur utama penyusunnya C, H, O dan N 7.Komponen penyusun struktur selYang merupakan kharakteristik dari karbohidrat adalah..​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="jika-kita-ingin-menulis-teks-deskriptif-kita-harus-mengetahui-tiga-bagian-utama-dari-teks-deskriptif-yaitu-a-fungsi-sosial-struktur-umum-dan-fitur-bahasab-fungsi-sosial-struktur-generik-d">
+                            1. Jika kita ingin menulis teks deskriptif, kita harus mengetahui tiga bagian utama dari teks deskriptif, yaitu ..... *A. fungsi sosial, struktur umum dan fitur bahasaB. fungsi sosial, struktur generik dan identifikasi.C. Struktur generik, deskripsi dan pengidentifikasi.D. Struktur umum, fitur bahasa, dan bentuk kata.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A</p><p> fungsi sosial, struktur umum dan fitur bahasa</p><p><strong>Penjelasan:</strong></p><p>...</p><p><strong>Jawaban:</strong></p><p>d.struktur umum,fitur bahasa,dan bentuk kata.</p><p><strong>Penjelasan:</strong></p><p>karena kita ingin menulis teks deskriptif  kita harus mengetahui 3  bagian utama dari teks deskriptif  yaitu  struktur umum , fitur bahasa , dan bentuk kata </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-dengan-singkat-struktur-dan-fungsi-tiga-bagian-utama-dari-sel-di-bawah-inia-membran-selb-inti-selc-protoplasma">
+                            2. jelaskan dengan singkat struktur dan fungsi tiga bagian utama dari sel di bawah ini
+a. membran sel
+b. inti sel
+c. protoplasma</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. membran sel</p><p><strong>Penjelasan:</strong></p><p>maaf klw salah</p><p></p><p></p><p>selamat belajar</p><p><strong>Jawaban:</strong></p><p>A.membran sel</p><p><strong>Penjelasan:</strong></p><p>Membran sel juga berfungsi untuk mengatur perkembangan sel melalui proses endositosis dan eksositosis. Proses endositosis memasukkan senyawa untuk pertumbuhan sel ke dalam sel. Sedangkan proses eksositosis mengeluarkan senyawa yang berlebih atau tidak digunakan lagi keluar sel.</p><br />
+                                            <h2 class="ez-toc-section" id="5-fungsi-kuda-kuda-pada-pembuatan-atapadalah-a-penyangga-utama-pada-struktur-atapb-penguat-struktur-atapc-penopang-bagian-dindingd-pondasi-bagian-disarm-lantai%e2%80%8b">
+                            3. 5. Fungsi kuda-kuda pada pembuatan atapadalah ....a. penyangga utama pada struktur atapb. penguat struktur atapc. penopang bagian dindingd. pondasi bagian disarm lantai​</h2><br />
+                        <p>Jawaban:</p><p> C.</p><p>Penjelasan:</p><p> Semoga jawaban saya benar</p><br />
+                                            <h2 class="ez-toc-section" id="1-suatu-kesatuan-struktur-fungsi-dasar-bagitingkat-organisasi-kehidupan-organismeadalah-a-atomb-jaringanc-molekuld-sel2-sel-memiliki-tiga-bagian-utama-yaitua-kloroplas-mitokondria-dan-vakuol">
+                            4. 1. Suatu kesatuan struktur fungsi dasar bagitingkat organisasi kehidupan organismeadalah...A atomB. jaringanC molekulD. sel2. Sel memiliki tiga bagian utama, yaituA. kloroplas, mitokondria, dan vakuolaB. sitoplasma, membran sel dan inti selC. inti sel mitokondria, dar vakuolaD. mitokondria, kloroplas, dan inti sel3. Sel tumbuhan memiliki bentuk yang tetapkarena ....A. berdinding sel dari selulosaB. memiliki plastidaC. membran sel rangkap duaD. memiliki sejumlah vakuola4. Struktur sel yang menjadi pembeda antara selhewan dan sel tumbuhan adalah ....A. membran selB. dinding selC. inti selD. mitokondria​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>1. d. sel.</p><p>2. B. sitoplasma, membran sel dan inti sel.</p><p>3. A. berdinding sel dari selulosa.</p><p>4. b. dinding sel.</p><p></p><p><strong>Penjelasan:</strong></p><p></p><p>Sel adalah kumpulan materi paling sederhana yang dapat hidup dan merupakan unit penyusun semua makhluk hidup. Sel mampu melakukan semua aktivitas kehidupan dan sebagian besar reaksi kimia untuk mempertahankan kehidupan berlangsung di dalam sel. Kebanyakan makhluk hidup tersusun atas sel tunggal, atau disebut organisme uniseluler, misalnya bakteri dan amoeba. </p><p></p><p>Makhluk hidup lainnya, termasuk tumbuhan, hewan, dan manusia, merupakan organisme multiseluler yang terdiri dari banyak tipe sel terspesialisasi dengan fungsinya masing-masing. Tubuh manusia, misalnya, tersusun atas lebih dari 1013 sel.</p><p></p><p>Membran sel atau membran plasma adalah struktur selaput tipis yang menyelubungi sebuah sel yang membatasi keberadaan sebuah sel, sekaligus juga memelihara perbedaan-perbedaan pokok antara isi sel dengan lingkungannya.</p><p></p><p>Sitoplasma merupakan bagian sel yang terlindungi oleh membran sel. Sitoplasma ini berbentuk cairan pada sel yang terbungkus membran sel. Masing-masing sel mempunyai sitoplasma, tetapi struktur sitoplasma antar sel tetaplan tidak sama satu dengan yang lain, sesuai dengan fungsi sel tersebut.</p><p></p><p>Pada sitoplasma ada sitoskeleton, berbagai organel dan vesikuli dan juga sitosol yang berbentuk cairan tempat organel melayang-layang didalamnya. 70-90% sitoplasma adalah cairan yang tidak berwarna, sisanya adalah sitokeleton (rangka sel) dan berbagai organel. </p><p></p><p>Inti sel atau nukleus adalah organel yang ditemukan pada sel eukariotik. Organel ini mengandung sebagian besar materi genetik sel dengan bentuk molekul DNA linier panjang yang membentuk kromosom bersama dengan beragam jenis protein. </p><p></p><p>Dinding sel atau yang biasa disebut tembok sel merupakan lapisan di luar membran sel yang mengelilingi jenis sel tertentu. Biasanya dinding sel ini terdapat pada tumbuhan, jamur, bakteri, dan jamur.</p><p></p><p></p>Detail Jawaban<p><strong>Mapel </strong><strong>:</strong><strong> </strong>IPA.</p><p><strong>Kelas </strong><strong>:</strong><strong> </strong>VII.</p><p><strong>Materi</strong><strong> </strong><strong>:</strong><strong> </strong>Sel.</p><p><strong>Kode</strong><strong> Kategorisasi</strong><strong> </strong><strong>:</strong><strong> </strong>11.4.1.</p><p></p><p></p><p>#AyoBelajar!</p><br />
+                                            <h2 class="ez-toc-section" id="13-akar-berfungsi-untuk-menyerap-air-dan-garam-mineral-dari-dalam-tanah-menambatkan-tubuh-tumbuhandalam-tanah-selain-fungsi-utama-tersebut-tumbuhan-juga-mengalami-modifikasi-struktur-dan-fungsibe">
+                            5. 13. Akar berfungsi untuk menyerap air dan garam mineral dari dalam tanah, menambatkan tubuh tumbuhandalam tanah. Selain 'fungsi utama tersebut, tumbuhan juga mengalami modifikasi struktur dan fungsiBerikut ini merupakan pernyataan yang benar mengenai modifikasi pada akar yaituA. Pada benalu, akar berubah menjadi akar penghisap yang berfungsi untuk menyerap air dan zat makanan dari inangnyamakanan dari inangnyaB. Pada tumbuhan bakau, akar termodifikasi menjadi akar banis yang berfungsi untuk menopang tubuhtumbuhanc. Pada tanaman sirih, akar termodifikasi menjadi akar pembelit untuk membelit inangnyaD. Pada tanaman kentang akar termodifikasi menjadi umbi akar sebagai tempat cadangan makanan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D</p><p><strong>Penjelasan:</strong></p><p>maaf ye klo salah</p><p></p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="7-berikut-yang-tidak-termasuk-ciri-kebahasaan-teks-eksposisi-adalaha-pronominab-kata-lekskialc-konjungsid-kata-bilangan8-struktur-yang-membahas-gagasan-utama-atau-prediksi-penulis-mengenai-suatu">
+                            6. 7. Berikut yang tidak termasuk ciri kebahasaan teks eksposisi adalaha. pronominab. kata lekskialc. konjungsid. kata bilangan8. struktur yang membahas gagasan utama atau prediksi penulis mengenai suatu persoalan yang didasarkan pada kenyataan atau fakta disebuta. tesisb. argumentasic. penegasan ulangd. kesimpulan15. Berikut salah satu yang menjadi struktur teks iklan adalaha. orientasib. nama produkc. pernyataan umumd. penutup10. Berikut yang termasuk konjungsi waktu adalaha. sesudahb. setelahc. kemudiand. serta11. Berikut yang bukan ciri ciri sebuah berita yang baik adalaha. menarik perhatianb. aktualc. segerad. panjang12. Iklan baris ditulis menggunakan bahasaa. berbelit-belitb. logis dan objektifc. tidak jelasd. tidak menarik14. Berikut yang merupakan fungsi teks iklan, kecuali sebagaia. informasib. persuasic. reminderd. argumentasi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A</p><p>B</p><p>A</p><p>B</p><p>B</p><p>B</p><p>B</p><p><strong>Penjelasan:</strong></p><p>MAAF KALAU SALAH TAPI SYA YAKIN BENAR</p><br />
+                                            <h2 class="ez-toc-section" id="1-sebutkan-4-organ-pada-tumbuhan-2-jelaskan-4-fungsi-akar-3-jelaskan-ciri-akar-tunggangakar-utama-dan-berikan-5-contoh-tumbuhannya4-jelaskan-ciri-akar-serabut-dan-berikan-5-contoh-tumbuha">
+                            7. 1. Sebutkan 4 organ pada tumbuhan !
+2. Jelaskan 4 fungsi akar !
+3. Jelaskan ciri akar tunggang/akar utama, dan berikan 5 contoh tumbuhannya!
+4. Jelaskan ciri akar serabut, dan berikan 5 contoh tumbuhannya !
+5. Sebutkan (buat tabel) perbedaan tumbuhan dikotil dan monokotil !
+6. Jelaskan fungsi dari anatomi akar di bawah ini :
+A. Epidermis
+B. Korteks
+C. Endodermis
+D. Silinder pusat
+7. Buatkan gambar irisan melintang akar monokotil dan akar dikotil
+8. Sebutkan 3 fungsi batang !
+9. Buatlah gambar irisan melintang batang monokotil dan dikotil !
+10. Jelaskan fungsi dari
+A. Xylem
+B. Floem
+11.jelaskam fungsi daun !
+12. Jelaskan perbedaan daun tunggal dan daun majemuk !
+13. Jelaskan fungsi dari :
+A. Stomata
+B. Mesofil daun
+14. Buatlah struktur anatomi daun
+15. Jelaskan perbedaan bunga lengkap dan bunga tidak lengkap !
+16. Berdasarkan alat kelaminnya, bunga dibedakan menjadi 3. Jelaskan !
+17. Buatlah gambar struktur bunga lengkap.
+18. Apa yang dimaksud dengan penyerbukan dan pembuahan? 
+tolong jawab yg benar yaa</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. jantung, ginjal, paru-paru, hati</p><p>2. Menyokong dan memperkuat tumbuhan untuk berdiri. Menyerap air dan berbagai macam garam mineral dari dalam tanah.</p><p>3.akar nya lurus ke bawah tanah, tumbuhan berakar tunggang tahan terhadap kekeringan karena akarnya bisa menembus jauh ke tanah wartel, ubi, lobak, mangga, bit</p><br />
+                                            <h2 class="ez-toc-section" id="7-perbedaan-utama-antara-struktur-akar-tanaman-dikotildengan-monokotil-adalah-a-terdiri-atas-jaringan-epidermis-korteks-danperisikelb-mempunyai-xilem-dan-floemc-mempunyai-kambiumd-mempunyai">
+                            8. 7. Perbedaan utama antara struktur akar tanaman dikotildengan monokotil adalah ...a. terdiri atas jaringan epidermis, korteks, danperisikelb. mempunyai xilem dan floemC. mempunyai kambiumd. mempunyai empulurberfungsi untuk jalan masuk air dan garam mi-neral​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C perbedaan utamanya adalah kambium</p><p>monokotil tidak punya, dikotil punya </p><p><strong>Jawaban:</strong></p><p>b.mempunyai xilem dan floem</p><p><strong>Penjelasan:</strong></p><p>maaf klo salah</p><br />
+                                            <h2 class="ez-toc-section" id="soal-diutamakan-untuk-siswa-siswi-smplatihan-soal-un-2017mapel-biologimateri-struktur-dan-fungsi-jaringan-tumbuhanbagian-akar-yang-terdiri-atas-sel-sel-parenkim-dan-berfungsi-sebagai-penyimpan">
+                            9. Soal diutamakan untuk siswa-siswi SMP
+Latihan Soal UN 2017
+Mapel : Biologi
+Materi : Struktur dan Fungsi Jaringan Tumbuhan
+Bagian akar yang terdiri atas sel-sel parenkim dan berfungsi sebagai penyimpan makanan cadangan adalah...
+A. Korteks
+B. Epidermis
+C. Endodermis
+D. Floem
+-SUKSES UN 2017-
+Posted by: NH :)</h2><br />
+                        A. Korteks semoga membantuA.Korteks<br />terdapat sel sel parenkim yg berfungsi sebagai penyimpan cadangan makanan<br />
+                                            <h2 class="ez-toc-section" id="6-jawablah-pertanyaan-berikut1-tuliskanlah-urutan-organisasi-kehidupan-tingkat-molekuler-dan-tingkat-seluler2-apakah-yang-dimaksud-dengan-kelenjar-endokrin3-tuliskanlah-jaringan-yang-menyusun-o">
+                            10. 6. Jawablah pertanyaan berikut!1. Tuliskanlah urutan organisasi kehidupan tingkat molekuler dan tingkat seluler!2. Apakah yang dimaksud dengan kelenjar endokrin?3. Tuliskanlah jaringan yang menyusun organ lambung!4. Mengapa struktur-struktur berikut ini penting bagi sel tumbuhan?a. dinding selb. vakuolac. kloroplasd.5. Tuliskanlah organel-organel sel dan fungsinya!6. Tuliskanlah macam-macam jaringan hewan!inti sel7. Tuliskanlah karakteristik utama jaringan meristematik dan di mana kita dapat menemukannya!8. Tuliskanlah nama jaringan yang berperan dalam pergerakan air dan mineral di dalam tubuh tumbuhan9. Tuliskanlah minimal empat perbedaan antara sel tumbuhan dan sel hewan!10. Tuliskanlah organel sel yang hanya dapat ditemukan pada sel tumbuhan!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>2.kelenjar yang berada dalam otak yang berguna sebagai pengatur hormon hormon yang dihasilkan dari kelenjar lain.</p><p>aku tau nya yang nomer 2aha sih.</p><br />
+                                            <h2 class="ez-toc-section" id="menumbuhkan-kesadaran-otoritas-negara-dan-masyarakat-untuk-menanam-pohon-alami-di-lahan-lahan-negara-yang-sudah-kritis-adalah-masalah-berat-yang-harus-menjadi-perhatian-utama-pohon-seringkali-diangg">
+                            11. Menumbuhkan kesadaran otoritas negara dan masyarakat untuk menanam pohon alami di lahan-lahan negara yang sudah kritis, adalah masalah berat yang harus menjadi perhatian utama. Pohon seringkali dianggap menjadi pengganggu dalam usaha pertanian sayur di lahan milik negara. Kutipan paragraf di atas merupakan bagian struktur penilaian karena…a. menjelaskan tentang cara mengembalikan fungsi Citarum sehingga kembali bersihb. menyebutkan tentang objek yang ditanggapic. menyebutkan tempat kejadiand.menyebutkan waktu kejadian​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B</p><p><strong>Penjelasan:</strong></p><p>Karena menjelaskan tentang objek yg sedang di bahas </p><br />
+                                            <h2 class="ez-toc-section" id="b-jaringan-ikatc-jaringan-ototd-jaringan-saraf39-jaringan-ini-berfungsi-untuk-menyimpan-cadangan-makanan-pada-daun-jaringanparenkim-berfungsi-untuk-fotosintesis-terutama-pada-jaringan-parenkim-p">
+                            12. B. Jaringan ikatC. jaringan ototD. jaringan saraf39. Jaringan ini berfungsi untuk menyimpan cadangan makanan. Pada daun jaringanparenkim berfungsi untuk fotosintesis, terutama pada jaringan parenkim palisade(jaringan pagar) dan parenkim spons karena banyak mengandung klorofil adalahA. jaringan epidermisB. jaringan dasar atau parenkimC. jaringan pengangkutD. jaringan penguat40. Jaringan yang berfungsi untuk memperkokoh struktur tumbuhan, misalnya pada bisalak, tempurung kelapa, tangkai daun, tangkai buah, dan sebagainya adalah....A. jaringan epidermisB. jaringan dasar atau parenkimC. jaringan pengangkutD. jaringan penguat​</h2><br />
+                        JAWABAN:C. JARINGAN OTOT39. B. JARINGN DASAR / PARENKIM40. A. JARINGAN EPIDERMIS<p></p>PERINGATAN:Jangan hapus!!ಥ__ಥ""Jangan Laporkan Pleaseಥ__ಥ""<p></p>JADIKAN JAWABAN TERCEDAS PLEASE✅PLEASE FOLLOW ME✅Poin 20 Please✅<p></p>TERIMAKASIH<br />
+                                            <h2 class="ez-toc-section" id="tex-quisstex%e2%9c%a8sekalian-big-points-%e2%9c%a8topik-struktur-dan-fungsi-sel-pada-sistem-pencernaansubtopik-gizi-dan-zat-makanan1-zat-makanan-x-memiliki-fungsi-seb">
+                            13. [tex] \:  \:  \:  \:  \:  \: quiss[/tex]✨Sekalian Big Points ✨Topik : Struktur dan fungsi sel pada sistem pencernaanSubtopik : Gizi dan zat makanan1.  Zat makanan X memiliki fungsi sebagai sumber energi utama tubuh dan memperlancar sistem pencernaan. Dilihat dari fungsinya maka zat makanan X tersebut adalah ....a. karbohidratb. proteinc. lipidd. vitamine. mineral☁️"Follow"☁️✨"My BesTie"✨[tex]carlint \: kayla \: hya[/tex][tex]dadanago8[/tex][tex]twinklyu \: kayla[/tex][tex]delaubezanolodelau[/tex][tex]see \: kayla[/tex][tex]see \: jhyan[/tex]☁️✨"Follow Kk terbaik"✨☁️[tex]raytama0[/tex][tex]leaozharat123[/tex][tex]thanks \: your[/tex]​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. karbohidrat </p><p><strong>penjelasan:</strong></p><p></p><p> <strong>Karbohidrat</strong></p><p></p><p>Unsur penyusun karbohidrat adalah C, H, dan O. Karbohidrat dapat disimpan di dalam tubuh sebagai glikogen.</p><p></p><p>Karbohidrat dan lemak merupakan sumber energi utama bagi tubuh kita.</p><p></p><p>Karbohidrat hanya berasal dari tumbuh-tumbuhan, misalnya: beras, jagung, gandum, gula, kentang, umbi-umbian, buah-buahan, dan lain sebagainya.</p><p></p><p>Di dalam tubuh karbohidrat berfungsi sebagai:</p><p></p><p>1.Sumber kalori, setiap satu gram karbohidrat menghasilkan 4,1 kalori.</p><p>2.Bahan penyusun senyawa organik lainnya, misalnya: protein, dan lemak.</p><p>3.Penjaga keseimbangan asam dan basa.</p><br />
+                                            <h2 class="ez-toc-section" id="5-pada-umumnya-struktur-pura-di-bali-dibagi-atas-tiga-bagian-yang-disebut-tri-mandala-masing-masing-mandala-di-batasi-oleh-candi-bentar-dan-candi-kurung-pernyataan-yang-benar-tentang-candi-kurung">
+                            14. 5. Pada umumnya struktur pura di Bali dibagi atas tiga bagian yang disebut Tri Mandala. Masing- masing mandala di batasi oleh Candi Bentar dan Candi Kurung. Pernyataan yang benar tentang Candi Kurung di bawah ini adalah... a. Pintu masuk yang menghubungkan antara Jeron dengan Jaba Tengah b. Bangunan candi yang meng- hubungkan Nista Mandala dengan Madya Mandala c. Pintu masuk yang menghubungkan Utama Mandala dengan Nista Mandala d. Bangunan candi yang meng- hubungkan Madya Mandala dengan Jaba Tengah a. Madya M b. Utama Mandala c. Nista Mandala d. Jeroan Mandala 8. Pura Swagina arti berfungsi dan be masyarakat tertentu profesi dalam menja sehari-hari. Pura to yang berprofesi sel melakukan pemujaa a. Pura Melanting b. Pura Badugul c. Pura Segara d. bangunan candi yang menghubungkan Madya mandala dengan Jaba Tengah​</h2><br />
+                        <p><strong>Candi kurung</strong> adalah <strong>pintu masuk</strong> yang menghubungkan antara <strong>Jeron</strong> dengan <strong>Jaba Tengah</strong>. Jawaban yang tepat adalah opsi <strong>A</strong>.</p><p></p><p><strong>Penjelasan:</strong></p><p>Pada umumnya struktur pura di Bali dibagi atas tiga bagian yang disebut <strong>Tri Mandala</strong> atau konsepsi tiga area. Konsep itu sebagai pedoman dalam pembagian zona berdasarkan tingkat kesuciannya. Bagian-bagian tersebut dikenal sebagau berikut </p><strong>Nista mandala </strong>atau <strong>jaba sisi</strong> yaitu bagian terluar.<strong>Madya mandala</strong> atau <strong>jaba tengah </strong>yaitu bagian peralihan atau tengah.<strong>Utama mandala </strong>atau <strong>jeron</strong> yaitu bagian paling dalam.<p></p><p>Adanya <strong>tingkat kesucia</strong>n Tri Mandala juga ditekankan dengan dibangunnya tembok pembatas ketiga area tersebut. Terdapat pintu gerbang pada posisi tertentu di tembok pembatas. Pada pembatas terluar pura biasanya didirikan gerbang berupa <strong>candi bentar</strong> dengan ukuran rendah dan motif sederhana. Pada tembok pembatas di antara jaba sisi dan jaba tengah dibangun gerbang berupa candi bentar dengan ukuran sedang dan motif bervariasi. Pada tembok pembatas yang dibangun di antara jaba tengah dan jeron dibangun sebuah gerbang yang tinggi dan megah berbentuk <strong>candi kurung.</strong> Gerbang tersebut dikenal dengan nama <strong>kori agung.</strong></p><p></p><p><strong>Pelajari lebih lanjut</strong></p><p>Materi tentang Tri Mandala https://brainly.co.id/tugas/4869881</p><p></p><p><strong>#BelajarBersamaBrainly</strong></p><br />
+                                            <h2 class="ez-toc-section" id="berikut-fungsi-manajemen-keuangan-dan-personalia-1-perencanaan-keuangan-2-penentuan-insentif-karyawan-3-menyusun-laporan-keuangan-4-struktur-penggajian-5-menganalisis-laporan-keuangan-tuga">
+                            15. Berikut fungsi manajemen keuangan dan personalia: 
+1) Perencanaan keuangan 
+2) Penentuan insentif karyawan 
+3) Menyusun laporan keuangan 
+4) Struktur penggajian 
+5) Menganalisis laporan keuangan 
+Tugas utama manajer keuangan adalah ….
+Pilih salah satu:
+A. 1,2 dan 3
+B. 2,3 dan 5
+C. 2,4 dan 5
+D. 3,4 dan 5
+E. 1,3 dan 5</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>E. 1, 3, dan 5</strong></p><p><strong>Penjelasan</strong><strong> </strong><strong>:</strong></p><p>Manajemen keuangan adalah manajemen yang berhubungan dengan langkah untuk mendapatkan dana yang dibutuhkan dan bagaimana penggunaannya dalam rangka mencapai tujuan. </p><br />
+                                            <h2 class="ez-toc-section" id="bacalah-penggalan-teks-tanggapan-berikut-untuk-menjawab-soal-no-17-dan-18pemanasan-global-yang-sedang-melanda-bumi-beberapa-tahun-belakangan-semakinparah-hal-ini-disebabkan-oleh-banyaknya-asap-pabr">
+                            16. Bacalah penggalan teks tanggapan berikut untuk menjawab soal no. 17 dan 18!Pemanasan global yang sedang melanda bumi beberapa tahun belakangan semakinparah. Hal ini disebabkan oleh banyaknya asap pabrik yang beroperasi dan asap darikendaraan bermotor. Keadaan ini diperparah dengan keadaan hutan yang seharusnyadapat berperan dalam mengurangi emisi gas, tetapi kenyataanya masih banyak hutanyang ditebang. Selain penebangan hutan, [...] hutan juga dapat menyebabkan hutantidak dapat menjalankan fungsinya dengan baik. Hal tersebut, menjadikan hutankonservasi yang sudah mulai banyak terjadi terutama di negara kita.17. Kata yang tepat untuk melengkapi kutipan teks tersebut adalah ...A. alih fungsiB. pemberdayaanC. penggunaanD. multi fungsi18. Struktur bagian teks tanggapan tersebut adalah ....A. konteksB. deskripsiC. argumentasiD. penilaian​</h2><br />
+                        <p>Jawaban: 17. alih fungsi 18. Argumentasi</p><p></p><p>Penjelasan: 17. Terjadi alih fungsi hutan. 18. Kalimat berupa opini jadi termasuk kalimat argumentasi. </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-bertambahnya-tinggi-badan-bertambahnya-lingkar-tubuh-dan-ukuran-besarnya-organ-seks-adalah-perubahan-yang-terjadi-pada-remaja-secara-a-eksternalb-outernalc-akternald-internal2-zat-zat-yang-terk">
+                            17. 1  Bertambahnya tinggi badan, bertambahnya lingkar tubuh dan ukuran besarnya organ seks adalah perubahan yang terjadi pada remaja secara ...a.Eksternalb.Outernalc.Akternald.Internal2 Zat-zat yang terkandung dalam suatu jenis makanan tertentu merupakan pengertian dari ...a.Malnutrisib.Lemakc.Gizid.Overnutrisi3 Membesarnya buah dada pada anak perempuan dan tumbuhnya kumis serta jenggot pada anak laki-laki adalah ciri-ciri pertumbuhan kelamin ...a.Primerb.Utamac.Sekunderd.Premium4 Manakah dibawah ini yang bukan dari tingkat perkembangan moral ...a.Konvensional Reasoningb.Learning Listeningc.Prakonvensional Learningd.Pascakonvensional Reasoning5 Bagian dari zat yang aktif dalam metabolisme atau sebagai bagian penting dari struktur sel dan jaringan sebagai kofaktor suatu enzim merupakan fungsi zat  ...a.Mineralb.Lemakc.Proteind.Karbohidrat</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. D.</p><p>2. C.</p><p>3. C.</p><p>4. B.</p><p>5. C.</p><p><strong>Penjelasan:</strong></p><p>MAAF KALO SALAH MASIH BELAJAR </p><br />
+                                            <h2 class="ez-toc-section" id="bacalah-paragraf-berikt-dengan-cermat-nama-kelinci-sendiri-berasal-dari-bahasa-belanda-kelinci-memiliki-telinga-yang-panjang-kedua-telinganya-tersebut-dapat-tumbuh-hingga-mencapai-lebih-dari-10-cm">
+                            18. Bacalah paragraf berikt dengan cermat! Nama kelinci sendiri berasal dari bahasa Belanda. Kelinci memiliki telinga yang panjang. Kedua telinganya tersebut dapat tumbuh hingga mencapai lebih dari 10 cm,dan mungkin saja, bahwa telinga panjang itu hasil dari adaptasi aktivitas mereka dalam mendeteksi predator.Oleh karena itu memang fungsi utama dari telinganya adalah mendengarkan suara.Selain itu kelinci meiliki kaki yang sangat kuat. Paragraf tersebut dalam struktur tesk deskripsi merupakan bagian ... A. identifikasi B. deskripsi bagian C. penutup D. simpulantolongin​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. identifikasi</p><p><strong>Penjelasan:</strong></p><p>Asal kata dan pengertian biasanya itu merupakan identifikasi</p><br />
+                                            <h2 class="ez-toc-section" id="pilihlah-salah-satu-jawaban-yang-paling-tepat1-teks-laporan-hasil-observasi-adalah-teks-yang-berisi-penjabaran-umummelaporkan-sesuatu-berupa-hasil-dari-a-penilaianb-pengamatanc-koreksid">
+                            19. Pilihlah salah satu jawaban yang paling tepat!
+1. Teks laporan hasil observasi adalah teks yang berisi penjabaran umum/melaporkan
+ sesuatu berupa hasil dari...
+A. Penilaian
+B. Pengamatan
+C. Koreksi
+D. Peluang
+2. Jenis teks laporan hasil observasi mendeskripsikan atau menggambarkan bentuk, ciri,
+ atau sifat umum, seperti hal-hal berikut, kecuali...
+A. Keindahan bumi
+B. Peristiwa
+C. Hewan 
+D. Benda
+3. Museum merupakan salah satu tempat paling penting dalam upaya pelestarian sejarah 
+ (1). Museum adalah lembaga yang berfungsi mengumpulkan, merawat, dan menyajikan 
+ serta melestarikan warisan budaya masyarakat untuk tujuan studi, penelitian, dan 
+ kesenangan atau hiburan (2). 
+ Fungsi museum yang utama adalah menyimpan, merawat, mengamankan, dan 
+ memanfaatkan koleksi museum berupa benda cagar budaya (3). Dengan demikian, 
+ museum memiliki fungsi besar yaitu sebagai tempat pelestarian (4). Kalimat utama 
+ ditunjukan pada nomor....
+A. 1 dan 4
+B. 2 dan 3
+C. 1 dan 3
+D. 2 dan 4
+4. Museum merupakan salah satu tempat paling penting dalam upaya pelestarian sejarah
+ (1). Museum adalah lembaga yang berfungsi mengumpulkan, merawat, dan menyajikan 
+ serta melestarikan warisan budaya masyarakat untuk tujuan studi, penelitian, dan 
+ kesenangan atau hiburan (2). 
+ Fungsi museum yang utama adalah menyimpan, merawat, mengamankan, dan 
+ memanfaatkan koleksi museum berupa benda cagar budaya (3). Dengan demikian, 
+ museum memiliki fungsi besar yaitu sebagai tempat pelestarian (4). Kalimat utama 
+ ditunjukan pada nomor....
+A. 1 dan 4
+B. 2 dan 3
+C. 1 dan 3
+D. 2 dan 4
+5. Berikut ini yang bukan struktur teks laporan observasi adalah.... 
+A. Pernyataan umum
+B. Simpulan
+C. Deskripsi bagian
+D. Orientasi
+6. Bekam atau hijamah ialah sebuah teknik pengobatan yang dilakukan dengan jalan membuang darah kotor (racun yang berbahaya) dari dalam tubuh lewat permukaan kulit. Menurut pemahaman umum, sebenarnya bekam berfungs untuk membang darah yang teah rusak atau teroksidasi karena tingginya oksidan dalam tubuh. Kutipan teks di atas termasuk salah satu struktur teks laporan hasil observasi, yaitu...
+A. Simpulan
+B. Pernyataan umum
+C. Deskripsi bagian
+D. Orientasi
+7. Kalimat utama yang ada di awal paragraf disebut.....
+A. Deduktif
+B. Induktif
+C. Inneratif
+D. Campuran
+8. Kalimat utama yang ada di akhir paragraf disebut.....
+A. Deduktif
+B. Induktif
+C. Inneratif
+D. Campuran
+9. Berikut adalah ciri-ciri teks laporan hasil observasi, kecuali....
+A.Berisi pembahasan berupa ilmu tentang suatu objek/konsep
+B.Membahas objek secara sistematis yang merinci setiap bagian dengan subjektif
+C.Membahas objek yang bersifat umum, termasuk kategori atau kelompok tersebut
+D.Bertujuan menjelaskan dari sudut pandang ilmu
+10. Wayang kulit dilihat dari umur, dan gaya pertunjukannya pun dibagi lagi menjadi bermacam jenis. Jenis yang paling terkenal, karena diperkirakan memiliki umur paling tua adalah wayang purwa. Purwa berasal dari bahasa Jawa, yang berarti awal. Wayang ini terbuat dari kulit kerbau yang ditatah, dan diberi warna sesuai kaidah pulasan wayang pendalangan, diberi tangkai dari bahan tanduk kerbau bule yang diolah sedemikian rupa dengan nama cempurit yang terdiri dari: tuding dan gapit. 
+ Ide pokok paragraf di atas adalah....
+A. Wayang dibagi menjadi beberapa jenis
+B.Wayang terbuat dari kulit kerbau
+C. Wayang purwa adalah wayang yang paling tua
+D. Perbedaan wayang gapil dan wayang tuding</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>1.B</strong></p><p><strong>2</strong><strong>.</strong><strong>D</strong></p><p><strong>3</strong><strong>.</strong><strong>D</strong></p><p><strong>4</strong><strong>.</strong><strong>D</strong></p><p><strong>5</strong><strong>.</strong><strong>D</strong></p><p><strong>6</strong><strong>.</strong><strong>A</strong></p><p><strong>7</strong><strong>.</strong><strong>A</strong></p><p><strong>8.</strong><strong>B</strong></p><p><strong>9</strong><strong>.</strong><strong>B</strong></p><p><strong>1</strong><strong>0</strong><strong>.</strong><strong>C</strong></p><p><strong>Maaf</strong><strong> </strong><strong>kalau</strong><strong> </strong><strong>ada</strong><strong> </strong><strong>ya</strong><strong>ng</strong><strong> </strong><strong>salah</strong><strong></strong><strong></strong><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="berikut-pengertian-perubahan-sosialmenurut-kingsley-davis-adalah-perubahan-perubahan-yang-terjadipada-lembaga-kemasyarakatan-didalam-suatu-masyarakat-yangmemengaruhi-sistem-sosialnyab-perubahan-s">
+                            20. Berikut pengertian perubahan sosialmenurut Kingsley Davis adalah ....perubahan-perubahan yang terjadipada lembaga kemasyarakatan didalam suatu masyarakat yangmemengaruhi sistem sosialnyab. perubahan sosial meliputi unsur-unsur kebudayaan, baik yangmaterial maupun yang inmaterial,terutama yang menekankan padapengaruh yang besar dari unsur-unsur kebudayaan materialC. perubahan-perubahan yangterjadi dalam struktur dan fungsimasyarakatd. perubahan-perubahan dalamhubungan sosial atau perubahanterhadap keseimbangan sosialtersebut​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. perubahan perubahan yang terjadi pada lembaga kemasyarakan yang mrmpengaruhi sistem sosialnya</p><br />
+                                            <h2 class="ez-toc-section" id="xilem-merupakan-jaringan-kompleks-karena-tersusun-dari-beberapa-tipe-sel-yang-berbeda-penyusun-utamanya-adalah-trakeid-dan-trakea-sebagai-saluran-pengangkut-air-dengan-penebalan-dinding-sel-yang-cuku">
+                            21. Xilem merupakan jaringan kompleks karena tersusun dari beberapa tipe sel yang berbeda. Penyusun utamanya adalah trakeid dan trakea sebagai saluran pengangkut air dengan penebalan dinding sel yang cukup tebal sekaligus berfungsi sebagai penyokong. Xilem juga tersusun atas serabut, sklerenkim, serta sel-sel parenkim yang hidup dan berperan dalam berbagai kegiatan metabolisme sel. Xilem disebut juga sebagai pembuluh kayu yang berbentuk kayu pada batang.1. Dalam laporan hasil percobaan, kutipan tersebut ditulis pada bagian....a. tujuanb. kajian teoric. pembahasand. alat dan bahan2. Dalam struktur teks laporan hasil percobaan, teks tersebut terdapat pada bagian.....a. pernyataan umumb. uraianc. hasild. kesimpulan3. Pernyataan yang benar berdasarkan teks tersebut adalah....a. Teks tersebut memberikan informasi bahwa xilem tersusun dari beberapa tipe sel yang berbeda. Penyusun utamanya adalah trakeid dan trakea.b. Teks tersebut merupakan laporan "Uji Coba Kekuatan Kayu".c. Teks tersebut memberikan informasi tentang proses pembentukan kayu.d. Teks tersebut menyampaikan bahwa kekuatan kayu terdapat pada batang.tolong di bantu ya guys makasih​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.b</p><p>2.a</p><p>3.a</p><p><strong>Penjelasan:</strong></p><p>semoga bener yaa</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-ciri-ciri-jaringan-berikut-1berfungsi-untuk-absorpsi-dan-proteksi-atau-sebagai-kelenjar-2berfungsi-untuk-melekatkan-suatu-jaringan-dengan-jaringan-lain-3sel-selnya-terikat-oleh-zat-pen">
+                            22. perhatikan ciri-ciri jaringan berikut! 
+1)berfungsi untuk absorpsi dan proteksi atau sebagai kelenjar 2)berfungsi untuk melekatkan suatu jaringan dengan jaringan lain 3)sel-selnya terikat oleh zat pengikat(semen) sehingga hampir tidak ada ruangan antarsel 4)mempunyai struktur serat-serat terutama kolagen yang padat 5)sel selnya melekat pada lamina basalis. ciri ciri jaringan epitel ditunjukkan oleh angka a.1),2),dan 3) b.1),2) dan 4) c.1),3),dan 5) d.2),4),dan 5) e.3),4),dan 5)</h2><br />
+                        c.1.3dan5..<br /><br /><br />isyaallah benar<br />
+                                            <h2 class="ez-toc-section" id="bantu-jawab-pleasee-jumlah-pin-pada-mikrokontroler-atmega328p-dalam-arduino-adalah-a-14-b-20c-28e-40e-42banyak-set-intruksi-yang-didukung-oleh-mikrokontroler-atmega328p-dalam-sebuah-prose">
+                            23. BANTU JAWAB PLEASEE .....Jumlah pin pada mikrokontroler Atmega328P dalam Arduino adalah ...A. 14 B. 20C. 28E. 40E. 42Banyak set intruksi yang didukung oleh mikrokontroler Atmega328P dalam sebuah proses aritmatikaadalah ...A. 130 B. 131 C.132 D. 133E. 141Bagian dalam microkontroler yang mampu menyimpan data ketika dialiri arus listrik dan akanterhapus ketika tidak disupplai tegangan adalah ...A. CPUC. FlashE. Port I/OB. ROMD. RAMKomputer generasi pertama ditandai dengan ditemukannya tabung hampa. Berikut ini yangmerupakan Komputer generasi pertama adalah ....A. IBM 7094D. IBM 360B. UNIVACE. PDP-8C. Pentiu Konsep perencanaan dan struktur pengoperasian dasar dari suatu sistem komputer disebut ....A. Komponen komputerD. Organisasi komputerB. Jenis-jenis komputerE. Fungsi komputerC. Arsitektur komputer Fungsi utama komputer yang berfungsi mengolah kumpulan data yang menghasilkan suatu informasiadalah ....A. KendaliD. Penyimpan dataB. Pengolah dataE. Penghitung dataC. Pemindah data​</h2><br />
+                         C<br />B<br />C<br />B<br />A<br />A<br /><br />Terimakasih <br />Sama"<br />
+                                            <h2 class="ez-toc-section" id="1-jaringan-embrional-akan-terus-berkembang-menjadi-struktur-dengan-fungsi-khusus-yang-akan-dimiliki-saat-dewasa-hal-ini-merupakan-salah-satu-proses-tahap-perkembangan-yaitu-a-mitosisb-pembela">
+                            24. 1. Jaringan embrional akan terus berkembang menjadi struktur dengan fungsi khusus yang akan dimiliki saat dewasa. Hal ini merupakan salah satu proses tahap perkembangan yaitu ....*a. mitosisb. pembelahan selc. morfogenesisd. Diferensiasi sele. rudimenter2. Pada peristiwa perkecambahan, kerja enzim dan hormon dipengaruhi terutama oleh faktor ....*a. suhub. kelembapanc. aird. tanahe. angin3. Berikut ini adalah empat bagian penting pada biji yang berkecambah, kecuali ....*a. kaulikulab. radikulac. plumulad. kotiledone. filokula​</h2><br />
+                        <p><strong>Jawaban:</strong></p>Jawaban: d. Diferensiasi selJawaban: a. suhuJawaban: e. filokula<p></p><p><strong>Penjelasan:</strong></p><p><strong>Jawaban: d. Diferensiasi sel</strong></p><p>Diferensiasi sel adalah proses di mana sel-sel embrional mengalami perubahan struktural dan fungsional yang mengarah pada perkembangan menjadi jenis sel yang lebih khusus dan sesuai dengan fungsi tertentu dalam organisme dewasa. Proses diferensiasi ini memungkinkan sel-sel dengan potensi yang sama pada awalnya untuk mengembangkan spesialisasi dan fungsi yang berbeda-beda dalam tubuh.</p><p></p><p><strong>Jawaban: a. suhu</strong></p><p>Pada peristiwa perkecambahan, kerja enzim dan hormon yang mempengaruhi proses tersebut sangat dipengaruhi oleh suhu. Suhu yang tepat diperlukan untuk mengaktifkan enzim dan merangsang produksi hormon yang mendukung pertumbuhan bibit. Suhu yang tidak sesuai bisa memperlambat atau bahkan menghambat perkecambahan dan pertumbuhan bibit.</p><p></p><p><strong>Jawaban: e. filokula</strong></p><p>Filokula bukan merupakan salah satu dari empat bagian penting pada biji yang berkecambah. Bagian penting pada biji yang berkecambah meliputi:</p><p></p><p>Kaulikula: Lapisan pelindung tipis yang melapisi permukaan biji dan dapat membantu penyerapan air selama perkecambahan.</p><p>Radikula: Merupakan akar embrio yang pertama kali tumbuh keluar dari biji saat perkecambahan dimulai.</p><p>Plumula: Merupakan tunas yang tumbuh setelah radikula, akan menjadi bagian atas tanaman yang berkembang.</p><p>Kotiledon: Merupakan daun lembaga pertama yang muncul dari biji saat perkecambahan dimulai. Fungsi kotiledon umumnya adalah untuk menyediakan cadangan makanan kepada embrio yang sedang berkembang.</p><p>Semua bagian ini berperan penting dalam proses perkecambahan dan pertumbuhan bibit menjadi tanaman dewasa.</p><p><strong>*Semoga Membantu!</strong></p><br />
+                                            <h2 class="ez-toc-section" id="xilem-merupakan-jaringan-kompleks-xilem-tersusun-dari-beberapa-tipe-sel-yang-berbeda-penyusunutamanya-adalah-trakeid-dan-trakea-jaringan-tersebut-berfungsi-sebagai-saluran-pengangkut-air-dengan-pen">
+                            25. Xilem merupakan jaringan kompleks. Xilem tersusun dari beberapa tipe sel yang berbeda. Penyusunutamanya adalah trakeid dan trakea. Jaringan tersebut berfungsi sebagai saluran pengangkut air dengan penebalan dinding sel yang cukup tebal sekaligus berfungsi sebagai penyokong. Xilem juga tersusun atas serabut, sklerenkim, serta sel-sel parenkim yang hidup. Xilem berperan dalam berbagai kegiatemetabolisme sel. Xilem disebut juga sebagai pembuluh kayu yang membentuk kayu pada batang 1. Dalam laporan hasil percobaan, kutipan tersebut ditulis pada bagian....a. tujuanb. kajian teoric. pembahasand. alat dan bahan2. Dalam struktur teks laporan hasil percobaan, teks tersebut terdapat pada bagian...a. pernyataan umumb. uraianc. hasild. kesimpulan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. C. pembahasan</p><p>2. A. pernyataan umum</p><p></p><p><strong>Penjelasan:</strong></p><p>semoga bermanfaat ^_^ dan maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="1-untuk-melewatkan-parameter-dengan-referensi-dapat-dilakukan-den-menambahkan-karakter-di-depan-nama-parameter-yaitu-a-b-c-d-e-2-nilai-nilai-yang-akan-dikirim-pada-sebuah-fungsi-disebu">
+                            26. 1. Untuk melewatkan parameter dengan referensi, dapat dilakukan den menambahkan karakter di depan nama parameter yaitu.a. #b. @c. $d. &amp;e. %2. Nilai-nilai yang akan dikirim pada sebuah fungsi disebut sebagaia. fungsib. datac. argumend. karaktere. struktur kendali terakhir dari array umumnya diisi dengan karakter...a. -2b. -1c. 0d. 1e. 24. Fungsi yang paling umum digunakan dalam menampilkan data adalah . a.PUTS ()b. PRINTF ()c. PUTCHAR Od. GETCHE ( )e. SCANF ()5. Berikut yang bukan termasuk keuntungan memakai fungsi (function) adalah a. menggunakan keyword voidb. menguraikan tugas pemrograman yang rumit c. dapat menggunakan kode yang ditulis dalam berbagai program yang berbedad. mengurangi duplikasi kode dalam program e. meningkatkan kemampuan pelacakan kesalahan6. Dalam beberapa literatur, array sering disebut sebagai ..a. indeksb. larikc. garisd. cacahe. urutan7. Berikut yang bukan termasuk bagian-bagian dalam definisi fungsi adalaha. bodyb. namec. parameter listd. outpute. return type8. Pembeda antara prototipe yang memiliki kemiripan dengan fungsi header adalah pada bagian akhir terdapat.....a. titik duab. dua titike. titik komad. pungtuasie. spasi ganda9. Bentuk sean pada dasarnya menyerupai fungsi.....a. getche ()b. getch()c. kontrol prosesd. konversi datae printf()10. Nama tungsi getche() sebenarnya singkatan dari .a. get currencyb. get character and echoc. going characterd.get charactere. get the click11. Jika sejumlah variabel dapat memakai nama yang sama, namun di antarasatu variabel dengan variabel yang lain dibedakan berdasarkan subscript,termasuk dalam kategori....a. elemenb. array c. fungsid. subscripte. code12. Penomoran indeks yang dibutuhkan dalam array dimensi satu adalah ....a. sembilanb. tujuhc. limad. tigae. satu13. Fungsi utama akan dipanggil secara otomatis saat program dimulai,namun fungsi yang lain harus dijalankan melalui pernyataan ....a. parameter listb. fungsi headerc. inisialisasid. function calle. definisi fungsi14. Suatu metode pengurutan yang terinspirasi dari gelembung sabun yangada di dalam permukaan air adalaha. Bubble Sortb. Exchange Sortc. Selection Sortd. Insertion Sorte. Quick Sort15. Pengiriman parameter berupa array dimensi dua hampir sama dengan pengiriman parameter array dimensi satu, hanya perbedaannya terletakpada array dimensi dua yang harus menyebutkan posisi ..a. parameter formalb. memoric. baris dan kolomd. kolom sajae. baris saja#TOLONG BANTU DENGAN JAWABAN YG BENAR​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.b</p><p>2.d</p><p>3.b</p><p>4.c</p><p>5.a</p><p>6.e</p><p>7.b</p><p>8.d</p><p>9.a</p><p>10.b</p><p>11.e</p><p>12.b</p><p>13.c</p><p>14.b</p><p>15.e</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah ya kak semoga membantu ya kak</p><br />
+                                            <h2 class="ez-toc-section" id="6-perbedaan-susunan-jaringan-akar-antara-tumbuhan-dikotil-dan-monokotil-adalah-pada-bagian-berkas-pengangkutannya-pernyataan-yang-benar-untuk-tumbuhan-dikotil-adalah-a-susunan-xilem-di-dalam-lingk">
+                            27. 6. perbedaan susunan jaringan akar antara tumbuhan dikotil dan monokotil adalah pada bagian berkas pengangkutannya pernyataan yang benar untuk tumbuhan dikotil adalah...A. susunan xilem di dalam lingkaranB. susunan floem di dalam lingkaranc. xilem dan floem berselang selingd. xilem lebih banyak daripada floem7. pada beberapa tumbuhan akar mengalami modifikasi sehingga menyebabkan perubahan fungsi salah satunya yaitu sebagai tempat menyimpan cadangan makanan yang dapat ditemukan pada tanamanA. bawang merahB. singkongc. kentangd. sagu8. bunga terdiri dari dua bagian utama yaitu perhiasan dan alat reproduksi pernyataan yang bukan merupakan fungsi dari struktur bunga adalahA. benang sari merupakan alat reproduksi betinaB. kelopak bunga sebagai penutup kuncupc. mahkota bunga untuk menarik perhatian seranggad. putik berfungsi sebagai alat reproduksi betinatolong dijawab kak yang bisa jawab tolong dijawab kak yang bisa jawab ​</h2><br />
+                        <p><strong>Jawaban:</strong></p> 5 . D 6. C7. B 8. B<p><strong>Penjelasan:</strong></p> jadikan yang terbaik<p></p><br />
+                                            <h2 class="ez-toc-section" id="kekurangan-cairan-pada-tubuh-bisa-berdampak-pada-terganggunya-fungsi-otak-terutama-kemampuan-untuk-fokus-dan-konsentrasi-hal-tersebut-dapat-berdampak-pada-aktivitas-dan-produktivitas-anda-sepanjang">
+                            28. Kekurangan cairan pada tubuh bisa berdampak pada terganggunya fungsi otak, terutama kemampuan untuk fokus dan konsentrasi. Hal tersebut dapat berdampak pada aktivitas dan produktivitas anda sepanjang hari. Paragraf tersebut merupakan struktur bagian... a. Pengenalan Isu b. Rangkaian argumen c. Ajakan d. Penegasan Kembali​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. pengenalan isu</p><p></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="bantu-ya-kaka1-struktur-sel-dibawah-ini-berfungsi-untuk-proses-transkripsi-proteina-mitokondriab-lisosomc-ribosomd-nucleus2-ubun-ubun-besae-pada-tulang-tengkorak-dibentuk-oleh-sambungan">
+                            29. Bantu ya kaka
+1. Struktur sel dibawah ini berfungsi untuk proses transkripsi protein:
+A. Mitokondria
+B. Lisosom
+C. Ribosom
+D. Nucleus
+2. Ubun-ubun Besae pada tulang tengkorak dibentuk oleh sambungan....
+A. medula spinalis
+B. sutura
+C. vetebralis
+D. cerebrum
+3. Komponen darah berfungsi saat terjadi pendarahan..
+A. eritrosit
+B. platelet
+C. leukosit
+D. limfosit
+4. Pembuluh darah ini yg banyak mengandung O2 ini meninggalkan jantunc..
+A. vena pulmonalis
+B. arteri pulmonalis
+C. aorta
+D. arteri koronalis
+5. Pencernaan karbohidrat terutama terjadi di...
+A. lambunc
+B. usus halus
+C. usus besar
+D. mulut</h2><br />
+                        3.B.platelet (trombosit)<br />4.C.Aorta<br /><br />
+                                            <h2 class="ez-toc-section" id="1-dalam-membuat-target-bagi-perusahaan-target-tersebut-harus-bisa-terukur-dengan-jelas-hal-tersebut-merupakan-salah-satu-framework-dalam-membuat-target-yaitua-achievable-b-realistic-c-measurab">
+                            30. 1. Dalam membuat target bagi perusahaan, target tersebut harus bisa terukur dengan jelas. Hal tersebut merupakan salah satu framework dalam membuat target, yaitu?
+A.achievable.
+B.realistic.
+C.measurable.
+D.specific.
+2. Dalam merencanakan struktur organisasi, apa yang perlu dilakukan setelah menentukan bagaimana setiap proses dijalankan?
+A. Mengelompokkan beberapa fungsi ke dalam suatu divisi.
+B. Melakukan pemetaan mana yang termasuk fungsi utama dan fungsi pendukung.
+C. Mengidentifikasi proses-proses yang perlu ada di dalam perusahaan.
+D. Menentukan siapa yang bertanggung jawab atas proses tersebut.
+3.Berikut ini, yang tidak termasuk komponen dalam biaya pokok produksi adalah?
+A. biaya pengiriman barang ke toko.
+B. biaya upah pekerja produksi.
+C. biaya operasional kantor.
+D. biaya bahan baku.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.B</p><p>2.C</p><p>3.C</p><p><strong>Penjelasan:</strong></p><p>maaf ye kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-struktur-sel-amoeba-di-bawah-inimanakah-komponenprotein-seluler-utama-yangberfungsi-untukmembentuk-strukturlokomotif-yang-di-tunjukoleh-tanda-panaha-integrinb-aktinc-mikrotubul">
+                            31. Perhatikan struktur sel Amoeba di bawah ini
+Manakah komponen
+protein seluler utama yang
+berfungsi untuk
+membentuk struktur
+lokomotif yang di tunjuk
+oleh tanda panah?
+A. Integrin
+B. Aktin
+C. Mikrotubulus
+D. Filamen intermedier
+E. Flagellin</h2><br />
+                        C.Mikrotubulus<br />aku sebenarnya tau karena aku pernah sakit amoeba jadi tau deh hehehe<br />
+                                            <h2 class="ez-toc-section" id="1-presiden-dan-wakil-presiden-dipilihdalam-satu-pasangan-secara-langsungoleh-rakyat-hal-ini-tercantum-dalam-a-pasal-5a-ayat-1b-pasal-6a-ayat-1c-pasal-7a-ayat-1d-pasal-8a-ayat-1e-pas">
+                            32. 1. Presiden dan wakil presiden dipilihdalam satu pasangan secara langsungoleh rakyat. Hal ini tercantum dalam ....a. Pasal 5A Ayat (1)b. Pasal 6A Ayat (1)c. Pasal 7A Ayat (1)d. Pasal 8A Ayat (1)e. Pasal 82. Struktur politik dalam suatu pemerintahan, yang bertugas menjalankan fungsi-fungsi pengambilan dan pelaksanaansy keputusan disebut ....a. sistem politikb. struktur politikc. infrastrukturd. partai politike. suprastruktur3. Kegiatan interaksi antara pemerintahdengan masyarakat dalam rangka prosespembuatan kebijakan dan keputusan yangmengikat disebut....a. sistemb. politikc. sistem politikd. kebijakane. ketentuan4. DPD merupakan lembaga negara yang di-bentuk untuk menjalankan tugas utama ....a. membantu MPR dalam mengubahundang-undang dasarb. membantu pemerintah dalam meng-ajukan RUUc. mewakili dan memperjuangkanaspirasi daerahd. mewadahi dan memperjuangkankepentingan golongane. membantu presiden dalam peme-rintahan5. Berikut ini lembaga-lembaga yang ter-masuk di dalam suprastruktur politikIndonesia, kecuali....a. Mahkamah konstitusib. Badan Pemeriksa Keuanganc. partai politikd. Pemerintah Daerahe. Dewan Perwakilan Rakyat​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ini tentang apa emang sih??</p><br />
+                                            <h2 class="ez-toc-section" id="pernyataan-berikut-yang-tidak-benar-mengenai-komponen-kimiawi-sel-adalah%e2%80%a6-a-protein-berfungsi-sebagai-pembentuk-struktur-sel-serta-menghasilkan-energi-b-kabohidrat-berfungsi-sebagai-pembentu">
+                            33. Pernyataan berikut yang tidak benar mengenai komponen kimiawi sel adalah….A. Protein berfungsi sebagai pembentuk struktur sel serta menghasilkan energi.B. Kabohidrat berfungsi sebagai pembentuk struktur sel serta menghasilkan energi.C. Protein berperan sebagai pembentuk struktur sel dan mempercepat reaksi kimia sebagai enzim.D. Lemak berperan sebagai komponen utama penyusun membran plasma dan penghasil energi.E. Asam nukleat berperan mengatur pewarisan sifat sel. 
+​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A</p><p><strong>Penjelasan:</strong></p><p>karena protein disusun oleh asam amino dan berperan sebagai salah satu penyusun membran sel, membantu transport substansi tertentu, dan mempercepat reaksi kimia dalam sel. Reaksi kimia tersebut terjadi dalam bentuk protein fungsional, yaitu enzim.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jenis-tipe-jembatan-yang-digunakan-pada-jaman-modern-adalah-menggunakan-bahan-utamaa-jembatan-balokb-jembatan-gantungc-jembatan-kabel-penahand-jembatan-gerbangdibawah-ini-yang-bukan-merupakan-peng">
+                            34. jenis tipe jembatan yang digunakan pada jaman modern adalah menggunakan bahan utamaA. jembatan balokB. jembatan gantungC. jembatan kabel penahanD. jembatan gerbangDibawah ini yang bukan merupakan penggolongan jembatan berdasarkan material yang digunakan adalahA. jembatan platB. jembatan bajaC. jembatan kayuD. jembatan betonBerikut ini kriteria atau syarat pembangunan bangunan tahan gempa kecualiA. denah bangunan harus simetrisB. bangunan harus terbuat dari batubataC. pondasi bangunan harus berada di tanah yang keras dan stabilD. struktur bangunan harus menyatu sehingga tidak mudah runtuhRentan terhadap rayap dan ukuran tidak sama adalah kelemahan dari konstruksiA. betonB. bajaC. kayuD. bambuJasa konstruksi menurut UUJK mencakup hal hal berikut ini kecualiA. jasa arsitekturB. jasa konsultasi konstruksiC. jasa rekayasa dan pembangunan konstruksiD. jasa pemeliharaan instalasi bangunanberikut fungsi konstruksi sebagai fungsi keagamaan kecuali A. masjidB. reaktor nuklirC. gerejaD. vihara​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.a</p><p>2.b</p><p>3.a</p><p>4.d</p><p>5.a</p><p>6.b</p><p><strong>Penjelasan:</strong></p><p>maaf y kalok salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="mohon-bantuannya6-jawablah-pertanyaan-berikut1-tuliskanlah-urutan-organisasi-kehidupan-tingkat-molekuler-dan-tingkat-seluler2-apakah-yang-dimaksud-dengan-kelenjar-endokrin3-tuliskanlah-jaringan">
+                            35. mohon bantuannya6. Jawablah pertanyaan berikut!1. Tuliskanlah urutan organisasi kehidupan tingkat molekuler dan tingkat seluler!2. Apakah yang dimaksud dengan kelenjar endokrin?3. Tuliskanlah jaringan yang menyusun organ lambung!4. Mengapa struktur-struktur berikut ini penting bagi sel tumbuhan?a. dinding selb. vakuolac. kloroplasd. inti sel5. Tuliskanlah organel-organel sel dan fungsinya!6. Tuliskanlah macam-macam jaringan hewan!inti sel7. Tuliskanlah karakteristik utama jaringan meristematik dan di mana kita dapat menemukannya!8. Tuliskanlah nama jaringan yang berperan dalam pergerakan air dan mineral di dalam tubuh tumbuhan9. Tuliskanlah minimal empat perbedaan antara sel tumbuhan dan sel hewan!10. Tuliskanlah organel sel yang hanya dapat ditemukan pada sel tumbuhan!​​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>maaf saya tidak bisa karena terlalu banyak</p><br />
+                                            <h2 class="ez-toc-section" id="kutipan-berikut-dalam-struktur-laporan-hasil-observasi-termasuk-dalam-bagian-%e2%80%a6-1-poingambar-tanpa-teksa-pernyataan-umumb-deskripsi-bagianc-deskripsi-manfaatd-simpulanteks-hutan-mangrove">
+                            36. Kutipan berikut dalam struktur laporan hasil observasi termasuk dalam bagian …. *1 poinGambar Tanpa TeksA. pernyataan umumB. deskripsi bagianC. deskripsi manfaatD. simpulanteks: hutan mangrove memiliki peran ekologis yabg besar bagi kehidupan manusia. telah berdabad abad lamanya dijadikan tumpuan jutaan orang yang hidup dipesisir. hutab ini memiliki banyak fungsi mulia dari penyedia sumber makanan, bahan baku industri, menjegah banjir, menjegah erosi hingga rekreasi. berikut ini fungsi utama hutan mangrove​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>aku rasa jawabannya C. Deskripsi manfaat.</p><p><strong>Penjelasan:</strong></p><p>karena di teks tersebut menjelaskan kegunaan hutan mangrove yang memiliki peran ekologis yang besar untuk masyarakat pesisir.</p><p></p><p>maaf kalau salah.</p><br />
+                                            <h2 class="ez-toc-section" id="8-kerugian-membuat-produk-berbahanbambu-adalah-a-kurang-awetb-kurang-mahalasc-jumlahnya-melimpahend-strukturnya-kurang-elastis9-faktor-yang-harus-diperhatikan-padagproduk-karya-kerajinan-yan">
+                            37. 8. Kerugian membuat produk berbahanbambu adalah ....a. Kurang awetb. kurang mahalasc. jumlahnya melimpahend. strukturnya kurang elastis9. Faktor yang harus diperhatikan padagproduk karya kerajinan yang siapdipasarkan agar terlihat lebih menarikdan tahan lama adalaha. hargab. merekc. kemasand. lokasi penjualan10. Pada pembuatan kerajinan, perbedaanutama mengenai bahan keras alami danbahan keras buatan adalah pada ....a. nilai bendanyab. harga bendanyac. fungsi bendanyad. pola pengolahannya11. Teknik tuang sekali pakai digunakan untukkarya kerajinan dalam bentuk ....a. ukiranb. mebelc. konveksi kaind. patung perunggu12.kayu sering dimanfaatkan untuk membuat Mebel,seperti meja dan kursi.bahan yg digunakan untuk memperindah mebel dari kayu adalah a. lem dan catb. tali dan pakuc. cat dan pernisd. Las dan ampelas​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>8.A</p><p>9.C</p><p>10.D</p><p>11.C</p><p>12.C</p><p><strong>Penjelasan:</strong></p><p> maaf ya kalau salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="persiapan-un-smp-ipa-biologi-jaringan-tumbuhandiutamakan-siswa-smp-yang-akan-menghadapi-un1-jaringan-tumbuhan-yang-memiliki-ciri-ciri-memiliki-sel-hidup-dan-struktur-selnya-tersusun-rapat-tanpa">
+                            38. PERSIAPAN UN SMP (IPA BIOLOGI - JARINGAN TUMBUHAN)
+Diutamakan siswa SMP yang akan menghadapi UN
+1. Jaringan tumbuhan yang memiliki ciri-ciri memiliki sel hidup dan struktur selnya tersusun rapat tanpa celah, seringkali memiliki derivat berupa stomata, bulu akar,  dan kutikula. Fungsi jaringan ini adalah...
+a. Aktif membelah untuk mengganti jaringan yang rusak
+b. Membentuk kulit biji yang keras
+c. Mengangkut hasil fotosintesis
+d. Melindungi jaringan yang berada di bawahnya
+2. Ketika batang dipotong melintang, susunan jaringannya mirip dengan struktur jaringan akar kecuali pada bagian...
+a. Epidermis
+b. Korteks
+c. Endodermis
+d. Silinder pusat</h2><br />
+                        1. d. Melindungi jaringan yang  berada di bawahnya<br />2. c. endodermis<br />
+                                            <h2 class="ez-toc-section" id="baterai-atau-yang-dikenal-juga-sebagai-batu-baterai-merupakan-alat-yang-mengumpulkan-dan-membangkitkan-aliran-listrik-baterai-biasanya-digunakan-pada-beberapa-alat-elektronik-levisi-atau-ac-maina">
+                            39. Baterai atau yang dikenal juga sebagai batu baterai merupakan alat yang mengumpulkan dan membangkitkan aliran listrik. baterai biasanya digunakan pada beberapa alat elektronik , levisi atau AC , mainan remote control, bahkan ponsel. Pada alat-alat tersebut, baterai berfungsi sebagai sumber energi utama . Tanpa adanya baterai, alat - alat tersebut tidak dapat dimanfaatkan . Akan tetapi, tahukah kamu bagaimana proses baterai ditemukan hingga dapat digunakan ? . Berdasarkan struktur teks eksplanasinya, paragraf tersebut tepat dijadikan bagian . . . . a. pembukaan/ pernyataan umum b. deret penjelas c. isi d. Kesimpulan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. pembuka/ pertanyaan umum</p><p><strong>Penjelasan:</strong></p><p><strong>semoga membantu :)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-pernyataan-berikut1-bersifat-hidrofobik-2-pelarut-vitamin-a-d-e-k-3-berfungsi-sebagai-sumber-energi-4-memiliki-rumus-molekul-ch2on-5-unsur-utama-penyusunnya-c-h-dan-o-6-unsur-utama">
+                            40. Perhatikan pernyataan berikut!1. Bersifat hidrofobik 2.Pelarut vitamin A, D, E, K 3.Berfungsi sebagai sumber energi 4.Memiliki rumus molekul (CH2O)n 5.Unsur utama penyusunnya C, H, dan O 6.Unsur utama penyusunnya C, H, O dan N 7.Komponen penyusun struktur selYang merupakan kharakteristik dari karbohidrat adalah..​</h2><br />
+                        <p>Komponen penyusun struktur sel yang merupakan kharakteristik dari karbohidrat adalah :</p><strong>(3) Berfungsi sebagai sumber energi</strong><strong>(4) Memiliki rumus molekul (CH₂O)n dengan rumus empiris Cn (H₂O)n</strong><strong>(5) Unsur utama penyusunnya C, H, dan O.</strong><p></p>Pembahasan<p>Karbohidrat disebut juga gula merupakan molekul yang tersusun dari unsur karbon (C), hidrogen (H), dan oksigen (O). Karbohidrat berfungsi sebagai sumber energi, mengatur proses metabolisme, sebagai bahan pembentuk struktur sel, jaringan dan organ, serta menjaga keseimbangan pH. Karbohidrat dibagi menjadi tiga berdasarkan jenis gula penyusunnya yaitu monosakarida, disakarida, polisakarida. </p><p></p><p>Pelajari lebih lanjut tentang materi fungsi karbohidrat brainly.co.id/tugas/16565129</p><p></p><p><strong>#BelajarBersamaBrainly</strong></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/-bscq77n5IE?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>b_inggris</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/sebutkan-minimal-tiga-contoh.html">Sebutkan Minimal Tiga Contoh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/alasan-bahwa-pancasila-berfungsi-sebagai-sumber-dari-sumber-hukum-adalah.html">Alasan Bahwa Pancasila Berfungsi Sebagai Sumber Dari Sumber Hukum Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/harga-keyboard-laptop-hp.html">Harga Keyboard Laptop Hp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/soal-uts-kelas-1-semester-1.html">Soal Uts Kelas 1 Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-dna-pdf.html">Fungsi Dari Dna Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/apa-fungsi-dari-rumus-frekuensi-di-excl.html">Apa Fungsi Dari Rumus Frekuensi Di Excl</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-denah-rumah.html">Contoh Soal Denah Rumah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-sensus-ekonomi-kaskus.html">Fungsi Dari Sensus Ekonomi Kaskus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-fungsi-pengawasan.html">Contoh Fungsi Pengawasan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-un-sma-matematika-ips.html">Contoh Soal Un Sma Matematika Ips</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/50-soal-bahasa-indonesia-beserta-jawabannya.html">50 Soal Bahasa Indonesia Beserta Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-tentang-renang.html">Contoh Soal Tentang Renang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-apk-bawaan-asus-seperti-slide.html">Fungsi Dari Apk Bawaan Asus Seperti Slide</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-bilangan-pangkat-negatif.html">Contoh Soal Bilangan Pangkat Negatif</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-hambatan-pengganti-rangkaian-paralel.html">Contoh Soal Hambatan Pengganti Rangkaian Paralel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-un-tentang-permutasi.html">Contoh Soal Un Tentang Permutasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-dan-jawaban-energi-potensial.html">Contoh Soal Dan Jawaban Energi Potensial</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-hots-sd-pdf.html">Contoh Soal Hots Sd Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-beta-karoten-dan-lutein-dari-daun-ubi.html">Fungsi Beta Karoten Dan Lutein Dari Daun Ubi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-method-showopendialog-java.html">Fungsi Dari Method Showopendialog Java</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://soalpedia.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://soalpedia.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

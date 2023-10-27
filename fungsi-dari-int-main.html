@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Int Main - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Int Main, , , , , , , 0, , , , , , 0, fungsi-dari-int-main, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Int Main - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Int Main, , , , , , , 0, , , , , , 0, fungsi-dari-int-main, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Int Main - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Int Main, , , , , , , 0, , , , , , 0, fungsi-dari-int-main, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://soalpedia.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://soalpedia.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://soalpedia.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://soalpedia.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://soalpedia.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://soalpedia.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://soalpedia.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Int Main</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">susifanlay</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Int+Main" alt="Fungsi Dari Int Main">
+                    </div>
+                    <p></p>
+                    <p>berapa nilai argc pada fungsi int main(int argc, chat *argc[]) pada program a.exe. jika di eksekusi kan sebagai a.exe b c d e​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berapa-nilai-argc-pada-fungsi-int-mainint-argc-chat-argc-pada-program-a-exe-jika-di-eksekusi-kan-sebagai-a-exe-b-c-d-e%e2%80%8b">1.
+                                            berapa nilai argc pada fungsi int main(int argc, chat *argc[]) pada program a.exe. jika di eksekusi kan sebagai a.exe b c d e​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-perbedaan-main-int-main-void-main-%e2%80%8b">2.
+                                            Tuliskan perbedaan main, int main, void main !​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berapa-nilai-argv3-pada-fungsi-int-mainint-argc-char-argv-pada-program-a-exe-jika-dieksekusi-sebagai-berikut-a-exe-b-c-d-e-d%e2%80%8b">3.
+                                            Berapa nilai argv[3] pada fungsi int main(int argc, char *argv[]) pada program a.exe jika dieksekusi sebagai berikut: a.exe b c d e (D​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespace-stdint-main-int-i4-while-i10-cout-program-while-cout-i-endl-i-2-cout-finish-endlreturn-0">4.
+                                            #include 
+using namespace std;
+int main()
+{
+ int i=4;
+ while (i&lt;10){
+ cout &lt;&lt; "Program While" ;
+ cout &lt;&lt; i &lt;&lt; endl;
+ i += 2;
+ }
+ cout &lt;&lt; "Finish" &lt;&lt; endl;
+return (0);
+}
+Output dari program diatas adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-cara-kerjaincludeprintfscanfint-main">5.
+                                            jelaskan cara kerja
+#includeprintfscanfint main()</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespaceint-main-int-nilai-64n-2-total-total-sqrtn-cout-total-endl-return-0dibenerin-dong-kk">6.
+                                            #include 
+using namespace
+int main() {
+    int nilai = 64,n = 2;
+    total;
+    total = sqrt(n)
+    cout &lt;&lt; total &lt;&lt; endl;
+   return 0;
+}
+dibenerin dong kk</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#void-change-my-number-int-a-a-10int-main-int-a-9change-my-number-a-printf-dn-a-return-0-adalah-%e2%80%8b">7.
+                                            Void change my number (int a) {a = 10}int main () }int a = 9change my number (a) ;printf ( "%d\n", a ) ;return 0 ;}adalah ...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kegunaan-int-main-di-dalam-bahasa-c">8.
+                                            kegunaan int main() di dalam bahasa c++</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yg-dimaksut-int-main-dan-return">9.
+                                            apa yg dimaksut int main dan return</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#int-main-int-i-a2for-i1-i5-i-a-ireturn-0berapa-banyak-perulangan-yang-terjadiint-main-int-x-5-y-2x-1if-x-0if-y-0-x-yelse-y">10.
+                                            Int main ( ) {
+Int i, a=2;
+For (i=1; i&lt;5; i++) {
+a = i;
+}
+Return 0;
+}
+Berapa banyak perulangan yang terjadi?
+Int main ( ) {
+Int x = -5, y = 2;
+x + = 1;
+if (x &lt; 0);
+if (y &lt; 0) x = y;
+Else y = x;
+Return 0;
+}
+Nila variabel x dan y adalah?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yg-dimaksut-kondisi-dalam-int-main-dan-retun">11.
+                                            apa yg dimaksut kondisi dalam int main dan retun</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#question-15-perhatikan-potongan-codingan-dibawah-ini-int-data6-6-7-2-15-17-1-int-n-6-int-aint-input-forint-i0-fungsi-diatas-memiliki-kegunaan%e2%80%8b">12.
+                                            Question 1/5 Perhatikan potongan codingan dibawah ini! int data[6] = {6, 7, 2, 15, 17, 1); int n = 6; int a(int input){ for(int i=0; fungsi diatas memiliki kegunaan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-menjumlahkan-total-nilai-dari-int-arrtotalitem-di-program-ini-gimana-yainclude-using-namespace-stdint-main-int-totalitem-8-int-arrtotalitem-5-2-21-4-9-16-13-3-for">13.
+                                            Cara menjumlahkan total nilai dari int arr[totalitem] di program ini gimana ya?
+#include 
+using namespace std;
+int main () {
+ int totalitem = 8;
+ int arr[totalitem] = {5, 2, 21, 4, 9, 16, 13, 3};
+ for (int i = 0; i &lt; totalitem; i++) {
+ for (int j = 0; j &lt; totalitem - i - 1; j++) {
+ int x = j + 1;
+ if (arr[j] &gt; arr[x]) {
+ int temp = arr[x];
+ arr[x] = arr[j];
+ arr[j] = temp;
+ }
+ }
+ }
+ for (int i = 0; i &lt; totalitem; i++) {
+ cout &lt;&lt; arr[i] &lt;&lt; " ";
+ }
+ return 0;
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-int-digunakan-untuk-%e2%80%8b">14.
+                                            fungsi INT digunakan untuk?...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-lah-sebuah-3-fungsi-overloading-yang-memiliki-1-parameter-jika-parameternya-int-maka-outputnya-%e2%80%9ctipe-data-int-hasilnya-parameter-100%e2%80%9d-jika-parameternya-double-maka-output">15.
+                                            Buat lah sebuah 3 fungsi overloading yang memiliki 1 parameter
+-	Jika parameternya int maka outputnya “Tipe data int, hasilnya [parameter * 100]”
+-	Jika parameternya double maka outputnya “Tipe data double, hasilnya [parameter * 1000]”
+-	Jika parameternya string maka outputnya “Tipe data string, nilainya Hello [parameter]”
+contoh pada fungsi main :
+int main() {
+	overloadingFunc(10;
+	overloadingFunc(10.0);
+	overloadingFunc("World);
+return 0;
+}
+outputnya :
+Tipe data int, hasilnya 10000
+Tipe data float, hasilnya 1000
+Tipe data string, nilainya Hello World</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-const-int-pada-bahasa-c">16.
+                                            fungsi const int pada bahasa c++</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-int-digunakan-untuk">17.
+                                            Fungsi INT digunakan untuk...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hasil-dari-fungsi-int-17333311%e2%80%8b">18.
+                                            hasil dari fungsi int (17,333311)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bantu-cara-dapatin-keluarannya-dong-sama-proses-penjelasannya-ya-terimakasih-includestdio-h-int-main-int-n-100-for-int-i-1-in-i-printf-ramadhan-sudah-mau-berl">19.
+                                            Bantu cara dapatin keluarannya dong. Sama proses + penjelasannya ya. Terimakasih
+.
+.
+#include(stdio.h)
+  int main (){
+  int n = 100 ;
+For (int i = 1 ; i&lt;=n ; i++)
+{ Printf ("Ramadhan sudah mau berlalu :') \n") ; }
+   Return 0;</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-merupakan-penggunaan-fungsi-array-yang-kurang-benar-adalah-a-int-nama50-b-int-nama5int-alm3-c-int-nama5alm3-d-char-nama5-e-char-nama5-int-alm3">20.
+                                            Berikut ini merupakan penggunaan fungsi array.yang kurang benar adalah a. Int nama[50]; b. Int nama[5];Int alm[3) c. Int nama[5],alm[3]; d. Char nama[5] e. Char nama[5] Int alm[3]:</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-satu-fungsi-yang-akan-menjumlah-semua-bilangan-dari-m-sampai-dengan-n-di-mana-msn-dan-mengembalikan-hasilnya-ke-program-pemanggil-prototype-fungsi-int-menjumlah-int-m-int-n">21.
+                                            Buatlah satu fungsi yang akan menjumlah semua bilangan dari m sampai dengan n di mana msn dan mengembalikan hasilnya ke program pemanggil. Prototype fungsi: int Menjumlah (int m, int n);</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespace-stdint-main-int-umur14-if-umur18-if-umur10-coutanak-anak-else-coutremaja-else-coutbukan-usia-a">22.
+                                            #include 
+using namespace std;
+int main()
+{
+ int umur=14;
+ if (umur&lt;=18)
+ {
+ if (umur&lt;=10){
+ cout&lt;&lt;"Anak-anak"&lt;
+ }else {
+ cout&lt;&lt;"Remaja"&lt;
+ }
+ }else {
+ cout&lt;&lt;"Bukan usia anak maupun remaja"&lt;
+ }
+}
+Program tersebut menghasilkan output?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-deklarasi-library-cmath-int-main-deklarasi-variabel-int-a-8-int-n-2-int-akarpangkat-menghitung-akar-dari-8-menghitung-8-dipangk">23.
+                                            #include 
+//deklarasi library cmath
+.........
+.........
+int main()
+ {
+ //deklarasi variabel 
+ int a = 8 ;
+ int n = 2 ;
+ int akar,pangkat;
+ // menghitung akar dari 8
+ .........
+ // menghitung 8 dipangkatkan 2
+ .........
+ //mencetak nilai akar dan pangkat
+ cout &lt;&lt; akar &lt;&lt; endl;
+ cout &lt;&lt; pangkat ;
+ return 0;
+}
+ benerin kk</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespace-stdint-maincouthello-world">24.
+                                            #include using namespace std;int main(){cout&lt;&lt;"HELLO WORLD";}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-disetiap-awal-program-wajib-ada%c2%a0int-main%c2%a0-jelaskan-%e2%80%8b">25.
+                                            Apakah disetiap awal program wajib ada int main() ? Jelaskan ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-cara-penulisan-fungsi-int-yang-tepat-adalah-a-inta52-b-intd4-c-intb7-d-intc50-%e2%80%8b">26.
+                                            6. Cara penulisan fungsi INT yang tepat adalah... a. =INT(A5;2) b. =INT(D4) C. +INT(B7) d. #INT(C5;0) ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespace-std-fungsi-menu-void-1-2-fungsi-jumlah-pesanan-void-3-4-5-fungsi-pilihan-menu-void-pilihan6-7">27.
+                                            #include using namespace std; //Fungsi Menu void 1 ........() { 2 . . . . } //Fungsi Jumlah Pesanan void 3 . . . . (4....... ) { 5 . . . . } //Fungsi Pilihan Menu void pilihan(6....... ) { 7 . . . . } //Fungsi cetak void 8 ........(int i, int jml, int pil[], int item[]) { } main() { } 9 . . . . //Variabel yang digunakan int i, jml, pil[100], item[100]; //Pemanggilan fungsi menu menu(); //Pemanggilan fungsi jumlah jumlah(jml); system("cls"); menu(); //Pemanggilan fungsi pilihan menu pilihan(i, jml, pil, item); system("cls"); menu(); //Pemanggilan fungsi cetak hasil 10 . . . .</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-antara-fungsi-int-dan-fungsi-roundup">28.
+                                            jelaskan perbedaan antara fungsi INT dan fungsi ROUNDUP!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yg-fungsi-int-led1">29.
+                                            Apa yg fungsi int led1</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yg-fungsi-int-led1">30.
+                                            Apa yg fungsi int led1</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-int-di-microsoft-excel%e2%80%8b">31.
+                                            apa fungsi INT di Microsoft Excel​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-istila-includestdioconioreturnendicoutint-maingradegetch">32.
+                                            APA ISTILA INCLUDE,STDIO,CONIO,RETURN,ENDI,COUT,INT MAIN,GRADE,GETCH</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-output-of-the-following-codevoid-printsumint-a-int-b-4cout-a-b-endlint-mainprintsum13">33.
+                                            What is the output of the following code?
+void printsum(int a, int b = 4)
+{
+cout &lt;&lt; a + b &lt;&lt; endl;
+}
+int main()
+{
+printsum(13);
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#you-must-declared-main-class-which-contains-main-method-which-is-entry-point-of-program-execution-class-nilwanhaikal_xipai_volumebalok-public-static-void-mainstringargs-int-p5int-l">34.
+                                            You must declared Main class which contains 'main' method, which is entry point of program execution.
+class NilwanHaikal_XIPAI_VolumeBalok {
+	public static void main(String[]args){
+	 	int p=5;
+		int l=2;
+        int t=5;
+		int volume=p*l*t;
+        System.out.println(volume);
+        int panjang=5;
+        int luas=2;
+        int tinggi=5;
+        int LuasP=2*(panjang*luas+panjang*tinggi+luas*tinggi);
+        System.out.println(LuasP);
+	}
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#nilai-setelah-output-adalah-int-mainint-x-100while-x-150x-x5cout-x-endl%e2%80%8b">35.
+                                            Nilai setelah output adalah...int main(){int x = 100;while (x &lt;= 150)x = x+5;cout&lt;&lt; x &lt;&lt;endl;​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-int-dan-pada-code-block-berfungsi-untuk%e2%80%8b">36.
+                                            perintah &amp;&amp;, ==, Int, dan ++ pada code block berfungsi untuk​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-potongan-codingan-dibawah-ini-void-a-printf%e2%80%9csaya-suka-belajar-algoritma%e2%80%9d-int-b-printf%e2%80%9csaya-suka-belajar-java%e2%80%9d-return-0-void-cint-angka1-i">37.
+                                            Perhatikan potongan codingan dibawah ini! void a(){ printf(“Saya suka belajar Algoritma”); } int b(){ printf(“Saya suka belajar Java”); return 0; } void c(int angka1, int angka2){ printf(“%d”, angka1+angka2); } Untuk menjumlahkan 2 angka, maka fungsi yang harus dipanggil dari fungsi main adalah
+A. void c();
+ B. c(5,2);
+ C. void c(5,2);
+ D. c();</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-kegunaan-dari-fungsi-int">38.
+                                            apakah kegunaan dari fungsi INT?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-int-digunakan-untuk">39.
+                                            fungsi INT digunakan untuk</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-iostreamusing-namespace-stdint-mainint-bulat-5-812269020nilai-variable-yag-diberikan-pada-indek-array-ke-3-adalah-%e2%80%8b">40.
+                                            # include &lt;iostream&gt;Using namespace std;int main(){int bulat [5] = {8,12,26,90,20};Nilai variable yag diberikan pada indek array ke 3 adalah..​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="berapa-nilai-argc-pada-fungsi-int-mainint-argc-chat-argc-pada-program-a-exe-jika-di-eksekusi-kan-sebagai-a-exe-b-c-d-e%e2%80%8b">
+                            1. berapa nilai argc pada fungsi int main(int argc, chat *argc[]) pada program a.exe. jika di eksekusi kan sebagai a.exe b c d e​</h2><br />
+                        <p>Nilai argc pada fungsi int main(int argc, char *argv[]) dalam program a.exe ketika dieksekusi dengan perintah "a.exe b c d e" akan bernilai 5.</p><p></p><p>argc adalah variabel yang menyimpan jumlah argument yang diterima oleh program, termasuk nama file program itu sendiri. Dalam hal ini, nama file program adalah "a.exe" dan ada 4 argument lainnya yaitu "b", "c", "d", dan "e", sehingga argc bernilai 5.</p><p></p><p><strong>#bantu brainliestnya yaa</strong></p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-perbedaan-main-int-main-void-main-%e2%80%8b">
+                            2. Tuliskan perbedaan main, int main, void main !​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>membatalkan main () {...} salah. Jika Anda mendeklarasikan main dengan cara ini, berhenti. (Kecuali jika kode Anda berjalan di lingkungan yang berdiri sendiri, dalam hal ini secara teoritis bisa benar.)</p><p>main () {...} dapat diterima di C89; tipe pengembalian, yang tidak ditentukan, default ke int. Namun, ini tidak lagi diizinkan di C99. Karena itu...</p><p>int main () {...} adalah cara terbaik untuk menulis main jika Anda tidak peduli dengan argumen program. Jika Anda peduli dengan argumen program, Anda perlu mendeklarasikan parameter argc dan argv juga. Anda harus selalu mendefinisikan main dengan cara ini. Menghilangkan tipe pengembalian tidak menawarkan keuntungan di C89 dan akan merusak kode Anda di C99.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="berapa-nilai-argv3-pada-fungsi-int-mainint-argc-char-argv-pada-program-a-exe-jika-dieksekusi-sebagai-berikut-a-exe-b-c-d-e-d%e2%80%8b">
+                            3. Berapa nilai argv[3] pada fungsi int main(int argc, char *argv[]) pada program a.exe jika dieksekusi sebagai berikut: a.exe b c d e (D​</h2><br />
+                        <p>Jika program a.exe dijalankan dengan argumen b, c, d, dan e, maka nilai argv[3] pada fungsi int main(int argc, char *argv[]) adalah d.</p><p></p><p>Pada program a.exe, argv adalah array pointer ke string-string yang merupakan argumen dari program tersebut. argc menyimpan jumlah total argumen yang diberikan pada program termasuk nama program itu sendiri.</p><p></p><p>Dalam kasus ini, argc akan bernilai 5, yaitu 1 untuk nama program dan 4 untuk argumen b, c, d, dan e. Karena argumen dihitung dari 0, maka argumen d memiliki indeks 3 pada array argv. Oleh karena itu, nilai dari argv[3] pada program tersebut adalah d.</p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="include-using-namespace-stdint-main-int-i4-while-i10-cout-program-while-cout-i-endl-i-2-cout-finish-endlreturn-0">
+                            4. #include 
+using namespace std;
+int main()
+{
+ int i=4;
+ while (i&lt;10){
+ cout &lt;&lt; "Program While" ;
+ cout &lt;&lt; i &lt;&lt; endl;
+ i += 2;
+ }
+ cout &lt;&lt; "Finish" &lt;&lt; endl;
+return (0);
+}
+Output dari program diatas adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Program While4
+</p><p>Program While6
+</p><p>Program While8
+</p><p>Finish</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-cara-kerjaincludeprintfscanfint-main">
+                            5. jelaskan cara kerja
+#includeprintfscanfint main()</h2><br />
+                        #Include digunakan untuk mengimport library, baik internal maupun eksternal.<br />sehingga bisa digunakan method, class, variable dari library tersebut.<br /><br />printf cara kerjanya adalah untuk melakukan output ke layar console.<br /><br />scanf digunakan untuk melakukan input, namun pada scanf sepertinya tidak bisa direct, harus melalui alamat memory, oleh karena itu diperlukan tanda &amp; sebagai referensi.<br /><br />int main() adalah fungsi yang pertama kali dijalankan ketika code dijalankan<br />
+                                            <h2 class="ez-toc-section" id="include-using-namespaceint-main-int-nilai-64n-2-total-total-sqrtn-cout-total-endl-return-0dibenerin-dong-kk">
+                            6. #include 
+using namespace
+int main() {
+    int nilai = 64,n = 2;
+    total;
+    total = sqrt(n)
+    cout &lt;&lt; total &lt;&lt; endl;
+   return 0;
+}
+dibenerin dong kk</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>#include &lt;iostream&gt;</p><p>#include &lt;cmath&gt;</p><p>using namespace std;</p><p></p><p>int main() {</p><p>    int nilai = 64,total;</p><p>    total = sqrt(nilai);</p><p>    cout &lt;&lt; total &lt;&lt; endl;</p><p>  </p><p>  return 0;</p><p>}</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="void-change-my-number-int-a-a-10int-main-int-a-9change-my-number-a-printf-dn-a-return-0-adalah-%e2%80%8b">
+                            7. Void change my number (int a) {a = 10}int main () }int a = 9change my number (a) ;printf ( "%d\n", a ) ;return 0 ;}adalah ...​</h2><br />
+                        <p><strong>Program di atas salah penulisan pada fungsi void change my number(int a) yang harusnya ditulis tanpa spasi atau dengan menggunakan tanda underscore agar menjadi void change_my_number(int a). Selain itu, nilai variabel a hanya diubah di dalam fungsi sehingga nilai variabel a pada fungsi main tidak berubah dan menghasilkan output "9". Jadi, output yang akan ditampilkan adalah "9".</strong></p><p></p><p></p><p></p><p></p><p><strong>Jawaban:</strong></p><p>Program tersebut tidak valid karena terdapat beberapa kesalahan penulisan sintaksis. Berikut adalah program yang diperbaiki:</p><p></p><p>#include &lt;stdio.h&gt;</p><p></p><p>void change_my_number(int *a) {</p><p>  *a = 10;</p><p>}</p><p></p><p>int main() {</p><p>  int a = 9;</p><p>  change_my_number(&amp;a);</p><p>  printf("%d\n", a);</p><p>  return 0;</p><p>}</p><p></p><p>Pada program di atas, terdapat sebuah fungsi bernama change_my_number yang menerima parameter berupa pointer ke sebuah bilangan bulat. Fungsi tersebut akan mengubah nilai bilangan bulat yang ditunjuk oleh pointer tersebut menjadi 10.</p><p></p><p>Di dalam main, terdapat sebuah variabel a dengan nilai awal 9. Kemudian, fungsi change_my_number dipanggil dengan parameter berupa alamat variabel a menggunakan operator &amp;. Setelah itu, nilai variabel a akan berubah menjadi 10 karena fungsi change_my_number telah mengubah nilai yang ditunjuk oleh pointer tersebut. Akhirnya, nilai variabel a yang sudah diubah ditampilkan menggunakan fungsi printf.</p><br />
+                                            <h2 class="ez-toc-section" id="kegunaan-int-main-di-dalam-bahasa-c">
+                            8. kegunaan int main() di dalam bahasa c++</h2><br />
+                        <br />1nt main()<br />ini adalah fungsi utama sebagai starting point untuk program c/c++, seenggaknya harus ada satu fungsi ini agar saat running machine tahu mulai dari fungsi mana (fungsi main ini)<br /><br />
+                                            <h2 class="ez-toc-section" id="apa-yg-dimaksut-int-main-dan-return">
+                            9. apa yg dimaksut int main dan return</h2><br />
+                        int main adalah pengulangan / memanggil fungsi pengulangan <br />return adalah untuk berpindah ke baris yang baru dari baris yang lama<br />
+                                            <h2 class="ez-toc-section" id="int-main-int-i-a2for-i1-i5-i-a-ireturn-0berapa-banyak-perulangan-yang-terjadiint-main-int-x-5-y-2x-1if-x-0if-y-0-x-yelse-y">
+                            10. Int main ( ) {
+Int i, a=2;
+For (i=1; i&lt;5; i++) {
+a = i;
+}
+Return 0;
+}
+Berapa banyak perulangan yang terjadi?
+Int main ( ) {
+Int x = -5, y = 2;
+x + = 1;
+if (x &lt; 0);
+if (y &lt; 0) x = y;
+Else y = x;
+Return 0;
+}
+Nila variabel x dan y adalah?</h2><br />
+                        Pertama, jawabanya 4 kali perulangan terjadi.<br />Soal kedua, nilai x = -4; dan nilai y = -4;<br />
+                                            <h2 class="ez-toc-section" id="apa-yg-dimaksut-kondisi-dalam-int-main-dan-retun">
+                            11. apa yg dimaksut kondisi dalam int main dan retun</h2><br />
+                        Kondisi digunakan untuk mengecek sebuah variable atau nilai kembalian, contoh sederhana untuk cek nilai siswa.<br />int main itu wajib ada dalam bahasa C/C++, karena otomatis compiler menjalankan code didalam int main.<br /><br />return, return itu adalah nilai kembalian sebuah function, yang dimana bisa berupa tipe data integer maupun char, atau struct.<br /><br />
+                                            <h2 class="ez-toc-section" id="question-15-perhatikan-potongan-codingan-dibawah-ini-int-data6-6-7-2-15-17-1-int-n-6-int-aint-input-forint-i0-fungsi-diatas-memiliki-kegunaan%e2%80%8b">
+                            12. Question 1/5 Perhatikan potongan codingan dibawah ini! int data[6] = {6, 7, 2, 15, 17, 1); int n = 6; int a(int input){ for(int i=0; fungsi diatas memiliki kegunaan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Potongan codingan yang diberikan tidak lengkap, tetapi berdasarkan informasi yang ada, kita dapat memberikan beberapa penjelasan tentang kode tersebut.</p><p></p><p>Kode yang diberikan mengandung kesalahan sintaksis karena terdapat tanda kurung siku yang tidak ditutup dengan baik pada inisialisasi array "data". Selain itu, kurangnya informasi yang relevan seperti definisi fungsi a(), menyebabkan kita tidak dapat memberikan penjelasan lengkap tentang kegunaan kode tersebut.</p><p></p><p>Namun, berdasarkan informasi yang ada, kita dapat mengidentifikasi beberapa hal dalam potongan codingan tersebut:</p><p></p><p>Pendefinisian Array "data":</p><p>Kode menginisialisasi sebuah array dengan nama "data" yang berisi 6 elemen bertipe integer. Elemen-elemen tersebut adalah 6, 7, 2, 15, 17, dan 1.</p><p></p><p>Pendefinisian Variabel "n":</p><p>Variabel "n" diinisialisasi dengan nilai 6, yang kemungkinan digunakan untuk menyimpan jumlah elemen dalam array "data".</p><p></p><p>Fungsi "a(int input)":</p><p>Namun, karena kurangnya informasi tentang isi dari fungsi "a()" dan bagaimana fungsi tersebut digunakan dalam konteks kode lainnya, kita tidak dapat memberikan kegunaan secara pasti. Fungsi "a()" mungkin memiliki peran tertentu dalam proses atau algoritma yang tidak terlihat dalam potongan kode yang diberikan.</p><p></p><p><strong>Penjelasan:</strong></p><p><strong></strong></p><p>Untuk memberikan penjelasan yang lebih akurat tentang kegunaan kode, kita memerlukan informasi lebih lanjut tentang isi dari fungsi "a()" dan bagaimana seluruh kode bekerja bersama-sama dalam konteks yang lebih luas.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="cara-menjumlahkan-total-nilai-dari-int-arrtotalitem-di-program-ini-gimana-yainclude-using-namespace-stdint-main-int-totalitem-8-int-arrtotalitem-5-2-21-4-9-16-13-3-for">
+                            13. Cara menjumlahkan total nilai dari int arr[totalitem] di program ini gimana ya?
+#include 
+using namespace std;
+int main () {
+ int totalitem = 8;
+ int arr[totalitem] = {5, 2, 21, 4, 9, 16, 13, 3};
+ for (int i = 0; i &lt; totalitem; i++) {
+ for (int j = 0; j &lt; totalitem - i - 1; j++) {
+ int x = j + 1;
+ if (arr[j] &gt; arr[x]) {
+ int temp = arr[x];
+ arr[x] = arr[j];
+ arr[j] = temp;
+ }
+ }
+ }
+ for (int i = 0; i &lt; totalitem; i++) {
+ cout &lt;&lt; arr[i] &lt;&lt; " ";
+ }
+ return 0;
+}</h2><br />
+                        <p><strong>Jawaban dan Penjelasan:</strong></p><p>(tambahan/modifikasinya adalah yang ditebalkan)</p><p>__________________________</p><p></p><p>#include &lt;iostream&gt;</p><p>using namespace std;</p><p></p><p>int main () {</p><p>    <strong>int jumlah = 0;</strong></p><p>    int totalitem = 8;</p><p>    int arr[totalitem] = {5, 2, 21, 4, 9, 16, 13, 3};</p><p></p><p>    for (int i = 0; i &lt; totalitem; i++) {</p><p>        for (int j = 0; j &lt; totalitem - i - 1; j++) {</p><p>            int x = j + 1;</p><p>            if (arr[j] &gt; arr[x]) {</p><p>                int temp = arr[x];</p><p>                arr[x] = arr[j];</p><p>                arr[j] = temp;</p><p>            }</p><p>        }</p><p>    }</p><p></p><p>    for (int i = 0; i &lt; totalitem; i++) {</p><p>        cout &lt;&lt; arr[i] &lt;&lt; " ";</p><p>    }</p><p>    <strong>for (int i = 0; i &lt; totalitem; i++) {</strong></p><p><strong>        jumlah += arr[i];</strong></p><p><strong>    }</strong></p><p><strong>    cout &lt;&lt; endl;</strong></p><p><strong>    cout &lt;&lt; "Jumlah = " &lt;&lt; jumlah &lt;&lt; endl;</strong></p><p>    return 0;</p><p>}</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-int-digunakan-untuk-%e2%80%8b">
+                            14. fungsi INT digunakan untuk?...​</h2><br />
+                        Question:<p>fungsi INT digunakan untuk?</p>Jawab:<p>-Membulatkan sebuah bilagan ke bawah</p><p>-Untuk ngambil Bilangan Bulat</p><p></p>================Maaf kalo salah<br />
+                                            <h2 class="ez-toc-section" id="buat-lah-sebuah-3-fungsi-overloading-yang-memiliki-1-parameter-jika-parameternya-int-maka-outputnya-%e2%80%9ctipe-data-int-hasilnya-parameter-100%e2%80%9d-jika-parameternya-double-maka-output">
+                            15. Buat lah sebuah 3 fungsi overloading yang memiliki 1 parameter
+-	Jika parameternya int maka outputnya “Tipe data int, hasilnya [parameter * 100]”
+-	Jika parameternya double maka outputnya “Tipe data double, hasilnya [parameter * 1000]”
+-	Jika parameternya string maka outputnya “Tipe data string, nilainya Hello [parameter]”
+contoh pada fungsi main :
+int main() {
+	overloadingFunc(10;
+	overloadingFunc(10.0);
+	overloadingFunc("World);
+return 0;
+}
+outputnya :
+Tipe data int, hasilnya 10000
+Tipe data float, hasilnya 1000
+Tipe data string, nilainya Hello World</h2><br />
+                        <p><strong>Jawaban dan Penjelasan:</strong></p>Overloaded Functions<p>Saya buat 2 versi. Yang pertama, argumen bertipe string menggunakan tipe "string" dari namespace std. Karena ada baris "use namespace std;", maka nama tipenya "string" saja, tidak perlu "std::string".</p><p>Versi kedua, argumen bertipe string menggunakan "char*". Pada saat passing argumen ke fungsi, harus menggunakan casting berupa "(char*)", agar tidak ada warning pada saat kompilasi.</p><p></p><p><strong>Versi 1: tipe data string menggunakan string dari namespace std (std::string)</strong></p><p>#include &lt;iostream&gt;</p><p>using namespace std;</p><p></p><p>void overloadingFunc(int i) {</p><p>    cout &lt;&lt; "Tipe data int, hasilnya " &lt;&lt; (100*i) &lt;&lt; endl;</p><p>}</p><p></p><p>void overloadingFunc(double d) {</p><p>    cout &lt;&lt; "Tipe data double, hasilnya " &lt;&lt; (1000*d) &lt;&lt; endl;</p><p>}</p><p></p><p>void overloadingFunc(string s) {</p><p>    cout &lt;&lt; "Tipe data string, nilainya Hello " &lt;&lt; s &lt;&lt; endl;</p><p>}</p><p></p><p>int main() {</p><p>    overloadingFunc(10);</p><p>    overloadingFunc(10.0);</p><p>    overloadingFunc("World");</p><p>    return 0;</p><p>}</p><p><strong></strong></p><p><strong>Versi 2: tipe data string menggunakan char*</strong></p><p>Bagian di atas ini persis sama seperti di atas.</p><p>void overloadingFunc(char* s) {</p><p>    cout &lt;&lt; "Tipe data string, nilainya Hello " &lt;&lt; s &lt;&lt; endl;</p><p>}</p><p></p><p>int main() {</p><p>    overloadingFunc(10);</p><p>    overloadingFunc(10.0);</p><p>    overloadingFunc((char*)"World");</p><p>    return 0;</p><p>}</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-const-int-pada-bahasa-c">
+                            16. fungsi const int pada bahasa c++</h2><br />
+                        const int itu berarti konstanta atau nilai yang sudah ditentukan. dan int itu tipe datanya berupa angka bulat. jadi misalkan rumus lingkaran, konstanta nya itu 3,14 dan udah ditentukan di sourcecodenya, kalo manggil constanta nya misalkan kita namain Pi maka otomatis yang terbaca 3,14<br />
+                                            <h2 class="ez-toc-section" id="fungsi-int-digunakan-untuk">
+                            17. Fungsi INT digunakan untuk...</h2><br />
+                        pada dasarnya, fungsi INT ini berfungsi untuk membulatkan sebuah angka ke bawah, ke bilangan bulat terdekatFungsi INT adalah untuk mengambil nilai bilangan bulat dari bilangan desimal<br /><br />___________<br />#Semoga bermanfaat ^_^<br />
+                                            <h2 class="ez-toc-section" id="hasil-dari-fungsi-int-17333311%e2%80%8b">
+                            18. hasil dari fungsi int (17,333311)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Hasilnya 17</p><p><strong>Penjelasan:</strong></p><p>Misalkan fungsi itu diketik dalam program pengolah angka seperti Ms. Excel 2013, dapat dilihat hasilnya seperti tampak pada gambar berikut ini.</p><p>Perhatikan baik-baik di bagian yg ditunjukkan tanda panah merah.</p><br />
+                                            <h2 class="ez-toc-section" id="bantu-cara-dapatin-keluarannya-dong-sama-proses-penjelasannya-ya-terimakasih-includestdio-h-int-main-int-n-100-for-int-i-1-in-i-printf-ramadhan-sudah-mau-berl">
+                            19. Bantu cara dapatin keluarannya dong. Sama proses + penjelasannya ya. Terimakasih
+.
+.
+#include(stdio.h)
+  int main (){
+  int n = 100 ;
+For (int i = 1 ; i&lt;=n ; i++)
+{ Printf ("Ramadhan sudah mau berlalu :') \n") ; }
+   Return 0;</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>itu disuruh buat tabel yang tulisannya ramadan sudah mau berlalu ...  penjelasan kuci progam C</p><br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-merupakan-penggunaan-fungsi-array-yang-kurang-benar-adalah-a-int-nama50-b-int-nama5int-alm3-c-int-nama5alm3-d-char-nama5-e-char-nama5-int-alm3">
+                            20. Berikut ini merupakan penggunaan fungsi array.yang kurang benar adalah a. Int nama[50]; b. Int nama[5];Int alm[3) c. Int nama[5],alm[3]; d. Char nama[5] e. Char nama[5] Int alm[3]:</h2><br />
+                        <p>Syntax error: <strong>Semua opsi, alasan</strong></p><p>- Semua primitive data type dituliskan dalam lower case seperti <strong>int</strong>, <strong>float</strong>, <strong>double</strong>, dan <strong>char</strong>.</p><p>- Opsi b variable alm diakhiri oleh ')' yang seharusnya ']' dan harus diakhiri semicolon</p><p>- Opsi d tidak diakhiri oleh semicolon</p><p>- Opsi e variable nama tidak diakhiri oleh semicolon dan variable alm diakhiri :</p><br /><p>Unsuitable variable: <strong>a,b, dan c, alasan</strong></p><p>- Opsi a, nama yang seharusnya menggunakan array of char karena nama dapat mengandung karakter huruf</p><p>- Opsi b, nama seharusnya menggunakan array of char tetapi kalau nama dalam konteks id cocok menggunakan int</p><p>- Opsi c nama dan alm (asumsi ini alamat) seharusnya menggunakan array of char </p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-satu-fungsi-yang-akan-menjumlah-semua-bilangan-dari-m-sampai-dengan-n-di-mana-msn-dan-mengembalikan-hasilnya-ke-program-pemanggil-prototype-fungsi-int-menjumlah-int-m-int-n">
+                            21. Buatlah satu fungsi yang akan menjumlah semua bilangan dari m sampai dengan n di mana msn dan mengembalikan hasilnya ke program pemanggil. Prototype fungsi: int Menjumlah (int m, int n);</h2><br />
+                        <p>#include &lt;iostream&gt;</p><p>using namespace std;</p><p>//fungsi yang akan menjumlah semua bilangan dari m sampai dengan n</p><p>int menjumlah(int m,int n);</p><p>int main(){</p><p>    int x,y,sum;</p><p>    cin&gt;&gt;x&gt;&gt;y;</p><p>    sum=menjumlah(x,y);</p><p>    return 0;</p><p>}</p><p></p><p>int menjumlah(int m,int n){</p><p>    if (m&gt;=n) {</p><p>        return menjumlah(m,n-1);</p><p>    }</p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="include-using-namespace-stdint-main-int-umur14-if-umur18-if-umur10-coutanak-anak-else-coutremaja-else-coutbukan-usia-a">
+                            22. #include 
+using namespace std;
+int main()
+{
+ int umur=14;
+ if (umur&lt;=18)
+ {
+ if (umur&lt;=10){
+ cout&lt;&lt;"Anak-anak"&lt;
+ }else {
+ cout&lt;&lt;"Remaja"&lt;
+ }
+ }else {
+ cout&lt;&lt;"Bukan usia anak maupun remaja"&lt;
+ }
+}
+Program tersebut menghasilkan output?</h2><br />
+                        <p>Jawaban:</p><p>remaja</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="include-deklarasi-library-cmath-int-main-deklarasi-variabel-int-a-8-int-n-2-int-akarpangkat-menghitung-akar-dari-8-menghitung-8-dipangk">
+                            23. #include 
+//deklarasi library cmath
+.........
+.........
+int main()
+ {
+ //deklarasi variabel 
+ int a = 8 ;
+ int n = 2 ;
+ int akar,pangkat;
+ // menghitung akar dari 8
+ .........
+ // menghitung 8 dipangkatkan 2
+ .........
+ //mencetak nilai akar dan pangkat
+ cout &lt;&lt; akar &lt;&lt; endl;
+ cout &lt;&lt; pangkat ;
+ return 0;
+}
+ benerin kk</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>#include &lt;iostream&gt;</p><p>#include &lt;cmath&gt;</p><p>using namespace std;</p><p></p><p>int main() {</p><p>    //deklarasi variabel </p><p>    int a = 8 ;</p><p>    int n = 2 ;</p><p>    int akar,pangkat;</p><p></p><p>   // menghitung akar dari 8</p><p>    akar = sqrt(a);</p><p>   // menghitung 8 dipangkatkan 2</p><p>    pangkat = pow(a,n);</p><p></p><p>   //mencetak nilai akar dan pangkat</p><p>    cout &lt;&lt; akar &lt;&lt; endl;</p><p>    cout &lt;&lt; pangkat ;</p><p>   return 0;</p><p>}</p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="include-using-namespace-stdint-maincouthello-world">
+                            24. #include using namespace std;int main(){cout&lt;&lt;"HELLO WORLD";}</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>HELLO WORD</p><p><strong>Penjelasan:</strong></p><p>Source Code yang anda berikan adalah bentuk penulisan program bahasa C++ yang mana cout adalah perintah untuk mencetak pada layar.</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-disetiap-awal-program-wajib-ada%c2%a0int-main%c2%a0-jelaskan-%e2%80%8b">
+                            25. Apakah disetiap awal program wajib ada int main() ? Jelaskan ​</h2><br />
+                        Jawaban :<p>iya karena banyak fungsi dari int main () untuk program</p><p></p>Penjelasan : <p>maaf klo salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="6-cara-penulisan-fungsi-int-yang-tepat-adalah-a-inta52-b-intd4-c-intb7-d-intc50-%e2%80%8b">
+                            26. 6. Cara penulisan fungsi INT yang tepat adalah... a. =INT(A5;2) b. =INT(D4) C. +INT(B7) d. #INT(C5;0) ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>b. =INT(D4)</strong></p><p><strong>Penjelasan:</strong></p><p>Cara penulisan yang tepat untuk menggunakan fungsi INT adalah dengan menuliskan tanda sama dengan (=) diikuti dengan kata INT dan tanda kurung (). Di dalam tanda kurung tersebut, kita harus menuliskan angka atau sel yang ingin kita ambil bagian bilangan bulat-nya.</p><br />
+                                            <h2 class="ez-toc-section" id="include-using-namespace-std-fungsi-menu-void-1-2-fungsi-jumlah-pesanan-void-3-4-5-fungsi-pilihan-menu-void-pilihan6-7">
+                            27. #include using namespace std; //Fungsi Menu void 1 ........() { 2 . . . . } //Fungsi Jumlah Pesanan void 3 . . . . (4....... ) { 5 . . . . } //Fungsi Pilihan Menu void pilihan(6....... ) { 7 . . . . } //Fungsi cetak void 8 ........(int i, int jml, int pil[], int item[]) { } main() { } 9 . . . . //Variabel yang digunakan int i, jml, pil[100], item[100]; //Pemanggilan fungsi menu menu(); //Pemanggilan fungsi jumlah jumlah(jml); system("cls"); menu(); //Pemanggilan fungsi pilihan menu pilihan(i, jml, pil, item); system("cls"); menu(); //Pemanggilan fungsi cetak hasil 10 . . . .</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ini yang di tanyakan apa?</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-antara-fungsi-int-dan-fungsi-roundup">
+                            28. jelaskan perbedaan antara fungsi INT dan fungsi ROUNDUP!</h2><br />
+                        Jawab:<br /><br /> Fungsi INT digunakan untuk membulatkan bilangan desimal ke bilangan integer (bilangan bulat).<br />Sinyaks: <br /><br />Fungsi ROUND digunakan untuk membulatkan suatu bilangan desimal ke bilangan desimal terdekat dengan jumlah desimal yang ditetapkan..<br />
+                                            <h2 class="ez-toc-section" id="apa-yg-fungsi-int-led1">
+                            29. Apa yg fungsi int led1</h2><br />
+                        Menerangkan cahaya pada led<br />
+                                            <h2 class="ez-toc-section" id="apa-yg-fungsi-int-led1">
+                            30. Apa yg fungsi int led1</h2><br />
+                        int itu singkatan dari integer(wajib angka)<br />led 1 merujuk ke suatu variabel<br /><br />jadi int led1 itu merupakan variabel yg isinya integer<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-int-di-microsoft-excel%e2%80%8b">
+                            31. apa fungsi INT di Microsoft Excel​</h2><br />
+                        <p>Fungsi INT adalah salah satu rumus matematika pada Microsoft Office Excel yang digunakan untuk membulatkan angka ke bawah sampai bilangan bulat terdekat.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-istila-includestdioconioreturnendicoutint-maingradegetch">
+                            32. APA ISTILA INCLUDE,STDIO,CONIO,RETURN,ENDI,COUT,INT MAIN,GRADE,GETCH</h2><br />
+                        itu istilah bahasa pemrograman (koding)<br />
+                                            <h2 class="ez-toc-section" id="what-is-the-output-of-the-following-codevoid-printsumint-a-int-b-4cout-a-b-endlint-mainprintsum13">
+                            33. What is the output of the following code?
+void printsum(int a, int b = 4)
+{
+cout &lt;&lt; a + b &lt;&lt; endl;
+}
+int main()
+{
+printsum(13);
+}</h2><br />
+                        <p><strong>What is the output of the following code?</strong></p><p>17 </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="you-must-declared-main-class-which-contains-main-method-which-is-entry-point-of-program-execution-class-nilwanhaikal_xipai_volumebalok-public-static-void-mainstringargs-int-p5int-l">
+                            34. You must declared Main class which contains 'main' method, which is entry point of program execution.
+class NilwanHaikal_XIPAI_VolumeBalok {
+	public static void main(String[]args){
+	 	int p=5;
+		int l=2;
+        int t=5;
+		int volume=p*l*t;
+        System.out.println(volume);
+        int panjang=5;
+        int luas=2;
+        int tinggi=5;
+        int LuasP=2*(panjang*luas+panjang*tinggi+luas*tinggi);
+        System.out.println(LuasP);
+	}
+}</h2><br />
+                        <p>Jawaban:</p><p>Enemies ahead</p><p>Penjelasan:</p><p></p><p><strong>Jawaban:</strong></p><p>C Programming Language
+</p><p>Basics
+</p><p>This chapter explains the features, technical details and syntaxes of the C programming language. I assume that you could write some simple programs. Otherwise, read "Introduction to Programming in C for Novices and First-time Programmers".
+</p><p>
+</p><p>1.  Introduction to C
+</p><p>C Standards
+</p><p>C is standardized as ISO/IEC 9899.
+</p><p>
+</p><p>K&amp;R C: Pre-standardized C, based on Brian Kernighan and Dennis Ritchie (K&amp;R) "The C Programming Language" 1978 book.
+</p><p>C90 (ISO/IEC 9899:1990 "Programming Languages. C"). Also known as ANSI C 89.
+</p><p>C99 (ISO/IEC 9899:1999 "Programming Languages. C")
+</p><p>C11 (ISO/IEC 9899:2011 "Programming Languages. C")
+</p><p>C Features
+</p><p>[TODO]
+</p><p>
+</p><p>C Strength and Pitfall
+</p><p>[TODO]
+</p><p>
+</p><p>2.  Basic Syntaxes
+</p><p>2.1  Revision
+</p><p>Below is a simple C program that illustrates the important programming constructs (sequential flow, while-loop, and if-else) and input/output. Read "Introduction to Programming in C for Novices and First-time Programmers" if you need help in understanding this program.
+</p><p>
+</p><p>1
+</p><p>2
+</p><p>3
+</p><p>4
+</p><p>5
+</p><p>6
+</p><p>7
+</p><p>8
+</p><p>9
+</p><p>10
+</p><p>11
+</p><p>12
+</p><p>13
+</p><p>14
+</p><p>15
+</p><p>16
+</p><p>17
+</p><p>18
+</p><p>19
+</p><p>20
+</p><p>21
+</p><p>22
+</p><p>23
+</p><p>24
+</p><p>25
+</p><p>26
+</p><p>27
+</p><p>28
+</p><p>29
+</p><p>30
+</p><p>31
+</p><p>32
+</p><p>33
+</p><p>34
+</p><p>35
+</p><p>36
+</p><p>37
+</p><p>38
+</p><p>39
+</p><p>40
+</p><p>41
+</p><p>42
+</p><p>/*
+</p><p> * Sum the odd and even numbers, respectively, from 1 to a given upperbound.
+</p><p> * Also compute the absolute difference.
+</p><p> * (SumOddEven.c)
+</p><p> */
+</p><p>#include &lt;stdio.h&gt;   // Needed to use IO functions
+</p><p>  </p><p>int main() {
+</p><p>   int sumOdd  = 0; // For accumulating odd numbers, init to 0
+</p><p>   int sumEven = 0; // For accumulating even numbers, init to 0
+</p><p>   int upperbound;  // Sum from 1 to this upperbound
+</p><p>   int absDiff;     // The absolute difference between the two sums
+</p><p>  </p><p>   // Prompt user for an upperbound
+</p><p>   printf("Enter the upperbound: ");
+</p><p>   scanf("%d", &amp;upperbound);   // Use %d to read an int
+</p><p>  </p><p>   // Use a while-loop to repeatedly add 1, 2, 3,..., to the upperbound
+</p><p>   int number = 1;
+</p><p>   while (number &lt;= upperbound) {
+</p><p>      if (number % 2 == 0) {  // Even number
+</p><p>         sumEven += number;   // Add number into sumEven
+</p><p>      } else {                // Odd number
+</p><p>         sumOdd += number;    // Add number into sumOdd
+</p><p>      }
+</p><p>      ++number; // increment number by 1
+</p><p>   }
+</p><p>  </p><p>   // Compute the absolute difference between the two sums
+</p><p>   if (sumOdd &gt; sumEven) {
+</p><p>      absDiff = sumOdd - sumEven;
+</p><p>   } else {
+</p><p>      absDiff = sumEven - sumOdd;
+</p><p>   }
+</p><p>  </p><p>   // Print the results
+</p><p>   printf("The sum of odd numbers is %d.\n", sumOdd);
+</p><p>   printf("The sum of even numbers is %d.\n", sumEven);
+</p><p>   printf("The absolute difference is %d.\n", absDiff);
+</p><p>  </p><p>   return 0;
+</p><p>}
+</p><p>Enter the upperbound: 1000
+</p><p>The sum of odd numbers is 250000.
+</p><p>The sum of even numbers is 250500.
+</p><p>The absolute difference is 500.
+</p><p>2.2  Comments
+</p><p>Comments are used to document and explain your codes and program logic. Comments are not programming statements and are ignored by the compiler, but they VERY IMPORTANT for providing documentation and explanation for others to understand your program (and also for yourself three days later).
+</p><p>
+</p><p>There are two kinds of comments in C:
+</p><p>
+</p><p>Multi-line Comment: begins with a /* and ends with a */, and can span several lines.
+</p><p>End-of-line Comment: begins with // and lasts till the end of the current line.
+</p><p>You should use comments liberally to explain and document your codes. During program development, instead of deleting a chunk of statements permanently, you could comment-out these statements so that you could get them back later, if needed.
+</p><p>
+</p><p>2.3  Statements and Blocks
+</p><p>Statement: A programming statement is the smallest independent unit in a program, just like a sentence in the English language. It performs a piece of programming action. A programming statement must be terminated by a semi-colon (;), just like an English sentence ends with a period. (Why not ends with a period like an english sentence? This is because period crashes with decimal point - it is hard for the dumb computer to differentiate between period and decimal point!)
+</p><p>
+</p><p>For examples,
+</p><p>
+</p><p>// Each of the following lines is a programming statement, which ends with a semi-colon (;)
+</p><p>int number1 = 10;
+</p><p>int number2, number3 = 99;
+</p><p>int product;
+</p><p>product = number1 * number2 * number3;
+</p><p>printf("Hello\n");
+</p><p>Block: A block (or a compound statement) is a group of statements surrounded by braces { }. All the statements inside the block is treated as one unit. Blocks are used as the body in constructs like function, if-else and loop, which may contain multiple statements but are treated as one unit. There is no need to put a semi-colon after the closing brace to end a complex statement. Empty block (without any statement) is permitted. For examples,
+</p><p>
+</p><p>// Each of the followings is a "complex" statement comprising one or more blocks of statements.
+</p><p>// No terminating semi-colon needed after the closing brace to end the "complex" statement.
+</p><p>// Take note that a "complex" statement is usually written over a few lines for readability.
+</p><p>if (mark &gt;= 50) {
+</p><p>   printf("PASS\n");
+</p><p>   printf("Well Done!\n");
+</p><p>   printf("Keep it Up!\n");
+</p><p>}
+</p><p>  </p><p>if (number == 88) {
+</p><p>   printf("Got it\n");  </p><p>} else {  </p><p>   printf("Try Again\n");  </p><p>}
+</p><p>  </p><p>i = 1;
+</p><p>while (i &lt; 8) {
+</p><p>   printf("%d\n", i);
+</p><p>   ++i;  </p><p>}
+</p><p>  </p><p>int main() {
+</p><p>   ...statements...  </p><p></p><p>maaf kalo salah :)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="nilai-setelah-output-adalah-int-mainint-x-100while-x-150x-x5cout-x-endl%e2%80%8b">
+                            35. Nilai setelah output adalah...int main(){int x = 100;while (x &lt;= 150)x = x+5;cout&lt;&lt; x &lt;&lt;endl;​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>output akhirnya adalah 155</p><p><strong>Penjelasan:</strong></p><p>x akan ditambah 5 sampai x&lt;=150</p><p>while x &lt;= 150 do</p><br />
+                                            <h2 class="ez-toc-section" id="perintah-int-dan-pada-code-block-berfungsi-untuk%e2%80%8b">
+                            36. perintah &amp;&amp;, ==, Int, dan ++ pada code block berfungsi untuk​</h2><br />
+                        <p>&amp;&amp; berfungsi untuk konversi Gerbang And</p><p>== berfungsi untuk sama dengan</p><p>int berfungsi untuk memasukan variable</p><p>++ berfungsi untuk menambah nilai variable</p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-potongan-codingan-dibawah-ini-void-a-printf%e2%80%9csaya-suka-belajar-algoritma%e2%80%9d-int-b-printf%e2%80%9csaya-suka-belajar-java%e2%80%9d-return-0-void-cint-angka1-i">
+                            37. Perhatikan potongan codingan dibawah ini! void a(){ printf(“Saya suka belajar Algoritma”); } int b(){ printf(“Saya suka belajar Java”); return 0; } void c(int angka1, int angka2){ printf(“%d”, angka1+angka2); } Untuk menjumlahkan 2 angka, maka fungsi yang harus dipanggil dari fungsi main adalah
+A. void c();
+ B. c(5,2);
+ C. void c(5,2);
+ D. c();</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>c(5,2);</p><p>kenapa?</p><p></p><p>void a(){</p><p>   printf(“Saya suka belajar Algoritma”); </p><p>} </p><p>int b(){ </p><p>    printf(“Saya suka belajar Java”); r</p><p>    return 0; </p><p>} </p><p>void c(int angka1, int angka2){</p><p>     printf(“%d”, angka1+angka2); </p><p>} </p><p></p><p>di func yang kamu tanyakan, udah jelas kalau void c(int angka1, int angka2) itu menampung 2 argumen, yaitu interger angka1 dan interger angka 2</p><p></p><p>jadi yang harus di panggil ya fungsi c()</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-kegunaan-dari-fungsi-int">
+                            38. apakah kegunaan dari fungsi INT?</h2><br />
+                        Membulatkan angka ke bawah ke bilangan bulat terdekat.Fungsinya mengambil nilai bilangan bulat dari suatu bilangan desimal<br /><br />___________<br />#Semoga bermanfaat ^_^<br />
+                                            <h2 class="ez-toc-section" id="fungsi-int-digunakan-untuk">
+                            39. fungsi INT digunakan untuk</h2><br />
+                        Nambahin mananya sama mana regen <br />itu guna intelegent nambahin mana supaya ga cepet abis<br />
+                                            <h2 class="ez-toc-section" id="include-iostreamusing-namespace-stdint-mainint-bulat-5-812269020nilai-variable-yag-diberikan-pada-indek-array-ke-3-adalah-%e2%80%8b">
+                            40. # include &lt;iostream&gt;Using namespace std;int main(){int bulat [5] = {8,12,26,90,20};Nilai variable yag diberikan pada indek array ke 3 adalah..​</h2><br />
+                        <p>Jawaban:90</p><p></p><p>Penjelasan:</p><p>Index </p><p>1=0</p><p>2=1</p><p>3=2</p><p>4=3</p><p>5=4</p><p></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/YqwYEKjGxdU?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-dan-pembahasan-primal-dual.html">Contoh Soal Dan Pembahasan Primal Dual</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-konjungsi-beserta-jawabannya.html">Contoh Soal Konjungsi Beserta Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-sequence-diagram-pada-genmymodel.html">Fungsi Dari Sequence Diagram Pada Genmymodel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/ctrl-di-word.html">Ctrl Di Word</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-nilai-maksimum-fungsi-objektif-dari-sistem-pertidaksamaan.html">Contoh Soal Nilai Maksimum Fungsi Objektif Dari Sistem Pertidaksamaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-impuls.html">Contoh Soal Impuls</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/berikut-yang-bukan-fungsi-utama-dari-kemasan-produk-adalah.html">Berikut Yang Bukan Fungsi Utama Dari Kemasan Produk Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-i-o-port-output.html">Fungsi Dari I O Port Output</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-insert-bkankkey-frame.html">Fungsi Dari Insert Bkankkey Frame</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-jurnal-finansial-dan-jurnal-pelaksanaan-anggaran.html">Contoh Soal Jurnal Finansial Dan Jurnal Pelaksanaan Anggaran</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-orang-topografi.html">Fungsi Dari Orang Topografi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-bangun-datar-gabungan-dan-jawabannya-kelas-6-brainly.html">Contoh Soal Bangun Datar Gabungan Dan Jawabannya Kelas 6 Brainly</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-tes-akademik-masuk-pln.html">Contoh Soal Tes Akademik Masuk Pln</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-buat-sim-c.html">Contoh Soal Buat Sim C</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/kuis-pengetahuan-umum.html">Kuis Pengetahuan Umum</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-matriks-pilihan-ganda-dan-jawaban.html">Contoh Soal Matriks Pilihan Ganda Dan Jawaban</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-clapperboard.html">Fungsi Dari Clapperboard</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-hambatan-pengganti-rangkaian-paralel.html">Contoh Soal Hambatan Pengganti Rangkaian Paralel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-bilik-kiri-adalah-menerima-darah-dari.html">Fungsi Bilik Kiri Adalah Menerima Darah Dari</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/bab-adalah.html">Bab Adalah</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://soalpedia.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://soalpedia.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

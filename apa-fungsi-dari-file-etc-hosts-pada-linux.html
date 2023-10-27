@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apa Fungsi Dari File Etc Hosts Pada Linux - BELAJAR</title>
+    <meta name="description" content="Apa Fungsi Dari File Etc Hosts Pada Linux, , , , , , , 0, , , , , , 0, apa-fungsi-dari-file-etc-hosts-pada-linux, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Apa Fungsi Dari File Etc Hosts Pada Linux - BELAJAR" />
+    <meta property="og:description" content="Apa Fungsi Dari File Etc Hosts Pada Linux, , , , , , , 0, , , , , , 0, apa-fungsi-dari-file-etc-hosts-pada-linux, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Apa Fungsi Dari File Etc Hosts Pada Linux - BELAJAR" />
+    <meta name="twitter:description" content="Apa Fungsi Dari File Etc Hosts Pada Linux, , , , , , , 0, , , , , , 0, apa-fungsi-dari-file-etc-hosts-pada-linux, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://soalpedia.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://soalpedia.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://soalpedia.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://soalpedia.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://soalpedia.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://soalpedia.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://soalpedia.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://soalpedia.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Apa Fungsi Dari File Etc Hosts Pada Linux</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">anasalliiby</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Apa+Fungsi+Dari+File+Etc+Hosts+Pada+Linux" alt="Apa Fungsi Dari File Etc Hosts Pada Linux">
+                    </div>
+                    <p></p>
+                    <p>mau tanya file hosts yang ada di (C:\windows\System32\drivers\etc\hosts) saya masih bingung dengan file &quot;hosts&quot; apa si kegunaan dari file hosts ini ?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mau-tanya-file-hosts-yang-ada-di-cwindowssystem32driversetchosts-saya-masih-bingung-dengan-file-hosts-apa-si-kegunaan-dari-file-hosts-ini">1.
+                                            mau tanya file hosts yang ada di (C:\windows\System32\drivers\etc\hosts) saya masih bingung dengan file "hosts" apa si kegunaan dari file hosts ini ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mau-tanya-file-hosts-yang-ada-di-cwindowssystem32driversetchosts-saya-masih-bingung-dengan-file-hosts-apa-si-kegunaan-nya-file-hosts-itu-tolong-dijelaskan-juga-ya">2.
+                                            mau tanya file hosts yang ada di (C:\windows\System32\drivers\etc\hosts) saya masih bingung dengan file "hosts" apa si kegunaan nya file hosts itu tolong dijelaskan juga ya ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mau-tanyafile-hosts-yg-ada-di-cwindowssystem32driversetchosts-pertanyaan-nya-apakah-file-hosts-bisa-meretas-komputer-orang-lain-atau-bahasa-yang">3.
+                                            mau tanya,file hosts yg ada di (C:\Windows\System32\drivers\etc\hosts) pertanyaan nya apakah file hosts bisa meretas komputer orang lain atau bahasa yang...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gambarkanlah-apa-saja-yang-mungkin-terjadi-apabila-file-etcpasswd-atau-etcshadow-terhapus-dari-sistem-linux">4.
+                                            Gambarkanlah apa saja yang mungkin terjadi apabila file /etc/passwd atau /etc/shadow terhapus dari sistem Linux?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-file-sistem-pada-linux-tidak-boleh-digunakan-untuk-menyimpan-data-dan-hanya-berfungsi-sebagai-virtual-memori-adalah">5.
+                                            jenis file sistem pada linux tidak boleh digunakan untuk menyimpan data dan hanya berfungsi sebagai virtual memori adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-isi-file-dalam-direktori-linux">6.
+                                            Sebutkan isi file dalam direktori linux</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-nanoetcnetworkinterfaces-pada-cli-linux">7.
+                                            apa fungsi dari "nano/etc/network/interfaces" pada CLI Linux</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-sistem-operasi-linux-direktory-etc-digunkan-sebagai%e2%80%8b">8.
+                                            pada sistem operasi Linux direktory /etc digunkan sebagai​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#file-file-apa-saja-yang-perlu-di-backup-di-sistem-operasi-linux-debian">9.
+                                            File - file apa saja yang perlu di backup di sistem operasi linux debian ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-pengertian-file-system2-mengapa-pada-linux-tidak-mengenal-partisi-drive-c-d-dan-lain-lain-jelaskan3-jelaskan-pengertian-direktori-file-linux-dibawaha-binb-devc-etcd-sbi">10.
+                                            1. Jelaskan pengertian File System!
+2. Mengapa pada Linux tidak mengenal partisi Drive C, D dan lain-lain? Jelaskan!
+3. Jelaskan pengertian direktori file linux dibawah
+A) /bin
+B) /dev
+C) /etc
+D) /sbin
+E) /home
+F) /lib
+G) /proc
+H) /tmp
+I) /usr
+J) /var</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-kemungkinan-yang-terjadi-apabila-fileetcpassword-atau-etcshadow-terhapus-dari-sistem-linux">11.
+                                            Jelaskan kemungkinan yang terjadi apabila file/etc/password atau etc/shadow terhapus dari sistem linux </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-perintah-man-k-file-pada-linux-adalah">12.
+                                            fungsi perintah man -k file pada linux adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#file-system-apakah-yang-di-gunakan-oleh-windows-dan-linux">13.
+                                            file system apakah yang di gunakan oleh windows dan linux?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-sistem-file-pada-linux">14.
+                                            Bagaimana sistem file pada linux? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-sistem-partisi-file-pada-linux">15.
+                                            Tuliskan sistem partisi file pada Linux !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-file-pada-konsep-direktori-linux">16.
+                                            Apa yang dimaksud dengan file pada konsep direktori linux</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-sistem-file-pada-linux%e2%80%8b">17.
+                                            bagaimana sistem file pada linux?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#file-system-yang-digunakan-linux-yaitu">18.
+                                            file system yang digunakan linux yaitu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tipe-file-yang-digunakan-oleh-linux-secara-umum-adalah-%e2%80%a6">19.
+                                            Tipe file yang digunakan oleh linux secara umum adalah ….</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#direktori-yang-berisi-file-file-konfigurasi-sistem-pada-sistem-operasi-linux-adalah">20.
+                                            direktori yang berisi file-file konfigurasi sistem pada sistem operasi Linux adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-kelebihan-file-hosts-di-bandingkan-server-dns">21.
+                                            apa kelebihan file hosts di bandingkan server dns </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-isi-file-etcpasswd">22.
+                                            apa isi file /etc/passwd</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-file-file-apa-saja-yang-terkait-dalam-pengaturan-konfigurasi-jaringan-pada-sistem-linux">23.
+                                            sebutkan file-file apa saja yang terkait dalam pengaturan konfigurasi jaringan pada sistem linux</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#memindahkan-file-dan-folder-bisa-ke-folder-itu-juga-atau-ke-folder-yang-lain-pada-linux-adalah-%e2%80%8b">24.
+                                            Memindahkan file dan folder, bisa ke folder itu juga atau ke folder yang lain pada linux adalah ...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-kelebihan-file-hosts-dibandingkan-dengan-server-dns">25.
+                                            apa kelebihan file hosts dibandingkan dengan server dns</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mau-tanyafile-hosts-yg-ada-di-cwindowssystem32driversetchosts-pertanyaan-nya-apakah-file-hosts-bisa-meretas-komputer-orang-lain-atau-bahasa-yang">26.
+                                            mau tanya,file hosts yg ada di (C:\Windows\System32\drivers\etc\hosts) pertanyaan nya apakah file hosts bisa meretas komputer orang lain atau bahasa yang...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-direktori-root-usr-etc-bin-mnt-di-linux">27.
+                                            fungsi direktori /root , /usr , /etc , /bin , /mnt di linux...???</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gambarkanlah-apa-saja-yang-mungkin-terjadi-apabila-fileetcpasswd-atau-etcshadow-terhapus-dari-sistem-linux">28.
+                                            Gambarkanlah apa saja yang mungkin terjadi apabila file/etc/passwd atau /etc/shadow terhapus dari sistem linux</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-setelah-anda-selesai-membangun-server-radio-streaming-dengan-icecast-pada-os-linux-dan-berjalan-dengan-baik-ternyata-anda-lupa-untuk-mengubah-nama-mesin-server-anda-dapat-memodifikasinya-dengan-m">29.
+                                            3. Setelah Anda selesai membangun server radio streaming dengan Icecast pada OS Linux dan berjalan dengan baik, ternyata Anda lupa untuk mengubah nama mesin server. Anda dapat memodifikasinya dengan mengonfigurasi ulang file yang berada di bawah direktori /etc. File yang seharusnya Anda modifikasi adalah .... ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-isi-file-etcpasword">30.
+                                            apa isi file etc/pasword</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-sistem-file-linux-yang-berisi-file-administrasi-adalah-a-varb-optc-etcd-bine-sbin%e2%80%8b">31.
+                                            8. Sistem file Linux yang berisi file administrasi adalah ....a./varb./optc./etcd./bine./sbin​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ekstensi-file-installer-pada-sistem-operasi-linux-adalah">32.
+                                            Ekstensi file installer pada sistem operasi Linux adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-saat-instalasi-sistem-operasi-linux-file-sistem-operasi-linux-tersebut-akan-tersimpan-pada-partisi-hardisk-yaitu">33.
+                                            Pada saat instalasi sistem operasi linux, file sistem operasi linux tersebut akan tersimpan pada partisi hardisk yaitu?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mau-tanyafile-hosts-yg-ada-di-cwindowssystem32driversetchosts-pertanyaan-nya-apakah-file-hosts-bisa-meretas-komputer-orang-lain-atau-bahasa-yang-gampangnya-bisa-menghack-perangkat-komputer">34.
+                                            
+mau tanya,file hosts yg ada di (C:\Windows\System32\drivers\etc\hosts)  pertanyaan nya apakah file hosts bisa meretas komputer orang lain atau bahasa yang gampangnya bisa menghack perangkat komputer orang ? dengan cara menaro kan file hosts kita ke orang lain ? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#persamaan-file-sistem-pada-windows-dan-linux">35.
+                                            persamaan file sistem pada windows dan linux</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mau-tanyafile-hosts-yg-ada-di-cwindowssystem32driversetchosts-pertanyaan-nya-apakah-file-hosts-bisa-meretas-komputer-orang-lain-atau-bahasa-yang-gampangnya-bisa-menghack-perangkat-komputer-or">36.
+                                            mau tanya,file hosts yg ada di (C:\Windows\System32\drivers\etc\hosts) pertanyaan nya apakah file hosts bisa meretas komputer orang lain atau bahasa yang gampangnya bisa menghack perangkat komputer orang ? dengan cara menaro kan file hosts kita ke orang lain ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-linux-di-bawah-ini-benar-kecuali-1-poin-nano-etcnetworkinterfaces-nano-etcnetworkinginterfaces-vi-etcnetworkinginterfaces">37.
+                                            Perintah linux di bawah ini benar, kecuali * 1 poin # nano /etc/network/interfaces # nano /etc/networking/interfaces # vi /etc/networking/interfaces</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#file-sistem-yg-digunakan-linux-adalah">38.
+                                            file sistem yg digunakan linux adalah </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perintah-untuk-mengestrak-suatu-file-pada-linux">39.
+                                            Apa perintah untuk mengestrak suatu file pada linux?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-kelebihan-file-hosts-dibandingkan-server-dns">40.
+                                            apa kelebihan file hosts dibandingkan server dns</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="mau-tanya-file-hosts-yang-ada-di-cwindowssystem32driversetchosts-saya-masih-bingung-dengan-file-hosts-apa-si-kegunaan-dari-file-hosts-ini">
+                            1. mau tanya file hosts yang ada di (C:\windows\System32\drivers\etc\hosts) saya masih bingung dengan file "hosts" apa si kegunaan dari file hosts ini ?</h2><br />
+                        Biasanya untuk mengendalikan server atau system dari laptop tersebut maupun juga data data seperti system:c maupun Data:D<br />
+                                            <h2 class="ez-toc-section" id="mau-tanya-file-hosts-yang-ada-di-cwindowssystem32driversetchosts-saya-masih-bingung-dengan-file-hosts-apa-si-kegunaan-nya-file-hosts-itu-tolong-dijelaskan-juga-ya">
+                            2. mau tanya file hosts yang ada di (C:\windows\System32\drivers\etc\hosts) saya masih bingung dengan file "hosts" apa si kegunaan nya file hosts itu tolong dijelaskan juga ya ?</h2><br />
+                        Kegunaanya yaitu sebagai berikut silahkan di simak yh:<br /><br />-Untuk Memblokir Situs<br /><br />Kamu bisa menggunakan file host sebagai pemblokir situs, sehingga kamu tak perlu menginstall software pendukung. Selain itu ini juga bisa mengamankan anak-anak untuk tidak membuka situs dewasa, karena tidak menggunakan software.<br /><br />-Selanjutnya untuk Membuat Shortcut <br /><br />SitusKamu juga bisa membuat shortcut untuk membuka situs favorit dengan menggunakan file host. Misalkan saja kamu sangat menyukai PusatGratis, kamu bisa membuat shortcut dan tidak perlu mengetikkan www.pusatgratis.com lagi pad URL bar di browser.<br /><br />-Yang terakhir untuk Mengalihkan Situs<br /><br />Kamu juga bisa mengalihkan sebuah situs ke situs lain loh, trik yang satu inibisa untuk mengjahili teman kamu. Contohnya saja jika teman kamu biasa membuka facebook.com, makakamu bisa mengalihkannya ke twitter.com. Sangat jahil memang, namun ini juga bisa kamu manfaatkanuntuk membatasi anak-anak agar tidak membuka situs dewasa juga.<br /><br />Smoga bermanfaat<br />
+                                            <h2 class="ez-toc-section" id="mau-tanyafile-hosts-yg-ada-di-cwindowssystem32driversetchosts-pertanyaan-nya-apakah-file-hosts-bisa-meretas-komputer-orang-lain-atau-bahasa-yang">
+                            3. mau tanya,file hosts yg ada di (C:\Windows\System32\drivers\etc\hosts) pertanyaan nya apakah file hosts bisa meretas komputer orang lain atau bahasa yang...</h2><br />
+                        bisa ya bisa tidak<br />tergantung programing nya di atur apa ?<br />untuk meretas atau tidak<br />
+                                            <h2 class="ez-toc-section" id="gambarkanlah-apa-saja-yang-mungkin-terjadi-apabila-file-etcpasswd-atau-etcshadow-terhapus-dari-sistem-linux">
+                            4. Gambarkanlah apa saja yang mungkin terjadi apabila file /etc/passwd atau /etc/shadow terhapus dari sistem Linux?</h2><br />
+                        Jika file-file tersebut terhapus ada kemungkinan user tidak dapat login<br />
+                                            <h2 class="ez-toc-section" id="jenis-file-sistem-pada-linux-tidak-boleh-digunakan-untuk-menyimpan-data-dan-hanya-berfungsi-sebagai-virtual-memori-adalah">
+                            5. jenis file sistem pada linux tidak boleh digunakan untuk menyimpan data dan hanya berfungsi sebagai virtual memori adalah</h2><br />
+                        <strong>Jenis file sistem pada linux yang tidak boleh digunakan</strong> untuk menyimpan data dan hanya berfungsi sebagai virtual memori adalah jenis file swap.<br /><br />Seperti kita ketahui pada saat menginstall linux, kita dapat melakukan partisi manual yaitu / ( root ) untuk file system, /home untuk menyimpan data dan terakhir adalah swap file sebagai virtual memori. Biasanya ukuran file swap adalah 2 kali dari RAM yang terpasang. Namun pada era sekarang ukuran RAM yang sudah cukup besar, kapasitas ruang swap tidak dipatok 2 kali besar RAM terpasang.<br /><br />Demikian pembahasan singkat mengenai file sistem yang berfungsi sebagai virtual memori. Untuk pembasahan lebih lanjut mengenai linux dapat dibaca pada link berikut <br /><br />Pengertian Linux brainly.co.id/tugas/5961226<br /><br />Detil tambahan<br />Kelas : 3 SMP<br />Materi : sistem pada linux, linux<br />Kata kunci : sistem pada linux, swap file, linux<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-isi-file-dalam-direktori-linux">
+                            6. Sebutkan isi file dalam direktori linux</h2><br />
+                        <p>/ – Root direktori yang membentuk basic sistem file. Semua file dan direktori secara logic berada di dalam root direktori ini walaupun dari lokasi yang berbeza.</p><p>/bin – Memuatkan program arahan yang merupakan sebahagian dari sistem operasi Linux. Banyak perintah Linux seperti cat, cp, ls, more, dan tar terletak pada /bin.</p><p>/boot – Memuatkan Linux Kernel dan file lain yang diperlukan LILO dan GRUB boot manager.</p><p>/dev – Memuatkan semua file penting. Linux melakukan semua operasi utama komputer seperti sebuah file yang special. Semua file seperti ini terletak di /dev.</p><p>/etc – Memuatkan semua sistem konfigurasi file dan skrip installation pada /etc/rc.d sub direktori.</p><p>/home – Direktori Home menyimpan semua direktori home user.</p><p>/lib – Memuatkan file library, termasuk modul driver yang dapat diisi pada sistem boot.</p><p>/lost+found – Direktori untuk file yang hilang. Semua partition disk memiliki direktori lost+found.</p><p>/media – Direktori untuk mounting removable media seperi drive CD-ROM, floopy disk dan zip drive.</p><p>/mnt – Direktori untuk mounting file sistem sementara.</p><p>/opt – Data – data instal / copy untuk aplikasi opsional .</p><p>/proc – Direktori istimewa untuk sistem file virtual. Ia mencakupi informasi mengenai berbagai aspek sistem Linux.</p><p>/root – Direktori Home untuk root user.</p><p>/sbin – Memuatkan file administration yang dapat diakses seperti mount, shutdown, umount.</p><p>/srv – Memuatkan data untuk layanan (HTTP, FTP, etc.) yang ditawarkan oleh sistem.</p><p>/sys – Direktori special yang memuatkan informasi mengenai hard disk seperti yang dilihat melalui Linux.</p><p>/tmp – Direktori yang digunakan untuk menyimpan data sementara. Isi dari direktori ini dibersihkan setiap kali sistem boot.</p><p>/usr – Memuatkan sub direktori untuk pelbagai program seperti sistem X Windows.</p><p>/usr/bin – Memuatkan file yang dapat diakses untuk pelbagai perintah Linux yang bukan merupakan sebahagian dari OS Linux.</p><p>/usr/include – Memuatkan file – file header dari bahasa program C dan C++.</p><p>/usr/lib – Memuatkan file – file library untuk bahasa C dan C++.</p><p>/usr/local – Memuatkan data lokal. Ia mengadungi direktori yang sama seperti /usr.</p><p>/usr/sbin – Memuatkan perintah – perintah administration.</p><p>/usr/share – Memuatkan data yang digunakan oleh banyak user sekaligus, seperti file konfigurasi default, gambar dan dokumen.</p><p>/usr/src – Memuatkan source code untuk Linux kernel.</p><p>/var – Memuatkan pelbagai sistem file seperti log, direktori mail, print dan lain – lain. Yang sering kali berubah kandungannya.</p><p>/var/cache – Area penyimpanan untuk cache data berbagai aplikasi.</p><p>/var/lib – Memuatkan informasi tentang status aplikasi – aplikasi yang ada. Aplikasi memodifikasi direktori ini semasa melakukan sesuatu kerja.</p><p>/var/lock – Memuatkan file yang dikunci supaya ia hanya boleh diguna oleh satu aplikasi saja.</p><p>/var/log – Memuatkan log dari aplikasi yang berbeza.</p><p>/var/mail – Memuatkan email pemilik.</p><p>/var/opt – Memuatkan data variable untuk pakej yang disimpan di direktori /opt.</p><p>/var/run – Memuatkan data yang menjelaskan sistem sejak pertama kali dijalankan.</p><p>/var/spool – Memuatkan data yang menunggu untuk diproses.</p><p>/var/tmp – Memuatkan file sementara, isi direktori ini tidak dihapus semasa sistem dimatikan.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-nanoetcnetworkinterfaces-pada-cli-linux">
+                            7. apa fungsi dari "nano/etc/network/interfaces" pada CLI Linux</h2><br />
+                        <p>membuka lembar untuk konfigurasi IP address</p><p>Untuk mengkonfigurasi IP pada komputer</p><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="pada-sistem-operasi-linux-direktory-etc-digunkan-sebagai%e2%80%8b">
+                            8. pada sistem operasi Linux direktory /etc digunkan sebagai​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>home – Direktori Home menyimpan semua direktori home user.</p><p>     #MAAF KALAU SALAH</p><p><strong>Jawaban:</strong></p><p>/home – Direktori Home menyimpan semua direktori home user.</p><p><strong>Penjelasan:</strong></p><p>#Jadikan ini jawaban Tercerdas</p><br />
+                                            <h2 class="ez-toc-section" id="file-file-apa-saja-yang-perlu-di-backup-di-sistem-operasi-linux-debian">
+                            9. File - file apa saja yang perlu di backup di sistem operasi linux debian ?</h2><br />
+                        halnya sistem operasi windows, dalam ubuntu (mungkin bisa juga dicoba varian debian) dapat dilakukan backup sistem operasi, bahkan lebih variatif. Jika dalam windows kita melakukan backup terhadap sistem operasinya (juga bisa termasuk program di dalamnya) ternyata di ubuntu dapat melakukan backup terhadap sistem operasi atau backup hanya pada program aplikasinya aja. Jadi lebih enak kan. Langsung saja kita menuju TKP...<br /><br />1. Backup Terhadap sistem operasi unbuntu<br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-pengertian-file-system2-mengapa-pada-linux-tidak-mengenal-partisi-drive-c-d-dan-lain-lain-jelaskan3-jelaskan-pengertian-direktori-file-linux-dibawaha-binb-devc-etcd-sbi">
+                            10. 1. Jelaskan pengertian File System!
+2. Mengapa pada Linux tidak mengenal partisi Drive C, D dan lain-lain? Jelaskan!
+3. Jelaskan pengertian direktori file linux dibawah
+A) /bin
+B) /dev
+C) /etc
+D) /sbin
+E) /home
+F) /lib
+G) /proc
+H) /tmp
+I) /usr
+J) /var</h2><br />
+                        1.File System adalah sebuah metode untuk memberi nama pada berkas dan meletakkannya pada media penyimpanan. Semua sistem operasi mulai dari DOS, Windows, Macintosh dan turunan UNIX memiliki Sistem berkas sendiri untuk meletakkan file dalam sebuah struktur hirarki<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-kemungkinan-yang-terjadi-apabila-fileetcpassword-atau-etcshadow-terhapus-dari-sistem-linux">
+                            11. Jelaskan kemungkinan yang terjadi apabila file/etc/password atau etc/shadow terhapus dari sistem linux </h2><br />
+                        <p>Jawaban:</p><p>File akan hilang</p><p>Penjelasan:</p><p>Semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-perintah-man-k-file-pada-linux-adalah">
+                            12. fungsi perintah man -k file pada linux adalah</h2><br />
+                        pwd<br />Perintah pwd berfungsi untuk melihat pada direktori mana kamu sedang berada pada saat ini.<br /><br />man<br />man adalah perintah yang berfungsi untuk menampilkan halaman manual atau dokumentasi dari sebuah perintah. Dengan menggunakan perintah man kamu bisa melihat panduan atau fungsi dari sebuah perintah.<br /><br />ls<br />Perintas ls berfungsi untuk menampilkan isi dari sebuah folder dengan menggunakan command line interface. Ketika sedang berada pada sebuah folder atau direktori tertentu, kamu bisa melihat isi dari folder atau direktori tersebut dengan menggunakan perintah ls.<br /><br />whoami<br />Seperti namanya, perintah whoami  berfungsi untuk melihat nama dari user  yang sedang kamu gunakan pada saat ini. Dengan mengetikkan perintah whoami  pada Terminal atau command line interface, maka akan muncul sebuah output nama dari user yang sedang kamu gunakan.<br /><br />cd<br />cd adalah singkat dari change directory. Perintah ini berfungsi untuk berpindah dari direktori dimana kamu berada saat ini. Kamu bisa keluar dari sebuah folder atau masuk ke dalam folder tertentu dengan menggunakan perintah ini.<br /><br />mkdir<br />Perintah mkdir berfungsi untuk membuat sebuah folder atau sebuah direktori baru menggunakan command line interface. Dengan menggunakan perintah makdir, kamu bukan hanya bisa membuat satu buah direktori baru, kamu juga bisa membuat sebuah struktur direktori baru dengan struktur tertentu.<br /><br />Dengan kata lain, kamu bisa membuat banyak folder hanya dengan menggunakan satu baris perintah di Linux dengan menggunakan perintah mkdir.<br /><br />touch<br />Perintah touch berfungsi untuk membuat sebuah file baru dengan menggunakan command line interface. Perintah ini bisa membuat file dengan ekstensi apa saja.<br /><br />rm<br />Perintah rm berfungsi untuk menghapus sebuah file dengan menggunakan command line interface. Dalam penggunaannya, dengan menggunakan parameter tertentu perintah rm juga digunakan untuk menghapus sebuah folder yang masih memiliki isi di dalamnya.<br /><br />rmdir<br />Hampir mirip dengan perintah rm, perintah rmdir berfungsi untuk menghapus sebuah folder yang telah kosong.<br /><br />mv<br />Perintah mv berfungsi untuk memindahkan sebuah file menggunakan command line. Dalam penggunaannya, kamu juga bisa menggunakan perintah ini untuk mengubah nama sebuah file.<br /><br />cp<br />Perintah cp adalah perintah yang berfungsi untuk mengopi sebuah file dengan menggunakan command line interface.<br /><br />Tidak sama dengan perintah mv, perintah ini tidak akan menghapus file dasarnya, ia hanya menyalin isi dari sebuah file ke dalam sebuah file yang baru dengan nama yang berbeda.<br /><br />cat<br />Perintah cat berfungsi untuk menampilkan isi dari sebuah file dengan mencetaknya sebagai output dari perintah tersebut.<br /><br />find<br />Perintah find berfungsi untuk mencari sebuah file atau sebuah folder menggunakan Terminal atau command line interface.<br /><br />Perintah ini mengizinkan kamu untuk melakukan pencarian dengan beberapa opsi filter pencarian seperti mencari sebuah file dengan ekstensi tertentu, ukuran tertentu, lokasi tertentu dan sebagainya.<br /><br />locate<br />Selain dengan menggunakan perintah find, kamu juga bisa melakukan pencarian dengan command line interface  menggunakan perintah locate. Berbeda dengan perintah find, perintah locate  melakukan pencarian file dengan mencocokkan nama file dari database yang ada.<br /><br />kill<br />Perintah kill berfungsi untuk menghentikan sebuah proses yang sedang berjalan. Kamu dapat menghentikan sebuah proses dengan menggunakan perintah berdasarkan pid dari proses tersebut.<br /><br />bg<br />Parintah bg berfungsi untuk mengirim proses ke latar belakang (background), proses akan tetap dijalankan, hanya saja tidak ditampilkan atau dikirim ke latar belakang.<br /><br />fg<br />Perintah fg adalah kebalikan dari perintah bg. Perintah fg berfungsi mengirim proses kembali ke foreground (latar depan).<br /><br />chmod<br />Perintah chmod berfungsi untuk mengatur hak akses dari sebuah file di Linux. Kamu dapat mengatur hak akses dari sebuah file terhadap sebuah user atau group tertentu dengan memberi batasan hak akses rwx (read, write, execute). Dengan menggunakan chmod kamu juga menambah atau menghapus sebu<br />
+                                            <h2 class="ez-toc-section" id="file-system-apakah-yang-di-gunakan-oleh-windows-dan-linux">
+                            13. file system apakah yang di gunakan oleh windows dan linux?</h2><br />
+                        Filesistem windows dengan linux berbeda, dari jenis partisi saja sudah berbeda.<br /><br />Linux kebanyakan menggunakan partisi jenis ext ( mau ext3, ext4 ), btrfs, jfs, xfs<br /><br />Windows bergantung kepada FAT, FAT32, exFAT, NTFS. Sekarang kebanyakan menggunakan NTFS<br /><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-sistem-file-pada-linux">
+                            14. Bagaimana sistem file pada linux? </h2><br />
+                        <p>https://perawatancomputer.wordpress.com/file-sistem-linux/<br />Dari extended no. 1 aja tulis nya</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-sistem-partisi-file-pada-linux">
+                            15. Tuliskan sistem partisi file pada Linux !</h2><br />
+                        sistem file pada linux;<br />-Ext2<br />-Ext3<br />-Ext4<br />-Jfs<br />-Reiser fs<br />-<br />/home = direktori tempat user menaruh filenya. Jadi misalnya user Gmnaf akan<br />memiliki direktori home sbb: /home/Gmnaf/<br />/etc = direktori tempat semua file konfigurasi, baik dari program aplikasi maupun<br />system Linux<br />/bin = tempat binary dari program<br />/sbin = sama seperti /bin, tapi khusus system.<br />/tmp = akan dihapus secara periodic tidak seperti /tmp<br />/usr = direktori berisi file program yang penting.<br />/var = direktori tempat menaruh file-file yang selalu beruba seperti mail.<br /><br />semoga membantu <br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-file-pada-konsep-direktori-linux">
+                            16. Apa yang dimaksud dengan file pada konsep direktori linux</h2><br />
+                        <p>Hai sazaraa52172,</p><p></p><p>File adalah kumpulan data yang disimpan pada penyimpanan sekunder (disk drive) yang dapat diakses oleh kernel dan proses. Setiap file memiliki inode yang terkait dengannya, yang berisi informasi tentang siapa pemilik file tersebut, jenis data apa yang terkandung di dalamnya, dan kapan terakhir kali diakses.</p><p></p><p>Semoga membantu!</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-sistem-file-pada-linux%e2%80%8b">
+                            17. bagaimana sistem file pada linux?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sistem File Linux</p><p>Sistem Operasi Linux mendukung banyak File System yang berbeda, tapi pilihan yang umum digunakan adalah keluarga Ext* (Ext2, Ext3 dan Ext4) dan ReiserFS.</p><p><strong>Penjelasan:</strong></p><p>1. Ext2 (2nd Extended)</p><p>File system ini merupakan penulisan ulang besar-besaran dari Extended file system. Ext2 adalah sistem file yang paling ampuh di Linux dan menjadi dasar dari segala distribusi linux.</p><p></p><p>2. Ext3 (3rd Extended)</p><p>Ext3 adalah peningkatan dari sistem file Ext2. Peningkatan ini memiliki beberapa keuntungan, diantaranya:</p><p>•Journaling</p><p>dengan menggunakan journaling, maka waktu recovery pada shutdown mendadak tidak akan selama pada Ext2. Namun ini menjadi kekurangan dari Ext3, karena dengan adanya fitur journaling, maka membutuhkan memori yang lebih dan memperlambat operasi I/O (Input/Output).</p><p></p><p>3. Ext4 (4th Extended)</p><p>Ext4 merupakan peningkatan dari sistem file Ext3. Ext4 dirilis secara lengkap dan stabil mulai dari kernel 2.6.28. Keuntungan menggunakan Ext4 adalah mempunyai pengalamatan 48-bit blok yang artinya dia akan mempunyai 1 EiB = 1.048.576 TB. Ukuran maksimum sistem file 16 TB.</p><p></p><p>4. JFS (Journalis File System)</p><p>JFS atau dikenal juga dengan nama IBM Journal File System merupakan sistem file pertama yang menawarkan journaling. JFS sudah bertahun-tahun digunakan dalam IBM AIX® OS sebelum digunakan ke GNU/Linux. JFS saat ini menggunakan sumber daya CPU paling sedikit dibandingkan sistem file GNU/Linux lainnya. JFS sangat cepat diformat, mounting dan fsck, serta memiliki kinerja sangat baik, terutama berkaitan dengan deadline I/O scheduler. Walaupun begitu, dukungan terhadap JFS tidak seluas sistem file Ext atau Reiser FS.</p><p></p><p>5. Reiser FS</p><p>Sistem file Reiser dibuat berdasarkan balance tree yang cepat dan unggul dalam hal kinerja, dengan algoritma yang lebih rumit. Sistem file Reiser juga memiliki jurnal yang cepat dan ciri-cirinya mirip sistem file Ext3. Sistem file Reiser lebih efisien dalam pemanfaatan ruang disk, dimana dapat menghemat disk sampai dengan 6 persen. </p><br />
+                                            <h2 class="ez-toc-section" id="file-system-yang-digunakan-linux-yaitu">
+                            18. file system yang digunakan linux yaitu</h2><br />
+                        ReiserFS dan SWAP...........................................................................................<br />
+                                            <h2 class="ez-toc-section" id="tipe-file-yang-digunakan-oleh-linux-secara-umum-adalah-%e2%80%a6">
+                            19. Tipe file yang digunakan oleh linux secara umum adalah ….</h2><br />
+                        EXT3<br /><br />sekian semoga membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="direktori-yang-berisi-file-file-konfigurasi-sistem-pada-sistem-operasi-linux-adalah">
+                            20. direktori yang berisi file-file konfigurasi sistem pada sistem operasi Linux adalah</h2><br />
+                        /etc – Tempat semua file-file konfigurasi sistem, hanya boleh diubah oleh super user.<br />
+                                            <h2 class="ez-toc-section" id="apa-kelebihan-file-hosts-di-bandingkan-server-dns">
+                            21. apa kelebihan file hosts di bandingkan server dns </h2><br />
+                        File Hosting Mampu menyimpan file2 /Data Web kita secara Lebih besar (keseliruhan) ketimbang data Server (DNS)<br />#MaafKalauSalah<br />
+                                            <h2 class="ez-toc-section" id="apa-isi-file-etcpasswd">
+                            22. apa isi file /etc/passwd</h2><br />
+                        hooo?<br />coba klik folder file kemudian klik folder etc trs klik passwd...<br />nahh isinya apa hayow... tadaaaa......jeng jeng jengg....:D<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-file-file-apa-saja-yang-terkait-dalam-pengaturan-konfigurasi-jaringan-pada-sistem-linux">
+                            23. sebutkan file-file apa saja yang terkait dalam pengaturan konfigurasi jaringan pada sistem linux</h2><br />
+                        keluarga unix<br />1.POSIX<br />2.GNU<br />3.ZEATH OS<br />4.SCO UNIX<br />5.MACOS/X<br />6.GNU<br />7.BSD<br />KELUARGA MAC OS<br />1. APPLE<br />2.MAC OS X VERSI 10.6<br /><br />
+                                            <h2 class="ez-toc-section" id="memindahkan-file-dan-folder-bisa-ke-folder-itu-juga-atau-ke-folder-yang-lain-pada-linux-adalah-%e2%80%8b">
+                            24. Memindahkan file dan folder, bisa ke folder itu juga atau ke folder yang lain pada linux adalah ...​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>mv /root/lokasifolderanda/* /folder/tujuan/anda/</strong></p><p></p><p>Misalnya anda punya banyak file di folder /home/yupi/Downloads/ dan ingin di pindahkan ke /root/tujuan/, maka command nya adalah sebagai berikut: </p><p></p><p><strong># mv /home/yupi/Downloads/ /root/tujuan/</strong></p><p></p><p>Semoga Membantu^^</p><br />
+                                            <h2 class="ez-toc-section" id="apa-kelebihan-file-hosts-dibandingkan-dengan-server-dns">
+                            25. apa kelebihan file hosts dibandingkan dengan server dns</h2><br />
+                        kalau gak salah download bisa kita pause dan resumepause dan resume.  itulah jawaban yang saya jawabkan.  semoga bermanfaat<br />
+                                            <h2 class="ez-toc-section" id="mau-tanyafile-hosts-yg-ada-di-cwindowssystem32driversetchosts-pertanyaan-nya-apakah-file-hosts-bisa-meretas-komputer-orang-lain-atau-bahasa-yang">
+                            26. mau tanya,file hosts yg ada di (C:\Windows\System32\drivers\etc\hosts) pertanyaan nya apakah file hosts bisa meretas komputer orang lain atau bahasa yang...</h2><br />
+                        Sebenarnya kalau untuk tekhnik hacking tidak perlu sampai memindahkan file host. bisa hanya dengan monitor, remote, atau bahkan dengan cmd serta keylogger dan masih banyak cara hack selain dengan host. Semoga membantu ^_^<br />
+                                            <h2 class="ez-toc-section" id="fungsi-direktori-root-usr-etc-bin-mnt-di-linux">
+                            27. fungsi direktori /root , /usr , /etc , /bin , /mnt di linux...???</h2><br />
+                        kalo /Root menyimpan untuk user yang root. /usr user data. /etc file sistem lainnya /bin file sistem /mnt mount filesystem<br /><br />
+                                            <h2 class="ez-toc-section" id="gambarkanlah-apa-saja-yang-mungkin-terjadi-apabila-fileetcpasswd-atau-etcshadow-terhapus-dari-sistem-linux">
+                            28. Gambarkanlah apa saja yang mungkin terjadi apabila file/etc/passwd atau /etc/shadow terhapus dari sistem linux</h2><br />
+                        data menghilang <br />........<br /><br />.<br />...<br />
+                                            <h2 class="ez-toc-section" id="3-setelah-anda-selesai-membangun-server-radio-streaming-dengan-icecast-pada-os-linux-dan-berjalan-dengan-baik-ternyata-anda-lupa-untuk-mengubah-nama-mesin-server-anda-dapat-memodifikasinya-dengan-m">
+                            29. 3. Setelah Anda selesai membangun server radio streaming dengan Icecast pada OS Linux dan berjalan dengan baik, ternyata Anda lupa untuk mengubah nama mesin server. Anda dapat memodifikasinya dengan mengonfigurasi ulang file yang berada di bawah direktori /etc. File yang seharusnya Anda modifikasi adalah .... ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>/etc/hostname</p><p><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="apa-isi-file-etcpasword">
+                            30. apa isi file etc/pasword</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>basis data kata sandi user pada user sistem operasi UNIX/Linux</p><p><strong>Penjelasan:</strong></p><p>ini adalah contoh isinya : vaiofand:x:121:131::/run/vaiofand:/bin/false</p><p>kata sandi dienkripsi satu arah, gk bisa dibalikin dari file tsb ke teks lagi. kalo lupa password ya bikin user baru (selama akun ROOT masih ingat passwordnya) kalo user root sama sama kekunci, ya wasalam sama user tsb</p><br />
+                                            <h2 class="ez-toc-section" id="8-sistem-file-linux-yang-berisi-file-administrasi-adalah-a-varb-optc-etcd-bine-sbin%e2%80%8b">
+                            31. 8. Sistem file Linux yang berisi file administrasi adalah ....a./varb./optc./etcd./bine./sbin​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C. /etc..... </p><p><strong>Penjelasan:</strong></p><p>Semoga benar</p><br />
+                                            <h2 class="ez-toc-section" id="ekstensi-file-installer-pada-sistem-operasi-linux-adalah">
+                            32. Ekstensi file installer pada sistem operasi Linux adalah</h2><br />
+                        .sh &gt; .tar.gz &gt; .bin &gt; .deb<br />
+                                            <h2 class="ez-toc-section" id="pada-saat-instalasi-sistem-operasi-linux-file-sistem-operasi-linux-tersebut-akan-tersimpan-pada-partisi-hardisk-yaitu">
+                            33. Pada saat instalasi sistem operasi linux, file sistem operasi linux tersebut akan tersimpan pada partisi hardisk yaitu?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>file sistem operasi Linux akan tersimpan pada partisi yang telah ditentukan oleh pengguna selama proses instalasi. Biasanya, pengguna dapat memilih partisi yang tersedia atau membuat partisi baru untuk menyimpan sistem operasi Linux.</p><br />
+                                            <h2 class="ez-toc-section" id="mau-tanyafile-hosts-yg-ada-di-cwindowssystem32driversetchosts-pertanyaan-nya-apakah-file-hosts-bisa-meretas-komputer-orang-lain-atau-bahasa-yang-gampangnya-bisa-menghack-perangkat-komputer">
+                            34. 
+mau tanya,file hosts yg ada di (C:\Windows\System32\drivers\etc\hosts)  pertanyaan nya apakah file hosts bisa meretas komputer orang lain atau bahasa yang gampangnya bisa menghack perangkat komputer orang ? dengan cara menaro kan file hosts kita ke orang lain ? </h2><br />
+                        Menghack?, setahu saya ga bisa. klo hosts paling cuma untuk jadi spyware aja deh<br />
+                                            <h2 class="ez-toc-section" id="persamaan-file-sistem-pada-windows-dan-linux">
+                            35. persamaan file sistem pada windows dan linux</h2><br />
+                        sama sama dapat di baca pada komputer dengan jenis file dok,dock.xlx,dan lain sebagainya.<br />
+                                            <h2 class="ez-toc-section" id="mau-tanyafile-hosts-yg-ada-di-cwindowssystem32driversetchosts-pertanyaan-nya-apakah-file-hosts-bisa-meretas-komputer-orang-lain-atau-bahasa-yang-gampangnya-bisa-menghack-perangkat-komputer-or">
+                            36. mau tanya,file hosts yg ada di (C:\Windows\System32\drivers\etc\hosts) pertanyaan nya apakah file hosts bisa meretas komputer orang lain atau bahasa yang gampangnya bisa menghack perangkat komputer orang ? dengan cara menaro kan file hosts kita ke orang lain ?</h2><br />
+                        Sebenarnya kalau untuk tekhnik hacking tidak perlu sampai memindahkan file host. bisa hanya dengan monitor, remote, atau bahkan dengan cmd serta keylogger dan masih banyak cara hack selain dengan host. Semoga membantu ^_^<br />
+                                            <h2 class="ez-toc-section" id="perintah-linux-di-bawah-ini-benar-kecuali-1-poin-nano-etcnetworkinterfaces-nano-etcnetworkinginterfaces-vi-etcnetworkinginterfaces">
+                            37. Perintah linux di bawah ini benar, kecuali * 1 poin # nano /etc/network/interfaces # nano /etc/networking/interfaces # vi /etc/networking/interfaces</h2><br />
+                        <p>/etc/networking/interfaces # vi</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="file-sistem-yg-digunakan-linux-adalah">
+                            38. file sistem yg digunakan linux adalah </h2><br />
+                        firmware<br />klo slah tlonh dikoreksi.1. EXT2<br />2. EXT3<br />3. EXT4<br />4. ReiserFS<br />5. SWAP<br />
+                                            <h2 class="ez-toc-section" id="apa-perintah-untuk-mengestrak-suatu-file-pada-linux">
+                            39. Apa perintah untuk mengestrak suatu file pada linux?</h2><br />
+                        zip[OPTION] DEST SOURCE<br />
+                                            <h2 class="ez-toc-section" id="apa-kelebihan-file-hosts-dibandingkan-server-dns">
+                            40. apa kelebihan file hosts dibandingkan server dns</h2><br />
+                        Download bisa kita Pause dan di resume, Waktu men-download file lebih cepat, Saat me-Download kita bisa menggunakan Download manager (IDM ), Anda tidak perlu Register untuk Upload dan Download file.<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/vUDJ-CAhnrs?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-statement-bersyarat.html">Fungsi Dari Statement Bersyarat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-bentangan-kawat-indihome.html">Fungsi Dari Bentangan Kawat Indihome</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-bahasa-inggris-kelas-xii.html">Contoh Soal Bahasa Inggris Kelas Xii</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-metode-koefisien-tak-tentu.html">Contoh Soal Metode Koefisien Tak Tentu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-tes-masuk-indomaret-dan-jawaban.html">Contoh Soal Tes Masuk Indomaret Dan Jawaban</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-nilai-jarak-euclidean.html">Fungsi Dari Nilai Jarak Euclidean</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-solder.html">Fungsi Dari Solder</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-tes-tertulis-satpol-pp-beserta-jawabannya.html">Contoh Soal Tes Tertulis Satpol Pp Beserta Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-dari-aplikasi-pixelmator-adalah.html">Fungsi Dari Aplikasi Pixelmator Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/fungsi-bagian-dari-indera-pendengaran.html">Fungsi Bagian Dari Indera Pendengaran</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-tugas-akhir-tentang-komputer-universitas-indonesia.html">Contoh Tugas Akhir Tentang Komputer Universitas Indonesia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-teorema-sisa-dengan-pembagi-xa-xb.html">Contoh Soal Teorema Sisa Dengan Pembagi Xa Xb</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/download-contoh-soal-excel-vlookup-dan-hlookup.html">Download Contoh Soal Excel Vlookup Dan Hlookup</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-excess-demand.html">Contoh Soal Excess Demand</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-asking-and-giving-permission-pilihan-ganda-dan-jawabannya.html">Contoh Soal Asking And Giving Permission Pilihan Ganda Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-bahasa-inggris-type-1-2-3.html">Contoh Soal Bahasa Inggris Type 1 2 3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/jelaskan-fungsi-dari-vlookup-dan-hlookup.html">Jelaskan Fungsi Dari Vlookup Dan Hlookup</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-tugas-akhir-manajemen-informatika-d3-berbasis-web-jasa.html">Contoh Tugas Akhir Manajemen Informatika D3 Berbasis Web Jasa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-fisika-un-smp.html">Contoh Soal Fisika Un Smp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://soalpedia.github.io/contoh-soal-fisika-kelas-x.html">Contoh Soal Fisika Kelas X</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://soalpedia.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://soalpedia.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://soalpedia.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
